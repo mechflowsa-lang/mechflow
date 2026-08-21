@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MechFlow — Modern Operational Excellence</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts: Plus Jakarta Sans for English, Cairo for Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Gradient Shapes -->
+    <div class="glow-bg">
+        <div class="sphere sphere-1"></div>
+        <div class="sphere sphere-2"></div>
+    </div>
+
+    <!-- Main Wrapper -->
+    <div class="page-wrapper">
+        <!-- Navigation Header -->
+        <header class="navbar">
+            <div class="brand-logo">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="34" height="34" rx="10" fill="url(#brand-grad)"/>
+                    <path d="M10 17L15 22L24 12" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="brand-grad" x1="0" y1="0" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#006C35"/>
+                            <stop offset="1" stop-color="#059669"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="brand-name">Mech<span>Flow</span></span>
+            </div>
+
+            <div class="header-right">
+                <div class="header-status">
+                    <span class="status-dot"></span> 
+                    <span data-i18n="statusText">System Status: Building Next-Gen Platform</span>
+                </div>
+                <!-- Language Switcher Button -->
+                <button class="lang-switch-btn" id="langToggle" aria-label="Switch Language">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <span id="langLabel">العربية</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <main class="hero-section">
+            <div class="hero-badge">
+                <span class="sparkle">✨</span> 
+                <span data-i18n="heroBadge">LAUNCHING SOON IN KSA & GULF</span>
+            </div>
+            <h1 class="hero-title">
+                <span data-i18n="heroTitlePrefix">The Future of</span> <br>
+                <span class="gradient-text" data-i18n="heroTitleHighlight">Smart Enterprise Operations</span>
+            </h1>
+            <p class="hero-subtitle" data-i18n="heroSubtitle">
+                We are building an advanced, scalable platform tailored for modern businesses in Saudi Arabia and the region. Experience unmatched performance, security, and seamless efficiency.
+            </p>
+
+            <!-- Countdown Timer -->
+            <div class="countdown-container" id="countdown">
+                <div class="time-block">
+                    <span class="time-number" id="days">00</span>
+                    <span class="time-label" data-i18n="labelDays">Days</span>
+                </div>
+                <div class="time-divider">:</div>
+                <div class="time-block">
+                    <span class="time-number" id="hours">00</span>
+                    <span class="time-label" data-i18n="labelHours">Hours</span>
+                </div>
+                <div class="time-divider">:</div>
+                <div class="time-block">
+                    <span class="time-number" id="minutes">00</span>
+                    <span class="time-label" data-i18n="labelMinutes">Minutes</span>
+                </div>
+                <div class="time-divider">:</div>
+                <div class="time-block">
+                    <span class="time-number" id="seconds">00</span>
+                    <span class="time-label" data-i18n="labelSeconds">Seconds</span>
+                </div>
+            </div>
+
+            <!-- Email Notification Form -->
+            <div class="subscribe-card">
+                <h3 data-i18n="formTitle">Be the first to get exclusive early access</h3>
+                <form class="subscribe-form" id="notifyForm">
+                    <div class="input-group">
+                        <svg class="email-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="M22 6L12 13L2 6"/>
+                        </svg>
+                        <input type="email" id="userEmail" data-i18n-placeholder="emailPlaceholder" placeholder="Enter your business email" required autocomplete="email">
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <span data-i18n="btnSubmit">Join Waitlist</span>
+                        <svg class="btn-arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </form>
+                <div class="form-feedback" id="formFeedback"></div>
+                <p class="privacy-note" data-i18n="privacyNote">🔒 Your data is fully protected. No spam guaranteed.</p>
+            </div>
+
+            <!-- Feature Previews -->
+            <section class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h4 data-i18n="feature1Title">Localized & High Performance</h4>
+                    <p data-i18n="feature1Desc">Built specifically with regional compliance, high availability, and ultra-fast cloud performance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h4 data-i18n="feature2Title">Bank-Grade Security</h4>
+                    <p data-i18n="feature2Desc">Strict data encryption, privacy protection, and enterprise standards compliant with local regulations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌴</div>
+                    <h4 data-i18n="feature3Title">Vision 2030 Ready</h4>
+                    <p data-i18n="feature3Desc">Empowering digital transformation across industrial, operational, and commercial sectors.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; <span id="year"></span> MechFlow. <span data-i18n="allRights">All rights reserved.</span></p>
+            <div class="social-links">
+                <a href="#" class="social-item" data-i18n="linkTwitter">Twitter / X</a>
+                <a href="#" class="social-item" data-i18n="linkLinkedIn">LinkedIn</a>
+                <a href="#" class="social-item" data-i18n="linkSupport">Support & Sales</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
