@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/mechkcbq/public_html
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp script.js $DEPLOYPATH
+    - /bin/cp README.md $DEPLOYPATH
