@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             heroTitlePrefix: "Something Great is",
             heroTitleHighlight: "Under Construction",
             heroSubtitle: "Our website is currently undergoing development. We are working hard to bring you a brand new digital experience. Stay tuned!",
+            timerBadge: "COUNTDOWN TO OFFICIAL LAUNCH",
             labelDays: "Days",
             labelHours: "Hours",
             labelMinutes: "Minutes",
@@ -39,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             heroTitlePrefix: "شيء رائع",
             heroTitleHighlight: "قيد الإنشاء والتحضير",
             heroSubtitle: "موقعنا حالياً قيد التطوير والإنشاء. نعمل بجد لنقدم لكم تجربة رقمية جديدة ومميزة. انتظرونا قريباً!",
+            timerBadge: "العد التنازلي للإطلاق الرسمي",
             labelDays: "أيام",
             labelHours: "ساعات",
             labelMinutes: "دقائق",
@@ -99,7 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Toggle language event
     if (langToggleBtn) {
         langToggleBtn.addEventListener('click', () => {
             const nextLang = currentLang === 'en' ? 'ar' : 'en';
@@ -107,24 +108,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Apply initial language
     applyLanguage(currentLang);
 
     // -------------------------------------------------------------
-    // 2. Countdown Timer Logic (30 days target)
+    // 2. ULTRA-MODERN CIRCULAR RING COUNTDOWN TIMER LOGIC
     // -------------------------------------------------------------
     const launchDate = new Date();
     launchDate.setDate(launchDate.getDate() + 30);
+
+    const circumference = 263.89; // 2 * PI * 42
+
+    const ringDays = document.getElementById('ringDays');
+    const ringHours = document.getElementById('ringHours');
+    const ringMinutes = document.getElementById('ringMinutes');
+    const ringSeconds = document.getElementById('ringSeconds');
+
+    const daysEl = document.getElementById('days');
+    const hoursEl = document.getElementById('hours');
+    const minutesEl = document.getElementById('minutes');
+    const secondsEl = document.getElementById('seconds');
+
+    let previousSeconds = -1;
+
+    function setRingProgress(ring, value, max) {
+        if (!ring) return;
+        const offset = circumference - (value / max) * circumference;
+        ring.style.strokeDashoffset = offset;
+    }
 
     function updateCountdown() {
         const now = new Date().getTime();
         const distance = launchDate.getTime() - now;
 
         if (distance < 0) {
-            document.getElementById('days').innerText = "00";
-            document.getElementById('hours').innerText = "00";
-            document.getElementById('minutes').innerText = "00";
-            document.getElementById('seconds').innerText = "00";
+            daysEl.innerText = "00";
+            hoursEl.innerText = "00";
+            minutesEl.innerText = "00";
+            secondsEl.innerText = "00";
             return;
         }
 
@@ -133,10 +153,25 @@ document.addEventListener('DOMContentLoaded', () => {
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        document.getElementById('days').innerText = String(days).padStart(2, '0');
-        document.getElementById('hours').innerText = String(hours).padStart(2, '0');
-        document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
-        document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
+        // Update Numbers
+        daysEl.innerText = String(days).padStart(2, '0');
+        hoursEl.innerText = String(hours).padStart(2, '0');
+        minutesEl.innerText = String(minutes).padStart(2, '0');
+        secondsEl.innerText = String(seconds).padStart(2, '0');
+
+        // Tick Pulse Animation for seconds
+        if (previousSeconds !== seconds) {
+            secondsEl.classList.remove('tick-pulse');
+            void secondsEl.offsetWidth; // trigger reflow
+            secondsEl.classList.add('tick-pulse');
+            previousSeconds = seconds;
+        }
+
+        // Update Circular SVG Ring Fill Ratios
+        setRingProgress(ringDays, days, 30);
+        setRingProgress(ringHours, hours, 24);
+        setRingProgress(ringMinutes, minutes, 60);
+        setRingProgress(ringSeconds, seconds, 60);
     }
 
     updateCountdown();

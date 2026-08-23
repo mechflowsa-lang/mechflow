@@ -7,9 +7,9 @@
 
 :root {
     --bg-body: #f8fafc;
-    --card-bg: rgba(255, 255, 255, 0.85);
+    --card-bg: rgba(255, 255, 255, 0.9);
     --card-border: rgba(226, 232, 240, 0.8);
-    --card-hover-border: rgba(5, 150, 105, 0.4);
+    --card-hover-border: rgba(5, 150, 105, 0.45);
     --primary-green: #006C35;
     --emerald-light: #059669;
     --primary-gradient: linear-gradient(135deg, #006C35 0%, #059669 100%);
@@ -185,7 +185,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 50px 0;
+    padding: 40px 0;
 }
 
 .hero-badge {
@@ -223,57 +223,180 @@ body {
     font-size: 1.15rem;
     color: var(--text-body);
     line-height: 1.7;
-    margin-bottom: 44px;
+    margin-bottom: 40px;
 }
 
-/* Countdown Timer */
-.countdown-container {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 48px;
-}
-
-.time-block {
-    background: #ffffff;
-    border: 1px solid var(--card-border);
-    padding: 20px 24px;
-    border-radius: 16px;
-    min-width: 104px;
+/* -------------------------------------------------------------
+ * ULTRA MODERN CIRCULAR RING COUNTDOWN TIMER
+ * ------------------------------------------------------------- */
+.countdown-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    margin-bottom: 48px;
+    width: 100%;
 }
 
-.time-block:hover {
-    transform: translateY(-4px);
+.countdown-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--emerald-light);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(5, 150, 105, 0.2);
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.08);
+}
+
+.pulse-ring-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--emerald-light);
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.7);
+    animation: ringPulse 1.8s infinite;
+}
+
+@keyframes ringPulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 8px rgba(5, 150, 105, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(5, 150, 105, 0);
+    }
+}
+
+.countdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.time-card {
+    background: #ffffff;
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+    padding: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.time-card:hover {
+    transform: translateY(-6px) scale(1.03);
     border-color: var(--card-hover-border);
+    box-shadow: 0 20px 40px rgba(0, 108, 53, 0.12);
+}
+
+.ring-svg-box {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-ring {
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+.ring-bg {
+    fill: none;
+    stroke: rgba(226, 232, 240, 0.6);
+    stroke-width: 6;
+}
+
+.ring-fill {
+    fill: none;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-dasharray: 263.89; /* 2 * PI * 42 */
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.8s ease-in-out, stroke 0.3s ease;
+}
+
+.ring-days { stroke: #006C35; }
+.ring-hours { stroke: #059669; }
+.ring-minutes { stroke: #d97706; }
+.ring-seconds { stroke: #6366f1; }
+
+.time-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .time-number {
-    font-size: 2.5rem;
+    font-size: 1.85rem;
     font-weight: 800;
     color: var(--text-dark);
     line-height: 1;
-    margin-bottom: 6px;
     font-variant-numeric: tabular-nums;
+    transition: transform 0.15s ease;
+}
+
+.time-number.tick-pulse {
+    animation: tickBounce 0.25s ease-out;
+}
+
+@keyframes tickBounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); color: var(--emerald-light); }
+    100% { transform: scale(1); }
 }
 
 .time-label {
-    font-size: 0.75rem;
+    font-size: 0.68rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     color: var(--text-muted);
     font-weight: 700;
+    margin-top: 4px;
 }
 
-.time-divider {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--text-muted);
-    margin-top: -16px;
+.time-dots {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.time-dots span {
+    width: 6px;
+    height: 6px;
+    background-color: var(--emerald-light);
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: dotBlink 1.5s infinite alternate;
+}
+
+.time-dots span:nth-child(2) {
+    animation-delay: 0.75s;
+}
+
+@keyframes dotBlink {
+    0% { opacity: 0.2; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1.2); }
 }
 
 /* Subscription Form Card */
@@ -314,13 +437,8 @@ body {
     pointer-events: none;
 }
 
-html[dir="ltr"] .email-icon {
-    left: 16px;
-}
-
-html[dir="rtl"] .email-icon {
-    right: 16px;
-}
+html[dir="ltr"] .email-icon { left: 16px; }
+html[dir="rtl"] .email-icon { right: 16px; }
 
 .input-group input {
     width: 100%;
@@ -333,13 +451,8 @@ html[dir="rtl"] .email-icon {
     transition: all 0.3s ease;
 }
 
-html[dir="ltr"] .input-group input {
-    padding: 14px 16px 14px 48px;
-}
-
-html[dir="rtl"] .input-group input {
-    padding: 14px 48px 14px 16px;
-}
+html[dir="ltr"] .input-group input { padding: 14px 16px 14px 48px; }
+html[dir="rtl"] .input-group input { padding: 14px 48px 14px 16px; }
 
 .input-group input:focus {
     border-color: var(--emerald-light);
@@ -381,13 +494,8 @@ html[dir="rtl"] .btn-arrow-icon {
     margin-top: 8px;
 }
 
-.form-feedback.success {
-    color: #16a34a;
-}
-
-.form-feedback.error {
-    color: #dc2626;
-}
+.form-feedback.success { color: #16a34a; }
+.form-feedback.error { color: #dc2626; }
 
 .privacy-note {
     font-size: 0.8rem;
@@ -412,13 +520,8 @@ html[dir="rtl"] .btn-arrow-icon {
     transition: all 0.3s ease;
 }
 
-html[dir="ltr"] .feature-card {
-    text-align: left;
-}
-
-html[dir="rtl"] .feature-card {
-    text-align: right;
-}
+html[dir="ltr"] .feature-card { text-align: left; }
+html[dir="rtl"] .feature-card { text-align: right; }
 
 .feature-card:hover {
     border-color: var(--card-hover-border);
@@ -471,56 +574,30 @@ html[dir="rtl"] .feature-card {
     transition: color 0.2s ease;
 }
 
-.social-item:hover {
-    color: var(--primary-green);
-}
+.social-item:hover { color: var(--primary-green); }
 
 /* Responsive Styles */
 @media (max-width: 900px) {
-    .hero-title {
-        font-size: 2.6rem;
-    }
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
+    .hero-title { font-size: 2.6rem; }
+    .features-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {
-    .navbar {
-        flex-direction: column;
-        gap: 16px;
-    }
-    .hero-title {
-        font-size: 2rem;
-    }
-    .hero-subtitle {
-        font-size: 1rem;
-    }
+    .navbar { flex-direction: column; gap: 16px; }
+    .hero-title { font-size: 2rem; }
+    .hero-subtitle { font-size: 1rem; }
     .countdown-container {
-        gap: 8px;
-    }
-    .time-block {
-        min-width: 72px;
-        padding: 14px 10px;
-    }
-    .time-number {
-        font-size: 1.75rem;
-    }
-    .time-divider {
-        font-size: 1.5rem;
-    }
-    .subscribe-card {
-        padding: 24px 20px;
-    }
-    .subscribe-form {
-        flex-direction: column;
-    }
-    .btn-primary {
-        justify-content: center;
-    }
-    .footer {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 16px;
-        text-align: center;
     }
+    .time-dots { display: none; }
+    .time-card { padding: 12px; }
+    .ring-svg-box { width: 90px; height: 90px; }
+    .progress-ring { width: 90px; height: 90px; }
+    .time-number { font-size: 1.5rem; }
+    .subscribe-card { padding: 24px 20px; }
+    .subscribe-form { flex-direction: column; }
+    .btn-primary { justify-content: center; }
+    .footer { flex-direction: column; gap: 16px; text-align: center; }
 }
