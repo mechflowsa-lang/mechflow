@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
     applyLanguage(currentLang);
 
     // -------------------------------------------------------------
-    // 2. APPLE / VERCEL STYLE MINIMALIST COUNTDOWN TIMER LOGIC
+    // 2. FEATURED SECONDS COUNTDOWN WITH VANISHING ANIMATION
     // -------------------------------------------------------------
     const launchDate = new Date();
     launchDate.setDate(launchDate.getDate() + 30);
@@ -118,6 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const hoursEl = document.getElementById('hours');
     const minutesEl = document.getElementById('minutes');
     const secondsEl = document.getElementById('seconds');
+
+    let prevSeconds = -1;
 
     function updateCountdown() {
         const now = new Date().getTime();
@@ -139,7 +141,17 @@ document.addEventListener('DOMContentLoaded', () => {
         daysEl.innerText = String(days).padStart(2, '0');
         hoursEl.innerText = String(hours).padStart(2, '0');
         minutesEl.innerText = String(minutes).padStart(2, '0');
-        secondsEl.innerText = String(seconds).padStart(2, '0');
+
+        const formattedSeconds = String(seconds).padStart(2, '0');
+
+        // Smooth Vanish Animation on Second Change
+        if (prevSeconds !== seconds) {
+            secondsEl.classList.remove('vanish-tick');
+            void secondsEl.offsetWidth; // trigger reflow
+            secondsEl.innerText = formattedSeconds;
+            secondsEl.classList.add('vanish-tick');
+            prevSeconds = seconds;
+        }
     }
 
     updateCountdown();

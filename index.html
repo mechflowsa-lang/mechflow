@@ -66,34 +66,32 @@
                 Our website is currently undergoing development. We are working hard to bring you a brand new digital experience. Stay tuned!
             </p>
 
-            <!-- Apple / Vercel Style Minimalist Countdown Timer -->
+            <!-- Featured Seconds Hero Timer with Vanishing Seconds Animation -->
             <div class="countdown-wrapper">
-                <div class="countdown-container" id="countdown">
-                    <div class="time-card">
-                        <span class="time-number" id="days">00</span>
-                        <span class="time-label" data-i18n="labelDays">Days</span>
+                <!-- Top Compact Days, Hours, Minutes Bar -->
+                <div class="top-time-bar">
+                    <div class="mini-time-unit">
+                        <span class="mini-number" id="days">00</span>
+                        <span class="mini-label" data-i18n="labelDays">Days</span>
                     </div>
-
-                    <div class="time-colon">:</div>
-
-                    <div class="time-card">
-                        <span class="time-number" id="hours">00</span>
-                        <span class="time-label" data-i18n="labelHours">Hours</span>
+                    <span class="unit-dot">•</span>
+                    <div class="mini-time-unit">
+                        <span class="mini-number" id="hours">00</span>
+                        <span class="mini-label" data-i18n="labelHours">Hours</span>
                     </div>
-
-                    <div class="time-colon">:</div>
-
-                    <div class="time-card">
-                        <span class="time-number" id="minutes">00</span>
-                        <span class="time-label" data-i18n="labelMinutes">Minutes</span>
+                    <span class="unit-dot">•</span>
+                    <div class="mini-time-unit">
+                        <span class="mini-number" id="minutes">00</span>
+                        <span class="mini-label" data-i18n="labelMinutes">Minutes</span>
                     </div>
+                </div>
 
-                    <div class="time-colon">:</div>
-
-                    <div class="time-card">
-                        <span class="time-number" id="seconds">00</span>
-                        <span class="time-label" data-i18n="labelSeconds">Seconds</span>
+                <!-- Featured Large Seconds Counter -->
+                <div class="hero-seconds-card">
+                    <div class="seconds-display">
+                        <span class="seconds-number" id="seconds">00</span>
                     </div>
+                    <span class="seconds-label" data-i18n="labelSeconds">Seconds</span>
                 </div>
             </div>
 
