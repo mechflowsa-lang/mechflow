@@ -45,7 +45,7 @@
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="12" cy="12" r="10"></circle>
                         <line x1="2" y1="12" x2="22" y2="12"></line>
-                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"></path>
                     </svg>
                     <span id="langLabel">العربية</span>
                 </button>
@@ -66,69 +66,33 @@
                 Our website is currently undergoing development. We are working hard to bring you a brand new digital experience. Stay tuned!
             </p>
 
-            <!-- Ultra Modern Circular Ring Countdown Timer -->
+            <!-- Apple / Vercel Style Minimalist Countdown Timer -->
             <div class="countdown-wrapper">
-                <div class="countdown-badge">
-                    <span class="pulse-ring-dot"></span>
-                    <span data-i18n="timerBadge">COUNTDOWN TO OFFICIAL LAUNCH</span>
-                </div>
                 <div class="countdown-container" id="countdown">
                     <div class="time-card">
-                        <div class="ring-svg-box">
-                            <svg class="progress-ring" width="100" height="100">
-                                <circle class="ring-bg" cx="50" cy="50" r="42"/>
-                                <circle class="ring-fill ring-days" id="ringDays" cx="50" cy="50" r="42"/>
-                            </svg>
-                            <div class="time-inner">
-                                <span class="time-number" id="days">00</span>
-                                <span class="time-label" data-i18n="labelDays">Days</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="time-dots"><span></span><span></span></div>
-
-                    <div class="time-card">
-                        <div class="ring-svg-box">
-                            <svg class="progress-ring" width="100" height="100">
-                                <circle class="ring-bg" cx="50" cy="50" r="42"/>
-                                <circle class="ring-fill ring-hours" id="ringHours" cx="50" cy="50" r="42"/>
-                            </svg>
-                            <div class="time-inner">
-                                <span class="time-number" id="hours">00</span>
-                                <span class="time-label" data-i18n="labelHours">Hours</span>
-                            </div>
-                        </div>
+                        <span class="time-number" id="days">00</span>
+                        <span class="time-label" data-i18n="labelDays">Days</span>
                     </div>
 
-                    <div class="time-dots"><span></span><span></span></div>
+                    <div class="time-colon">:</div>
 
                     <div class="time-card">
-                        <div class="ring-svg-box">
-                            <svg class="progress-ring" width="100" height="100">
-                                <circle class="ring-bg" cx="50" cy="50" r="42"/>
-                                <circle class="ring-fill ring-minutes" id="ringMinutes" cx="50" cy="50" r="42"/>
-                            </svg>
-                            <div class="time-inner">
-                                <span class="time-number" id="minutes">00</span>
-                                <span class="time-label" data-i18n="labelMinutes">Minutes</span>
-                            </div>
-                        </div>
+                        <span class="time-number" id="hours">00</span>
+                        <span class="time-label" data-i18n="labelHours">Hours</span>
                     </div>
 
-                    <div class="time-dots"><span></span><span></span></div>
+                    <div class="time-colon">:</div>
 
                     <div class="time-card">
-                        <div class="ring-svg-box">
-                            <svg class="progress-ring" width="100" height="100">
-                                <circle class="ring-bg" cx="50" cy="50" r="42"/>
-                                <circle class="ring-fill ring-seconds" id="ringSeconds" cx="50" cy="50" r="42"/>
-                            </svg>
-                            <div class="time-inner">
-                                <span class="time-number" id="seconds">00</span>
-                                <span class="time-label" data-i18n="labelSeconds">Seconds</span>
-                            </div>
-                        </div>
+                        <span class="time-number" id="minutes">00</span>
+                        <span class="time-label" data-i18n="labelMinutes">Minutes</span>
+                    </div>
+
+                    <div class="time-colon">:</div>
+
+                    <div class="time-card">
+                        <span class="time-number" id="seconds">00</span>
+                        <span class="time-label" data-i18n="labelSeconds">Seconds</span>
                     </div>
                 </div>
             </div>
