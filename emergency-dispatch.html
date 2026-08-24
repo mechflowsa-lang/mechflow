@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>24/7 Breakdown Dispatch Center — MechFlow Saudi Arabia</title>
-  <meta name="description" content="24/7 emergency rotating equipment breakdown dispatch. Instant field mobilizations for laser alignment, vibration diagnostics, and mechanical seal replacement across Jeddah, Dammam & Yanbu.">
+  <title>24/7 Breakdown Dispatch &amp; Emergency Squads — MechFlow Saudi Arabia</title>
+  <meta name="description" content="24/7 rapid emergency engineering response across Jeddah, Dammam & Yanbu. Mobilized within 2-4 hours with laser alignment, vibration analyzers, and seal technicians.">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -20,7 +20,9 @@
         <span class="hub-item"><i class="fa-solid fa-location-dot"></i> <strong>Branch Offices:</strong> Dammam &amp; Yanbu</span>
       </div>
       <div class="topbar-right">
-        <a href="emergency-dispatch.html" class="topbar-hotline"><i class="fa-solid fa-phone-volume"></i> 24/7 Breakdown: +966 54 509 2221</a>
+        <a href="emergency-dispatch.html" class="topbar-hotline">
+          <i class="fa-solid fa-phone-volume"></i> 24/7 Breakdown: +966 54 509 2221
+        </a>
         <a href="ar/emergency-dispatch.html" class="lang-btn"><i class="fa-solid fa-globe"></i> العربية</a>
       </div>
     </div>
@@ -50,14 +52,48 @@
     </div>
   </header>
 
-  <section class="hero-monolith" style="background: linear-gradient(180deg, #1C0A00 0%, var(--color-obsidian-black) 100%); padding: 70px 0;">
-    <div class="container">
-      <div style="display: inline-flex; align-items:center; gap: 8px; background: rgba(255, 122, 0, 0.2); border: 1px solid var(--color-safety-amber); padding: 6px 16px; border-radius: var(--radius-full); font-size: 13px; font-weight: 800; color: var(--color-safety-amber); margin-bottom: 16px;">
-        <i class="fa-solid fa-truck-medical"></i> 24/7 RAPID RESPONSE SQUAD ACTIVATED
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
+    <div class="mobile-drawer">
+      <div>
+        <div class="mobile-drawer-header">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon" style="width:36px; height:36px; font-size:16px;"><i class="fa-solid fa-gears"></i></div>
+            <span class="brand-name" style="font-size:22px;">Mech<span>Flow</span></span>
+          </a>
+          <button class="mobile-drawer-close" id="mobileDrawerClose"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> About Company</a></li>
+          <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> All 6 Divisions</a></li>
+          <li><a href="turbomachinery.html" class="mobile-nav-link"><i class="fa-solid fa-fan"></i> Turbomachinery &amp; Pumps</a></li>
+          <li><a href="fluid-gas-sealing.html" class="mobile-nav-link"><i class="fa-solid fa-ring"></i> Fluid &amp; Dry Gas Sealing</a></li>
+          <li><a href="plant-turnaround.html" class="mobile-nav-link"><i class="fa-solid fa-wrench"></i> Plant Turnaround &amp; Machining</a></li>
+          <li><a href="advanced-engineering.html" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> FEA, CFD &amp; 3D Scanning</a></li>
+          <li><a href="electrical-motors.html" class="mobile-nav-link"><i class="fa-solid fa-bolt"></i> Motor Rewinding &amp; VFD</a></li>
+          <li><a href="industries.html" class="mobile-nav-link"><i class="fa-solid fa-industry"></i> Industries</a></li>
+          <li><a href="case-studies.html" class="mobile-nav-link"><i class="fa-solid fa-chart-line"></i> Case Studies</a></li>
+          <li><a href="diagnostic.html" class="mobile-nav-link"><i class="fa-solid fa-stethoscope"></i> Diagnostic Tool</a></li>
+          <li><a href="emergency-dispatch.html" class="mobile-nav-link active"><i class="fa-solid fa-truck-medical"></i> 24/7 Dispatch</a></li>
+          <li><a href="rfq.html" class="mobile-nav-link"><i class="fa-solid fa-file-signature"></i> Request RFQ</a></li>
+          <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> Contact Us</a></li>
+        </ul>
       </div>
-      <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px; color:#FFFFFF;">24/7 Breakdown Dispatch &amp; Mobilization Center</h1>
+      <div class="mobile-drawer-footer">
+        <a href="ar/emergency-dispatch.html" class="lang-btn" style="justify-content:center; padding:10px;"><i class="fa-solid fa-globe"></i> العربية</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero-monolith" style="padding: 70px 0;">
+    <div class="container">
+      <div style="display: inline-flex; align-items:center; gap: 8px; background: var(--color-safety-amber-light); border: 1px solid var(--color-safety-amber-border); padding: 6px 16px; border-radius: var(--radius-full); font-size: 13px; font-weight: 800; color: var(--color-safety-amber); margin-bottom: 16px;">
+        <i class="fa-solid fa-truck-medical"></i> RAPID DEPLOYMENT EMERGENCY RESPONSE
+      </div>
+      <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px;">24/7 Emergency Industrial Breakdown Center</h1>
       <p class="hero-lead-text">
-        Immediate 2-4 hour field deployment of certified rotating equipment engineers, wireless laser alignment systems, and hydraulic tooling to any plant site across the Kingdom of Saudi Arabia.
+        Immediate mobilization of diagnostic engineers and mobile field equipment within 2 to 4 hours across all Saudi industrial cities.
       </p>
     </div>
   </section>
@@ -66,37 +102,37 @@
     <div class="container">
       <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 48px; align-items: flex-start;">
         <div>
-          <span class="tag-accent" style="color: var(--color-safety-amber);"><i class="fa-solid fa-phone-volume"></i> Direct Line to Duty Engineers</span>
-          <h2 class="head-title-lg">Immediate Facility Speed Dial</h2>
+          <span class="tag-accent" style="color: var(--color-safety-amber);"><i class="fa-solid fa-phone-volume"></i> Direct Line Access</span>
+          <h2 class="head-title-lg">Immediate Communication with Duty Engineers</h2>
 
           <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 24px;">
-            <!-- Jeddah -->
+            <!-- Jeddah HQ -->
             <div style="background: #FFFFFF; border: 2px solid var(--color-saudi-emerald); border-radius: var(--radius-lg); padding: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; box-shadow: var(--shadow-card);">
               <div>
-                <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; background: var(--color-saudi-emerald); color: #FFFFFF; padding: 3px 8px; border-radius: 4px;">Headquarters &amp; Western Hub</span>
-                <h4 style="font-size: 20px; color: var(--color-text-dark-heading); margin-top: 6px;">Jeddah, Rabigh, Makkah, Madinah &amp; NEOM</h4>
+                <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; background: var(--color-saudi-emerald); color: #FFFFFF; padding: 3px 8px; border-radius: 4px;">Western Province Hub</span>
+                <h4 style="font-size: 20px; color: var(--color-heading); margin-top: 6px;">Jeddah, Rabigh, Makkah, Medina &amp; NEOM</h4>
               </div>
               <a href="tel:+966564709249" style="background: var(--color-saudi-emerald); color: #FFFFFF; font-weight: 800; padding: 12px 22px; border-radius: var(--radius-full); display:inline-flex; align-items:center; gap:8px;">
                 <i class="fa-solid fa-phone"></i> +966 56 470 9249
               </a>
             </div>
 
-            <!-- Dammam -->
-            <div style="background: #FFFFFF; border: 1px solid var(--color-border-light); border-radius: var(--radius-lg); padding: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; box-shadow: var(--shadow-card);">
+            <!-- Dammam Branch -->
+            <div style="background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; box-shadow: var(--shadow-card);">
               <div>
                 <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; background: var(--color-tech-cyan); color: #FFFFFF; padding: 3px 8px; border-radius: 4px;">Eastern Province Hub</span>
-                <h4 style="font-size: 20px; color: var(--color-text-dark-heading); margin-top: 6px;">Dammam, Jubail, Ras Al Khair &amp; Khobar</h4>
+                <h4 style="font-size: 20px; color: var(--color-heading); margin-top: 6px;">Dammam, Jubail &amp; Ras Al Khair</h4>
               </div>
               <a href="tel:+966545092221" style="background: var(--color-tech-cyan); color: #FFFFFF; font-weight: 800; padding: 12px 22px; border-radius: var(--radius-full); display:inline-flex; align-items:center; gap:8px;">
                 <i class="fa-solid fa-phone"></i> +966 54 509 2221
               </a>
             </div>
 
-            <!-- Yanbu -->
-            <div style="background: #FFFFFF; border: 1px solid var(--color-border-light); border-radius: var(--radius-lg); padding: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; box-shadow: var(--shadow-card);">
+            <!-- Yanbu Branch -->
+            <div style="background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; box-shadow: var(--shadow-card);">
               <div>
-                <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; background: var(--color-safety-amber); color: #FFFFFF; padding: 3px 8px; border-radius: 4px;">Red Sea Petrochemical Hub</span>
-                <h4 style="font-size: 20px; color: var(--color-text-dark-heading); margin-top: 6px;">Yanbu Industrial City &amp; Desalination Base</h4>
+                <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; background: var(--color-safety-amber); color: #FFFFFF; padding: 3px 8px; border-radius: 4px;">Red Sea Petrochem Hub</span>
+                <h4 style="font-size: 20px; color: var(--color-heading); margin-top: 6px;">Yanbu Industrial &amp; Desalination Plants</h4>
               </div>
               <a href="tel:+966545092221" style="background: var(--color-safety-amber); color: #FFFFFF; font-weight: 800; padding: 12px 22px; border-radius: var(--radius-full); display:inline-flex; align-items:center; gap:8px;">
                 <i class="fa-solid fa-phone"></i> +966 54 509 2221
@@ -105,13 +141,13 @@
           </div>
         </div>
 
-        <div style="background: var(--color-obsidian-dark); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius-xl); padding: 32px; color: #FFFFFF; box-shadow: var(--shadow-dark-card);">
-          <h3 style="font-size: 22px; color: #FFFFFF; margin-bottom: 16px;"><i class="fa-brands fa-whatsapp" style="color: #25D366;"></i> Instant WhatsApp Dispatch</h3>
-          <p style="font-size: 14px; color: var(--color-text-light-muted); margin-bottom: 24px; line-height:1.6;">
-            Send photos of equipment nameplates, vibration telemetry spectrums, or leaking seal videos directly to our duty engineer for instant triage.
+        <div style="background: #FFFFFF; border: 1.5px solid var(--color-border); border-radius: var(--radius-xl); padding: 32px; box-shadow: var(--shadow-card);">
+          <h3 style="font-size: 22px; color: var(--color-heading); margin-bottom: 16px;"><i class="fa-brands fa-whatsapp" style="color: #25D366;"></i> Instant WhatsApp Dispatch</h3>
+          <p style="font-size: 14px; color: var(--color-body); margin-bottom: 24px; line-height:1.68;">
+            Directly message equipment nameplate pictures, vibration spectrum readings, or leak videos to our on-duty reliability team.
           </p>
 
-          <a href="https://wa.me/966545092221?text=Hello%20MechFlow%20Emergency%20Dispatch%2C%20we%20have%20an%20urgent%20industrial%20breakdown%20requiring%20immediate%20engineering%20support." target="_blank" style="background: #25D366; color: #FFFFFF; font-weight: 800; font-size: 16px; padding: 16px; border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);">
+          <a href="https://wa.me/966545092221?text=Hello%20MechFlow,%20we%20have%20an%20urgent%20industrial%20breakdown%20requiring%20engineering%20dispatch." target="_blank" style="background: #25D366; color: #FFFFFF; font-weight: 800; font-size: 16px; padding: 16px; border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);">
             <i class="fa-brands fa-whatsapp" style="font-size: 20px;"></i>
             <span>Open WhatsApp Emergency Chat</span>
           </a>
@@ -120,11 +156,66 @@
     </div>
   </section>
 
+  <!-- Master Footer with Rich Icons -->
   <footer class="master-footer">
     <div class="container">
-      <div class="footer-bottom-row" style="border-top:none; padding-top:0;">
+      <div class="footer-4col">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
+            <div class="brand-icon" style="width:38px; height:38px; font-size:17px;"><i class="fa-solid fa-gears"></i></div>
+            <span class="brand-name" style="font-size:24px;">Mech<span>Flow</span></span>
+          </a>
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #94A3B8;">
+            Kingdom-wide OEM-independent engineering leader providing Turbomachinery overhaul, Dry Gas Seals (API 692), laser alignment, and plant turnaround (TAR) services.
+          </p>
+          <div class="iso-cert-badges">
+            <span class="iso-badge-pill">ISO 9001:2015</span>
+            <span class="iso-badge-pill">ISO 45001:2018</span>
+            <span class="iso-badge-pill">ISO 14001:2015</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-layer-group"></i> Service Divisions</h4>
+          <div class="footer-nav-list">
+            <a href="turbomachinery.html"><i class="fa-solid fa-fan"></i> Turbomachinery &amp; Pumps</a>
+            <a href="fluid-gas-sealing.html"><i class="fa-solid fa-ring"></i> Fluid &amp; Dry Gas Sealing</a>
+            <a href="plant-turnaround.html"><i class="fa-solid fa-wrench"></i> Plant Turnaround (TAR)</a>
+            <a href="advanced-engineering.html"><i class="fa-solid fa-microchip"></i> FEA / CFD &amp; 3D Scanning</a>
+            <a href="electrical-motors.html"><i class="fa-solid fa-bolt"></i> Motor Rewinding &amp; VFD</a>
+            <a href="heat-transfer.html"><i class="fa-solid fa-temperature-arrow-down"></i> Heat Exchangers &amp; Coolers</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-compass"></i> Quick Links</h4>
+          <div class="footer-nav-list">
+            <a href="about.html"><i class="fa-solid fa-shield-halved"></i> About Company &amp; Governance</a>
+            <a href="industries.html"><i class="fa-solid fa-industry"></i> Industries We Serve</a>
+            <a href="case-studies.html"><i class="fa-solid fa-chart-line"></i> Proven Case Studies</a>
+            <a href="diagnostic.html"><i class="fa-solid fa-stethoscope"></i> Interactive Diagnostic Tool</a>
+            <a href="emergency-dispatch.html"><i class="fa-solid fa-truck-medical"></i> 24/7 Breakdown Dispatch</a>
+            <a href="rfq.html"><i class="fa-solid fa-file-signature"></i> Request a Technical Solution</a>
+            <a href="contact.html"><i class="fa-solid fa-map-location-dot"></i> Contact &amp; Hub Locations</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-building-flag"></i> Corporate Presence</h4>
+          <p style="font-size: 13.5px; margin-bottom: 12px; line-height: 1.6; color: #94A3B8;">
+            🏢 <strong style="color:#FFFFFF;">Head Office:</strong> Jeddah, Saudi Arabia<br>
+            📍 <strong style="color:#FFFFFF;">Branch Offices:</strong> Dammam &amp; Yanbu
+          </p>
+          <p style="font-size: 13.5px; color: var(--color-safety-amber); font-weight: 700;">
+            📞 <span style="color:#CBD5E1;">24/7 Hotline:</span> +966 54 509 2221<br>
+            📧 <span style="color:#CBD5E1;">RFQ Email:</span> rfq@mechflow.sa
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
         <span>&copy; 2026 MechFlow Saudi Arabia Co. Ltd. Head Office: Jeddah | Branches: Dammam &amp; Yanbu</span>
-        <a href="index.html" style="color: var(--color-tech-cyan-light);">Return to Home <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="index.html" style="color: #38BDF8;">Return to Home <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </footer>

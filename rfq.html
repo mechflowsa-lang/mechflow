@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Request a Technical Solution (RFQ) — MechFlow Saudi Arabia</title>
-  <meta name="description" content="Submit a customized technical proposal and quotation request for API 610 pumps, steam turbines, mechanical seals, dry gas seals, motor rewinding, or plant turnaround services.">
+  <title>Request for Quotation (RFQ) &amp; Technical Solution — MechFlow Saudi Arabia</title>
+  <meta name="description" content="Submit technical scope, equipment tags, and operating conditions for pump overhauls, mechanical seals, or plant turnaround services across Jeddah, Dammam & Yanbu.">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -20,7 +20,9 @@
         <span class="hub-item"><i class="fa-solid fa-location-dot"></i> <strong>Branch Offices:</strong> Dammam &amp; Yanbu</span>
       </div>
       <div class="topbar-right">
-        <a href="emergency-dispatch.html" class="topbar-hotline"><i class="fa-solid fa-phone-volume"></i> 24/7 Breakdown: +966 54 509 2221</a>
+        <a href="emergency-dispatch.html" class="topbar-hotline">
+          <i class="fa-solid fa-phone-volume"></i> 24/7 Breakdown: +966 54 509 2221
+        </a>
         <a href="ar/rfq.html" class="lang-btn"><i class="fa-solid fa-globe"></i> العربية</a>
       </div>
     </div>
@@ -50,39 +52,73 @@
     </div>
   </header>
 
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
+    <div class="mobile-drawer">
+      <div>
+        <div class="mobile-drawer-header">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon" style="width:36px; height:36px; font-size:16px;"><i class="fa-solid fa-gears"></i></div>
+            <span class="brand-name" style="font-size:22px;">Mech<span>Flow</span></span>
+          </a>
+          <button class="mobile-drawer-close" id="mobileDrawerClose"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> About Company</a></li>
+          <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> All 6 Divisions</a></li>
+          <li><a href="turbomachinery.html" class="mobile-nav-link"><i class="fa-solid fa-fan"></i> Turbomachinery &amp; Pumps</a></li>
+          <li><a href="fluid-gas-sealing.html" class="mobile-nav-link"><i class="fa-solid fa-ring"></i> Fluid &amp; Dry Gas Sealing</a></li>
+          <li><a href="plant-turnaround.html" class="mobile-nav-link"><i class="fa-solid fa-wrench"></i> Plant Turnaround &amp; Machining</a></li>
+          <li><a href="advanced-engineering.html" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> FEA, CFD &amp; 3D Scanning</a></li>
+          <li><a href="electrical-motors.html" class="mobile-nav-link"><i class="fa-solid fa-bolt"></i> Motor Rewinding &amp; VFD</a></li>
+          <li><a href="industries.html" class="mobile-nav-link"><i class="fa-solid fa-industry"></i> Industries</a></li>
+          <li><a href="case-studies.html" class="mobile-nav-link"><i class="fa-solid fa-chart-line"></i> Case Studies</a></li>
+          <li><a href="diagnostic.html" class="mobile-nav-link"><i class="fa-solid fa-stethoscope"></i> Diagnostic Tool</a></li>
+          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> 24/7 Dispatch</a></li>
+          <li><a href="rfq.html" class="mobile-nav-link active"><i class="fa-solid fa-file-signature"></i> Request RFQ</a></li>
+          <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="mobile-drawer-footer">
+        <a href="ar/rfq.html" class="lang-btn" style="justify-content:center; padding:10px;"><i class="fa-solid fa-globe"></i> العربية</a>
+      </div>
+    </div>
+  </div>
+
   <section class="hero-monolith" style="padding: 70px 0;">
     <div class="container">
       <span class="hero-badge-pill"><span class="pulse-dot"></span> INTERACTIVE RFQ CONFIGURATOR</span>
-      <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px;">Request a Technical Solution &amp; Commercial Proposal</h1>
+      <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px;">Request a Technical Solution &amp; Proposal</h1>
       <p class="hero-lead-text">
-        Configure your equipment parameters, operating conditions, and preferred service hub to receive an authoritative engineering proposal.
+        Configure your asset parameters, maintenance scope, and facility location to receive an engineered proposal and commercial quotation.
       </p>
     </div>
   </section>
 
-  <section class="section-spacer" style="background: var(--color-canvas);">
+  <section class="section-spacer" style="background: var(--color-canvas-alt);">
     <div class="container">
-      <div style="max-width: 860px; margin: 0 auto; background: #FFFFFF; border: 1px solid var(--color-border-light); border-radius: var(--radius-xl); padding: 44px; box-shadow: var(--shadow-card-hover);">
+      <div style="max-width: 860px; margin: 0 auto; background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 44px; box-shadow: var(--shadow-card);">
         
-        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you. Your technical RFQ has been submitted to MechFlow engineering specialists. We will contact you within 2 business hours.');">
+        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! Your technical RFQ has been submitted to MechFlow Saudi Arabia.');">
           
           <!-- Step 1 -->
           <div style="margin-bottom: 32px;">
-            <h3 style="font-size: 18px; color: var(--color-text-dark-heading); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;">
+            <h3 style="font-size: 18px; color: var(--color-heading); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;">
               <span class="step-num-pill" style="width:28px; height:28px; font-size:13px;">1</span>
               Select Engineering Division
             </h3>
             <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
-              <label style="background: var(--color-canvas-alt); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
-                <input type="radio" name="rfqDivision" value="turbomachinery" checked> Turbomachinery &amp; API 610 Pumps
+              <label style="background: var(--color-canvas-subtle); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
+                <input type="radio" name="rfqDivision" value="turbomachinery" checked> Turbomachinery &amp; Pumps (API 610)
               </label>
-              <label style="background: var(--color-canvas-alt); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
+              <label style="background: var(--color-canvas-subtle); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
                 <input type="radio" name="rfqDivision" value="sealing"> Fluid &amp; Dry Gas Sealing (API 682/692)
               </label>
-              <label style="background: var(--color-canvas-alt); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
-                <input type="radio" name="rfqDivision" value="turnaround"> Plant Turnaround (TAR) &amp; Bolt Torquing
+              <label style="background: var(--color-canvas-subtle); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
+                <input type="radio" name="rfqDivision" value="turnaround"> Plant Turnaround &amp; Bolting (TAR)
               </label>
-              <label style="background: var(--color-canvas-alt); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
+              <label style="background: var(--color-canvas-subtle); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
                 <input type="radio" name="rfqDivision" value="electrical"> Electric Motor Rewinding &amp; VFD
               </label>
             </div>
@@ -90,60 +126,60 @@
 
           <!-- Step 2 -->
           <div style="margin-bottom: 32px;">
-            <h3 style="font-size: 18px; color: var(--color-text-dark-heading); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;">
+            <h3 style="font-size: 18px; color: var(--color-heading); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;">
               <span class="step-num-pill" style="width:28px; height:28px; font-size:13px;">2</span>
-              Equipment &amp; Technical Operating Conditions
+              Equipment &amp; Operating Parameters
             </h3>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
               <div>
                 <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Equipment Tag / Model:</label>
-                <input type="text" placeholder="e.g., Multistage Boiler Feed Pump" required style="width: 100%; padding: 12px 14px; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); font-size: 14px;">
+                <input type="text" placeholder="e.g., Multistage Boiler Feed Pump" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
               </div>
               <div>
-                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Operating Temperature &amp; Pressure:</label>
-                <input type="text" placeholder="e.g., 180°C / 65 Bar" style="width: 100%; padding: 12px 14px; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); font-size: 14px;">
+                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Operating Temp / Pressure:</label>
+                <input type="text" placeholder="e.g., 180°C / 65 Bar" style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
               </div>
             </div>
           </div>
 
           <!-- Step 3 -->
           <div style="margin-bottom: 32px;">
-            <h3 style="font-size: 18px; color: var(--color-text-dark-heading); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;">
+            <h3 style="font-size: 18px; color: var(--color-heading); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;">
               <span class="step-num-pill" style="width:28px; height:28px; font-size:13px;">3</span>
-              Company Details &amp; Preferred Facility Hub
+              Facility &amp; Contact Details
             </h3>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
               <div>
-                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Preferred Regional Hub:</label>
-                <select style="width: 100%; padding: 12px 14px; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); font-size: 14px; background:#FFFFFF;">
-                  <option value="jeddah">Jeddah Head Office &amp; Master Works</option>
+                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Preferred KSA Hub:</label>
+                <select style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px; background: #FFFFFF;">
+                  <option value="jeddah">Jeddah Headquarters &amp; Central Works</option>
                   <option value="dammam">Dammam Eastern Province Branch</option>
-                  <option value="yanbu">Yanbu Petrochemical Branch</option>
-                  <option value="onsite">On-Site Field Squad (Anywhere in KSA)</option>
+                  <option value="yanbu">Yanbu Red Sea Hub</option>
+                  <option value="onsite">On-Site Field Support Squad</option>
                 </select>
               </div>
               <div>
-                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Company / Facility Name:</label>
-                <input type="text" placeholder="e.g., Saudi Aramco / SABIC" required style="width: 100%; padding: 12px 14px; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); font-size: 14px;">
+                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Company / Plant Name:</label>
+                <input type="text" placeholder="e.g., Saudi Aramco / SABIC" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
               </div>
               <div>
                 <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Contact Person &amp; Title:</label>
-                <input type="text" placeholder="e.g., Reliability Manager" required style="width: 100%; padding: 12px 14px; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); font-size: 14px;">
+                <input type="text" placeholder="e.g., Maintenance Manager" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
               </div>
               <div>
-                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Mobile / WhatsApp Number:</label>
-                <input type="tel" placeholder="e.g., +966 5X XXX XXXX" required style="width: 100%; padding: 12px 14px; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); font-size: 14px;">
+                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Phone / Mobile:</label>
+                <input type="tel" placeholder="e.g., +966 5X XXX XXXX" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
               </div>
             </div>
 
             <div>
-              <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Scope of Work / Symptoms:</label>
-              <textarea rows="4" placeholder="Describe scope, known failure modes, or turnaround timeline..." style="width: 100%; padding: 12px 14px; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); font-size: 14px;"></textarea>
+              <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Scope of Work / Anomaly Details:</label>
+              <textarea rows="4" placeholder="Describe the maintenance requirements or symptoms..." style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;"></textarea>
             </div>
           </div>
 
           <button type="submit" class="btn-hero-primary" style="width: 100%; justify-content: center; font-size: 17px; padding: 16px;">
-            <span>Submit RFQ to Engineering Team</span>
+            <span>Submit RFQ &amp; Request Engineered Solution</span>
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </form>
@@ -152,11 +188,66 @@
     </div>
   </section>
 
+  <!-- Master Footer with Rich Icons -->
   <footer class="master-footer">
     <div class="container">
-      <div class="footer-bottom-row" style="border-top:none; padding-top:0;">
+      <div class="footer-4col">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
+            <div class="brand-icon" style="width:38px; height:38px; font-size:17px;"><i class="fa-solid fa-gears"></i></div>
+            <span class="brand-name" style="font-size:24px;">Mech<span>Flow</span></span>
+          </a>
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #94A3B8;">
+            Kingdom-wide OEM-independent engineering leader providing Turbomachinery overhaul, Dry Gas Seals (API 692), laser alignment, and plant turnaround (TAR) services.
+          </p>
+          <div class="iso-cert-badges">
+            <span class="iso-badge-pill">ISO 9001:2015</span>
+            <span class="iso-badge-pill">ISO 45001:2018</span>
+            <span class="iso-badge-pill">ISO 14001:2015</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-layer-group"></i> Service Divisions</h4>
+          <div class="footer-nav-list">
+            <a href="turbomachinery.html"><i class="fa-solid fa-fan"></i> Turbomachinery &amp; Pumps</a>
+            <a href="fluid-gas-sealing.html"><i class="fa-solid fa-ring"></i> Fluid &amp; Dry Gas Sealing</a>
+            <a href="plant-turnaround.html"><i class="fa-solid fa-wrench"></i> Plant Turnaround (TAR)</a>
+            <a href="advanced-engineering.html"><i class="fa-solid fa-microchip"></i> FEA / CFD &amp; 3D Scanning</a>
+            <a href="electrical-motors.html"><i class="fa-solid fa-bolt"></i> Motor Rewinding &amp; VFD</a>
+            <a href="heat-transfer.html"><i class="fa-solid fa-temperature-arrow-down"></i> Heat Exchangers &amp; Coolers</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-compass"></i> Quick Links</h4>
+          <div class="footer-nav-list">
+            <a href="about.html"><i class="fa-solid fa-shield-halved"></i> About Company &amp; Governance</a>
+            <a href="industries.html"><i class="fa-solid fa-industry"></i> Industries We Serve</a>
+            <a href="case-studies.html"><i class="fa-solid fa-chart-line"></i> Proven Case Studies</a>
+            <a href="diagnostic.html"><i class="fa-solid fa-stethoscope"></i> Interactive Diagnostic Tool</a>
+            <a href="emergency-dispatch.html"><i class="fa-solid fa-truck-medical"></i> 24/7 Breakdown Dispatch</a>
+            <a href="rfq.html"><i class="fa-solid fa-file-signature"></i> Request a Technical Solution</a>
+            <a href="contact.html"><i class="fa-solid fa-map-location-dot"></i> Contact &amp; Hub Locations</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-building-flag"></i> Corporate Presence</h4>
+          <p style="font-size: 13.5px; margin-bottom: 12px; line-height: 1.6; color: #94A3B8;">
+            🏢 <strong style="color:#FFFFFF;">Head Office:</strong> Jeddah, Saudi Arabia<br>
+            📍 <strong style="color:#FFFFFF;">Branch Offices:</strong> Dammam &amp; Yanbu
+          </p>
+          <p style="font-size: 13.5px; color: var(--color-safety-amber); font-weight: 700;">
+            📞 <span style="color:#CBD5E1;">24/7 Hotline:</span> +966 54 509 2221<br>
+            📧 <span style="color:#CBD5E1;">RFQ Email:</span> rfq@mechflow.sa
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
         <span>&copy; 2026 MechFlow Saudi Arabia Co. Ltd. Head Office: Jeddah | Branches: Dammam &amp; Yanbu</span>
-        <a href="index.html" style="color: var(--color-tech-cyan-light);">Return to Home <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="index.html" style="color: #38BDF8;">Return to Home <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </footer>

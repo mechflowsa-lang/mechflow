@@ -20,7 +20,9 @@
         <span class="hub-item"><i class="fa-solid fa-location-dot"></i> <strong>الفروع التشغيلية:</strong> الدمام وينبع</span>
       </div>
       <div class="topbar-right">
-        <a href="emergency-dispatch.html" class="topbar-hotline"><i class="fa-solid fa-phone-volume"></i> طوارئ الأعطال: 92221 509 54 966+</a>
+        <a href="emergency-dispatch.html" class="topbar-hotline">
+          <i class="fa-solid fa-phone-volume"></i> طوارئ الأعطال: 92221 509 54 966+
+        </a>
         <a href="../industries.html" class="lang-btn"><i class="fa-solid fa-globe"></i> English</a>
       </div>
     </div>
@@ -50,6 +52,40 @@
     </div>
   </header>
 
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
+    <div class="mobile-drawer">
+      <div>
+        <div class="mobile-drawer-header">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon" style="width:36px; height:36px; font-size:16px;"><i class="fa-solid fa-gears"></i></div>
+            <span class="brand-name" style="font-size:22px;">ميك<span>فلو</span></span>
+          </a>
+          <button class="mobile-drawer-close" id="mobileDrawerClose"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
+          <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> عن الشركة</a></li>
+          <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> كافة الأقسام</a></li>
+          <li><a href="turbomachinery.html" class="mobile-nav-link"><i class="fa-solid fa-fan"></i> التوربينات والمضخات</a></li>
+          <li><a href="fluid-gas-sealing.html" class="mobile-nav-link"><i class="fa-solid fa-ring"></i> الأختام الميكانيكية والغازية</a></li>
+          <li><a href="plant-turnaround.html" class="mobile-nav-link"><i class="fa-solid fa-wrench"></i> عمرات المصانع والتشغيل الموقعي</a></li>
+          <li><a href="advanced-engineering.html" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> المحاكاة والمسح ثلاثي الأبعاد</a></li>
+          <li><a href="electrical-motors.html" class="mobile-nav-link"><i class="fa-solid fa-bolt"></i> لف المحركات الكهربائية والتحكم</a></li>
+          <li><a href="industries.html" class="mobile-nav-link active"><i class="fa-solid fa-industry"></i> القطاعات</a></li>
+          <li><a href="case-studies.html" class="mobile-nav-link"><i class="fa-solid fa-chart-line"></i> دراسات الحالة</a></li>
+          <li><a href="diagnostic.html" class="mobile-nav-link"><i class="fa-solid fa-stethoscope"></i> أداة التشخيص</a></li>
+          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> طوارئ الأعطال</a></li>
+          <li><a href="rfq.html" class="mobile-nav-link"><i class="fa-solid fa-file-signature"></i> طلب تسعير</a></li>
+          <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> مواقع الفروع</a></li>
+        </ul>
+      </div>
+      <div class="mobile-drawer-footer">
+        <a href="../industries.html" class="lang-btn" style="justify-content:center; padding:10px;"><i class="fa-solid fa-globe"></i> English</a>
+      </div>
+    </div>
+  </div>
+
   <section class="hero-monolith" style="padding: 70px 0;">
     <div class="container">
       <span class="hero-badge-pill"><span class="pulse-dot"></span> القطاعات والتطبيقات الحيوية</span>
@@ -60,12 +96,12 @@
     </div>
   </section>
 
-  <section class="section-spacer" style="background: var(--color-canvas);">
+  <section class="section-spacer" style="background: var(--color-canvas-alt);">
     <div class="container">
       <div class="divisions-3col-grid">
         
         <div class="division-box-card">
-          <div class="division-icon-badge" style="background: rgba(0, 128, 255, 0.1); color: var(--color-tech-cyan);">
+          <div class="division-icon-badge" style="background: var(--color-tech-cyan-light); color: var(--color-tech-cyan);">
             <i class="fa-solid fa-oil-well"></i>
           </div>
           <h3 class="division-card-title">النفط والغاز والتكرير</h3>
@@ -73,7 +109,7 @@
         </div>
 
         <div class="division-box-card">
-          <div class="division-icon-badge" style="background: rgba(0, 108, 53, 0.1); color: var(--color-saudi-emerald);">
+          <div class="division-icon-badge" style="background: var(--color-saudi-emerald-light); color: var(--color-saudi-emerald);">
             <i class="fa-solid fa-flask-vial"></i>
           </div>
           <h3 class="division-card-title">البتروكيماويات والبوليمرات</h3>
@@ -81,7 +117,7 @@
         </div>
 
         <div class="division-box-card">
-          <div class="division-icon-badge" style="background: rgba(255, 122, 0, 0.1); color: var(--color-safety-amber);">
+          <div class="division-icon-badge" style="background: var(--color-safety-amber-light); color: var(--color-safety-amber);">
             <i class="fa-solid fa-droplet"></i>
           </div>
           <h3 class="division-card-title">تحلية المياه (SWCC)</h3>
@@ -89,7 +125,7 @@
         </div>
 
         <div class="division-box-card">
-          <div class="division-icon-badge" style="background: rgba(14, 165, 233, 0.1); color: #0EA5E9);">
+          <div class="division-icon-badge" style="background: #E0F2FE; color: #0284C7);">
             <i class="fa-solid fa-plug-circle-bolt"></i>
           </div>
           <h3 class="division-card-title">توليد الطاقة (SEC)</h3>
@@ -97,7 +133,7 @@
         </div>
 
         <div class="division-box-card">
-          <div class="division-icon-badge" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B);">
+          <div class="division-icon-badge" style="background: #FEF3C7; color: #D97706);">
             <i class="fa-solid fa-gem"></i>
           </div>
           <h3 class="division-card-title">التعدين والفوسفات (معادن)</h3>
@@ -105,7 +141,7 @@
         </div>
 
         <div class="division-box-card">
-          <div class="division-icon-badge" style="background: rgba(99, 102, 241, 0.1); color: #6366F1);">
+          <div class="division-icon-badge" style="background: #EEF2FF; color: #4F46E5);">
             <i class="fa-solid fa-ship"></i>
           </div>
           <h3 class="division-card-title">المرافق البحرية والموانئ</h3>
@@ -116,10 +152,65 @@
     </div>
   </section>
 
+  <!-- Master Footer with Rich Icons -->
   <footer class="master-footer">
     <div class="container">
-      <div class="footer-bottom-row" style="border-top:none; padding-top:0;">
-        <span>&copy; 2026 شركة ميك فلو السعودية المحدودة. المكتب الرئيسي: جدة | الفروع: الدمام وينبع.</span>
+      <div class="footer-4col">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
+            <div class="brand-icon" style="width:38px; height:38px; font-size:17px;"><i class="fa-solid fa-gears"></i></div>
+            <span class="brand-name" style="font-size:24px;">ميك<span>فلو</span></span>
+          </a>
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #94A3B8;">
+            الريادة الهندسية المستقلة في المملكة العربية السعودية لخدمات عمرات التوربينات والمضخات، الأختام الغازية الجافة (API 692)، المحاذاة الليزرية، وعمرات المصانع الكبرى.
+          </p>
+          <div class="iso-cert-badges">
+            <span class="iso-badge-pill">ISO 9001:2015</span>
+            <span class="iso-badge-pill">ISO 45001:2018</span>
+            <span class="iso-badge-pill">ISO 14001:2015</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-layer-group"></i> الأقسام الهندسية</h4>
+          <div class="footer-nav-list">
+            <a href="turbomachinery.html"><i class="fa-solid fa-fan"></i> التوربينات والمضخات البترولية</a>
+            <a href="fluid-gas-sealing.html"><i class="fa-solid fa-ring"></i> الأختام الغازية والميكانيكية</a>
+            <a href="plant-turnaround.html"><i class="fa-solid fa-wrench"></i> عمرات المصانع والشد الهيدروليكي</a>
+            <a href="advanced-engineering.html"><i class="fa-solid fa-microchip"></i> المحاكاة والمسح ثلاثي الأبعاد</a>
+            <a href="electrical-motors.html"><i class="fa-solid fa-bolt"></i> إعادة لف المحركات والأتمتة</a>
+            <a href="heat-transfer.html"><i class="fa-solid fa-temperature-arrow-down"></i> المبادلات الحرارية وأبراج التبريد</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-compass"></i> روابط سريعة</h4>
+          <div class="footer-nav-list">
+            <a href="about.html"><i class="fa-solid fa-shield-halved"></i> عن الشركة والحوكمة</a>
+            <a href="industries.html"><i class="fa-solid fa-industry"></i> القطاعات الصناعية</a>
+            <a href="case-studies.html"><i class="fa-solid fa-chart-line"></i> دراسات الحالة وسجل الموثوقية</a>
+            <a href="diagnostic.html"><i class="fa-solid fa-stethoscope"></i> أداة التشخيص الهندسي</a>
+            <a href="emergency-dispatch.html"><i class="fa-solid fa-truck-medical"></i> مركز طوارئ الأعطال 24/7</a>
+            <a href="rfq.html"><i class="fa-solid fa-file-signature"></i> طلب حل فني وتسعير</a>
+            <a href="contact.html"><i class="fa-solid fa-map-location-dot"></i> مواقع الفروع والتواصل</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-building-flag"></i> التواجد المؤسسي</h4>
+          <p style="font-size: 13.5px; margin-bottom: 12px; line-height: 1.6; color: #94A3B8;">
+            🏢 <strong style="color:#FFFFFF;">المكتب الرئيسي:</strong> جدة، المملكة العربية السعودية<br>
+            📍 <strong style="color:#FFFFFF;">الفروع التشغيلية:</strong> الدمام وينبع
+          </p>
+          <p style="font-size: 13.5px; color: var(--color-safety-amber); font-weight: 700;">
+            📞 <span style="color:#CBD5E1;">طوارئ الأعطال 24/7:</span> 92221 509 54 966+<br>
+            📧 <span style="color:#CBD5E1;">طلبات التسعير:</span> rfq@mechflow.sa
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <span>&copy; 2026 شركة ميك فلو السعودية المحدودة. المقر الرئيسي: جدة | الفروع: الدمام وينبع</span>
         <a href="rfq.html" style="color: var(--color-safety-amber); font-weight:700;">طلب حل فني للقطاع <i class="fa-solid fa-arrow-left"></i></a>
       </div>
     </div>

@@ -1,72 +1,68 @@
 /* ==========================================================================
-   MECHFLOW SAUDI ARABIA — ULTRA-PREMIUM ENTERPRISE INDUSTRIAL DESIGN SYSTEM
-   Design DNA: Bostom + Tesco Saudi + Dilogue + PumpsServices
-   Sovereign Palette: Obsidian #070F1E, Deep Navy #0B192C, Saudi Emerald #006C35,
-   Tech Cyan #0080FF, Safety Amber #FF7A00, Crisp Light #FFFFFF
+   MECHFLOW SAUDI ARABIA — CLEAN MODERN ENTERPRISE INDUSTRIAL DESIGN SYSTEM
+   Theme: Crisp High-Tech Light Industrial (Bostom / Tesco Saudi / Dilogue)
+   Primary Palette: Crisp White #FFFFFF, Clean Slate Canvas #F8FAFC / #F1F5F9,
+   Saudi Emerald #006C35, Tech Cyan #0080FF, Safety Amber #FF7A00, Dark Navy #0A192F
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 
 :root {
-  --color-obsidian-black: #040914;
-  --color-obsidian-dark: #070F1E;
-  --color-obsidian-surface: #0E1B31;
-  --color-obsidian-card: #13233F;
-  --color-obsidian-card-hover: #192D50;
+  /* Clean Enterprise Light Canvas */
+  --color-canvas: #FFFFFF;
+  --color-canvas-alt: #F8FAFC;
+  --color-canvas-subtle: #F1F5F9;
+  --color-card-bg: #FFFFFF;
   
+  /* Brand Accents */
   --color-saudi-emerald: #006C35;
-  --color-saudi-emerald-light: #10B981;
-  --color-saudi-emerald-glow: rgba(0, 108, 53, 0.35);
+  --color-saudi-emerald-hover: #005228;
+  --color-saudi-emerald-light: #E8F5E9;
+  --color-saudi-emerald-border: #A7F3D0;
   
   --color-tech-cyan: #0080FF;
-  --color-tech-cyan-light: #38BDF8;
-  --color-tech-cyan-glow: rgba(0, 128, 255, 0.35);
+  --color-tech-cyan-hover: #0066CC;
+  --color-tech-cyan-light: #EFF6FF;
+  --color-tech-cyan-border: #BFDBFE;
   
   --color-safety-amber: #FF7A00;
-  --color-safety-amber-hover: #EA580C;
-  --color-safety-amber-glow: rgba(255, 122, 0, 0.4);
-  
-  --color-crimson: #EF4444;
-  
-  --color-canvas: #F8FAFC;
-  --color-canvas-alt: #F1F5F9;
-  --color-surface-white: #FFFFFF;
-  
-  --color-border-light: #E2E8F0;
-  --color-border-dark: rgba(255, 255, 255, 0.1);
-  --color-border-glow: rgba(0, 128, 255, 0.25);
-  
-  --color-text-dark-heading: #0F172A;
-  --color-text-dark-body: #334155;
-  --color-text-dark-muted: #64748B;
-  
-  --color-text-light-heading: #FFFFFF;
-  --color-text-light-body: #E2E8F0;
-  --color-text-light-muted: #94A3B8;
+  --color-safety-amber-hover: #E06A00;
+  --color-safety-amber-light: #FFF7ED;
+  --color-safety-amber-border: #FED7AA;
 
+  /* Typography Colors */
+  --color-heading: #0B192C;
+  --color-body: #334155;
+  --color-muted: #64748B;
+  --color-border: #E2E8F0;
+  --color-border-hover: #CBD5E1;
+
+  /* Dark Accents (For Header & Footer Contrast) */
+  --color-nav-dark: #0A192F;
+  --color-footer-dark: #071224;
+
+  /* Fonts */
   --font-main: 'Plus Jakarta Sans', 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
   --font-arabic: 'Cairo', 'Tajawal', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  --radius-xs: 4px;
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
-  --radius-xl: 28px;
+  /* Radius & Shadows */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-xl: 30px;
   --radius-full: 9999px;
 
-  --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
-  --shadow-card-hover: 0 20px 40px -12px rgba(0, 0, 0, 0.15), 0 8px 16px -4px rgba(0, 0, 0, 0.08);
-  --shadow-dark-card: 0 20px 45px -15px rgba(0, 0, 0, 0.7);
-  --shadow-glow-cyan: 0 0 30px var(--color-tech-cyan-glow);
-  --shadow-glow-emerald: 0 0 30px var(--color-saudi-emerald-glow);
-  --shadow-glow-amber: 0 0 30px var(--color-safety-amber-glow);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-card: 0 10px 30px -5px rgba(11, 25, 44, 0.06), 0 4px 6px -2px rgba(11, 25, 44, 0.03);
+  --shadow-hover: 0 20px 40px -10px rgba(11, 25, 44, 0.12), 0 8px 16px -4px rgba(11, 25, 44, 0.06);
+  --shadow-amber: 0 8px 25px rgba(255, 122, 0, 0.35);
 
   --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  --transition-slow: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* --- Universal Reset --- */
@@ -91,7 +87,7 @@ html[dir="rtl"] {
 
 body {
   background-color: var(--color-canvas);
-  color: var(--color-text-dark-body);
+  color: var(--color-body);
   font-size: 15.5px;
   line-height: 1.65;
   overflow-x: hidden;
@@ -114,7 +110,7 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  color: var(--color-text-dark-heading);
+  color: var(--color-heading);
   font-weight: 700;
   line-height: 1.22;
   letter-spacing: -0.02em;
@@ -137,7 +133,7 @@ html[dir="rtl"] h6 {
 
 .container {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 24px;
@@ -145,12 +141,12 @@ html[dir="rtl"] h6 {
 }
 
 /* ==========================================================================
-   TOPBAR & NOTIFICATION TICKER
+   TOPBAR
    ========================================================================== */
 .topbar {
-  background: var(--color-obsidian-black);
+  background: #060E1A;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  color: var(--color-text-light-muted);
+  color: #94A3B8;
   font-size: 13px;
   padding: 9px 0;
   position: relative;
@@ -176,17 +172,17 @@ html[dir="rtl"] h6 {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  color: #FFFFFF;
+  color: #E2E8F0;
   font-weight: 500;
 }
 
 .hub-item i {
-  color: var(--color-saudi-emerald-light);
+  color: #4ADE80;
   font-size: 13px;
 }
 
 .hub-item strong {
-  color: var(--color-saudi-emerald-light);
+  color: #FFFFFF;
   font-weight: 700;
 }
 
@@ -211,37 +207,35 @@ html[dir="rtl"] h6 {
 
 .topbar-hotline:hover {
   color: #FFA726;
-  text-shadow: 0 0 12px rgba(255, 122, 0, 0.6);
 }
 
 .lang-btn {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  padding: 4px 12px;
+  padding: 4px 14px;
   border-radius: var(--radius-full);
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.08);
   color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   transition: all var(--transition-fast);
 }
 
 .lang-btn:hover {
   background: var(--color-saudi-emerald);
-  border-color: var(--color-saudi-emerald-light);
-  box-shadow: 0 0 15px var(--color-saudi-emerald-glow);
+  border-color: #4ADE80;
 }
 
 /* ==========================================================================
-   NAVIGATION BAR & MEGA MENU
+   HEADER & NAVIGATION
    ========================================================================== */
 .main-header {
-  background: rgba(7, 15, 30, 0.95);
+  background: rgba(10, 25, 47, 0.98);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -249,19 +243,18 @@ html[dir="rtl"] h6 {
 }
 
 .main-header.scrolled {
-  background: rgba(4, 9, 20, 0.98);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  border-bottom-color: rgba(0, 128, 255, 0.2);
+  background: #060E1A;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 78px;
 }
 
-/* Clean, crisp Brand Logo without cluttered tagline */
+/* Clean Brand Logo */
 .brand-logo {
   display: flex;
   align-items: center;
@@ -280,16 +273,11 @@ html[dir="rtl"] h6 {
   color: #FFFFFF;
   font-size: 20px;
   box-shadow: 0 4px 16px rgba(0, 108, 53, 0.4);
-  transition: transform var(--transition-fast);
-}
-
-.brand-logo:hover .brand-icon {
-  transform: rotate(10deg) scale(1.05);
 }
 
 .brand-name {
   font-family: var(--font-heading);
-  font-size: 25px;
+  font-size: 26px;
   font-weight: 900;
   letter-spacing: -0.04em;
   color: #FFFFFF;
@@ -306,11 +294,11 @@ html[dir="rtl"] h6 {
 .desktop-nav {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 26px;
 }
 
 .nav-link {
-  color: var(--color-text-light-muted);
+  color: #CBD5E1;
   font-weight: 600;
   font-size: 15px;
   padding: 8px 0;
@@ -332,11 +320,11 @@ html[dir="rtl"] h6 {
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--color-tech-cyan-light), var(--color-saudi-emerald-light));
+  background: linear-gradient(90deg, #38BDF8, #4ADE80);
   border-radius: 2px;
 }
 
-/* Mega-Menu Dropdown */
+/* Mega Menu */
 .nav-dropdown {
   position: relative;
 }
@@ -345,11 +333,11 @@ html[dir="rtl"] h6 {
   position: absolute;
   top: 100%;
   left: -240px;
-  width: 900px;
-  background: var(--color-obsidian-dark);
+  width: 880px;
+  background: #0B192C;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-dark-card);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
   padding: 24px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -373,7 +361,7 @@ html[dir="rtl"] .mega-menu-box {
 }
 
 .mega-item {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: var(--radius-md);
   padding: 16px;
@@ -383,7 +371,7 @@ html[dir="rtl"] .mega-menu-box {
 }
 
 .mega-item:hover {
-  background: rgba(0, 128, 255, 0.1);
+  background: rgba(0, 128, 255, 0.12);
   border-color: var(--color-tech-cyan);
   transform: translateY(-2px);
 }
@@ -393,7 +381,7 @@ html[dir="rtl"] .mega-menu-box {
   height: 40px;
   border-radius: 10px;
   background: rgba(0, 128, 255, 0.15);
-  color: var(--color-tech-cyan-light);
+  color: #38BDF8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -410,11 +398,11 @@ html[dir="rtl"] .mega-menu-box {
 
 .mega-content-desc {
   font-size: 12px;
-  color: var(--color-text-light-muted);
+  color: #94A3B8;
   line-height: 1.4;
 }
 
-/* Nav CTA Buttons */
+/* Nav Actions */
 .nav-actions-group {
   display: flex;
   align-items: center;
@@ -422,22 +410,22 @@ html[dir="rtl"] .mega-menu-box {
 }
 
 .btn-rfq-gold {
-  background: linear-gradient(135deg, var(--color-safety-amber) 0%, #E06A00 100%);
+  background: linear-gradient(135deg, #FF7A00 0%, #E06A00 100%);
   color: #FFFFFF;
   padding: 11px 22px;
   border-radius: var(--radius-full);
   font-weight: 700;
-  font-size: 14px;
+  font-size: 14.5px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 4px 18px var(--color-safety-amber-glow);
+  box-shadow: var(--shadow-amber);
   transition: all var(--transition-fast);
 }
 
 .btn-rfq-gold:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 122, 0, 0.55);
+  box-shadow: 0 12px 30px rgba(255, 122, 0, 0.5);
 }
 
 .mobile-menu-btn {
@@ -451,20 +439,17 @@ html[dir="rtl"] .mega-menu-box {
   align-items: center;
   justify-content: center;
   font-size: 18px;
+  cursor: pointer;
 }
 
 /* ==========================================================================
-   HERO BANNER & LIVE METRICS
+   CLEAN MODERN HERO SECTION (LIGHT ENTERPRISE THEME)
    ========================================================================== */
 .hero-monolith {
-  background: radial-gradient(circle at 85% 15%, rgba(0, 108, 53, 0.25) 0%, rgba(7, 15, 30, 0) 50%),
-              radial-gradient(circle at 15% 85%, rgba(0, 128, 255, 0.2) 0%, rgba(7, 15, 30, 0) 50%),
-              linear-gradient(180deg, var(--color-obsidian-dark) 0%, var(--color-obsidian-black) 100%);
-  color: #FFFFFF;
+  background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+  padding: 75px 0 65px;
+  border-bottom: 1px solid var(--color-border);
   position: relative;
-  overflow: hidden;
-  padding: 95px 0 75px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .hero-grid {
@@ -478,24 +463,24 @@ html[dir="rtl"] .mega-menu-box {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(0, 108, 53, 0.2);
-  border: 1px solid var(--color-saudi-emerald);
+  background: #E8F5E9;
+  border: 1px solid #A7F3D0;
   padding: 6px 16px;
   border-radius: var(--radius-full);
   font-size: 12.5px;
-  font-weight: 700;
-  color: #4ADE80;
+  font-weight: 800;
+  color: var(--color-saudi-emerald);
   margin-bottom: 20px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .hero-badge-pill .pulse-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #4ADE80;
-  box-shadow: 0 0 10px #4ADE80;
+  background: var(--color-saudi-emerald);
+  box-shadow: 0 0 8px rgba(0, 108, 53, 0.6);
   animation: pulseDot 2s infinite;
 }
 
@@ -506,31 +491,27 @@ html[dir="rtl"] .mega-menu-box {
 }
 
 .hero-h1 {
-  font-size: 52px;
+  font-size: 48px;
   font-weight: 900;
-  line-height: 1.12;
-  color: #FFFFFF;
-  margin-bottom: 22px;
+  line-height: 1.14;
+  color: var(--color-heading);
+  margin-bottom: 20px;
   letter-spacing: -0.03em;
 }
 
 .hero-h1 .grad-cyan {
-  background: linear-gradient(90deg, #38BDF8 0%, #0080FF 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--color-tech-cyan);
 }
 
 .hero-h1 .grad-green {
-  background: linear-gradient(90deg, #4ADE80 0%, #059669 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--color-saudi-emerald);
 }
 
 .hero-lead-text {
-  font-size: 18px;
-  color: var(--color-text-light-muted);
-  line-height: 1.65;
-  margin-bottom: 34px;
+  font-size: 17.5px;
+  color: var(--color-body);
+  line-height: 1.68;
+  margin-bottom: 32px;
   max-width: 620px;
 }
 
@@ -543,57 +524,58 @@ html[dir="rtl"] .mega-menu-box {
 }
 
 .btn-hero-primary {
-  background: linear-gradient(135deg, var(--color-safety-amber) 0%, #E06A00 100%);
+  background: linear-gradient(135deg, #FF7A00 0%, #E06A00 100%);
   color: #FFFFFF;
   font-weight: 800;
   font-size: 16px;
-  padding: 16px 30px;
+  padding: 15px 30px;
   border-radius: var(--radius-full);
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  box-shadow: 0 6px 25px var(--color-safety-amber-glow);
+  box-shadow: var(--shadow-amber);
   transition: all var(--transition-fast);
 }
 
 .btn-hero-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(255, 122, 0, 0.6);
+  box-shadow: 0 12px 30px rgba(255, 122, 0, 0.5);
 }
 
 .btn-hero-secondary {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #FFFFFF;
+  background: #FFFFFF;
+  border: 1.5px solid var(--color-border);
+  color: var(--color-heading);
   font-weight: 700;
   font-size: 16px;
-  padding: 16px 28px;
+  padding: 15px 28px;
   border-radius: var(--radius-full);
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  box-shadow: var(--shadow-sm);
   transition: all var(--transition-fast);
 }
 
 .btn-hero-secondary:hover {
-  background: rgba(255, 255, 255, 0.16);
-  border-color: #FFFFFF;
+  border-color: var(--color-saudi-emerald);
+  color: var(--color-saudi-emerald);
   transform: translateY(-2px);
 }
 
-/* Hero Visual Card */
+/* Hero Visual Box */
 .hero-visual-box {
-  background: var(--color-obsidian-card);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #FFFFFF;
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
   overflow: hidden;
-  box-shadow: var(--shadow-dark-card);
+  box-shadow: var(--shadow-card);
   position: relative;
 }
 
 .hero-visual-box img {
   width: 100%;
-  height: 400px;
+  height: 390px;
   object-fit: cover;
 }
 
@@ -602,43 +584,42 @@ html[dir="rtl"] .mega-menu-box {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(0deg, rgba(7, 15, 30, 0.96) 0%, rgba(7, 15, 30, 0.6) 70%, rgba(7, 15, 30, 0) 100%);
-  padding: 28px;
+  background: linear-gradient(0deg, rgba(11, 25, 44, 0.95) 0%, rgba(11, 25, 44, 0.6) 70%, rgba(11, 25, 44, 0) 100%);
+  padding: 24px;
 }
 
 .hero-visual-chip {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(0, 128, 255, 0.25);
-  border: 1px solid var(--color-tech-cyan);
+  background: rgba(0, 128, 255, 0.3);
+  border: 1px solid #38BDF8;
   padding: 4px 12px;
   border-radius: var(--radius-full);
   font-size: 11.5px;
   font-weight: 800;
-  color: var(--color-tech-cyan-light);
+  color: #FFFFFF;
   margin-bottom: 8px;
   text-transform: uppercase;
 }
 
 .hero-visual-title {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 800;
   color: #FFFFFF;
 }
 
-/* Hero Metrics Ticker */
+/* Metrics Bar */
 .metrics-ticker-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  margin-top: 48px;
-  background: rgba(19, 35, 63, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  margin-top: 40px;
+  background: #FFFFFF;
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: 24px 32px;
+  box-shadow: var(--shadow-card);
 }
 
 .metric-box {
@@ -650,9 +631,9 @@ html[dir="rtl"] .mega-menu-box {
 .metric-icon-circle {
   width: 48px;
   height: 48px;
-  border-radius: 12px;
-  background: rgba(0, 128, 255, 0.15);
-  color: var(--color-tech-cyan-light);
+  border-radius: 14px;
+  background: var(--color-tech-cyan-light);
+  color: var(--color-tech-cyan);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -664,41 +645,41 @@ html[dir="rtl"] .mega-menu-box {
   font-family: var(--font-heading);
   font-size: 32px;
   font-weight: 900;
-  color: #FFFFFF;
+  color: var(--color-heading);
   line-height: 1;
 }
 
 .metric-lbl {
-  font-size: 12.5px;
-  color: var(--color-text-light-muted);
+  font-size: 13px;
+  color: var(--color-muted);
   font-weight: 600;
   margin-top: 4px;
 }
 
 /* ==========================================================================
-   CLIENT TRUST MATRIX & APPROVED VENDOR BAR
+   CLIENT TRUST BAR
    ========================================================================== */
 .trust-matrix-section {
   background: #FFFFFF;
-  border-bottom: 1px solid var(--color-border-light);
-  padding: 36px 0;
+  border-bottom: 1px solid var(--color-border);
+  padding: 34px 0;
 }
 
 .trust-matrix-title {
   text-align: center;
-  font-size: 12px;
+  font-size: 12.5px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--color-text-dark-muted);
-  margin-bottom: 22px;
+  letter-spacing: 0.1em;
+  color: var(--color-muted);
+  margin-bottom: 20px;
 }
 
 .trust-badges-grid {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   flex-wrap: wrap;
 }
 
@@ -707,12 +688,12 @@ html[dir="rtl"] .mega-menu-box {
   align-items: center;
   gap: 8px;
   background: var(--color-canvas-alt);
-  border: 1px solid var(--color-border-light);
+  border: 1px solid var(--color-border);
   padding: 8px 18px;
   border-radius: var(--radius-full);
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 700;
-  color: var(--color-text-dark-heading);
+  color: var(--color-heading);
   transition: all var(--transition-fast);
 }
 
@@ -721,27 +702,23 @@ html[dir="rtl"] .mega-menu-box {
 }
 
 .trust-pill:hover {
-  background: var(--color-obsidian-surface);
-  color: #FFFFFF;
-  border-color: var(--color-obsidian-surface);
+  background: #FFFFFF;
+  border-color: var(--color-saudi-emerald);
   transform: translateY(-2px);
-}
-
-.trust-pill:hover i {
-  color: var(--color-tech-cyan-light);
+  box-shadow: var(--shadow-sm);
 }
 
 /* ==========================================================================
-   SERVICE DIVISIONS (TESCO & DILOGUE BENCHMARK)
+   SERVICE DIVISIONS
    ========================================================================== */
 .section-spacer {
-  padding: 90px 0;
+  padding: 85px 0;
 }
 
 .section-head-center {
   text-align: center;
-  max-width: 780px;
-  margin: 0 auto 50px;
+  max-width: 760px;
+  margin: 0 auto 48px;
 }
 
 .tag-accent {
@@ -751,34 +728,34 @@ html[dir="rtl"] .mega-menu-box {
   font-size: 12.5px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--color-saudi-emerald);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .head-title-lg {
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 900;
-  color: var(--color-text-dark-heading);
+  color: var(--color-heading);
   line-height: 1.18;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .head-desc {
-  font-size: 17px;
-  color: var(--color-text-dark-muted);
+  font-size: 16.5px;
+  color: var(--color-body);
   line-height: 1.6;
 }
 
 .divisions-3col-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 26px;
 }
 
 .division-box-card {
   background: #FFFFFF;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: 32px;
   display: flex;
@@ -805,8 +782,8 @@ html[dir="rtl"] .mega-menu-box {
 
 .division-box-card:hover {
   transform: translateY(-6px);
-  box-shadow: var(--shadow-card-hover);
-  border-color: rgba(0, 128, 255, 0.3);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-tech-cyan-border);
 }
 
 .division-box-card:hover::before {
@@ -817,7 +794,7 @@ html[dir="rtl"] .mega-menu-box {
   width: 54px;
   height: 54px;
   border-radius: 14px;
-  background: rgba(0, 108, 53, 0.1);
+  background: var(--color-saudi-emerald-light);
   color: var(--color-saudi-emerald);
   display: flex;
   align-items: center;
@@ -829,20 +806,20 @@ html[dir="rtl"] .mega-menu-box {
   font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 800;
-  color: var(--color-text-dark-muted);
+  color: var(--color-muted);
   text-transform: uppercase;
 }
 
 .division-card-title {
   font-size: 21px;
   font-weight: 800;
-  color: var(--color-text-dark-heading);
+  color: var(--color-heading);
   margin-top: 4px;
 }
 
 .division-card-desc {
-  font-size: 14px;
-  color: var(--color-text-dark-body);
+  font-size: 14.5px;
+  color: var(--color-body);
   line-height: 1.6;
   margin: 16px 0;
 }
@@ -859,7 +836,7 @@ html[dir="rtl"] .mega-menu-box {
   gap: 10px;
   font-size: 13.5px;
   font-weight: 600;
-  color: var(--color-text-dark-heading);
+  color: var(--color-heading);
 }
 
 .division-feature-row i {
@@ -873,40 +850,39 @@ html[dir="rtl"] .mega-menu-box {
   justify-content: space-between;
   padding: 12px 18px;
   border-radius: var(--radius-md);
-  background: var(--color-canvas-alt);
-  color: var(--color-text-dark-heading);
+  background: var(--color-canvas-subtle);
+  color: var(--color-heading);
   font-weight: 700;
   font-size: 14px;
   transition: all var(--transition-fast);
 }
 
 .division-link-btn:hover {
-  background: var(--color-obsidian-surface);
+  background: var(--color-heading);
   color: #FFFFFF;
 }
 
 /* ==========================================================================
-   INTERACTIVE SMART DIAGNOSTIC SELECTOR (CRO ENGINE)
+   CLEAN SMART DIAGNOSTIC SELECTOR
    ========================================================================== */
 .diag-interactive-card {
-  background: var(--color-obsidian-dark);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #FFFFFF;
+  border: 1.5px solid var(--color-border);
   border-radius: var(--radius-xl);
-  padding: 48px;
-  box-shadow: var(--shadow-dark-card);
-  color: #FFFFFF;
+  padding: 44px;
+  box-shadow: var(--shadow-card);
 }
 
 .diag-grid-3step {
   display: grid;
   grid-template-columns: 1fr 1fr 1.15fr;
   gap: 24px;
-  margin-top: 36px;
+  margin-top: 32px;
 }
 
 .diag-step-box {
-  background: var(--color-obsidian-surface);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--color-canvas-alt);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: 24px;
   display: flex;
@@ -918,9 +894,9 @@ html[dir="rtl"] .mega-menu-box {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 15px;
-  color: #FFFFFF;
+  color: var(--color-heading);
 }
 
 .step-num-pill {
@@ -940,21 +916,16 @@ html[dir="rtl"] .mega-menu-box {
   width: 100%;
   padding: 13px 16px;
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #FFFFFF;
+  background: #FFFFFF;
+  border: 1.5px solid var(--color-border);
+  color: var(--color-heading);
   font-size: 14px;
   font-weight: 600;
 }
 
-.diag-select-control option {
-  background: var(--color-obsidian-dark);
-  color: #FFFFFF;
-}
-
 .diag-result-box {
-  background: rgba(0, 108, 53, 0.25);
-  border: 1px solid var(--color-saudi-emerald);
+  background: var(--color-saudi-emerald-light);
+  border: 1.5px solid var(--color-saudi-emerald-border);
   border-radius: var(--radius-lg);
   padding: 24px;
   display: flex;
@@ -967,29 +938,29 @@ html[dir="rtl"] .mega-menu-box {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: #4ADE80;
+  color: var(--color-saudi-emerald);
   font-size: 12px;
   font-weight: 800;
   text-transform: uppercase;
 }
 
 .diag-result-heading {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 800;
-  color: #FFFFFF;
+  color: var(--color-heading);
   margin: 6px 0;
 }
 
 .diag-result-text {
-  font-size: 13.5px;
-  color: var(--color-text-light-body);
+  font-size: 14px;
+  color: var(--color-body);
   line-height: 1.5;
 }
 
 .btn-dispatch-now {
   background: var(--color-safety-amber);
   color: #FFFFFF;
-  padding: 12px 18px;
+  padding: 13px 20px;
   border-radius: var(--radius-md);
   font-weight: 800;
   font-size: 14px;
@@ -998,7 +969,7 @@ html[dir="rtl"] .mega-menu-box {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  box-shadow: 0 4px 16px var(--color-safety-amber-glow);
+  box-shadow: var(--shadow-amber);
   transition: all var(--transition-fast);
 }
 
@@ -1008,17 +979,17 @@ html[dir="rtl"] .mega-menu-box {
 }
 
 /* ==========================================================================
-   TRI-HUB GEOGRAPHIC CARDS (JEDDAH HQ, DAMMAM, YANBU)
+   TRI-HUB GEOGRAPHIC CARDS
    ========================================================================== */
 .tri-hubs-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 26px;
 }
 
 .hub-location-card {
   background: #FFFFFF;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: 32px;
   display: flex;
@@ -1042,9 +1013,8 @@ html[dir="rtl"] .mega-menu-box {
   font-size: 11px;
   font-weight: 800;
   text-transform: uppercase;
-  padding: 3px 12px;
+  padding: 3px 14px;
   border-radius: var(--radius-full);
-  box-shadow: 0 4px 10px var(--color-saudi-emerald-glow);
 }
 
 html[dir="rtl"] .head-office-ribbon {
@@ -1054,13 +1024,13 @@ html[dir="rtl"] .head-office-ribbon {
 
 .hub-location-card:hover {
   transform: translateY(-5px);
-  box-shadow: var(--shadow-card-hover);
+  box-shadow: var(--shadow-hover);
 }
 
 .hub-city-title {
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 900;
-  color: var(--color-text-dark-heading);
+  color: var(--color-heading);
 }
 
 .hub-tag-badge {
@@ -1068,7 +1038,7 @@ html[dir="rtl"] .head-office-ribbon {
   font-size: 12px;
   font-weight: 800;
   color: var(--color-saudi-emerald);
-  background: rgba(0, 108, 53, 0.1);
+  background: var(--color-saudi-emerald-light);
   padding: 4px 12px;
   border-radius: var(--radius-sm);
 }
@@ -1084,7 +1054,7 @@ html[dir="rtl"] .head-office-ribbon {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  color: var(--color-text-dark-body);
+  color: var(--color-body);
 }
 
 .hub-contact-item i {
@@ -1100,35 +1070,35 @@ html[dir="rtl"] .head-office-ribbon {
   gap: 8px;
   padding: 12px 18px;
   border-radius: var(--radius-md);
-  border: 1px solid var(--color-border-light);
+  border: 1.5px solid var(--color-border);
   font-weight: 700;
   font-size: 14px;
-  color: var(--color-text-dark-heading);
+  color: var(--color-heading);
   transition: all var(--transition-fast);
 }
 
 .hub-btn-action:hover {
-  background: var(--color-obsidian-surface);
+  background: var(--color-heading);
   color: #FFFFFF;
-  border-color: var(--color-obsidian-surface);
+  border-color: var(--color-heading);
 }
 
 /* ==========================================================================
-   MASTER FOOTER
+   PREMIUM MASTER FOOTER WITH RICH FONT AWESOME ICONS
    ========================================================================== */
 .master-footer {
-  background: var(--color-obsidian-black);
-  color: var(--color-text-light-muted);
-  padding: 80px 0 35px;
+  background: var(--color-footer-dark);
+  color: #94A3B8;
+  padding: 75px 0 35px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   margin-top: auto;
 }
 
 .footer-4col {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  grid-template-columns: 1.3fr 1.1fr 1fr 1.1fr;
   gap: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .footer-head-title {
@@ -1136,34 +1106,53 @@ html[dir="rtl"] .head-office-ribbon {
   font-weight: 800;
   color: #FFFFFF;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-head-title i {
+  color: #38BDF8;
 }
 
 .footer-nav-list {
   display: flex;
   flex-direction: column;
-  gap: 11px;
+  gap: 12px;
   font-size: 14px;
 }
 
 .footer-nav-list a {
-  color: var(--color-text-light-muted);
+  color: #94A3B8;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 9px;
+  transition: all var(--transition-fast);
+}
+
+.footer-nav-list a i {
+  font-size: 13px;
+  width: 16px;
+  color: var(--color-tech-cyan);
+  transition: color var(--transition-fast);
 }
 
 .footer-nav-list a:hover {
-  color: var(--color-tech-cyan-light);
-  transform: translateX(3px);
+  color: #FFFFFF;
+  transform: translateX(4px);
 }
 
 html[dir="rtl"] .footer-nav-list a:hover {
-  transform: translateX(-3px);
+  transform: translateX(-4px);
+}
+
+.footer-nav-list a:hover i {
+  color: #4ADE80;
 }
 
 .footer-bottom-row {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding-top: 28px;
+  padding-top: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1181,8 +1170,8 @@ html[dir="rtl"] .footer-nav-list a:hover {
 .iso-badge-pill {
   padding: 5px 12px;
   border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   font-size: 11px;
   font-weight: 800;
   color: #FFFFFF;

@@ -52,17 +52,51 @@
     </div>
   </header>
 
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
+    <div class="mobile-drawer">
+      <div>
+        <div class="mobile-drawer-header">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon" style="width:36px; height:36px; font-size:16px;"><i class="fa-solid fa-gears"></i></div>
+            <span class="brand-name" style="font-size:22px;">Mech<span>Flow</span></span>
+          </a>
+          <button class="mobile-drawer-close" id="mobileDrawerClose"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> About Company</a></li>
+          <li><a href="services.html" class="mobile-nav-link active"><i class="fa-solid fa-layer-group"></i> All 6 Divisions</a></li>
+          <li><a href="turbomachinery.html" class="mobile-nav-link"><i class="fa-solid fa-fan"></i> Turbomachinery &amp; Pumps</a></li>
+          <li><a href="fluid-gas-sealing.html" class="mobile-nav-link"><i class="fa-solid fa-ring"></i> Fluid &amp; Dry Gas Sealing</a></li>
+          <li><a href="plant-turnaround.html" class="mobile-nav-link"><i class="fa-solid fa-wrench"></i> Plant Turnaround &amp; Machining</a></li>
+          <li><a href="advanced-engineering.html" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> FEA, CFD &amp; 3D Scanning</a></li>
+          <li><a href="electrical-motors.html" class="mobile-nav-link"><i class="fa-solid fa-bolt"></i> Motor Rewinding &amp; VFD</a></li>
+          <li><a href="industries.html" class="mobile-nav-link"><i class="fa-solid fa-industry"></i> Industries</a></li>
+          <li><a href="case-studies.html" class="mobile-nav-link"><i class="fa-solid fa-chart-line"></i> Case Studies</a></li>
+          <li><a href="diagnostic.html" class="mobile-nav-link"><i class="fa-solid fa-stethoscope"></i> Diagnostic Tool</a></li>
+          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> 24/7 Dispatch</a></li>
+          <li><a href="rfq.html" class="mobile-nav-link"><i class="fa-solid fa-file-signature"></i> Request RFQ</a></li>
+          <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="mobile-drawer-footer">
+        <a href="ar/services.html" class="lang-btn" style="justify-content:center; padding:10px;"><i class="fa-solid fa-globe"></i> العربية</a>
+      </div>
+    </div>
+  </div>
+
   <section class="hero-monolith" style="padding: 70px 0;">
     <div class="container">
       <span class="hero-badge-pill"><span class="pulse-dot"></span> 6 SPECIALIZED INDUSTRIAL DIVISIONS</span>
-      <h1 class="hero-h1" style="font-size: 42px; margin-bottom: 16px;">Integrated Mechanical &amp; Sealing Engineering</h1>
+      <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px;">Integrated Mechanical &amp; Sealing Engineering</h1>
       <p class="hero-lead-text">
         Providing OEM-independent overhaul, cleanroom dynamic testing, precision machining, and rapid turnaround field services across the Kingdom of Saudi Arabia.
       </p>
     </div>
   </section>
 
-  <section class="section-spacer" style="background: var(--color-canvas);">
+  <section class="section-spacer" style="background: var(--color-canvas-alt);">
     <div class="container">
       <div class="divisions-3col-grid">
         
@@ -82,7 +116,7 @@
         <div class="division-box-card">
           <div>
             <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge" style="background: rgba(0, 128, 255, 0.1); color: var(--color-tech-cyan);"><i class="fa-solid fa-ring"></i></div>
+              <div class="division-icon-badge" style="background: var(--color-tech-cyan-light); color: var(--color-tech-cyan);"><i class="fa-solid fa-ring"></i></div>
               <div><span class="division-tag-num">DIVISION 02</span><h3 class="division-card-title">Fluid &amp; Dry Gas Sealing</h3></div>
             </div>
             <p class="division-card-desc">Heavy mechanical seals, API 692 Dry Gas Seals, cleanroom Nitrogen dynamic test stand (150 bar), and helium flat lapping.</p>
@@ -94,7 +128,7 @@
         <div class="division-box-card">
           <div>
             <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge" style="background: rgba(255, 122, 0, 0.1); color: var(--color-safety-amber);"><i class="fa-solid fa-wrench"></i></div>
+              <div class="division-icon-badge" style="background: var(--color-safety-amber-light); color: var(--color-safety-amber);"><i class="fa-solid fa-wrench"></i></div>
               <div><span class="division-tag-num">DIVISION 03</span><h3 class="division-card-title">Plant Turnaround (TAR)</h3></div>
             </div>
             <p class="division-card-desc">Shutdown mechanical execution, hydraulic bolt torquing/tensioning per ASME PCC-1, onsite flange facing, and 40k PSI hydro-test.</p>
@@ -106,7 +140,7 @@
         <div class="division-box-card">
           <div>
             <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981;"><i class="fa-solid fa-microchip"></i></div>
+              <div class="division-icon-badge" style="background: var(--color-saudi-emerald-light); color: var(--color-saudi-emerald);"><i class="fa-solid fa-microchip"></i></div>
               <div><span class="division-tag-num">DIVISION 04</span><h3 class="division-card-title">Advanced CAE &amp; 3D Scan</h3></div>
             </div>
             <p class="division-card-desc">FEA structural/thermal stress analysis, CFD cavitation simulations, FaroArm 3D scanning, and HVAF tungsten carbide coatings.</p>
@@ -118,7 +152,7 @@
         <div class="division-box-card">
           <div>
             <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge" style="background: rgba(234, 179, 8, 0.1); color: #EAB308;"><i class="fa-solid fa-bolt"></i></div>
+              <div class="division-icon-badge" style="background: var(--color-safety-amber-light); color: #D97706;"><i class="fa-solid fa-bolt"></i></div>
               <div><span class="division-tag-num">DIVISION 05</span><h3 class="division-card-title">Electric Motors &amp; VFD</h3></div>
             </div>
             <p class="division-card-desc">Low &amp; medium voltage motor rewinding, Vacuum Pressure Impregnation (VPI), VFD troubleshooting, and PLC control panels.</p>
@@ -130,7 +164,7 @@
         <div class="division-box-card">
           <div>
             <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge" style="background: rgba(239, 68, 68, 0.1); color: #EF4444;"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+              <div class="division-icon-badge" style="background: #FEE2E2; color: #DC2626;"><i class="fa-solid fa-temperature-arrow-down"></i></div>
               <div><span class="division-tag-num">DIVISION 06</span><h3 class="division-card-title">Heat Exchangers &amp; Towers</h3></div>
             </div>
             <p class="division-card-desc">Shell &amp; tube exchanger retubing, bundle pulling, plate exchanger ultrasonic cleaning, and cooling tower drive maintenance.</p>
@@ -142,9 +176,64 @@
     </div>
   </section>
 
+  <!-- Master Footer with Rich Icons -->
   <footer class="master-footer">
     <div class="container">
-      <div class="footer-bottom-row" style="border-top:none; padding-top:0;">
+      <div class="footer-4col">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
+            <div class="brand-icon" style="width:38px; height:38px; font-size:17px;"><i class="fa-solid fa-gears"></i></div>
+            <span class="brand-name" style="font-size:24px;">Mech<span>Flow</span></span>
+          </a>
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #94A3B8;">
+            Kingdom-wide OEM-independent engineering leader providing Turbomachinery overhaul, Dry Gas Seals (API 692), laser alignment, and plant turnaround (TAR) services.
+          </p>
+          <div class="iso-cert-badges">
+            <span class="iso-badge-pill">ISO 9001:2015</span>
+            <span class="iso-badge-pill">ISO 45001:2018</span>
+            <span class="iso-badge-pill">ISO 14001:2015</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-layer-group"></i> Service Divisions</h4>
+          <div class="footer-nav-list">
+            <a href="turbomachinery.html"><i class="fa-solid fa-fan"></i> Turbomachinery &amp; Pumps</a>
+            <a href="fluid-gas-sealing.html"><i class="fa-solid fa-ring"></i> Fluid &amp; Dry Gas Sealing</a>
+            <a href="plant-turnaround.html"><i class="fa-solid fa-wrench"></i> Plant Turnaround (TAR)</a>
+            <a href="advanced-engineering.html"><i class="fa-solid fa-microchip"></i> FEA / CFD &amp; 3D Scanning</a>
+            <a href="electrical-motors.html"><i class="fa-solid fa-bolt"></i> Motor Rewinding &amp; VFD</a>
+            <a href="heat-transfer.html"><i class="fa-solid fa-temperature-arrow-down"></i> Heat Exchangers &amp; Coolers</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-compass"></i> Quick Links</h4>
+          <div class="footer-nav-list">
+            <a href="about.html"><i class="fa-solid fa-shield-halved"></i> About Company &amp; Governance</a>
+            <a href="industries.html"><i class="fa-solid fa-industry"></i> Industries We Serve</a>
+            <a href="case-studies.html"><i class="fa-solid fa-chart-line"></i> Proven Case Studies</a>
+            <a href="diagnostic.html"><i class="fa-solid fa-stethoscope"></i> Interactive Diagnostic Tool</a>
+            <a href="emergency-dispatch.html"><i class="fa-solid fa-truck-medical"></i> 24/7 Breakdown Dispatch</a>
+            <a href="rfq.html"><i class="fa-solid fa-file-signature"></i> Request a Technical Solution</a>
+            <a href="contact.html"><i class="fa-solid fa-map-location-dot"></i> Contact &amp; Hub Locations</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-building-flag"></i> Corporate Presence</h4>
+          <p style="font-size: 13.5px; margin-bottom: 12px; line-height: 1.6; color: #94A3B8;">
+            🏢 <strong style="color:#FFFFFF;">Head Office:</strong> Jeddah, Saudi Arabia<br>
+            📍 <strong style="color:#FFFFFF;">Branch Offices:</strong> Dammam &amp; Yanbu
+          </p>
+          <p style="font-size: 13.5px; color: var(--color-safety-amber); font-weight: 700;">
+            📞 <span style="color:#CBD5E1;">24/7 Hotline:</span> +966 54 509 2221<br>
+            📧 <span style="color:#CBD5E1;">RFQ Email:</span> rfq@mechflow.sa
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
         <span>&copy; 2026 MechFlow Saudi Arabia Co. Ltd. Head Office: Jeddah | Branches: Dammam &amp; Yanbu</span>
         <a href="rfq.html" style="color: var(--color-safety-amber); font-weight:700;">Submit RFQ Specification <i class="fa-solid fa-arrow-right"></i></a>
       </div>

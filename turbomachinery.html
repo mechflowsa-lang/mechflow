@@ -50,10 +50,44 @@
     </div>
   </header>
 
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
+    <div class="mobile-drawer">
+      <div>
+        <div class="mobile-drawer-header">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon" style="width:36px; height:36px; font-size:16px;"><i class="fa-solid fa-gears"></i></div>
+            <span class="brand-name" style="font-size:22px;">Mech<span>Flow</span></span>
+          </a>
+          <button class="mobile-drawer-close" id="mobileDrawerClose"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> About Company</a></li>
+          <li><a href="services.html" class="mobile-nav-link active"><i class="fa-solid fa-layer-group"></i> All 6 Divisions</a></li>
+          <li><a href="turbomachinery.html" class="mobile-nav-link active"><i class="fa-solid fa-fan"></i> Turbomachinery &amp; Pumps</a></li>
+          <li><a href="fluid-gas-sealing.html" class="mobile-nav-link"><i class="fa-solid fa-ring"></i> Fluid &amp; Dry Gas Sealing</a></li>
+          <li><a href="plant-turnaround.html" class="mobile-nav-link"><i class="fa-solid fa-wrench"></i> Plant Turnaround &amp; Machining</a></li>
+          <li><a href="advanced-engineering.html" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> FEA, CFD &amp; 3D Scanning</a></li>
+          <li><a href="electrical-motors.html" class="mobile-nav-link"><i class="fa-solid fa-bolt"></i> Motor Rewinding &amp; VFD</a></li>
+          <li><a href="industries.html" class="mobile-nav-link"><i class="fa-solid fa-industry"></i> Industries</a></li>
+          <li><a href="case-studies.html" class="mobile-nav-link"><i class="fa-solid fa-chart-line"></i> Case Studies</a></li>
+          <li><a href="diagnostic.html" class="mobile-nav-link"><i class="fa-solid fa-stethoscope"></i> Diagnostic Tool</a></li>
+          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> 24/7 Dispatch</a></li>
+          <li><a href="rfq.html" class="mobile-nav-link"><i class="fa-solid fa-file-signature"></i> Request RFQ</a></li>
+          <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="mobile-drawer-footer">
+        <a href="ar/turbomachinery.html" class="lang-btn" style="justify-content:center; padding:10px;"><i class="fa-solid fa-globe"></i> العربية</a>
+      </div>
+    </div>
+  </div>
+
   <section class="hero-monolith" style="padding: 70px 0;">
     <div class="container">
       <span class="hero-badge-pill"><span class="pulse-dot"></span> DIVISION 01 — ROTATING EQUIPMENT &amp; TURBOMACHINERY</span>
-      <h1 class="hero-h1" style="font-size: 42px; margin-bottom: 16px;">API 610 Process Pumps &amp; Turbomachinery Overhaul</h1>
+      <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px;">API 610 Process Pumps &amp; Turbomachinery Overhaul</h1>
       <p class="hero-lead-text">
         Comprehensive OEM-independent teardown, non-destructive testing (NDT), 10-ton Schenck dynamic balancing, and wireless precision laser shaft alignment across Saudi Arabia.
       </p>
@@ -62,67 +96,59 @@
 
   <section class="section-spacer" style="background: var(--color-canvas);">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 48px; align-items: flex-start; margin-bottom: 60px;">
+      <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 48px; align-items: flex-start;">
         <div>
           <span class="tag-accent"><i class="fa-solid fa-fan"></i> Engineering Specialization</span>
           <h2 class="head-title-lg">Critical Rotating Equipment Capabilities</h2>
-          <p style="color: var(--color-text-dark-body); margin-bottom: 20px; line-height: 1.65;">
+          <p style="color: var(--color-body); margin-bottom: 20px; line-height: 1.68;">
             MechFlow’s workshops in <strong>Jeddah, Dammam, and Yanbu</strong> are equipped with heavy overhead cranes, computerized balancing stands, and precision machining lathes capable of handling multi-stage boiler feed pumps, steam turbine rotors, and heavy industrial gearboxes.
           </p>
           
           <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 24px;">
-            <div style="background: #FFFFFF; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); padding: 22px; box-shadow: var(--shadow-card);">
-              <h4 style="font-size: 18px; color: var(--color-text-dark-heading); margin-bottom: 6px; display:flex; align-items:center; gap:8px;">
+            <div style="background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 22px; box-shadow: var(--shadow-card);">
+              <h4 style="font-size: 18px; color: var(--color-heading); margin-bottom: 6px; display:flex; align-items:center; gap:8px;">
                 <i class="fa-solid fa-circle-check" style="color: var(--color-saudi-emerald);"></i>
                 API 610 Centrifugal &amp; Multistage Pump Overhaul
               </h4>
-              <p style="font-size: 14px; color: var(--color-text-dark-body);">Full disassembly, dye-penetrant / magnetic particle inspection, shaft straightening, wear ring renewal, and hydrostatic casing pressure verification.</p>
+              <p style="font-size: 14px; color: var(--color-body);">Full disassembly, dye-penetrant / magnetic particle inspection, shaft straightening, wear ring renewal, and hydrostatic casing pressure verification.</p>
             </div>
             
-            <div style="background: #FFFFFF; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); padding: 22px; box-shadow: var(--shadow-card);">
-              <h4 style="font-size: 18px; color: var(--color-text-dark-heading); margin-bottom: 6px; display:flex; align-items:center; gap:8px;">
+            <div style="background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 22px; box-shadow: var(--shadow-card);">
+              <h4 style="font-size: 18px; color: var(--color-heading); margin-bottom: 6px; display:flex; align-items:center; gap:8px;">
                 <i class="fa-solid fa-circle-check" style="color: var(--color-saudi-emerald);"></i>
                 Steam Turbines (API 611/612) &amp; Gas Compressors
               </h4>
-              <p style="font-size: 14px; color: var(--color-text-dark-body);">Rotor blading overhaul, diaphragm restoration, journal/thrust bearing replacement, labyrinth seal retrofit, and axial clearance optimization.</p>
+              <p style="font-size: 14px; color: var(--color-body);">Rotor blading overhaul, diaphragm restoration, journal/thrust bearing replacement, labyrinth seal retrofit, and axial clearance optimization.</p>
             </div>
 
-            <div style="background: #FFFFFF; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); padding: 22px; box-shadow: var(--shadow-card);">
-              <h4 style="font-size: 18px; color: var(--color-text-dark-heading); margin-bottom: 6px; display:flex; align-items:center; gap:8px;">
+            <div style="background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 22px; box-shadow: var(--shadow-card);">
+              <h4 style="font-size: 18px; color: var(--color-heading); margin-bottom: 6px; display:flex; align-items:center; gap:8px;">
                 <i class="fa-solid fa-circle-check" style="color: var(--color-saudi-emerald);"></i>
                 In-House (10T) &amp; On-Site Field Dynamic Balancing
               </h4>
-              <p style="font-size: 14px; color: var(--color-text-dark-body);">Hard-bearing Schenck balancing machines handling rotors up to 10 tons (ISO 1940 G0.4 - G2.5) + 2-plane field vibration correction on operating plant machinery.</p>
-            </div>
-
-            <div style="background: #FFFFFF; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); padding: 22px; box-shadow: var(--shadow-card);">
-              <h4 style="font-size: 18px; color: var(--color-text-heading); margin-bottom: 6px; display:flex; align-items:center; gap:8px;">
-                <i class="fa-solid fa-circle-check" style="color: var(--color-saudi-emerald);"></i>
-                Wireless Precision Laser Shaft Alignment
-              </h4>
-              <p style="font-size: 14px; color: var(--color-text-dark-body);">Utilizing Prüftechnik and Easy-Laser dual-sensor alignment systems to eliminate thermal growth offset, reducing bearing stress and seal wear by up to 400%.</p>
+              <p style="font-size: 14px; color: var(--color-body);">Hard-bearing Schenck balancing machines handling rotors up to 10 tons (ISO 1940 G0.4 - G2.5) + 2-plane field vibration correction on operating plant machinery.</p>
             </div>
           </div>
         </div>
 
-        <div style="background: var(--color-obsidian-dark); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius-xl); padding: 32px; color: #FFFFFF; box-shadow: var(--shadow-dark-card);">
-          <h3 style="font-size: 22px; color: #FFFFFF; margin-bottom: 16px;">Technical Tolerances &amp; Standards</h3>
+        <div style="background: #FFFFFF; border: 1.5px solid var(--color-border); border-radius: var(--radius-xl); padding: 32px; box-shadow: var(--shadow-card);">
+          <h3 style="font-size: 22px; color: var(--color-heading); margin-bottom: 16px;">Technical Tolerances &amp; Standards</h3>
           <ul style="display: flex; flex-direction: column; gap: 14px; font-size: 14px; margin-bottom: 30px;">
-            <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px;">
-              <span style="color: var(--color-text-light-muted);">Balancing Standard:</span>
-              <span class="mono" style="color: var(--color-tech-cyan-light); font-weight:700;">ISO 1940 G0.4 - G2.5</span>
+            <li style="display:flex; justify-content:space-between; border-bottom: 1px solid var(--color-border); padding-bottom: 8px;">
+              <span style="color: var(--color-muted);">Balancing Standard:</span>
+              <span class="mono" style="color: var(--color-saudi-emerald); font-weight:700;">ISO 1940 G0.4 - G2.5</span>
             </li>
-            <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px;">
-              <span style="color: var(--color-text-light-muted);">Max Rotor Weight:</span>
-              <span class="mono" style="color: var(--color-tech-cyan-light); font-weight:700;">10,000 kg (10 Tons)</span>
+            <li style="display:flex; justify-content:space-between; border-bottom: 1px solid var(--color-border); padding-bottom: 8px;">
+              <span style="color: var(--color-muted);">Max Rotor Weight:</span>
+              <span class="mono" style="color: var(--color-saudi-emerald); font-weight:700;">10,000 kg (10 Tons)</span>
             </li>
-            <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px;">
-              <span style="color: var(--color-text-light-muted);">Shaft Runout Tolerance:</span>
-              <span class="mono" style="color: var(--color-tech-cyan-light); font-weight:700;">< 0.012 mm TIR</span>
+            <li style="display:flex; justify-content:space-between; border-bottom: 1px solid var(--color-border); padding-bottom: 8px;">
+              <span style="color: var(--color-muted);">Shaft Runout Tolerance:</span>
+              <span class="mono" style="color: var(--color-saudi-emerald); font-weight:700;">< 0.012 mm TIR</span>
             </li>
-            <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px;">
-              <span style="color: var(--color-text-light-muted);">Laser Offset Accuracy:</span>
-              <span class="mono" style="color: var(--color-tech-cyan-light); font-weight:700;">± 0.005 mm</span>
+            <li style="display:flex; justify-content:space-between; border-bottom: 1px solid var(--color-border); padding-bottom: 8px;">
+              <span style="color: var(--color-muted);">Laser Offset Accuracy:</span>
+              <span class="mono" style="color: var(--color-saudi-emerald); font-weight:700;">± 0.005 mm</span>
             </li>
           </ul>
 
@@ -130,19 +156,71 @@
             <span>Request Pump / Turbine Overhaul</span>
             <i class="fa-solid fa-arrow-right"></i>
           </a>
-          <a href="emergency-dispatch.html" style="display: block; text-align: center; margin-top: 14px; font-size: 13px; color: var(--color-safety-amber); font-weight:700;">
-            Need 24/7 Breakdown Dispatch? Click here <i class="fa-solid fa-chevron-right" style="font-size:10px;"></i>
-          </a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Master Footer with Rich Icons -->
   <footer class="master-footer">
     <div class="container">
-      <div class="footer-bottom-row" style="border-top:none; padding-top:0;">
+      <div class="footer-4col">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
+            <div class="brand-icon" style="width:38px; height:38px; font-size:17px;"><i class="fa-solid fa-gears"></i></div>
+            <span class="brand-name" style="font-size:24px;">Mech<span>Flow</span></span>
+          </a>
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #94A3B8;">
+            Kingdom-wide OEM-independent engineering leader providing Turbomachinery overhaul, Dry Gas Seals (API 692), laser alignment, and plant turnaround (TAR) services.
+          </p>
+          <div class="iso-cert-badges">
+            <span class="iso-badge-pill">ISO 9001:2015</span>
+            <span class="iso-badge-pill">ISO 45001:2018</span>
+            <span class="iso-badge-pill">ISO 14001:2015</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-layer-group"></i> Service Divisions</h4>
+          <div class="footer-nav-list">
+            <a href="turbomachinery.html"><i class="fa-solid fa-fan"></i> Turbomachinery &amp; Pumps</a>
+            <a href="fluid-gas-sealing.html"><i class="fa-solid fa-ring"></i> Fluid &amp; Dry Gas Sealing</a>
+            <a href="plant-turnaround.html"><i class="fa-solid fa-wrench"></i> Plant Turnaround (TAR)</a>
+            <a href="advanced-engineering.html"><i class="fa-solid fa-microchip"></i> FEA / CFD &amp; 3D Scanning</a>
+            <a href="electrical-motors.html"><i class="fa-solid fa-bolt"></i> Motor Rewinding &amp; VFD</a>
+            <a href="heat-transfer.html"><i class="fa-solid fa-temperature-arrow-down"></i> Heat Exchangers &amp; Coolers</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-compass"></i> Quick Links</h4>
+          <div class="footer-nav-list">
+            <a href="about.html"><i class="fa-solid fa-shield-halved"></i> About Company &amp; Governance</a>
+            <a href="industries.html"><i class="fa-solid fa-industry"></i> Industries We Serve</a>
+            <a href="case-studies.html"><i class="fa-solid fa-chart-line"></i> Proven Case Studies</a>
+            <a href="diagnostic.html"><i class="fa-solid fa-stethoscope"></i> Interactive Diagnostic Tool</a>
+            <a href="emergency-dispatch.html"><i class="fa-solid fa-truck-medical"></i> 24/7 Breakdown Dispatch</a>
+            <a href="rfq.html"><i class="fa-solid fa-file-signature"></i> Request a Technical Solution</a>
+            <a href="contact.html"><i class="fa-solid fa-map-location-dot"></i> Contact &amp; Hub Locations</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-building-flag"></i> Corporate Presence</h4>
+          <p style="font-size: 13.5px; margin-bottom: 12px; line-height: 1.6; color: #94A3B8;">
+            🏢 <strong style="color:#FFFFFF;">Head Office:</strong> Jeddah, Saudi Arabia<br>
+            📍 <strong style="color:#FFFFFF;">Branch Offices:</strong> Dammam &amp; Yanbu
+          </p>
+          <p style="font-size: 13.5px; color: var(--color-safety-amber); font-weight: 700;">
+            📞 <span style="color:#CBD5E1;">24/7 Hotline:</span> +966 54 509 2221<br>
+            📧 <span style="color:#CBD5E1;">RFQ Email:</span> rfq@mechflow.sa
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
         <span>&copy; 2026 MechFlow Saudi Arabia Co. Ltd. Head Office: Jeddah | Branches: Dammam &amp; Yanbu</span>
-        <a href="services.html" style="color: var(--color-tech-cyan-light);">All Services Hub <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="services.html" style="color: #38BDF8;">All Services Hub <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </footer>

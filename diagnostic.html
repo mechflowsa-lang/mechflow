@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Interactive Equipment Diagnostic &amp; Solution Finder — MechFlow Saudi Arabia</title>
-  <meta name="description" content="3-step interactive rotating equipment troubleshooter. Diagnose pump vibration, mechanical seal leakage, turbine surge, and motor overheating with instant KSA field dispatch.">
+  <title>Interactive Equipment Diagnostic Tool — MechFlow Saudi Arabia</title>
+  <meta name="description" content="Instant engineering troubleshooting for rotating machinery and mechanical seals. Select asset type and observed symptoms for immediate technical guidance and dispatch in Saudi Arabia.">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -20,7 +20,9 @@
         <span class="hub-item"><i class="fa-solid fa-location-dot"></i> <strong>Branch Offices:</strong> Dammam &amp; Yanbu</span>
       </div>
       <div class="topbar-right">
-        <a href="emergency-dispatch.html" class="topbar-hotline"><i class="fa-solid fa-phone-volume"></i> 24/7 Breakdown: +966 54 509 2221</a>
+        <a href="emergency-dispatch.html" class="topbar-hotline">
+          <i class="fa-solid fa-phone-volume"></i> 24/7 Breakdown: +966 54 509 2221
+        </a>
         <a href="ar/diagnostic.html" class="lang-btn"><i class="fa-solid fa-globe"></i> العربية</a>
       </div>
     </div>
@@ -50,17 +52,51 @@
     </div>
   </header>
 
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
+    <div class="mobile-drawer">
+      <div>
+        <div class="mobile-drawer-header">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon" style="width:36px; height:36px; font-size:16px;"><i class="fa-solid fa-gears"></i></div>
+            <span class="brand-name" style="font-size:22px;">Mech<span>Flow</span></span>
+          </a>
+          <button class="mobile-drawer-close" id="mobileDrawerClose"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> About Company</a></li>
+          <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> All 6 Divisions</a></li>
+          <li><a href="turbomachinery.html" class="mobile-nav-link"><i class="fa-solid fa-fan"></i> Turbomachinery &amp; Pumps</a></li>
+          <li><a href="fluid-gas-sealing.html" class="mobile-nav-link"><i class="fa-solid fa-ring"></i> Fluid &amp; Dry Gas Sealing</a></li>
+          <li><a href="plant-turnaround.html" class="mobile-nav-link"><i class="fa-solid fa-wrench"></i> Plant Turnaround &amp; Machining</a></li>
+          <li><a href="advanced-engineering.html" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> FEA, CFD &amp; 3D Scanning</a></li>
+          <li><a href="electrical-motors.html" class="mobile-nav-link"><i class="fa-solid fa-bolt"></i> Motor Rewinding &amp; VFD</a></li>
+          <li><a href="industries.html" class="mobile-nav-link"><i class="fa-solid fa-industry"></i> Industries</a></li>
+          <li><a href="case-studies.html" class="mobile-nav-link"><i class="fa-solid fa-chart-line"></i> Case Studies</a></li>
+          <li><a href="diagnostic.html" class="mobile-nav-link active"><i class="fa-solid fa-stethoscope"></i> Diagnostic Tool</a></li>
+          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> 24/7 Dispatch</a></li>
+          <li><a href="rfq.html" class="mobile-nav-link"><i class="fa-solid fa-file-signature"></i> Request RFQ</a></li>
+          <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="mobile-drawer-footer">
+        <a href="ar/diagnostic.html" class="lang-btn" style="justify-content:center; padding:10px;"><i class="fa-solid fa-globe"></i> العربية</a>
+      </div>
+    </div>
+  </div>
+
   <section class="hero-monolith" style="padding: 70px 0;">
     <div class="container">
-      <span class="hero-badge-pill"><span class="pulse-dot"></span> SMART RELIABILITY ASSISTANT</span>
-      <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px;">Interactive Plant Equipment Troubleshooter</h1>
+      <span class="hero-badge-pill"><span class="pulse-dot"></span> INTERACTIVE RELIABILITY ASSISTANT</span>
+      <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px;">Interactive Plant Diagnostic &amp; Dispatch Protocol</h1>
       <p class="hero-lead-text">
-        Select your plant asset and observed symptoms to receive instant engineering recommendations, standard tolerances, and direct field dispatch routing.
+        Troubleshoot rotating asset anomalies and route your breakdown directly to our rapid technical teams in Jeddah, Dammam, and Yanbu.
       </p>
     </div>
   </section>
 
-  <section class="section-spacer" style="background: var(--color-canvas);">
+  <section class="section-spacer" style="background: var(--color-canvas-alt);">
     <div class="container">
       <div class="diag-interactive-card">
         <div class="diag-grid-3step">
@@ -68,7 +104,7 @@
           <div class="diag-step-box">
             <div class="diag-step-badge">
               <span class="step-num-pill">1</span>
-              <span>Select Equipment</span>
+              <span>Asset Classification</span>
             </div>
             <select class="diag-select-control" id="diagEquipment">
               <option value="pump">API 610 Centrifugal Process Pump</option>
@@ -83,7 +119,7 @@
           <div class="diag-step-box">
             <div class="diag-step-badge">
               <span class="step-num-pill">2</span>
-              <span>Select Observed Symptom</span>
+              <span>Observed Symptom</span>
             </div>
             <select class="diag-select-control" id="diagSymptom">
               <option value="vibration">High Vibration Level (> 7.1 mm/s RMS)</option>
@@ -93,20 +129,20 @@
             </select>
           </div>
 
-          <!-- Step 3: Result -->
+          <!-- Step 3 -->
           <div class="diag-result-box">
             <div>
-              <span class="diag-result-status"><i class="fa-solid fa-circle-check"></i> Recommended Protocol</span>
+              <span class="diag-result-status"><i class="fa-solid fa-circle-check"></i> Standard Engineering Protocol</span>
               <h4 class="diag-result-heading" id="diagResultTitle">Laser Alignment &amp; Dynamic Balancing</h4>
-              <p class="diag-result-text" id="diagResultDesc">High-frequency resonance detected. Immediate laser alignment and dynamic balancing to ISO G2.5 recommended.</p>
+              <p class="diag-result-text" id="diagResultDesc">Dynamic unbalance or angular misalignment detected. Laser alignment &amp; ISO G2.5 balancing required.</p>
               
-              <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.15); font-size: 13px; color: #4ADE80;">
-                <i class="fa-solid fa-truck-fast"></i> Rapid Dispatch Hub: <strong id="diagResultHub" style="color: #FFFFFF;">Jeddah HQ &amp; Dammam Mobile Vans</strong>
+              <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--color-saudi-emerald-border); font-size: 13px; color: var(--color-saudi-emerald); font-weight:700;">
+                <i class="fa-solid fa-truck-fast"></i> Field Mobilization: <strong id="diagResultHub" style="color: var(--color-heading);">Jeddah HQ &amp; Dammam Mobile Squads</strong>
               </div>
             </div>
             
             <a href="emergency-dispatch.html" class="btn-dispatch-now" id="diagActionBtn">
-              <span>Dispatch Engineer / Emergency RFQ</span>
+              <span>Dispatch On-Site Engineer / RFQ</span>
               <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
@@ -115,11 +151,66 @@
     </div>
   </section>
 
+  <!-- Master Footer with Rich Icons -->
   <footer class="master-footer">
     <div class="container">
-      <div class="footer-bottom-row" style="border-top:none; padding-top:0;">
+      <div class="footer-4col">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
+            <div class="brand-icon" style="width:38px; height:38px; font-size:17px;"><i class="fa-solid fa-gears"></i></div>
+            <span class="brand-name" style="font-size:24px;">Mech<span>Flow</span></span>
+          </a>
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #94A3B8;">
+            Kingdom-wide OEM-independent engineering leader providing Turbomachinery overhaul, Dry Gas Seals (API 692), laser alignment, and plant turnaround (TAR) services.
+          </p>
+          <div class="iso-cert-badges">
+            <span class="iso-badge-pill">ISO 9001:2015</span>
+            <span class="iso-badge-pill">ISO 45001:2018</span>
+            <span class="iso-badge-pill">ISO 14001:2015</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-layer-group"></i> Service Divisions</h4>
+          <div class="footer-nav-list">
+            <a href="turbomachinery.html"><i class="fa-solid fa-fan"></i> Turbomachinery &amp; Pumps</a>
+            <a href="fluid-gas-sealing.html"><i class="fa-solid fa-ring"></i> Fluid &amp; Dry Gas Sealing</a>
+            <a href="plant-turnaround.html"><i class="fa-solid fa-wrench"></i> Plant Turnaround (TAR)</a>
+            <a href="advanced-engineering.html"><i class="fa-solid fa-microchip"></i> FEA / CFD &amp; 3D Scanning</a>
+            <a href="electrical-motors.html"><i class="fa-solid fa-bolt"></i> Motor Rewinding &amp; VFD</a>
+            <a href="heat-transfer.html"><i class="fa-solid fa-temperature-arrow-down"></i> Heat Exchangers &amp; Coolers</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-compass"></i> Quick Links</h4>
+          <div class="footer-nav-list">
+            <a href="about.html"><i class="fa-solid fa-shield-halved"></i> About Company &amp; Governance</a>
+            <a href="industries.html"><i class="fa-solid fa-industry"></i> Industries We Serve</a>
+            <a href="case-studies.html"><i class="fa-solid fa-chart-line"></i> Proven Case Studies</a>
+            <a href="diagnostic.html"><i class="fa-solid fa-stethoscope"></i> Interactive Diagnostic Tool</a>
+            <a href="emergency-dispatch.html"><i class="fa-solid fa-truck-medical"></i> 24/7 Breakdown Dispatch</a>
+            <a href="rfq.html"><i class="fa-solid fa-file-signature"></i> Request a Technical Solution</a>
+            <a href="contact.html"><i class="fa-solid fa-map-location-dot"></i> Contact &amp; Hub Locations</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-building-flag"></i> Corporate Presence</h4>
+          <p style="font-size: 13.5px; margin-bottom: 12px; line-height: 1.6; color: #94A3B8;">
+            🏢 <strong style="color:#FFFFFF;">Head Office:</strong> Jeddah, Saudi Arabia<br>
+            📍 <strong style="color:#FFFFFF;">Branch Offices:</strong> Dammam &amp; Yanbu
+          </p>
+          <p style="font-size: 13.5px; color: var(--color-safety-amber); font-weight: 700;">
+            📞 <span style="color:#CBD5E1;">24/7 Hotline:</span> +966 54 509 2221<br>
+            📧 <span style="color:#CBD5E1;">RFQ Email:</span> rfq@mechflow.sa
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
         <span>&copy; 2026 MechFlow Saudi Arabia Co. Ltd. Head Office: Jeddah | Branches: Dammam &amp; Yanbu</span>
-        <a href="emergency-dispatch.html" style="color: var(--color-safety-amber); font-weight:700;">24/7 Breakdown Hotline: +966 54 509 2221 <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="emergency-dispatch.html" style="color: var(--color-safety-amber); font-weight:700;">24/7 Emergency Hotline: +966 54 509 2221 <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </footer>

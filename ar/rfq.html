@@ -20,7 +20,9 @@
         <span class="hub-item"><i class="fa-solid fa-location-dot"></i> <strong>الفروع التشغيلية:</strong> الدمام وينبع</span>
       </div>
       <div class="topbar-right">
-        <a href="emergency-dispatch.html" class="topbar-hotline"><i class="fa-solid fa-phone-volume"></i> طوارئ الأعطال: 92221 509 54 966+</a>
+        <a href="emergency-dispatch.html" class="topbar-hotline">
+          <i class="fa-solid fa-phone-volume"></i> طوارئ الأعطال: 92221 509 54 966+
+        </a>
         <a href="../rfq.html" class="lang-btn"><i class="fa-solid fa-globe"></i> English</a>
       </div>
     </div>
@@ -50,6 +52,40 @@
     </div>
   </header>
 
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
+    <div class="mobile-drawer">
+      <div>
+        <div class="mobile-drawer-header">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon" style="width:36px; height:36px; font-size:16px;"><i class="fa-solid fa-gears"></i></div>
+            <span class="brand-name" style="font-size:22px;">ميك<span>فلو</span></span>
+          </a>
+          <button class="mobile-drawer-close" id="mobileDrawerClose"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
+          <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> عن الشركة</a></li>
+          <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> كافة الأقسام</a></li>
+          <li><a href="turbomachinery.html" class="mobile-nav-link"><i class="fa-solid fa-fan"></i> التوربينات والمضخات</a></li>
+          <li><a href="fluid-gas-sealing.html" class="mobile-nav-link"><i class="fa-solid fa-ring"></i> الأختام الميكانيكية والغازية</a></li>
+          <li><a href="plant-turnaround.html" class="mobile-nav-link"><i class="fa-solid fa-wrench"></i> عمرات المصانع والتشغيل الموقعي</a></li>
+          <li><a href="advanced-engineering.html" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> المحاكاة والمسح ثلاثي الأبعاد</a></li>
+          <li><a href="electrical-motors.html" class="mobile-nav-link"><i class="fa-solid fa-bolt"></i> لف المحركات الكهربائية والتحكم</a></li>
+          <li><a href="industries.html" class="mobile-nav-link"><i class="fa-solid fa-industry"></i> القطاعات</a></li>
+          <li><a href="case-studies.html" class="mobile-nav-link"><i class="fa-solid fa-chart-line"></i> دراسات الحالة</a></li>
+          <li><a href="diagnostic.html" class="mobile-nav-link"><i class="fa-solid fa-stethoscope"></i> أداة التشخيص</a></li>
+          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> طوارئ الأعطال</a></li>
+          <li><a href="rfq.html" class="mobile-nav-link active"><i class="fa-solid fa-file-signature"></i> طلب تسعير</a></li>
+          <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> مواقع الفروع</a></li>
+        </ul>
+      </div>
+      <div class="mobile-drawer-footer">
+        <a href="../rfq.html" class="lang-btn" style="justify-content:center; padding:10px;"><i class="fa-solid fa-globe"></i> English</a>
+      </div>
+    </div>
+  </div>
+
   <section class="hero-monolith" style="padding: 70px 0;">
     <div class="container">
       <span class="hero-badge-pill"><span class="pulse-dot"></span> منظومة التسعير والحلول الفنية التفاعلية</span>
@@ -60,29 +96,29 @@
     </div>
   </section>
 
-  <section class="section-spacer" style="background: var(--color-canvas);">
+  <section class="section-spacer" style="background: var(--color-canvas-alt);">
     <div class="container">
-      <div style="max-width: 860px; margin: 0 auto; background: #FFFFFF; border: 1px solid var(--color-border-light); border-radius: var(--radius-xl); padding: 44px; box-shadow: var(--shadow-card-hover);">
+      <div style="max-width: 860px; margin: 0 auto; background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 44px; box-shadow: var(--shadow-card);">
         
         <form action="#" method="POST" onsubmit="event.preventDefault(); alert('شكراً لكم، تم استلام طلبكم الفني وسيتم التواصل معكم من قِبل الفريق الهندسي المختص فوراً.');">
           
           <!-- خطوة 1 -->
           <div style="margin-bottom: 32px;">
-            <h3 style="font-size: 18px; color: var(--color-text-dark-heading); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;">
-              <span class="step-num-pill" style="width:28px; height:28px; font-size:13px; background:var(--color-saudi-emerald);">1</span>
+            <h3 style="font-size: 18px; color: var(--color-heading); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;">
+              <span class="step-num-pill" style="width:28px; height:28px; font-size:13px;">1</span>
               اختيار القسم الهندسي المطلوب
             </h3>
             <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
-              <label style="background: var(--color-canvas-alt); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
+              <label style="background: var(--color-canvas-subtle); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
                 <input type="radio" name="rfqDivision" value="turbomachinery" checked> التوربينات والمضخات البترولية (API 610)
               </label>
-              <label style="background: var(--color-canvas-alt); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
+              <label style="background: var(--color-canvas-subtle); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
                 <input type="radio" name="rfqDivision" value="sealing"> الأختام الميكانيكية والغازية الجافة (API 682/692)
               </label>
-              <label style="background: var(--color-canvas-alt); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
+              <label style="background: var(--color-canvas-subtle); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
                 <input type="radio" name="rfqDivision" value="turnaround"> عمرات المصانع الشاملة والشد الهيدروليكي (TAR)
               </label>
-              <label style="background: var(--color-canvas-alt); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
+              <label style="background: var(--color-canvas-subtle); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
                 <input type="radio" name="rfqDivision" value="electrical"> إعادة لف المحركات الكهربائية والأتمتة (VFD)
               </label>
             </div>
@@ -90,32 +126,32 @@
 
           <!-- خطوة 2 -->
           <div style="margin-bottom: 32px;">
-            <h3 style="font-size: 18px; color: var(--color-text-dark-heading); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;">
-              <span class="step-num-pill" style="width:28px; height:28px; font-size:13px; background:var(--color-saudi-emerald);">2</span>
+            <h3 style="font-size: 18px; color: var(--color-heading); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;">
+              <span class="step-num-pill" style="width:28px; height:28px; font-size:13px;">2</span>
               بيانات ومواصفات التشغيل الفنية
             </h3>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
               <div>
                 <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">رقم تاق المعدة / الموديل:</label>
-                <input type="text" placeholder="مثال: مضخة تغذية غلايات متعددة المراحل" required style="width: 100%; padding: 12px 14px; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); font-size: 14px;">
+                <input type="text" placeholder="مثال: مضخة تغذية غلايات متعددة المراحل" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
               </div>
               <div>
                 <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">درجة الحرارة والضغط التشغيلي:</label>
-                <input type="text" placeholder="مثال: 180°C / 65 Bar" style="width: 100%; padding: 12px 14px; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); font-size: 14px;">
+                <input type="text" placeholder="مثال: 180°C / 65 Bar" style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
               </div>
             </div>
           </div>
 
           <!-- خطوة 3 -->
           <div style="margin-bottom: 32px;">
-            <h3 style="font-size: 18px; color: var(--color-text-dark-heading); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;">
-              <span class="step-num-pill" style="width:28px; height:28px; font-size:13px; background:var(--color-saudi-emerald);">3</span>
+            <h3 style="font-size: 18px; color: var(--color-heading); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;">
+              <span class="step-num-pill" style="width:28px; height:28px; font-size:13px;">3</span>
               معلومات الاتصال والفرع المفضل
             </h3>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
               <div>
                 <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">الفرع المفضل في المملكة:</label>
-                <select style="width: 100%; padding: 12px 14px; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); font-size: 14px; background: #FFFFFF;">
+                <select style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px; background: #FFFFFF;">
                   <option value="jeddah">المقر الرئيسي والمصنع المركزي: جدة</option>
                   <option value="dammam">فرع المنطقة الشرقية: الدمام</option>
                   <option value="yanbu">فرع منطقة البحر الأحمر: ينبع</option>
@@ -124,21 +160,21 @@
               </div>
               <div>
                 <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">اسم المنشأة / المصنع:</label>
-                <input type="text" placeholder="مثال: أرامكو السعودية / سابك" required style="width: 100%; padding: 12px 14px; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); font-size: 14px;">
+                <input type="text" placeholder="مثال: أرامكو السعودية / سابك" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
               </div>
               <div>
                 <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">الاسم والمسمى الوظيفي:</label>
-                <input type="text" placeholder="مثال: مدير الصيانة والموثوقية" required style="width: 100%; padding: 12px 14px; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); font-size: 14px;">
+                <input type="text" placeholder="مثال: مدير الصيانة والموثوقية" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
               </div>
               <div>
                 <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">رقم الجوال / الواتساب:</label>
-                <input type="tel" placeholder="مثال: 9665XXXXXXXX+" required style="width: 100%; padding: 12px 14px; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); font-size: 14px;">
+                <input type="tel" placeholder="مثال: 9665XXXXXXXX+" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
               </div>
             </div>
 
             <div>
               <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">ملاحظات وشرح متطلبات الصيانة:</label>
-              <textarea rows="4" placeholder="يرجى كتابة تفاصيل الأعطال أو جدول العمرة المطلوب..." style="width: 100%; padding: 12px 14px; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); font-size: 14px;"></textarea>
+              <textarea rows="4" placeholder="يرجى كتابة تفاصيل الأعطال أو جدول العمرة المطلوب..." style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;"></textarea>
             </div>
           </div>
 
@@ -152,11 +188,66 @@
     </div>
   </section>
 
+  <!-- Master Footer with Rich Icons -->
   <footer class="master-footer">
     <div class="container">
-      <div class="footer-bottom-row" style="border-top:none; padding-top:0;">
-        <span>&copy; 2026 شركة ميك فلو السعودية المحدودة. المكتب الرئيسي: جدة | الفروع: الدمام وينبع.</span>
-        <a href="index.html" style="color: var(--color-tech-cyan-light);">العودة للرئيسية <i class="fa-solid fa-arrow-left"></i></a>
+      <div class="footer-4col">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
+            <div class="brand-icon" style="width:38px; height:38px; font-size:17px;"><i class="fa-solid fa-gears"></i></div>
+            <span class="brand-name" style="font-size:24px;">ميك<span>فلو</span></span>
+          </a>
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #94A3B8;">
+            الريادة الهندسية المستقلة في المملكة العربية السعودية لخدمات عمرات التوربينات والمضخات، الأختام الغازية الجافة (API 692)، المحاذاة الليزرية، وعمرات المصانع الكبرى.
+          </p>
+          <div class="iso-cert-badges">
+            <span class="iso-badge-pill">ISO 9001:2015</span>
+            <span class="iso-badge-pill">ISO 45001:2018</span>
+            <span class="iso-badge-pill">ISO 14001:2015</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-layer-group"></i> الأقسام الهندسية</h4>
+          <div class="footer-nav-list">
+            <a href="turbomachinery.html"><i class="fa-solid fa-fan"></i> التوربينات والمضخات البترولية</a>
+            <a href="fluid-gas-sealing.html"><i class="fa-solid fa-ring"></i> الأختام الغازية والميكانيكية</a>
+            <a href="plant-turnaround.html"><i class="fa-solid fa-wrench"></i> عمرات المصانع والشد الهيدروليكي</a>
+            <a href="advanced-engineering.html"><i class="fa-solid fa-microchip"></i> المحاكاة والمسح ثلاثي الأبعاد</a>
+            <a href="electrical-motors.html"><i class="fa-solid fa-bolt"></i> إعادة لف المحركات والأتمتة</a>
+            <a href="heat-transfer.html"><i class="fa-solid fa-temperature-arrow-down"></i> المبادلات الحرارية وأبراج التبريد</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-compass"></i> روابط سريعة</h4>
+          <div class="footer-nav-list">
+            <a href="about.html"><i class="fa-solid fa-shield-halved"></i> عن الشركة والحوكمة</a>
+            <a href="industries.html"><i class="fa-solid fa-industry"></i> القطاعات الصناعية</a>
+            <a href="case-studies.html"><i class="fa-solid fa-chart-line"></i> دراسات الحالة وسجل الموثوقية</a>
+            <a href="diagnostic.html"><i class="fa-solid fa-stethoscope"></i> أداة التشخيص الهندسي</a>
+            <a href="emergency-dispatch.html"><i class="fa-solid fa-truck-medical"></i> مركز طوارئ الأعطال 24/7</a>
+            <a href="rfq.html"><i class="fa-solid fa-file-signature"></i> طلب حل فني وتسعير</a>
+            <a href="contact.html"><i class="fa-solid fa-map-location-dot"></i> مواقع الفروع والتواصل</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-head-title"><i class="fa-solid fa-building-flag"></i> التواجد المؤسسي</h4>
+          <p style="font-size: 13.5px; margin-bottom: 12px; line-height: 1.6; color: #94A3B8;">
+            🏢 <strong style="color:#FFFFFF;">المكتب الرئيسي:</strong> جدة، المملكة العربية السعودية<br>
+            📍 <strong style="color:#FFFFFF;">الفروع التشغيلية:</strong> الدمام وينبع
+          </p>
+          <p style="font-size: 13.5px; color: var(--color-safety-amber); font-weight: 700;">
+            📞 <span style="color:#CBD5E1;">طوارئ الأعطال 24/7:</span> 92221 509 54 966+<br>
+            📧 <span style="color:#CBD5E1;">طلبات التسعير:</span> rfq@mechflow.sa
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <span>&copy; 2026 شركة ميك فلو السعودية المحدودة. المقر الرئيسي: جدة | الفروع: الدمام وينبع</span>
+        <a href="index.html" style="color: #38BDF8;">العودة للرئيسية <i class="fa-solid fa-arrow-left"></i></a>
       </div>
     </div>
   </footer>
