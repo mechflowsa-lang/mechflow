@@ -15,27 +15,6 @@
 </head>
 <body>
 
-  <!-- شريط المعلومات العلوي -->
-  <div class="topbar">
-    <div class="container topbar-wrapper">
-      <div class="topbar-hubs">
-        <span class="hub-item"><i class="fa-solid fa-building"></i> <strong>المكتب الرئيسي:</strong> جدة</span>
-        <span class="hub-sep">|</span>
-        <span class="hub-item"><i class="fa-solid fa-location-dot"></i> <strong>الفروع التشغيلية:</strong> الدمام وينبع</span>
-      </div>
-      <div class="topbar-right">
-        <a href="emergency-dispatch.html" class="topbar-hotline">
-          <i class="fa-solid fa-phone-volume fa-shake"></i>
-          طوارئ الأعطال 24/7: 92221 509 54 966+
-        </a>
-        <a href="../index.html" class="lang-btn" title="English Version">
-          <i class="fa-solid fa-globe"></i>
-          English
-        </a>
-      </div>
-    </div>
-  </div>
-
   <!-- ترويسة الموقع الرئيسية -->
   <header class="main-header">
     <div class="container nav-wrapper">
@@ -112,9 +91,10 @@
       </nav>
 
       <!-- زر القائمة للهواتف -->
-      <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="فتح القائمة">
-        <i class="fa-solid fa-bars-staggered"></i>
-      </button>
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <a href="../index.html" class="lang-btn"><i class="fa-solid fa-globe"></i> English</a>
+        <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="Toggle Menu"><i class="fa-solid fa-bars-staggered"></i></button>
+      </div>
     </div>
   </header>
 
