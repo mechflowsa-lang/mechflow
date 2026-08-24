@@ -74,7 +74,7 @@
     transform: translateY(-2px);
   }
 
-  /* Emergency Speed Dial Central Action Pill */
+  /* Emergency Speed Dial Central Action Pill (Brand Gold Theme) */
   .appbar-item.emergency-pill {
     color: #1C2A31 !important;
   }
@@ -83,11 +83,11 @@
     width: 46px !important;
     height: 46px !important;
     border-radius: 50% !important;
-    background: linear-gradient(135deg, #FF7A00 0%, #EA580C 100%) !important;
+    background: linear-gradient(135deg, #B67B2B 0%, #96601D 100%) !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    box-shadow: 0 4px 16px rgba(255, 122, 0, 0.5) !important;
+    box-shadow: 0 4px 16px rgba(182, 123, 43, 0.5) !important;
     margin-top: -18px !important;
     border: 3px solid #FFFFFF !important;
     animation: radarWave 2.2s infinite !important;
@@ -100,14 +100,14 @@
 
   .appbar-item.emergency-pill span {
     font-weight: 800 !important;
-    color: #EA580C !important;
+    color: #B67B2B !important;
     font-size: 10.5px !important;
   }
 
   @keyframes radarWave {
-    0% { box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.6); }
-    70% { box-shadow: 0 0 0 10px rgba(255, 122, 0, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(255, 122, 0, 0); }
+    0% { box-shadow: 0 0 0 0 rgba(182, 123, 43, 0.6); }
+    70% { box-shadow: 0 0 0 10px rgba(182, 123, 43, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(182, 123, 43, 0); }
   }
 
   /* Offcanvas Mobile App Navigation Drawer (Clean White Theme) */

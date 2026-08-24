@@ -345,10 +345,10 @@ html[dir="rtl"] .mega-menu-box {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('images/hero-bg.png');
+  background-image: url('images/hero-bg-opt.jpg');
   background-size: cover;
   background-position: center;
-  opacity: 0.32;
+  opacity: 0.35;
   mix-blend-mode: luminosity;
   pointer-events: none;
 }
@@ -376,7 +376,7 @@ html[dir="rtl"] .mega-menu-box {
 
 .hero-title-punch span.highlight-amber {
   color: var(--color-brand-bronze-light);
-  background: linear-gradient(135deg, #D4881A 0%, #B67B2B 100%);
+  background: linear-gradient(135deg, #E6A74E 0%, #B67B2B 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -389,44 +389,44 @@ html[dir="rtl"] .mega-menu-box {
   max-width: 640px;
 }
 
-/* 4 Micro Feature Items (2-Line Grid Layout) */
+/* 4 Micro Feature Items (Matching Reference Image) */
 .hero-micro-features-2line {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px 16px;
+  gap: 16px 20px;
   margin-bottom: 28px;
-  max-width: 560px;
+  max-width: 600px;
 }
 
 .micro-badge-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  padding: 8px 12px;
-  border-radius: var(--radius-sm);
-  backdrop-filter: blur(4px);
+  gap: 12px;
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .micro-badge-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 7px;
-  background: rgba(182, 123, 43, 0.2);
-  border: 1px solid rgba(182, 123, 43, 0.5);
+  width: 44px;
+  height: 44px;
+  border-radius: 11px;
+  background: rgba(14, 22, 34, 0.92);
+  border: 1.5px solid var(--color-brand-bronze);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FDBA74;
-  font-size: 13px;
+  color: #F59E0B;
+  font-size: 16px;
   flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .micro-badge-text {
-  font-size: 12.5px;
-  font-weight: 600;
-  color: #F1F5F9;
+  font-family: var(--font-heading);
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #FFFFFF;
   line-height: 1.25;
 }
 
@@ -1452,43 +1452,49 @@ html[dir="rtl"] .footer-nav-list a:hover {
   }
 
   .hero-title-punch {
-    font-size: 26px;
-    line-height: 1.15;
+    font-size: 25px;
+    line-height: 1.18;
+    text-align: center;
     margin-bottom: 12px;
   }
 
   .hero-desc-text {
     font-size: 14px;
     line-height: 1.55;
-    margin-bottom: 18px;
+    text-align: center;
+    margin: 0 auto 18px;
+    max-width: 100%;
   }
 
   .hero-micro-features-2line {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    margin-bottom: 20px;
+    gap: 10px 8px;
+    margin: 0 auto 20px;
+    max-width: 100%;
   }
 
   .micro-badge-item {
-    padding: 6px 8px;
-    gap: 6px;
+    gap: 8px;
   }
 
   .micro-badge-icon {
-    width: 26px;
-    height: 26px;
-    font-size: 11px;
-    border-radius: 5px;
+    width: 36px;
+    height: 36px;
+    font-size: 13px;
+    border-radius: 8px;
   }
 
   .micro-badge-text {
     font-size: 11px;
+    line-height: 1.2;
   }
 
   .hero-action-buttons {
     flex-direction: column;
     width: 100%;
     gap: 10px;
+    margin: 0 auto;
   }
 
   .btn-emergency-gold,
@@ -1503,34 +1509,49 @@ html[dir="rtl"] .footer-nav-list a:hover {
   .hero-trust-proof {
     font-size: 12px;
     justify-content: center;
+    text-align: left;
+    margin-top: 8px;
   }
 
-  /* 3 Showcase Cards on Mobile */
+  html[dir="rtl"] .hero-trust-proof {
+    text-align: right;
+  }
+
+  /* 3 Showcase Cards on Mobile: Preserved Slanted Parallelogram Shape */
   .hero-cards-trio {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
-    margin-top: 10px;
-    padding: 0;
+    margin-top: 18px;
+    padding: 6px 4px;
   }
 
   .skewed-hero-card {
-    height: 140px;
-    border-radius: 8px;
-    transform: none !important;
-    border-width: 1.5px;
+    height: 145px;
+    border-radius: 6px;
+    transform: skewX(-8deg) !important;
+    border: 1.5px solid #0080FF !important;
+    box-shadow: 0 6px 20px rgba(0, 128, 255, 0.35) !important;
+  }
+
+  html[dir="rtl"] .skewed-hero-card {
+    transform: skewX(8deg) !important;
   }
 
   .skewed-card-inner {
-    transform: none !important;
-    inset: 0;
-    padding: 10px 8px;
+    transform: skewX(8deg) !important;
+    inset: -10px -15px !important;
+    padding: 10px 6px !important;
+  }
+
+  html[dir="rtl"] .skewed-card-inner {
+    transform: skewX(-8deg) !important;
   }
 
   .skewed-card-title {
-    font-size: 10px;
-    line-height: 1.2;
-    letter-spacing: 0;
+    font-size: 9.5px !important;
+    line-height: 1.2 !important;
+    font-weight: 800 !important;
   }
 
   /* Marquee Section Mobile */
