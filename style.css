@@ -1280,11 +1280,12 @@ html[dir="rtl"] .footer-nav-list a:hover {
 }
 
 /* ==========================================================================
-   RESPONSIVE BREAKPOINTS
+   RESPONSIVE BREAKPOINTS (PERFECT MOBILE EXPERIENCE)
    ========================================================================== */
+
 @media (max-width: 1024px) {
   .desktop-nav, .topbar {
-    display: none;
+    display: none !important;
   }
 
   .mobile-menu-btn {
@@ -1293,74 +1294,352 @@ html[dir="rtl"] .footer-nav-list a:hover {
 
   .hero-layout-grid {
     grid-template-columns: 1fr;
-    gap: 36px;
-  }
-
-  .hero-cards-trio {
-    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
   }
 
   .divisions-3col-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
   .diag-grid-3step {
     grid-template-columns: 1fr;
+    gap: 18px;
   }
 
   .tri-hubs-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .footer-4col {
     grid-template-columns: 1fr 1fr;
+    gap: 32px;
   }
 }
 
 @media (max-width: 768px) {
-  .hero-title-punch {
-    font-size: 32px;
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .nav-wrapper {
+    height: 64px;
   }
 
   .brand-logo-img {
+    height: 36px;
+    max-width: 155px;
+  }
+
+  .lang-btn {
+    padding: 4px 10px;
+    font-size: 11px;
+  }
+
+  .mobile-menu-btn {
+    width: 38px;
     height: 38px;
+    font-size: 16px;
+  }
+
+  /* Hero Mobile */
+  .hero-monolith {
+    padding: 36px 0 32px;
+  }
+
+  .hero-tag-box {
+    font-size: 10.5px;
+    padding: 4px 10px;
+    margin-bottom: 12px;
+  }
+
+  .hero-title-punch {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+
+  .hero-desc-text {
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 20px;
   }
 
   .hero-micro-features {
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 22px;
   }
 
+  .micro-feature-item {
+    gap: 8px;
+  }
+
+  .micro-feature-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+    border-radius: 7px;
+  }
+
+  .micro-feature-text {
+    font-size: 11px;
+    line-height: 1.25;
+  }
+
+  .hero-action-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .btn-emergency-orange,
+  .btn-outline-services {
+    width: 100%;
+    justify-content: center;
+    padding: 13px 18px;
+    font-size: 13.5px;
+    text-align: center;
+  }
+
+  /* 3 Showcase Cards on Mobile: 3-column compact grid */
   .hero-cards-trio {
-    grid-template-columns: 1fr;
-    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+    padding: 0;
   }
 
   .skewed-hero-card {
-    height: 220px;
+    height: 140px;
+    border-radius: 8px;
     transform: none !important;
+    border-width: 1.5px;
   }
 
   .skewed-card-inner {
     transform: none !important;
     inset: 0;
+    padding: 10px 8px;
   }
 
+  .skewed-card-title {
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0;
+  }
+
+  /* Marquee Section Mobile */
+  .client-marquee-section {
+    padding: 20px 0 16px;
+  }
+
+  .marquee-header-row {
+    margin-bottom: 14px;
+    gap: 8px;
+  }
+
+  .marquee-tag {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  .marquee-sub {
+    font-size: 11.5px;
+  }
+
+  .marquee-track {
+    gap: 40px;
+  }
+
+  .marquee-item {
+    height: 38px;
+    min-width: 100px;
+    padding: 0 4px;
+  }
+
+  .marquee-item img {
+    height: 30px;
+    max-width: 110px;
+  }
+
+  /* Sections Spacing */
+  .section-spacer {
+    padding: 48px 0;
+  }
+
+  .section-head-center {
+    margin-bottom: 32px;
+  }
+
+  .head-title-lg {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .head-desc {
+    font-size: 14px;
+  }
+
+  /* Divisions Cards */
   .divisions-3col-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
-  .leaders-label {
-    border-right: none;
-    padding-right: 0;
+  .division-box-card {
+    padding: 20px 16px;
+    border-radius: 14px;
+    gap: 16px;
+  }
+
+  .division-icon-badge {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+
+  .division-card-title {
+    font-size: 18px;
+  }
+
+  .division-card-desc {
+    font-size: 13.5px;
+    margin: 10px 0;
+  }
+
+  .division-feature-row {
+    font-size: 12.5px;
+  }
+
+  .division-link-btn {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  /* Diagnostic Card */
+  .diag-interactive-card {
+    padding: 20px 16px;
+    border-radius: 16px;
+  }
+
+  .diag-step-box {
+    padding: 16px 14px;
+    border-radius: 12px;
+    gap: 10px;
+  }
+
+  .diag-select-control {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .diag-result-box {
+    padding: 16px 14px;
+    border-radius: 12px;
+  }
+
+  .diag-result-heading {
+    font-size: 16px;
+  }
+
+  .diag-result-text {
+    font-size: 13px;
+  }
+
+  .btn-dispatch-now {
+    padding: 11px 16px;
+    font-size: 13px;
     width: 100%;
-    text-align: center;
   }
 
-  .leaders-logos-row {
-    justify-content: center;
+  /* Hubs */
+  .tri-hubs-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .hub-location-card {
+    padding: 22px 16px;
+    border-radius: 14px;
+    gap: 14px;
+  }
+
+  .hub-city-title {
+    font-size: 19px;
+  }
+
+  .hub-contact-list {
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .hub-btn-action {
+    padding: 10px 14px;
+    font-size: 13px;
+    width: 100%;
+  }
+
+  /* Footer Mobile */
+  .master-footer {
+    padding: 44px 0 20px;
   }
 
   .footer-4col {
     grid-template-columns: 1fr;
+    gap: 28px;
+    margin-bottom: 28px;
+  }
+
+  .footer-head-title {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+
+  .footer-social-row {
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .social-icon-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+
+  .footer-bottom-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title-punch {
+    font-size: 22px;
+  }
+
+  .hero-micro-features {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .hero-cards-trio {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .skewed-hero-card {
+    height: 110px;
+  }
+
+  .skewed-card-title {
+    font-size: 12px;
   }
 }

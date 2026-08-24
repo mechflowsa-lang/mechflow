@@ -1,7 +1,7 @@
 /* ==========================================================================
-   MECHFLOW SAUDI ARABIA — NATIVE MOBILE APP-STYLE NAVIGATION (BULLETPROOF)
-   - On Desktop (min-width: 1025px): Completely hidden (display: none !important)
-   - On Mobile (max-width: 1024px): Pixel-perfect native smartphone bottom appbar
+   MECHFLOW SAUDI ARABIA — NATIVE MOBILE APP NAVIGATION & DRAWER
+   Brand Palette: White Canvas (#FFFFFF), Charcoal (#1C2A31), Gold (#B67B2B)
+   Ultra-Clean, Perfectly Aligned Mobile Experience
    ========================================================================== */
 
 /* 1. Desktop Rule: STRICTLY HIDE on Screens >= 1025px */
@@ -20,23 +20,23 @@
 @media (max-width: 1024px) {
   
   body {
-    padding-bottom: 72px !important;
+    padding-bottom: 74px !important;
   }
 
-  /* Fixed Native App-Style Bottom Navigation Bar */
+  /* Fixed Native App-Style Bottom Navigation Bar (Clean White / Brand Gold) */
   .mobile-bottom-appbar {
     display: flex !important;
     position: fixed !important;
     bottom: 0 !important;
     left: 0 !important;
     right: 0 !important;
-    height: 66px !important;
-    background: #0A192F !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+    height: 64px !important;
+    background: #FFFFFF !important;
+    border-top: 1px solid #E2E8F0 !important;
     justify-content: space-around !important;
     align-items: center !important;
     z-index: 9999 !important;
-    box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.4) !important;
+    box-shadow: 0 -4px 20px rgba(28, 42, 49, 0.08) !important;
     padding: 0 4px !important;
   }
 
@@ -46,7 +46,7 @@
     align-items: center !important;
     justify-content: center !important;
     gap: 3px !important;
-    color: #94A3B8 !important;
+    color: #64748B !important;
     font-size: 11px !important;
     font-weight: 700 !important;
     text-decoration: none !important;
@@ -58,65 +58,68 @@
   }
 
   .appbar-item i {
-    font-size: 19px !important;
+    font-size: 18px !important;
     display: block !important;
+    color: #64748B !important;
+    transition: all 0.2s ease !important;
   }
 
   .appbar-item:hover,
   .appbar-item.active {
-    color: #38BDF8 !important;
+    color: #B67B2B !important;
   }
 
   .appbar-item.active i {
-    color: #38BDF8 !important;
+    color: #B67B2B !important;
     transform: translateY(-2px);
   }
 
   /* Emergency Speed Dial Central Action Pill */
   .appbar-item.emergency-pill {
-    color: #FFFFFF !important;
+    color: #1C2A31 !important;
   }
 
   .appbar-item.emergency-pill .pill-icon-wrap {
-    width: 48px !important;
-    height: 48px !important;
+    width: 46px !important;
+    height: 46px !important;
     border-radius: 50% !important;
     background: linear-gradient(135deg, #FF7A00 0%, #EA580C 100%) !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    box-shadow: 0 4px 20px rgba(255, 122, 0, 0.6) !important;
-    margin-top: -20px !important;
-    border: 3px solid #0A192F !important;
+    box-shadow: 0 4px 16px rgba(255, 122, 0, 0.5) !important;
+    margin-top: -18px !important;
+    border: 3px solid #FFFFFF !important;
     animation: radarWave 2.2s infinite !important;
   }
 
   .appbar-item.emergency-pill .pill-icon-wrap i {
     color: #FFFFFF !important;
-    font-size: 18px !important;
+    font-size: 17px !important;
   }
 
   .appbar-item.emergency-pill span {
     font-weight: 800 !important;
-    color: #FF7A00 !important;
+    color: #EA580C !important;
+    font-size: 10.5px !important;
   }
 
   @keyframes radarWave {
-    0% { box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.7); }
-    70% { box-shadow: 0 0 0 12px rgba(255, 122, 0, 0); }
+    0% { box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.6); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 122, 0, 0); }
     100% { box-shadow: 0 0 0 0 rgba(255, 122, 0, 0); }
   }
 
-  /* Offcanvas Mobile App Navigation Drawer */
+  /* Offcanvas Mobile App Navigation Drawer (Clean White Theme) */
   .mobile-drawer-overlay {
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
     bottom: 0 !important;
-    background: rgba(0, 0, 0, 0.75) !important;
-    backdrop-filter: blur(8px) !important;
-    -webkit-backdrop-filter: blur(8px) !important;
+    background: rgba(28, 42, 49, 0.6) !important;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
     z-index: 10000 !important;
     opacity: 0 !important;
     visibility: hidden !important;
@@ -134,25 +137,26 @@
     top: 0 !important;
     bottom: 0 !important;
     left: 0 !important;
-    width: 320px !important;
-    max-width: 86vw !important;
-    background: #060E1A !important;
-    border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+    width: 310px !important;
+    max-width: 85vw !important;
+    background: #FFFFFF !important;
+    border-right: 1px solid #E2E8F0 !important;
     z-index: 10001 !important;
-    padding: 24px !important;
+    padding: 20px !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: space-between !important;
     transform: translateX(-100%) !important;
     transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
     overflow-y: auto !important;
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.15) !important;
   }
 
   html[dir="rtl"] .mobile-drawer {
     left: auto !important;
     right: 0 !important;
     border-right: none !important;
-    border-left: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-left: 1px solid #E2E8F0 !important;
     transform: translateX(100%) !important;
   }
 
@@ -164,29 +168,29 @@
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
-    padding-bottom: 20px !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding-bottom: 16px !important;
+    border-bottom: 1px solid #E2E8F0 !important;
   }
 
   .mobile-drawer-close {
     width: 36px !important;
     height: 36px !important;
     border-radius: 8px !important;
-    background: rgba(255, 255, 255, 0.08) !important;
-    color: #FFFFFF !important;
+    background: #F1F5F9 !important;
+    color: #1C2A31 !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     font-size: 16px !important;
-    border: none !important;
+    border: 1px solid #E2E8F0 !important;
     cursor: pointer !important;
   }
 
   .mobile-nav-list {
     display: flex !important;
     flex-direction: column !important;
-    gap: 6px !important;
-    margin-top: 20px !important;
+    gap: 4px !important;
+    margin-top: 14px !important;
     list-style: none !important;
     padding: 0 !important;
   }
@@ -195,56 +199,56 @@
     display: flex !important;
     align-items: center !important;
     gap: 12px !important;
-    padding: 12px 14px !important;
-    border-radius: 12px !important;
-    color: #94A3B8 !important;
+    padding: 10px 12px !important;
+    border-radius: 10px !important;
+    color: #334155 !important;
     font-weight: 700 !important;
-    font-size: 14.5px !important;
+    font-size: 14px !important;
     transition: all 0.2s ease !important;
     text-decoration: none !important;
   }
 
   .mobile-nav-link i {
-    width: 22px !important;
-    font-size: 16px !important;
-    color: #38BDF8 !important;
+    width: 20px !important;
+    font-size: 15px !important;
+    color: #B67B2B !important;
   }
 
   .mobile-nav-link:hover,
   .mobile-nav-link.active {
-    background: rgba(0, 128, 255, 0.15) !important;
-    color: #FFFFFF !important;
+    background: #FDF8F0 !important;
+    color: #B67B2B !important;
   }
 
   .mobile-drawer-footer {
-    padding-top: 20px !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding-top: 16px !important;
+    border-top: 1px solid #E2E8F0 !important;
     display: flex !important;
     flex-direction: column !important;
-    gap: 12px !important;
+    gap: 10px !important;
   }
 
   .mobile-hotline-banner {
-    background: rgba(255, 122, 0, 0.15) !important;
-    border: 1px solid #FF7A00 !important;
-    padding: 14px !important;
-    border-radius: 12px !important;
-    color: #FFFFFF !important;
+    background: #FFF7ED !important;
+    border: 1.5px solid #FF7A00 !important;
+    padding: 12px !important;
+    border-radius: 10px !important;
+    color: #1C2A31 !important;
     text-align: center !important;
   }
 
   .mobile-hotline-banner strong {
     display: block !important;
-    font-size: 11px !important;
+    font-size: 10.5px !important;
     text-transform: uppercase !important;
-    color: #FF7A00 !important;
-    margin-bottom: 3px !important;
+    color: #EA580C !important;
+    margin-bottom: 2px !important;
   }
 
   .mobile-hotline-digits {
     font-family: var(--font-heading) !important;
-    font-size: 16px !important;
+    font-size: 15px !important;
     font-weight: 900 !important;
-    color: #FFFFFF !important;
+    color: #1C2A31 !important;
   }
 }
