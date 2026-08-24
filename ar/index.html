@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../mobile-app.css">
   
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23006C35'/><path d='M8 16L14 22L24 10' stroke='white' stroke-width='3' stroke-linecap='round'/></svg>">
+  <link rel="icon" type="image/svg+xml" href="../mechflow-logo.svg">
 </head>
 <body>
 
@@ -18,7 +18,7 @@
   <div class="topbar">
     <div class="container topbar-wrapper">
       <div class="topbar-hubs">
-        <span class="hub-item"><i class="fa-solid fa-building-flag"></i> <strong>المكتب الرئيسي:</strong> جدة</span>
+        <span class="hub-item"><i class="fa-solid fa-building"></i> <strong>المكتب الرئيسي:</strong> جدة</span>
         <span class="hub-sep">|</span>
         <span class="hub-item"><i class="fa-solid fa-location-dot"></i> <strong>الفروع التشغيلية:</strong> الدمام وينبع</span>
       </div>
@@ -38,7 +38,7 @@
   <!-- ترويسة الموقع الرئيسية -->
   <header class="main-header">
     <div class="container nav-wrapper">
-      <a href="index.html" class="brand-logo" aria-label="MechFlow Homepage">
+      <a href="index.html" class="brand-logo" aria-label="الرئيسية ميك فلو">
         <img src="../mechflow-logo.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img">
       </a>
 
@@ -158,7 +158,7 @@
     </div>
   </div>
 
-  <!-- القسم الرئيسي (Hero Section) -->
+  <!-- القسم الرئيسي (Hero Section مع بطاقات متوازية الأضلاع مائلة) -->
   <section class="hero-monolith">
     <div class="container">
       <div class="hero-layout-grid">
@@ -216,24 +216,30 @@
           </div>
         </div>
 
-        <!-- الجانب الأيسر: 3 بطاقات مائلة بصور حقيقية -->
+        <!-- الجانب الأيسر: 3 بطاقات مائلة متوازية الأضلاع -->
         <div class="hero-cards-trio">
           <!-- بطاقة 1 -->
-          <a href="turbomachinery.html" class="angled-showcase-card">
-            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="التوربينات والآلات الدوارة">
-            <div class="angled-card-title">التوربينات والمعدات الدوارة<br>&amp; المضخات البترولية</div>
+          <a href="turbomachinery.html" class="skewed-hero-card">
+            <div class="skewed-card-inner">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="التوربينات والآلات الدوارة">
+              <div class="skewed-card-title">التوربينات والمعدات الدوارة<br>&amp; المضخات البترولية</div>
+            </div>
           </a>
 
           <!-- بطاقة 2 -->
-          <a href="fluid-gas-sealing.html" class="angled-showcase-card">
-            <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80" alt="الأختام الميكانيكية والغازية">
-            <div class="angled-card-title">الأختام الميكانيكية<br>&amp; الأختام الغازية الجافة</div>
+          <a href="fluid-gas-sealing.html" class="skewed-hero-card">
+            <div class="skewed-card-inner">
+              <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80" alt="الأختام الميكانيكية والغازية">
+              <div class="skewed-card-title">الأختام الميكانيكية<br>&amp; الأختام الغازية الجافة</div>
+            </div>
           </a>
 
           <!-- بطاقة 3 -->
-          <a href="electrical-motors.html" class="angled-showcase-card">
-            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" alt="الهندسة الكهربائية والأتمتة">
-            <div class="angled-card-title">لف المحركات الكهربائية<br>&amp; أنظمة التحكم والأتمتة</div>
+          <a href="electrical-motors.html" class="skewed-hero-card">
+            <div class="skewed-card-inner">
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" alt="الهندسة الكهربائية والأتمتة">
+              <div class="skewed-card-title">لف المحركات الكهربائية<br>&amp; أنظمة التحكم والأتمتة</div>
+            </div>
           </a>
         </div>
 
@@ -334,7 +340,7 @@
         <div class="division-box-card">
           <div>
             <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge" style="background: var(--color-tech-cyan-light); color: var(--color-tech-cyan);">
+              <div class="division-icon-badge" style="background: var(--color-brand-gold-tint); color: var(--color-brand-bronze);">
                 <i class="fa-solid fa-ring"></i>
               </div>
               <div>
@@ -347,11 +353,11 @@
             </p>
             <div class="division-features-list">
               <div class="division-feature-row">
-                <i class="fa-solid fa-circle-check" style="color: var(--color-tech-cyan);"></i>
+                <i class="fa-solid fa-circle-check" style="color: var(--color-brand-bronze);"></i>
                 منصة فحص ديناميكي بالنيتروجين حتى 150 بار
               </div>
               <div class="division-feature-row">
-                <i class="fa-solid fa-circle-check" style="color: var(--color-tech-cyan);"></i>
+                <i class="fa-solid fa-circle-check" style="color: var(--color-brand-bronze);"></i>
                 صقل أوجه بصري بأشرطة ضوء الهيليوم أحادي اللون
               </div>
             </div>
@@ -366,7 +372,7 @@
         <div class="division-box-card">
           <div>
             <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge" style="background: var(--color-safety-amber-light); color: var(--color-safety-amber);">
+              <div class="division-icon-badge" style="background: var(--color-brand-gold-tint); color: var(--color-brand-bronze);">
                 <i class="fa-solid fa-wrench"></i>
               </div>
               <div>
@@ -379,11 +385,11 @@
             </p>
             <div class="division-features-list">
               <div class="division-feature-row">
-                <i class="fa-solid fa-circle-check" style="color: var(--color-safety-amber);"></i>
+                <i class="fa-solid fa-circle-check" style="color: var(--color-brand-bronze);"></i>
                 تشغيل وتنعيم الفلانجات موقعياً حتى 120 بوصة
               </div>
               <div class="division-feature-row">
-                <i class="fa-solid fa-circle-check" style="color: var(--color-safety-amber);"></i>
+                <i class="fa-solid fa-circle-check" style="color: var(--color-brand-bronze);"></i>
                 اختبارات ضغط هيدروستاتيكي حتى 40,000 PSI
               </div>
             </div>
@@ -402,7 +408,7 @@
     <div class="container">
       <div class="diag-interactive-card">
         <div style="text-align: center; max-width: 700px; margin: 0 auto 30px;">
-          <span class="tag-accent" style="color: var(--color-tech-cyan);"><i class="fa-solid fa-wand-magic-sparkles"></i> المساعد التفاعلي للموثوقية</span>
+          <span class="tag-accent"><i class="fa-solid fa-wand-magic-sparkles"></i> المساعد التفاعلي للموثوقية</span>
           <h2 class="head-title-lg">أداة التشخيص الفوري لأعطال المعدات</h2>
           <p style="color: var(--color-muted);">حدد نوع الأصل والأعراض المرصودة لاستلام البروتوكول الهندسي المعتمد وتوجيه أقرب فرع في المملكة.</p>
         </div>
@@ -537,15 +543,16 @@
     </div>
   </section>
 
-  <!-- تذييل الصفحة الرئيسي مع الأيقونات الغنية -->
+  <!-- تذييل الصفحة الرئيسي (بدون إيموجي ومع شبكات التواصل الاجتماعي) -->
   <footer class="master-footer">
     <div class="container">
       <div class="footer-4col">
+        <!-- عمود 1 -->
         <div>
           <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
             <img src="../mechflow-logo-white.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img" style="height:44px;">
           </a>
-          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #94A3B8;">
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 18px; color: #94A3B8;">
             الريادة الهندسية المستقلة في المملكة العربية السعودية لخدمات عمرات التوربينات والمضخات، الأختام الغازية الجافة (API 692)، المحاذاة الليزرية، وعمرات المصانع الكبرى.
           </p>
           <div class="iso-cert-badges">
@@ -553,8 +560,18 @@
             <span class="iso-badge-pill">ISO 45001:2018</span>
             <span class="iso-badge-pill">ISO 14001:2015</span>
           </div>
+
+          <!-- شريط شبكات التواصل الاجتماعي -->
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://wa.me/966545092221" target="_blank" rel="noopener" class="social-icon-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
         </div>
 
+        <!-- عمود 2 -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-layer-group"></i> الأقسام الهندسية</h4>
           <div class="footer-nav-list">
@@ -567,6 +584,7 @@
           </div>
         </div>
 
+        <!-- عمود 3 -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-compass"></i> روابط سريعة</h4>
           <div class="footer-nav-list">
@@ -580,22 +598,33 @@
           </div>
         </div>
 
+        <!-- عمود 4 (أيقونات نظيفة بدون إيموجي) -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-building-flag"></i> التواجد المؤسسي</h4>
-          <p style="font-size: 13.5px; margin-bottom: 12px; line-height: 1.6; color: #94A3B8;">
-            🏢 <strong style="color:#FFFFFF;">المكتب الرئيسي:</strong> جدة، المملكة العربية السعودية<br>
-            📍 <strong style="color:#FFFFFF;">الفروع التشغيلية:</strong> الدمام وينبع
-          </p>
-          <p style="font-size: 13.5px; color: var(--color-safety-amber); font-weight: 700;">
-            📞 <span style="color:#CBD5E1;">طوارئ الأعطال 24/7:</span> 92221 509 54 966+<br>
-            📧 <span style="color:#CBD5E1;">طلبات التسعير:</span> rfq@mechflow.sa
-          </p>
+          <div class="footer-presence-list">
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-building"></i>
+              <span><strong>المكتب الرئيسي:</strong> جدة، المملكة العربية السعودية</span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <span><strong>الفروع التشغيلية:</strong> الدمام وينبع</span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span><strong>طوارئ الأعطال 24/7:</strong> <a href="tel:+966545092221">92221 509 54 966+</a></span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-envelope"></i>
+              <span><strong>طلبات التسعير:</strong> <a href="mailto:rfq@mechflow.sa">rfq@mechflow.sa</a></span>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="footer-bottom-row">
         <span>&copy; 2026 شركة ميك فلو السعودية المحدودة. كافة الحقوق محفوظة.</span>
-        <span>متوافق مع مستهدفات التوطين الصناعي لرؤية السعودية 2030.</span>
+        <a href="emergency-dispatch.html" style="color: #FFA800; font-weight:700;">طوارئ الأعطال 24/7: 92221 509 54 966+ <i class="fa-solid fa-arrow-left"></i></a>
       </div>
     </div>
   </footer>
