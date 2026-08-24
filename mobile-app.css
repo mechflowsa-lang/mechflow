@@ -1,14 +1,12 @@
 /* ==========================================================================
-   MECHFLOW SAUDI ARABIA — MOBILE APP-STYLE UI/UX COMPONENT STYLES
-   Provides native smartphone app experience with bottom navigation tab bar
+   MECHFLOW SAUDI ARABIA — NATIVE MOBILE APP-STYLE NAVIGATION
+   Provides authentic smartphone bottom navigation bar with tactile feedback
    ========================================================================== */
 
-/* Only active on mobile / tablet screens */
 @media (max-width: 1024px) {
   
-  /* Add padding bottom to body so content does not get hidden behind the bottom app bar */
   body {
-    padding-bottom: 76px !important;
+    padding-bottom: 74px !important;
   }
 
   /* Fixed Native App-Style Bottom Navigation Bar */
@@ -18,7 +16,7 @@
     left: 0;
     right: 0;
     height: 68px;
-    background: rgba(10, 25, 47, 0.96);
+    background: rgba(7, 15, 30, 0.96);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-top: 1px solid rgba(255, 255, 255, 0.12);
@@ -26,8 +24,8 @@
     justify-content: space-around;
     align-items: center;
     z-index: 9999;
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
-    padding: 0 8px;
+    box-shadow: 0 -6px 25px rgba(0, 0, 0, 0.5);
+    padding: 0 6px;
   }
 
   .appbar-item {
@@ -36,9 +34,9 @@
     align-items: center;
     justify-content: center;
     gap: 3px;
-    color: var(--color-text-on-dark-muted);
+    color: var(--color-text-light-muted);
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
     flex: 1;
     height: 100%;
@@ -47,10 +45,8 @@
     -webkit-tap-highlight-color: transparent;
   }
 
-  .appbar-item svg {
-    width: 22px;
-    height: 22px;
-    stroke-width: 2;
+  .appbar-item i {
+    font-size: 19px;
     transition: transform var(--transition-fast), color var(--transition-fast);
   }
 
@@ -59,7 +55,7 @@
     color: var(--color-tech-cyan-light);
   }
 
-  .appbar-item.active svg {
+  .appbar-item.active i {
     color: var(--color-tech-cyan-light);
     transform: translateY(-2px);
   }
@@ -70,57 +66,33 @@
   }
 
   .appbar-item.emergency-pill .pill-icon-wrap {
-    width: 44px;
-    height: 44px;
+    width: 46px;
+    height: 46px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #FF7A00 0%, #E06A00 100%);
+    background: linear-gradient(135deg, #FF7A00 0%, #EA580C 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 15px rgba(255, 122, 0, 0.5);
-    margin-top: -16px;
-    border: 3px solid var(--color-obsidian);
-    animation: pulseEmergency 2.5s infinite;
+    box-shadow: 0 4px 20px rgba(255, 122, 0, 0.6);
+    margin-top: -18px;
+    border: 3px solid var(--color-obsidian-dark);
+    animation: radarWave 2.2s infinite;
   }
 
-  .appbar-item.emergency-pill .pill-icon-wrap svg {
+  .appbar-item.emergency-pill .pill-icon-wrap i {
     color: #FFFFFF;
-    width: 20px;
-    height: 20px;
+    font-size: 18px;
   }
 
   .appbar-item.emergency-pill span {
-    font-weight: 700;
+    font-weight: 800;
     color: var(--color-safety-amber);
   }
 
-  @keyframes pulseEmergency {
-    0% { box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.6); }
-    70% { box-shadow: 0 0 0 10px rgba(255, 122, 0, 0); }
+  @keyframes radarWave {
+    0% { box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.7); }
+    70% { box-shadow: 0 0 0 12px rgba(255, 122, 0, 0); }
     100% { box-shadow: 0 0 0 0 rgba(255, 122, 0, 0); }
-  }
-
-  /* Mobile Top App Header Bar */
-  .mobile-app-topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 14px 20px;
-    background: var(--color-obsidian-dark);
-    border-bottom: 1px solid var(--color-border-dark);
-    font-size: 13px;
-  }
-
-  .mobile-hubs-indicator {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #FFFFFF;
-    font-weight: 600;
-  }
-
-  .mobile-hubs-indicator span {
-    color: var(--color-saudi-emerald-light);
   }
 
   /* Offcanvas Mobile App Navigation Drawer */
@@ -130,8 +102,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     z-index: 10000;
     opacity: 0;
     visibility: hidden;
@@ -148,10 +121,10 @@
     top: 0;
     bottom: 0;
     left: 0;
-    width: 310px;
-    max-width: 85vw;
-    background: var(--color-obsidian-dark);
-    border-right: 1px solid var(--color-border-dark);
+    width: 320px;
+    max-width: 86vw;
+    background: var(--color-obsidian-black);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 10001;
     padding: 24px;
     display: flex;
@@ -166,7 +139,7 @@
     left: auto;
     right: 0;
     border-right: none;
-    border-left: 1px solid var(--color-border-dark);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
     transform: translateX(100%);
   }
 
@@ -179,7 +152,7 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid var(--color-border-dark);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .mobile-drawer-close {
@@ -191,48 +164,49 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 16px;
   }
 
   .mobile-nav-list {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin-top: 24px;
+    gap: 6px;
+    margin-top: 20px;
   }
 
   .mobile-nav-link {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 12px 16px;
+    padding: 12px 14px;
     border-radius: var(--radius-md);
-    color: var(--color-text-on-dark);
-    font-weight: 600;
-    font-size: 15px;
+    color: var(--color-text-light-muted);
+    font-weight: 700;
+    font-size: 14.5px;
     transition: all var(--transition-fast);
+  }
+
+  .mobile-nav-link i {
+    width: 22px;
+    font-size: 16px;
+    color: var(--color-tech-cyan-light);
   }
 
   .mobile-nav-link:hover,
   .mobile-nav-link.active {
     background: rgba(0, 128, 255, 0.12);
-    color: var(--color-tech-cyan-light);
-  }
-
-  .mobile-nav-link svg {
-    width: 20px;
-    height: 20px;
-    color: var(--color-tech-cyan-light);
+    color: #FFFFFF;
   }
 
   .mobile-drawer-footer {
-    padding-top: 24px;
-    border-top: 1px solid var(--color-border-dark);
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 12px;
   }
 
-  .mobile-hotline-box {
+  .mobile-hotline-banner {
     background: rgba(255, 122, 0, 0.12);
     border: 1px solid var(--color-safety-amber);
     padding: 14px;
@@ -241,18 +215,18 @@
     text-align: center;
   }
 
-  .mobile-hotline-box strong {
+  .mobile-hotline-banner strong {
     display: block;
     font-size: 11px;
     text-transform: uppercase;
     color: var(--color-safety-amber);
-    margin-bottom: 4px;
+    margin-bottom: 3px;
   }
 
-  .mobile-hotline-num {
+  .mobile-hotline-digits {
     font-family: var(--font-heading);
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 900;
     color: #FFFFFF;
   }
 }

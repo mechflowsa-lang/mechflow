@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>MechFlow — Industrial Engineering, Turbomachinery & Plant Services | Saudi Arabia</title>
+  <title>MechFlow — Industrial Engineering, Turbomachinery &amp; Plant Services | Saudi Arabia</title>
   <meta name="description" content="Leading OEM-independent industrial engineering partner in Saudi Arabia. Specializing in Turbomachinery overhaul, Dry Gas Seals (API 692), laser alignment, plant turnaround (TAR), and 24/7 rapid dispatch across Jeddah, Dammam & Yanbu.">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="style.css">
@@ -19,18 +22,18 @@
   <div class="topbar">
     <div class="container topbar-wrapper">
       <div class="topbar-hubs">
-        <span class="hub-tag">🏢 <strong>Head Office:</strong> Jeddah</span>
-        <span class="hub-divider">|</span>
-        <span class="hub-tag">📍 <strong>Branch Offices:</strong> Dammam &amp; Yanbu</span>
+        <span class="hub-item"><i class="fa-solid fa-building-flag"></i> <strong>Head Office:</strong> Jeddah</span>
+        <span class="hub-sep">|</span>
+        <span class="hub-item"><i class="fa-solid fa-location-dot"></i> <strong>Branch Offices:</strong> Dammam &amp; Yanbu</span>
       </div>
-      <div class="topbar-actions">
-        <a href="emergency-dispatch.html" class="topbar-link emergency-hotline">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <div class="topbar-right">
+        <a href="emergency-dispatch.html" class="topbar-hotline">
+          <i class="fa-solid fa-phone-volume fa-shake"></i>
           24/7 Breakdown Dispatch: +966 54 509 2221
         </a>
-        <a href="ar/index.html" class="lang-toggle-btn" title="Switch to Arabic">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
-          العربية (Arabic)
+        <a href="ar/index.html" class="lang-btn" title="Switch to Arabic">
+          <i class="fa-solid fa-globe"></i>
+          العربية
         </a>
       </div>
     </div>
@@ -39,104 +42,102 @@
   <!-- Main Navigation Header -->
   <header class="main-header">
     <div class="container nav-wrapper">
+      <!-- Clean Brand Logo without messy sub-text -->
       <a href="index.html" class="brand-logo" aria-label="MechFlow Home">
-        <div class="brand-icon-box">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <div class="brand-icon">
+          <i class="fa-solid fa-gears"></i>
         </div>
-        <div class="brand-text-group">
-          <span class="brand-title">Mech<span>Flow</span></span>
-          <span class="brand-subtitle">Saudi Industrial Services</span>
-        </div>
+        <span class="brand-name">Mech<span>Flow</span></span>
       </a>
 
       <!-- Desktop Navigation Menu -->
       <nav class="desktop-nav">
-        <div class="nav-item">
-          <a href="index.html" class="nav-link active">Home</a>
-        </div>
-        <div class="nav-item">
-          <a href="about.html" class="nav-link">About Us</a>
-        </div>
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
         
-        <!-- Services Mega Menu -->
-        <div class="nav-item">
+        <!-- Services Mega Menu Dropdown -->
+        <div class="nav-dropdown">
           <a href="services.html" class="nav-link">
             Services &amp; Divisions
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            <i class="fa-solid fa-chevron-down" style="font-size: 11px; margin-left: 2px;"></i>
           </a>
-          <div class="mega-menu">
-            <a href="turbomachinery.html" class="mega-card">
-              <div class="mega-card-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          <div class="mega-menu-box">
+            <a href="turbomachinery.html" class="mega-item">
+              <div class="mega-icon-circle">
+                <i class="fa-solid fa-fan"></i>
               </div>
-              <span class="mega-card-title">Turbomachinery &amp; Pumps</span>
-              <span class="mega-card-desc">API 610 pumps, steam turbines, dynamic balancing &amp; laser alignment.</span>
+              <div>
+                <div class="mega-content-title">Turbomachinery &amp; Pumps</div>
+                <div class="mega-content-desc">API 610 pumps, turbines, 10T dynamic balancing &amp; laser alignment.</div>
+              </div>
             </a>
 
-            <a href="fluid-gas-sealing.html" class="mega-card">
-              <div class="mega-card-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/></svg>
+            <a href="fluid-gas-sealing.html" class="mega-item">
+              <div class="mega-icon-circle">
+                <i class="fa-solid fa-ring"></i>
               </div>
-              <span class="mega-card-title">Fluid &amp; Dry Gas Sealing</span>
-              <span class="mega-card-desc">API 682/692 seals, 150-bar cleanroom nitrogen testing &amp; helium lapping.</span>
+              <div>
+                <div class="mega-content-title">Fluid &amp; Dry Gas Sealing</div>
+                <div class="mega-content-desc">API 682/692 seals, 150-bar cleanroom N₂ testing &amp; helium lapping.</div>
+              </div>
             </a>
 
-            <a href="plant-turnaround.html" class="mega-card">
-              <div class="mega-card-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            <a href="plant-turnaround.html" class="mega-item">
+              <div class="mega-icon-circle">
+                <i class="fa-solid fa-wrench"></i>
               </div>
-              <span class="mega-card-title">Plant Turnaround (TAR)</span>
-              <span class="mega-card-desc">Bolt torquing, in-situ flange facing, cold pipe cutting &amp; hydro-testing.</span>
+              <div>
+                <div class="mega-content-title">Plant Turnaround (TAR)</div>
+                <div class="mega-content-desc">Bolt torquing, in-situ flange facing, cold cutting &amp; hydro-testing.</div>
+              </div>
             </a>
 
-            <a href="advanced-engineering.html" class="mega-card">
-              <div class="mega-card-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <a href="advanced-engineering.html" class="mega-item">
+              <div class="mega-icon-circle">
+                <i class="fa-solid fa-microchip"></i>
               </div>
-              <span class="mega-card-title">Advanced CAE / FEA &amp; 3D Scan</span>
-              <span class="mega-card-desc">Finite element analysis, CFD flow simulations &amp; HVAF coatings.</span>
+              <div>
+                <div class="mega-content-title">Advanced CAE &amp; 3D Scan</div>
+                <div class="mega-content-desc">Finite element analysis, CFD flow simulations &amp; HVAF coatings.</div>
+              </div>
             </a>
 
-            <a href="electrical-motors.html" class="mega-card">
-              <div class="mega-card-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <a href="electrical-motors.html" class="mega-item">
+              <div class="mega-icon-circle">
+                <i class="fa-solid fa-bolt"></i>
               </div>
-              <span class="mega-card-title">Electrical &amp; Motor Rewinding</span>
-              <span class="mega-card-desc">Class H insulation rewinding, VPI treatment &amp; VFD control panels.</span>
+              <div>
+                <div class="mega-content-title">Electric Motors &amp; VFD</div>
+                <div class="mega-content-desc">Class H insulation rewinding, VPI treatment &amp; PLC control panels.</div>
+              </div>
             </a>
 
-            <a href="heat-transfer.html" class="mega-card">
-              <div class="mega-card-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <a href="heat-transfer.html" class="mega-item">
+              <div class="mega-icon-circle">
+                <i class="fa-solid fa-temperature-arrow-down"></i>
               </div>
-              <span class="mega-card-title">Heat Exchangers &amp; Towers</span>
-              <span class="mega-card-desc">Bundle extraction, tube re-sleeving, chemical wash &amp; hydro-test.</span>
+              <div>
+                <div class="mega-content-title">Heat Exchangers &amp; Towers</div>
+                <div class="mega-content-desc">Bundle extraction, tube re-sleeving, chemical wash &amp; hydro-test.</div>
+              </div>
             </a>
           </div>
         </div>
 
-        <div class="nav-item">
-          <a href="industries.html" class="nav-link">Industries</a>
-        </div>
-        <div class="nav-item">
-          <a href="case-studies.html" class="nav-link">Case Studies</a>
-        </div>
-        <div class="nav-item">
-          <a href="diagnostic.html" class="nav-link">Diagnostic Tool</a>
-        </div>
-        <div class="nav-item">
-          <a href="contact.html" class="nav-link">Contact</a>
-        </div>
+        <a href="industries.html" class="nav-link">Industries</a>
+        <a href="case-studies.html" class="nav-link">Case Studies</a>
+        <a href="diagnostic.html" class="nav-link">Diagnostic Tool</a>
+        <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
-      <!-- Header Action Triggers -->
-      <div class="nav-actions">
-        <a href="rfq.html" class="btn-rfq-nav">
+      <!-- Nav Action CTAs -->
+      <div class="nav-actions-group">
+        <a href="rfq.html" class="btn-rfq-gold">
           <span>Request a Solution</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          <i class="fa-solid fa-arrow-right"></i>
         </a>
-        <button class="mobile-menu-trigger" id="mobileMenuTrigger" aria-label="Open Navigation Drawer">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="Open Navigation Drawer">
+          <i class="fa-solid fa-bars-staggered"></i>
         </button>
       </div>
     </div>
@@ -147,226 +148,258 @@
     <div class="mobile-drawer">
       <div>
         <div class="mobile-drawer-header">
-          <div class="brand-logo">
-            <span class="brand-title">Mech<span>Flow</span></span>
-          </div>
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon" style="width:36px; height:36px; font-size:16px;">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <span class="brand-name" style="font-size:22px;">Mech<span>Flow</span></span>
+          </a>
           <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Menu">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
         <ul class="mobile-nav-list">
-          <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
-          <li><a href="about.html" class="mobile-nav-link">About Company &amp; Governance</a></li>
-          <li><a href="services.html" class="mobile-nav-link">All 6 Engineering Divisions</a></li>
-          <li><a href="turbomachinery.html" class="mobile-nav-link">Turbomachinery &amp; Pumps</a></li>
-          <li><a href="fluid-gas-sealing.html" class="mobile-nav-link">Fluid &amp; Dry Gas Sealing</a></li>
-          <li><a href="plant-turnaround.html" class="mobile-nav-link">Plant Turnaround &amp; Machining</a></li>
-          <li><a href="advanced-engineering.html" class="mobile-nav-link">FEA, CFD &amp; 3D Scanning</a></li>
-          <li><a href="electrical-motors.html" class="mobile-nav-link">Motor Rewinding &amp; VFD</a></li>
-          <li><a href="industries.html" class="mobile-nav-link">Industries We Serve</a></li>
-          <li><a href="case-studies.html" class="mobile-nav-link">Proven Case Studies</a></li>
-          <li><a href="diagnostic.html" class="mobile-nav-link">Smart Diagnostic Selector</a></li>
-          <li><a href="emergency-dispatch.html" class="mobile-nav-link">24/7 Breakdown Dispatch</a></li>
-          <li><a href="rfq.html" class="mobile-nav-link">Request a Technical Solution</a></li>
-          <li><a href="contact.html" class="mobile-nav-link">Contact &amp; Hub Locations</a></li>
+          <li><a href="index.html" class="mobile-nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> About Company &amp; Governance</a></li>
+          <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> All 6 Engineering Divisions</a></li>
+          <li><a href="turbomachinery.html" class="mobile-nav-link"><i class="fa-solid fa-fan"></i> Turbomachinery &amp; Pumps</a></li>
+          <li><a href="fluid-gas-sealing.html" class="mobile-nav-link"><i class="fa-solid fa-ring"></i> Fluid &amp; Dry Gas Sealing</a></li>
+          <li><a href="plant-turnaround.html" class="mobile-nav-link"><i class="fa-solid fa-wrench"></i> Plant Turnaround &amp; Machining</a></li>
+          <li><a href="advanced-engineering.html" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> FEA, CFD &amp; 3D Scanning</a></li>
+          <li><a href="electrical-motors.html" class="mobile-nav-link"><i class="fa-solid fa-bolt"></i> Motor Rewinding &amp; VFD</a></li>
+          <li><a href="industries.html" class="mobile-nav-link"><i class="fa-solid fa-industry"></i> Industries We Serve</a></li>
+          <li><a href="case-studies.html" class="mobile-nav-link"><i class="fa-solid fa-chart-line"></i> Proven Case Studies</a></li>
+          <li><a href="diagnostic.html" class="mobile-nav-link"><i class="fa-solid fa-stethoscope"></i> Smart Diagnostic Selector</a></li>
+          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> 24/7 Breakdown Dispatch</a></li>
+          <li><a href="rfq.html" class="mobile-nav-link"><i class="fa-solid fa-file-signature"></i> Request a Technical Solution</a></li>
+          <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-envelope"></i> Contact &amp; Hub Locations</a></li>
         </ul>
       </div>
       <div class="mobile-drawer-footer">
-        <div class="mobile-hotline-box">
+        <div class="mobile-hotline-banner">
           <strong>24/7 KSA Emergency Hotline</strong>
-          <span class="mobile-hotline-num">+966 54 509 2221</span>
+          <span class="mobile-hotline-digits">+966 54 509 2221</span>
         </div>
-        <a href="ar/index.html" class="lang-toggle-btn" style="justify-content:center;">🌐 العربية (Arabic Version)</a>
+        <a href="ar/index.html" class="lang-btn" style="justify-content:center; padding:10px;">
+          <i class="fa-solid fa-globe"></i> العربية (Arabic Version)
+        </a>
       </div>
     </div>
   </div>
 
-  <!-- Hero Section (Authority, Synthesis & Live Metric Ticker) -->
-  <section class="hero-wrapper">
-    <div class="hero-glow-1"></div>
-    <div class="hero-glow-2"></div>
+  <!-- Hero Section -->
+  <section class="hero-monolith">
     <div class="container">
-      <div class="hero-content-grid">
+      <div class="hero-grid">
         <div>
           <div class="hero-badge-pill">
-            <span>🇸🇦</span> LEADING OEM-INDEPENDENT ENGINEERING IN SAUDI ARABIA
+            <span class="pulse-dot"></span>
+            LEADING OEM-INDEPENDENT ENGINEERING IN SAUDI ARABIA
           </div>
-          <h1 class="hero-main-title">
-            Elevating Industrial Reliability with <span class="cyan">Precision Engineering</span> &amp; <span class="emerald">Turnaround Excellence</span>
+          <h1 class="hero-h1">
+            Elevating Industrial Reliability with <span class="grad-cyan">Precision Engineering</span> &amp; <span class="grad-green">Turnaround Excellence</span>
           </h1>
-          <p class="hero-desc">
-            Specialized solutions for Turbomachinery overhauls, Dry Gas Seals (API 692), laser shaft alignment, onsite machining, and 24/7 emergency dispatch across Jeddah HQ, Dammam, and Yanbu.
+          <p class="hero-lead-text">
+            Specialized engineering solutions for Turbomachinery overhauls, Dry Gas Seals (API 692), laser shaft alignment, onsite machining, and 24/7 emergency dispatch across Jeddah HQ, Dammam, and Yanbu.
           </p>
-          <div class="hero-cta-group">
-            <a href="rfq.html" class="btn-primary-hero">
+          <div class="hero-btn-row">
+            <a href="rfq.html" class="btn-hero-primary">
               <span>Request a Technical Solution</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <a href="emergency-dispatch.html" class="btn-secondary-hero">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF7A00" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <a href="emergency-dispatch.html" class="btn-hero-secondary">
+              <i class="fa-solid fa-truck-medical" style="color: var(--color-safety-amber);"></i>
               <span>24/7 Emergency Dispatch</span>
             </a>
           </div>
         </div>
 
-        <div class="hero-visual-card">
-          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80" alt="Industrial Engineering Workshop" class="hero-visual-img">
-          <div class="hero-visual-overlay">
-            <span class="hero-visual-badge">API 682 &amp; API 692 Testing Standards</span>
-            <div class="hero-visual-caption">High-Pressure Cleanroom Testing &amp; 10-Ton Dynamic Balancing</div>
+        <div class="hero-visual-box">
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80" alt="Industrial Engineering Workshop">
+          <div class="hero-visual-badge-overlay">
+            <span class="hero-visual-chip"><i class="fa-solid fa-award"></i> API 682 &amp; API 692 Testing Standards</span>
+            <div class="hero-visual-title">High-Pressure Cleanroom Testing &amp; 10-Ton Dynamic Balancing</div>
           </div>
         </div>
       </div>
 
       <!-- Live Scaled Metrics Bar -->
-      <div class="hero-metrics-bar" style="margin-top: 50px;">
-        <div class="metric-item">
-          <span class="metric-number"><span data-counter="450">450</span>+</span>
-          <span class="metric-label">Combined Specialist Years</span>
+      <div class="metrics-ticker-row">
+        <div class="metric-box">
+          <div class="metric-icon-circle"><i class="fa-solid fa-user-shield"></i></div>
+          <div>
+            <div class="metric-val"><span data-counter="450">450</span>+</div>
+            <div class="metric-lbl">Combined Specialist Years</div>
+          </div>
         </div>
-        <div class="metric-item">
-          <span class="metric-number"><span data-counter="1200">1200</span>+</span>
-          <span class="metric-label">Overhaul Projects Delivered</span>
+        <div class="metric-box">
+          <div class="metric-icon-circle"><i class="fa-solid fa-gears"></i></div>
+          <div>
+            <div class="metric-val"><span data-counter="1200">1200</span>+</div>
+            <div class="metric-lbl">Overhaul Projects Delivered</div>
+          </div>
         </div>
-        <div class="metric-item">
-          <span class="metric-number"><span data-counter="5000">5000</span>+</span>
-          <span class="metric-label">Seals Refurbished &amp; Tested</span>
+        <div class="metric-box">
+          <div class="metric-icon-circle"><i class="fa-solid fa-ring"></i></div>
+          <div>
+            <div class="metric-val"><span data-counter="5000">5000</span>+</div>
+            <div class="metric-lbl">Seals Refurbished &amp; Tested</div>
+          </div>
         </div>
-        <div class="metric-item">
-          <span class="metric-number">0.00</span>
-          <span class="metric-label">Lost Time Incident (LTI) Record</span>
+        <div class="metric-box">
+          <div class="metric-icon-circle" style="background: rgba(0, 108, 53, 0.2); color: #4ADE80;"><i class="fa-solid fa-shield-heart"></i></div>
+          <div>
+            <div class="metric-val" style="color: #4ADE80;">0.00</div>
+            <div class="metric-lbl">Lost Time Incident (LTI) Record</div>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Trust Matrix & Approved Vendor Bar -->
+  <section class="trust-matrix-section">
+    <div class="container">
+      <div class="trust-matrix-title">Trusted Partner &amp; Approved Vendor For Critical Saudi Infrastructure</div>
+      <div class="trust-badges-grid">
+        <span class="trust-pill"><i class="fa-solid fa-circle-check"></i> Saudi Aramco Approved</span>
+        <span class="trust-pill"><i class="fa-solid fa-circle-check"></i> SABIC Vendor</span>
+        <span class="trust-pill"><i class="fa-solid fa-circle-check"></i> SWCC Desalination</span>
+        <span class="trust-pill"><i class="fa-solid fa-circle-check"></i> Saudi Electricity (SEC)</span>
+        <span class="trust-pill"><i class="fa-solid fa-circle-check"></i> Ma'aden Mining</span>
+        <span class="trust-pill"><i class="fa-solid fa-circle-check"></i> Petro Rabigh</span>
+        <span class="trust-pill"><i class="fa-solid fa-circle-check"></i> NEOM Energy</span>
       </div>
     </div>
   </section>
 
   <!-- Horizontally Integrated Business Divisions (Tesco Benchmark) -->
-  <section class="section-padding" style="background-color: var(--color-bg-canvas);">
+  <section class="section-spacer" style="background-color: var(--color-canvas);">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Horizontally Integrated Engineering</span>
-        <h2 class="section-title">Comprehensive Industrial Service Divisions</h2>
-        <p class="section-subtitle">Delivering full asset life-cycle support from rotating host equipment to precision sealing devices and heavy field turnarounds.</p>
+      <div class="section-head-center">
+        <span class="tag-accent"><i class="fa-solid fa-cubes-stacked"></i> Horizontally Integrated Engineering</span>
+        <h2 class="head-title-lg">Comprehensive Industrial Service Divisions</h2>
+        <p class="head-desc">Delivering full asset life-cycle support from rotating host equipment to precision sealing devices and heavy field turnarounds.</p>
       </div>
 
-      <div class="divisions-grid">
+      <div class="divisions-3col-grid">
         <!-- Division 1 -->
-        <div class="division-card">
+        <div class="division-box-card">
           <div>
-            <div class="division-header-box">
-              <div class="division-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <div class="division-icon-badge">
+                <i class="fa-solid fa-fan"></i>
               </div>
               <div>
-                <span class="division-number">DIVISION 01</span>
-                <h3 class="division-title">Turbomachinery &amp; Pumps</h3>
+                <span class="division-tag-num">DIVISION 01</span>
+                <h3 class="division-card-title">Turbomachinery &amp; Pumps</h3>
               </div>
             </div>
-            <p class="division-desc" style="margin: 16px 0;">
+            <p class="division-card-desc">
               Overhaul, re-engineering, and dynamic testing of API 610 centrifugal process pumps, multistage boiler feeds, steam turbines, and blowers.
             </p>
-            <div class="division-features">
-              <div class="division-feature-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <div class="division-features-list">
+              <div class="division-feature-row">
+                <i class="fa-solid fa-circle-check"></i>
                 10-Ton In-House Dynamic Balancing (ISO G2.5)
               </div>
-              <div class="division-feature-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <div class="division-feature-row">
+                <i class="fa-solid fa-circle-check"></i>
                 Wireless Precision Laser Shaft Alignment
               </div>
             </div>
           </div>
-          <a href="turbomachinery.html" class="division-btn">
+          <a href="turbomachinery.html" class="division-link-btn">
             <span>Explore Division Capabilities</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
 
         <!-- Division 2 -->
-        <div class="division-card">
+        <div class="division-box-card">
           <div>
-            <div class="division-header-box">
-              <div class="division-icon" style="background: rgba(0, 128, 255, 0.1); color: var(--color-tech-cyan);">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/></svg>
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <div class="division-icon-badge" style="background: rgba(0, 128, 255, 0.1); color: var(--color-tech-cyan);">
+                <i class="fa-solid fa-ring"></i>
               </div>
               <div>
-                <span class="division-number">DIVISION 02</span>
-                <h3 class="division-title">Fluid &amp; Dry Gas Sealing</h3>
+                <span class="division-tag-num">DIVISION 02</span>
+                <h3 class="division-card-title">Fluid &amp; Dry Gas Sealing</h3>
               </div>
             </div>
-            <p class="division-desc" style="margin: 16px 0;">
+            <p class="division-card-desc">
               High-pressure mechanical seals and API 692 compressor dry gas seals (DGS) with cleanroom assembly, dynamic testing, and helium lapping.
             </p>
-            <div class="division-features">
-              <div class="division-feature-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <div class="division-features-list">
+              <div class="division-feature-row">
+                <i class="fa-solid fa-circle-check" style="color: var(--color-tech-cyan);"></i>
                 150-Bar Nitrogen Dynamic Test Stand
               </div>
-              <div class="division-feature-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <div class="division-feature-row">
+                <i class="fa-solid fa-circle-check" style="color: var(--color-tech-cyan);"></i>
                 Sub-Micron Optical Flat Helium Lapping
               </div>
             </div>
           </div>
-          <a href="fluid-gas-sealing.html" class="division-btn">
+          <a href="fluid-gas-sealing.html" class="division-link-btn">
             <span>Explore Sealing Technology</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
 
         <!-- Division 3 -->
-        <div class="division-card">
+        <div class="division-box-card">
           <div>
-            <div class="division-header-box">
-              <div class="division-icon" style="background: rgba(255, 122, 0, 0.1); color: var(--color-safety-amber);">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <div class="division-icon-badge" style="background: rgba(255, 122, 0, 0.1); color: var(--color-safety-amber);">
+                <i class="fa-solid fa-wrench"></i>
               </div>
               <div>
-                <span class="division-number">DIVISION 03</span>
-                <h3 class="division-title">Plant Turnaround &amp; Field</h3>
+                <span class="division-tag-num">DIVISION 03</span>
+                <h3 class="division-card-title">Plant Turnaround &amp; Field</h3>
               </div>
             </div>
-            <p class="division-desc" style="margin: 16px 0;">
+            <p class="division-card-desc">
               Critical-path shutdown execution, hydraulic bolt torquing/tensioning per ASME PCC-1, onsite cold pipe cutting, and high-pressure hydro-testing.
             </p>
-            <div class="division-features">
-              <div class="division-feature-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <div class="division-features-list">
+              <div class="division-feature-row">
+                <i class="fa-solid fa-circle-check" style="color: var(--color-safety-amber);"></i>
                 Onsite Flange Facing up to 120"
               </div>
-              <div class="division-feature-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <div class="division-feature-row">
+                <i class="fa-solid fa-circle-check" style="color: var(--color-safety-amber);"></i>
                 40,000 PSI Hydrostatic Pressure Testing
               </div>
             </div>
           </div>
-          <a href="plant-turnaround.html" class="division-btn">
+          <a href="plant-turnaround.html" class="division-link-btn">
             <span>Explore Turnaround Services</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Interactive Smart Diagnostic & Solution Finder (Unique CRO Engine) -->
-  <section class="section-padding" style="background: var(--color-obsidian-dark); color: #FFFFFF;">
+  <!-- Interactive Smart Diagnostic Selector (Unique CRO Engine) -->
+  <section class="section-spacer" style="background: var(--color-obsidian-black);">
     <div class="container">
-      <div class="diagnostic-container">
-        <div style="text-align: center; max-width: 680px; margin: 0 auto 30px;">
-          <span class="section-tag" style="color: var(--color-tech-cyan-light);">Interactive Problem Solver</span>
-          <h2 class="section-title" style="color: #FFFFFF;">Instant Plant Equipment Diagnostic</h2>
-          <p style="color: var(--color-text-on-dark-muted);">Select your asset and observed symptoms to receive an immediate engineering protocol and direct KSA dispatch routing.</p>
+      <div class="diag-interactive-card">
+        <div style="text-align: center; max-width: 700px; margin: 0 auto 30px;">
+          <span class="tag-accent" style="color: var(--color-tech-cyan-light);"><i class="fa-solid fa-wand-magic-sparkles"></i> Interactive Problem Solver</span>
+          <h2 class="head-title-lg" style="color: #FFFFFF;">Instant Plant Equipment Diagnostic</h2>
+          <p style="color: var(--color-text-light-muted);">Select your asset and observed symptoms to receive an immediate engineering protocol and direct KSA dispatch routing.</p>
         </div>
 
-        <div class="diagnostic-steps-grid">
+        <div class="diag-grid-3step">
           <!-- Step 1 -->
-          <div class="diag-step-card">
-            <div class="diag-step-header">
-              <span class="diag-step-num">1</span>
-              <span class="diag-step-title">Select Equipment</span>
+          <div class="diag-step-box">
+            <div class="diag-step-badge">
+              <span class="step-num-pill">1</span>
+              <span>Select Equipment</span>
             </div>
-            <select class="diag-select" id="diagEquipment">
+            <select class="diag-select-control" id="diagEquipment">
               <option value="pump">API 610 Centrifugal Process Pump</option>
               <option value="compressor">Centrifugal Gas Compressor</option>
               <option value="turbine">Steam / Gas Turbine</option>
@@ -376,13 +409,13 @@
           </div>
 
           <!-- Step 2 -->
-          <div class="diag-step-card">
-            <div class="diag-step-header">
-              <span class="diag-step-num">2</span>
-              <span class="diag-step-title">Select Symptom</span>
+          <div class="diag-step-box">
+            <div class="diag-step-badge">
+              <span class="step-num-pill">2</span>
+              <span>Select Symptom</span>
             </div>
-            <select class="diag-select" id="diagSymptom">
-              <option value="vibration">High Vibration Level (> 7.1 mm/s)</option>
+            <select class="diag-select-control" id="diagSymptom">
+              <option value="vibration">High Vibration Level (> 7.1 mm/s RMS)</option>
               <option value="leakage">Mechanical Seal Leakage / Smoke</option>
               <option value="burn">Winding Burnout / Overheating</option>
               <option value="trip">Emergency Trip / Bearing Temp Surge</option>
@@ -390,13 +423,16 @@
           </div>
 
           <!-- Step 3: Result -->
-          <div class="diag-result-card">
+          <div class="diag-result-box">
             <div>
-              <span class="diag-result-badge">✓ Recommended Protocol</span>
-              <h4 class="diag-result-title" id="diagResultTitle">Laser Alignment &amp; Dynamic Balancing</h4>
-              <p class="diag-result-desc" id="diagResultDesc">High-frequency resonance detected. Immediate laser alignment and dynamic balancing to ISO G2.5 recommended.</p>
+              <span class="diag-result-status"><i class="fa-solid fa-circle-check"></i> Recommended Protocol</span>
+              <h4 class="diag-result-heading" id="diagResultTitle">Laser Alignment &amp; Dynamic Balancing</h4>
+              <p class="diag-result-text" id="diagResultDesc">High-frequency resonance detected. Immediate laser alignment and dynamic balancing to ISO G2.5 recommended.</p>
             </div>
-            <a href="diagnostic.html" class="btn-diag-action" id="diagActionBtn">View Full Protocol &amp; Dispatch</a>
+            <a href="diagnostic.html" class="btn-dispatch-now" id="diagActionBtn">
+              <span>View Full Protocol &amp; Dispatch</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -404,128 +440,140 @@
   </section>
 
   <!-- Tri-Hub Strategic Footprint (Jeddah HQ, Dammam, Yanbu) -->
-  <section class="section-padding" style="background-color: var(--color-bg-canvas);">
+  <section class="section-spacer" style="background-color: var(--color-canvas);">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Kingdom-Wide Infrastructure</span>
-        <h2 class="section-title">Strategic Multi-Facility Footprint</h2>
-        <p class="section-subtitle">Positioned across Saudi Arabia's vital industrial axes to provide rapid on-site field dispatch and master workshop overhauls.</p>
+      <div class="section-head-center">
+        <span class="tag-accent"><i class="fa-solid fa-map-location-dot"></i> Kingdom-Wide Infrastructure</span>
+        <h2 class="head-title-lg">Strategic Multi-Facility Footprint</h2>
+        <p class="head-desc">Positioned across Saudi Arabia's vital industrial axes to provide rapid on-site field dispatch and master workshop overhauls.</p>
       </div>
 
-      <div class="tri-hub-grid">
+      <div class="tri-hubs-grid">
         <!-- Jeddah HQ -->
-        <div class="hub-card head-office">
-          <span class="hub-head-tag">Head Office &amp; Central Works</span>
-          <div class="hub-role-badge">Western Province Hub</div>
-          <h3 class="hub-city-name">Jeddah Headquarters</h3>
-          <div class="hub-info-list">
-            <div class="hub-info-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div class="hub-location-card is-head-office">
+          <span class="head-office-ribbon">Head Office &amp; Central Works</span>
+          <div class="hub-tag-badge">Western Province Hub</div>
+          <h3 class="hub-city-title">Jeddah Headquarters</h3>
+          <div class="hub-contact-list">
+            <div class="hub-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
               <span>Al Sarooriya Dist, Al Khumra Industrial Corridor, Jeddah</span>
             </div>
-            <div class="hub-info-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div class="hub-contact-item">
+              <i class="fa-solid fa-phone"></i>
               <span>Phone: +966 56 470 9249 / +966 54 509 2221</span>
             </div>
-            <div class="hub-info-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div class="hub-contact-item">
+              <i class="fa-solid fa-envelope"></i>
               <span>Email: jeddah.hq@mechflow.sa</span>
             </div>
           </div>
-          <a href="contact.html" class="hub-action-btn">View Facility Details &amp; Map</a>
+          <a href="contact.html" class="hub-btn-action">
+            <span>View Facility &amp; Map</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
 
         <!-- Dammam Branch -->
-        <div class="hub-card">
-          <div class="hub-role-badge">Eastern Province Hub</div>
-          <h3 class="hub-city-name">Dammam Branch</h3>
-          <div class="hub-info-list">
-            <div class="hub-info-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div class="hub-location-card">
+          <div class="hub-tag-badge">Eastern Province Hub</div>
+          <h3 class="hub-city-title">Dammam Branch</h3>
+          <div class="hub-contact-list">
+            <div class="hub-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
               <span>2nd Industrial City, Dammam &amp; Jubail Corridor</span>
             </div>
-            <div class="hub-info-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div class="hub-contact-item">
+              <i class="fa-solid fa-phone"></i>
               <span>Phone: +966 54 509 2221</span>
             </div>
-            <div class="hub-info-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div class="hub-contact-item">
+              <i class="fa-solid fa-envelope"></i>
               <span>Email: dammam@mechflow.sa</span>
             </div>
           </div>
-          <a href="contact.html" class="hub-action-btn">View Facility Details &amp; Map</a>
+          <a href="contact.html" class="hub-btn-action">
+            <span>View Facility &amp; Map</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
 
         <!-- Yanbu Branch -->
-        <div class="hub-card">
-          <div class="hub-role-badge">Red Sea Petrochemical Hub</div>
-          <h3 class="hub-city-name">Yanbu Branch</h3>
-          <div class="hub-info-list">
-            <div class="hub-info-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div class="hub-location-card">
+          <div class="hub-tag-badge">Red Sea Petrochem Hub</div>
+          <h3 class="hub-city-title">Yanbu Branch</h3>
+          <div class="hub-contact-list">
+            <div class="hub-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
               <span>Royal Commission Industrial Zone (RCJY), Yanbu</span>
             </div>
-            <div class="hub-info-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div class="hub-contact-item">
+              <i class="fa-solid fa-phone"></i>
               <span>Phone: +966 54 509 2221</span>
             </div>
-            <div class="hub-info-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div class="hub-contact-item">
+              <i class="fa-solid fa-envelope"></i>
               <span>Email: yanbu@mechflow.sa</span>
             </div>
           </div>
-          <a href="contact.html" class="hub-action-btn">View Facility Details &amp; Map</a>
+          <a href="contact.html" class="hub-btn-action">
+            <span>View Facility &amp; Map</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Master Footer -->
-  <footer class="footer-main">
+  <footer class="master-footer">
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-4col">
         <div>
-          <div class="brand-logo" style="margin-bottom: 16px;">
-            <span class="brand-title">Mech<span>Flow</span></span>
-          </div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
+            <div class="brand-icon" style="width:38px; height:38px; font-size:17px;">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <span class="brand-name" style="font-size:24px;">Mech<span>Flow</span></span>
+          </a>
           <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px;">
             Kingdom-wide OEM-independent engineering leader providing Turbomachinery overhaul, Dry Gas Seals (API 692), laser alignment, and plant turnaround (TAR) services.
           </p>
-          <div class="footer-cert-badges">
-            <span class="cert-pill">ISO 9001:2015</span>
-            <span class="cert-pill">ISO 45001:2018</span>
-            <span class="cert-pill">ISO 14001:2015</span>
+          <div class="iso-cert-badges">
+            <span class="iso-badge-pill">ISO 9001:2015</span>
+            <span class="iso-badge-pill">ISO 45001:2018</span>
+            <span class="iso-badge-pill">ISO 14001:2015</span>
           </div>
         </div>
 
         <div>
-          <h4 class="footer-col-title">Service Divisions</h4>
-          <div class="footer-links">
-            <a href="turbomachinery.html" class="footer-link">Turbomachinery &amp; Pumps</a>
-            <a href="fluid-gas-sealing.html" class="footer-link">Fluid &amp; Dry Gas Sealing</a>
-            <a href="plant-turnaround.html" class="footer-link">Plant Turnaround (TAR)</a>
-            <a href="advanced-engineering.html" class="footer-link">FEA / CFD &amp; 3D Scanning</a>
-            <a href="electrical-motors.html" class="footer-link">Motor Rewinding &amp; VFD</a>
-            <a href="heat-transfer.html" class="footer-link">Heat Exchangers &amp; Coolers</a>
+          <h4 class="footer-head-title">Service Divisions</h4>
+          <div class="footer-nav-list">
+            <a href="turbomachinery.html"><i class="fa-solid fa-chevron-right" style="font-size:10px;"></i> Turbomachinery &amp; Pumps</a>
+            <a href="fluid-gas-sealing.html"><i class="fa-solid fa-chevron-right" style="font-size:10px;"></i> Fluid &amp; Dry Gas Sealing</a>
+            <a href="plant-turnaround.html"><i class="fa-solid fa-chevron-right" style="font-size:10px;"></i> Plant Turnaround (TAR)</a>
+            <a href="advanced-engineering.html"><i class="fa-solid fa-chevron-right" style="font-size:10px;"></i> FEA / CFD &amp; 3D Scanning</a>
+            <a href="electrical-motors.html"><i class="fa-solid fa-chevron-right" style="font-size:10px;"></i> Motor Rewinding &amp; VFD</a>
+            <a href="heat-transfer.html"><i class="fa-solid fa-chevron-right" style="font-size:10px;"></i> Heat Exchangers &amp; Coolers</a>
           </div>
         </div>
 
         <div>
-          <h4 class="footer-col-title">Quick Links</h4>
-          <div class="footer-links">
-            <a href="about.html" class="footer-link">About Company &amp; Governance</a>
-            <a href="industries.html" class="footer-link">Industries We Serve</a>
-            <a href="case-studies.html" class="footer-link">Proven Case Studies</a>
-            <a href="diagnostic.html" class="footer-link">Interactive Diagnostic Tool</a>
-            <a href="emergency-dispatch.html" class="footer-link">24/7 Breakdown Dispatch</a>
-            <a href="rfq.html" class="footer-link">Request a Technical Solution</a>
-            <a href="contact.html" class="footer-link">Contact &amp; Hub Locations</a>
+          <h4 class="footer-head-title">Quick Links</h4>
+          <div class="footer-nav-list">
+            <a href="about.html"><i class="fa-solid fa-chevron-right" style="font-size:10px;"></i> About Company &amp; Governance</a>
+            <a href="industries.html"><i class="fa-solid fa-chevron-right" style="font-size:10px;"></i> Industries We Serve</a>
+            <a href="case-studies.html"><i class="fa-solid fa-chevron-right" style="font-size:10px;"></i> Proven Case Studies</a>
+            <a href="diagnostic.html"><i class="fa-solid fa-chevron-right" style="font-size:10px;"></i> Interactive Diagnostic Tool</a>
+            <a href="emergency-dispatch.html"><i class="fa-solid fa-chevron-right" style="font-size:10px;"></i> 24/7 Breakdown Dispatch</a>
+            <a href="rfq.html"><i class="fa-solid fa-chevron-right" style="font-size:10px;"></i> Request a Technical Solution</a>
+            <a href="contact.html"><i class="fa-solid fa-chevron-right" style="font-size:10px;"></i> Contact &amp; Hub Locations</a>
           </div>
         </div>
 
         <div>
-          <h4 class="footer-col-title">Corporate Presence</h4>
-          <p style="font-size: 13.5px; margin-bottom: 12px;">
+          <h4 class="footer-head-title">Corporate Presence</h4>
+          <p style="font-size: 13.5px; margin-bottom: 12px; line-height: 1.6;">
             🏢 <strong>Head Office:</strong> Jeddah, Saudi Arabia<br>
             📍 <strong>Branch Offices:</strong> Dammam &amp; Yanbu
           </p>
@@ -536,40 +584,40 @@
         </div>
       </div>
 
-      <div class="footer-bottom">
+      <div class="footer-bottom-row">
         <span>&copy; 2026 MechFlow Saudi Arabia Co. Ltd. All Rights Reserved.</span>
         <span>Aligned with Saudi Vision 2030 Industrial Localization.</span>
       </div>
     </div>
   </footer>
 
-  <!-- Fixed Mobile App-Style Bottom Navigation Tab Bar (Always Visible on Mobile) -->
+  <!-- Fixed Mobile App-Style Bottom Navigation Tab Bar -->
   <nav class="mobile-bottom-appbar" aria-label="Mobile Bottom Navigation">
     <a href="index.html" class="appbar-item active">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <i class="fa-solid fa-house"></i>
       <span>Home</span>
     </a>
 
     <a href="services.html" class="appbar-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      <i class="fa-solid fa-layer-group"></i>
       <span>Services</span>
     </a>
 
     <a href="diagnostic.html" class="appbar-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <i class="fa-solid fa-stethoscope"></i>
       <span>Diagnose</span>
     </a>
 
     <!-- Center Floating Action Pill for 24/7 Call -->
     <a href="emergency-dispatch.html" class="appbar-item emergency-pill">
       <div class="pill-icon-wrap">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <i class="fa-solid fa-phone-volume"></i>
       </div>
       <span>24/7 Call</span>
     </a>
 
     <a href="rfq.html" class="appbar-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      <i class="fa-solid fa-file-signature"></i>
       <span>RFQ</span>
     </a>
   </nav>

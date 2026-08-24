@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>القطاعات الصناعية التي نخدمها — ميك فلو السعودية</title>
   <meta name="description" content="خدمات هندسية تخصصية لقطاعات النفط والغاز، البتروكيماويات، تحلية المياه (SWCC)، توليد الطاقة (SEC)، والتعدين (معادن) في السعودية.">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../mobile-app.css">
 </head>
@@ -13,13 +15,13 @@
   <div class="topbar">
     <div class="container topbar-wrapper">
       <div class="topbar-hubs">
-        <span class="hub-tag">🏢 <strong>المكتب الرئيسي:</strong> جدة</span>
-        <span class="hub-divider">|</span>
-        <span class="hub-tag">📍 <strong>الفروع التشغيلية:</strong> الدمام وينبع</span>
+        <span class="hub-item"><i class="fa-solid fa-building-flag"></i> <strong>المكتب الرئيسي:</strong> جدة</span>
+        <span class="hub-sep">|</span>
+        <span class="hub-item"><i class="fa-solid fa-location-dot"></i> <strong>الفروع التشغيلية:</strong> الدمام وينبع</span>
       </div>
-      <div class="topbar-actions">
-        <a href="emergency-dispatch.html" class="topbar-link emergency-hotline">📞 طوارئ الأعطال 24/7: 92221 509 54 966+</a>
-        <a href="../industries.html" class="lang-toggle-btn">English</a>
+      <div class="topbar-right">
+        <a href="emergency-dispatch.html" class="topbar-hotline"><i class="fa-solid fa-phone-volume"></i> طوارئ الأعطال: 92221 509 54 966+</a>
+        <a href="../industries.html" class="lang-btn"><i class="fa-solid fa-globe"></i> English</a>
       </div>
     </div>
   </div>
@@ -27,9 +29,10 @@
   <header class="main-header">
     <div class="container nav-wrapper">
       <a href="index.html" class="brand-logo">
-        <div class="brand-icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
-        <div class="brand-text-group"><span class="brand-title">ميك<span>فلو</span></span><span class="brand-subtitle">الخدمات الصناعية السعودية</span></div>
+        <div class="brand-icon"><i class="fa-solid fa-gears"></i></div>
+        <span class="brand-name">ميك<span>فلو</span></span>
       </a>
+
       <nav class="desktop-nav">
         <a href="index.html" class="nav-link">الرئيسية</a>
         <a href="about.html" class="nav-link">عن الشركة</a>
@@ -39,76 +42,95 @@
         <a href="diagnostic.html" class="nav-link">أداة التشخيص</a>
         <a href="contact.html" class="nav-link">تواصل معنا</a>
       </nav>
-      <div class="nav-actions">
-        <a href="rfq.html" class="btn-rfq-nav">طلب حل فني</a>
-        <button class="mobile-menu-trigger" id="mobileMenuTrigger"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+
+      <div class="nav-actions-group">
+        <a href="rfq.html" class="btn-rfq-gold">طلب حل فني</a>
+        <button class="mobile-menu-btn" id="mobileMenuTrigger"><i class="fa-solid fa-bars-staggered"></i></button>
       </div>
     </div>
   </header>
 
-  <section style="background: linear-gradient(180deg, var(--color-obsidian) 0%, var(--color-obsidian-dark) 100%); padding: 70px 0; color: #FFFFFF; border-bottom: 1px solid var(--color-border-dark);">
+  <section class="hero-monolith" style="padding: 70px 0;">
     <div class="container">
-      <span class="hero-badge-pill">القطاعات والتطبيقات الحيوية</span>
+      <span class="hero-badge-pill"><span class="pulse-dot"></span> القطاعات والتطبيقات الحيوية</span>
       <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px;">القطاعات الصناعية التي ندعم موثوقيتها</h1>
-      <p style="font-size: 18px; color: var(--color-text-on-dark-muted); max-width: 800px;">
+      <p class="hero-lead-text">
         دعم المنشآت الحيوية في المملكة بأعلى معايير الدقة والجاهزية للحد من فترات التوقف غير المخططة.
       </p>
     </div>
   </section>
 
-  <section class="section-padding" style="background: var(--color-bg-canvas);">
+  <section class="section-spacer" style="background: var(--color-canvas);">
     <div class="container">
-      <div class="divisions-grid">
+      <div class="divisions-3col-grid">
         
-        <div class="division-card">
-          <h3 class="division-title" style="color: var(--color-tech-cyan);">النفط والغاز والتكرير</h3>
-          <p class="division-desc">مضخات التعزيز متعددة الأطوار، ضواغط الهيدروجين API 617، أختام API 682 Plan 53B وعمرات المصافي.</p>
+        <div class="division-box-card">
+          <div class="division-icon-badge" style="background: rgba(0, 128, 255, 0.1); color: var(--color-tech-cyan);">
+            <i class="fa-solid fa-oil-well"></i>
+          </div>
+          <h3 class="division-card-title">النفط والغاز والتكرير</h3>
+          <p class="division-card-desc">مضخات التعزيز متعددة الأطوار، ضواغط الهيدروجين API 617، أختام API 682 Plan 53B وعمرات المصافي.</p>
         </div>
 
-        <div class="division-card">
-          <h3 class="division-title" style="color: var(--color-saudi-emerald);">البتروكيماويات والبوليمرات</h3>
-          <p class="division-desc">أختام خلاطات المفاعلات الكيميائية، مضخات الزيت الحراري واختبارات الجودة غير الإتلافية.</p>
+        <div class="division-box-card">
+          <div class="division-icon-badge" style="background: rgba(0, 108, 53, 0.1); color: var(--color-saudi-emerald);">
+            <i class="fa-solid fa-flask-vial"></i>
+          </div>
+          <h3 class="division-card-title">البتروكيماويات والبوليمرات</h3>
+          <p class="division-card-desc">أختام خلاطات المفاعلات الكيميائية، مضخات الزيت الحراري واختبارات الجودة غير الإتلافية.</p>
         </div>
 
-        <div class="division-card">
-          <h3 class="division-title" style="color: var(--color-safety-amber);">تحلية المياه (SWCC)</h3>
-          <p class="division-desc">مضخات التناضح العكسي (RO) ذات الضغط العالي، تصنيع قطع السوبر دوبلكس، والطلاء المقاوم للتكهف.</p>
+        <div class="division-box-card">
+          <div class="division-icon-badge" style="background: rgba(255, 122, 0, 0.1); color: var(--color-safety-amber);">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+          <h3 class="division-card-title">تحلية المياه (SWCC)</h3>
+          <p class="division-card-desc">مضخات التناضح العكسي (RO) ذات الضغط العالي، تصنيع قطع السوبر دوبلكس، والطلاء المقاوم للتكهف.</p>
         </div>
 
-        <div class="division-card">
-          <h3 class="division-title" style="color: #0EA5E9);">توليد الطاقة (SEC)</h3>
-          <p class="division-desc">مضخات تغذية الغلايات متعددة المراحل، مساعدات التوربينات البخارية، وشد فلانجات الخطوط الحارة.</p>
+        <div class="division-box-card">
+          <div class="division-icon-badge" style="background: rgba(14, 165, 233, 0.1); color: #0EA5E9);">
+            <i class="fa-solid fa-plug-circle-bolt"></i>
+          </div>
+          <h3 class="division-card-title">توليد الطاقة (SEC)</h3>
+          <p class="division-card-desc">مضخات تغذية الغلايات متعددة المراحل، مساعدات التوربينات البخارية، وشد فلانجات الخطوط الحارة.</p>
         </div>
 
-        <div class="division-card">
-          <h3 class="division-title" style="color: #F59E0B);">التعدين والفوسفات (معادن)</h3>
-          <p class="division-desc">مضخات الطمي الكاشط، صناديق التروس الثقيلة، وتطبيق طلاءات كربيد التنجستن المقاومة للاحتكاك.</p>
+        <div class="division-box-card">
+          <div class="division-icon-badge" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B);">
+            <i class="fa-solid fa-gem"></i>
+          </div>
+          <h3 class="division-card-title">التعدين والفوسفات (معادن)</h3>
+          <p class="division-card-desc">مضخات الطمي الكاشط، صناديق التروس الثقيلة، وتطبيق طلاءات كربيد التنجستن المقاومة للاحتكاك.</p>
         </div>
 
-        <div class="division-card">
-          <h3 class="division-title" style="color: #6366F1);">المرافق البحرية والموانئ</h3>
-          <p class="division-desc">مضخات نزح المياه، محاذاة ليزرية لمحاور دفع السفن، وعمرات مآخذ مياه التبريد البحرية.</p>
+        <div class="division-box-card">
+          <div class="division-icon-badge" style="background: rgba(99, 102, 241, 0.1); color: #6366F1);">
+            <i class="fa-solid fa-ship"></i>
+          </div>
+          <h3 class="division-card-title">المرافق البحرية والموانئ</h3>
+          <p class="division-card-desc">مضخات نزح المياه، محاذاة ليزرية لمحاور دفع السفن، وعمرات مآخذ مياه التبريد البحرية.</p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <footer class="footer-main">
+  <footer class="master-footer">
     <div class="container">
-      <div class="footer-bottom">
+      <div class="footer-bottom-row" style="border-top:none; padding-top:0;">
         <span>&copy; 2026 شركة ميك فلو السعودية المحدودة. المكتب الرئيسي: جدة | الفروع: الدمام وينبع.</span>
-        <a href="rfq.html" style="color: var(--color-safety-amber); font-weight:700;">طلب حل فني للقطاع ➔</a>
+        <a href="rfq.html" style="color: var(--color-safety-amber); font-weight:700;">طلب حل فني للقطاع <i class="fa-solid fa-arrow-left"></i></a>
       </div>
     </div>
   </footer>
 
   <nav class="mobile-bottom-appbar">
-    <a href="index.html" class="appbar-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>الرئيسية</span></a>
-    <a href="services.html" class="appbar-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg><span>الخدمات</span></a>
-    <a href="diagnostic.html" class="appbar-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span>التشخيص</span></a>
-    <a href="emergency-dispatch.html" class="appbar-item emergency-pill"><div class="pill-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><span>طوارئ 24/7</span></a>
-    <a href="rfq.html" class="appbar-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span>طلب تسعير</span></a>
+    <a href="index.html" class="appbar-item"><i class="fa-solid fa-house"></i><span>الرئيسية</span></a>
+    <a href="services.html" class="appbar-item"><i class="fa-solid fa-layer-group"></i><span>الخدمات</span></a>
+    <a href="diagnostic.html" class="appbar-item"><i class="fa-solid fa-stethoscope"></i><span>التشخيص</span></a>
+    <a href="emergency-dispatch.html" class="appbar-item emergency-pill"><div class="pill-icon-wrap"><i class="fa-solid fa-phone-volume"></i></div><span>طوارئ 24/7</span></a>
+    <a href="rfq.html" class="appbar-item"><i class="fa-solid fa-file-signature"></i><span>طلب تسعير</span></a>
   </nav>
 
   <script src="../script.js"></script>
