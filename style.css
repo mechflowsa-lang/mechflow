@@ -636,70 +636,112 @@ html[dir="rtl"] .skewed-card-inner {
 }
 
 /* ==========================================================================
-   CLIENT LOGOS BAR ("TRUSTED BY INDUSTRY LEADERS")
+   CLIENT LOGOS INFINITE MARQUEE TICKER
    ========================================================================== */
-.client-leaders-bar {
+.client-marquee-section {
   background: #FFFFFF;
   border-bottom: 1px solid var(--color-border);
-  padding: 26px 0;
+  padding: 28px 0 24px;
+  overflow: hidden;
+  position: relative;
 }
 
-.leaders-wrapper {
+.marquee-header-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 20px;
   flex-wrap: wrap;
-  gap: 24px;
+  text-align: center;
 }
 
-.leaders-label {
+.marquee-tag {
+  display: inline-block;
+  background: var(--color-brand-gold-tint);
+  border: 1.5px solid var(--color-brand-bronze-border);
+  color: var(--color-brand-bronze-dark);
   font-family: var(--font-heading);
-  font-size: 13px;
-  font-weight: 900;
-  color: var(--color-brand-charcoal);
-  line-height: 1.2;
-  letter-spacing: 0.04em;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  border-right: 2px solid var(--color-border);
-  padding-right: 24px;
+  padding: 4px 12px;
+  border-radius: var(--radius-xs);
+}
+
+.marquee-sub {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #475569;
+}
+
+.marquee-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent 0%, #000 6%, #000 94%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 6%, #000 94%, transparent 100%);
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+  width: max-content;
+  animation: marqueeScroll 24s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  min-width: 140px;
+  padding: 0 10px;
   flex-shrink: 0;
 }
 
-html[dir="rtl"] .leaders-label {
-  border-right: none;
-  border-left: 2px solid var(--color-border);
-  padding-right: 0;
-  padding-left: 24px;
-}
-
-.leaders-logos-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-grow: 1;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.client-logo-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-family: var(--font-heading);
-  font-weight: 800;
-  color: #1E293B;
-  font-size: 17px;
-  opacity: 0.85;
-  transition: opacity var(--transition-fast);
-}
-
-.client-logo-item:hover {
-  opacity: 1;
-}
-
-.client-logo-item svg, .client-logo-item img {
-  height: 28px;
+.marquee-item img {
+  height: 40px;
   width: auto;
+  max-width: 170px;
+  object-fit: contain;
+  filter: grayscale(15%);
+  opacity: 0.85;
+  transition: all var(--transition-fast);
+}
+
+.marquee-item:hover img {
+  filter: none;
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333333%);
+  }
+}
+
+html[dir="rtl"] .marquee-track {
+  animation: marqueeScrollRTL 24s linear infinite;
+}
+
+@keyframes marqueeScrollRTL {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(33.333333%);
+  }
 }
 
 /* ==========================================================================
