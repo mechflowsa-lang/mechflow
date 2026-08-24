@@ -507,48 +507,64 @@ html[dir="rtl"] .mega-menu-box {
 .trust-avatar-group {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .trust-avatar {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 2px solid #051329;
-  object-fit: cover;
-  margin-left: -10px;
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  min-height: 38px !important;
+  max-width: 38px !important;
+  max-height: 38px !important;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+  border: 2.5px solid #051329 !important;
+  margin-left: -12px !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
 }
 
 .trust-avatar:first-child {
-  margin-left: 0;
+  margin-left: 0 !important;
 }
 
 html[dir="rtl"] .trust-avatar {
-  margin-left: 0;
-  margin-right: -10px;
+  margin-left: 0 !important;
+  margin-right: -12px !important;
 }
 
 html[dir="rtl"] .trust-avatar:first-child {
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 
 .trust-avatar-more {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 2px solid #051329;
-  background: var(--color-brand-bronze);
-  color: #FFFFFF;
-  font-size: 10.5px;
-  font-weight: 900;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: -10px;
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  min-height: 38px !important;
+  max-width: 38px !important;
+  max-height: 38px !important;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  aspect-ratio: 1 / 1 !important;
+  border: 2.5px solid #051329 !important;
+  background: var(--color-brand-bronze) !important;
+  color: #FFFFFF !important;
+  font-size: 11px !important;
+  font-weight: 900 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-left: -12px !important;
+  flex-shrink: 0 !important;
 }
 
 html[dir="rtl"] .trust-avatar-more {
-  margin-left: 0;
-  margin-right: -10px;
+  margin-left: 0 !important;
+  margin-right: -12px !important;
 }
 
 .trust-text-block {
@@ -1749,16 +1765,34 @@ html[dir="rtl"] .footer-nav-list a:hover {
   }
 
   .hero-micro-features-2line {
-    grid-template-columns: 1fr;
-    gap: 6px;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px 6px !important;
+  }
+
+  .micro-badge-icon {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 12px !important;
+    border-radius: 7px !important;
+  }
+
+  .micro-badge-text {
+    font-size: 10px !important;
+    line-height: 1.15 !important;
   }
 
   .hero-cards-trio {
-    grid-template-columns: 1fr;
-    gap: 8px;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 6px !important;
   }
 
   .skewed-hero-card {
-    height: 110px;
+    height: 135px !important;
+  }
+
+  .skewed-card-title {
+    font-size: 8.5px !important;
   }
 }
