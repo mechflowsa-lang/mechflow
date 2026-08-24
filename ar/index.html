@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>ميك فلو السعودية — الهندسة الميكانيكية، صيانة التوربينات والأختام الميكانيكية</title>
+  <meta name="description" content="الشركة الرائدة في هندسة وصيانة التوربينات والمضخات البترولية (API 610) والأختام الغازية الجافة (API 692) والصيانة الشاملة للمصانع (TAR) عبر جدة والدمام وينبع.">
+  
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../mobile-app.css">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23006C35'/><path d='M8 16L14 22L24 10' stroke='white' stroke-width='3' stroke-linecap='round'/></svg>">
+</head>
+<body>
+
+  <!-- شريط الإشعارات العلوي -->
+  <div class="topbar">
+    <div class="container topbar-wrapper">
+      <div class="topbar-hubs">
+        <span class="hub-tag">🏢 <strong>المكتب الرئيسي:</strong> جدة</span>
+        <span class="hub-divider">|</span>
+        <span class="hub-tag">📍 <strong>الفروع التشغيلية:</strong> الدمام وينبع</span>
+      </div>
+      <div class="topbar-actions">
+        <a href="emergency-dispatch.html" class="topbar-link emergency-hotline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          طوارئ الأعطال 24/7: 92221 509 54 966+
+        </a>
+        <a href="../index.html" class="lang-toggle-btn" title="التحويل للإنجليزية">
+          English (الإنجليزية)
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- الهيدر الرئيسي -->
+  <header class="main-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon-box">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="brand-text-group">
+          <span class="brand-title">ميك<span>فلو</span></span>
+          <span class="brand-subtitle">الخدمات الصناعية السعودية</span>
+        </div>
+      </a>
+
+      <!-- القائمة الرئيسية -->
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link active">الرئيسية</a>
+        <a href="about.html" class="nav-link">عن الشركة</a>
+        <a href="services.html" class="nav-link">الخدمات والأقسام</a>
+        <a href="industries.html" class="nav-link">القطاعات الصناعية</a>
+        <a href="case-studies.html" class="nav-link">دراسات الحالة</a>
+        <a href="diagnostic.html" class="nav-link">أداة التشخيص</a>
+        <a href="contact.html" class="nav-link">تواصل معنا</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="rfq.html" class="btn-rfq-nav">
+          <span>طلب حل فني / عرض سعر</span>
+        </a>
+        <button class="mobile-menu-trigger" id="mobileMenuTrigger"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- القائمة الجانبية للشاشات الصغيرة -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
+    <div class="mobile-drawer">
+      <div>
+        <div class="mobile-drawer-header">
+          <div class="brand-logo"><span class="brand-title">ميك<span>فلو</span></span></div>
+          <button class="mobile-drawer-close" id="mobileDrawerClose"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+        </div>
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link active">الرئيسية</a></li>
+          <li><a href="about.html" class="mobile-nav-link">عن الشركة والحوكمة</a></li>
+          <li><a href="services.html" class="mobile-nav-link">كافة الأقسام الهندسية (6 أقسام)</a></li>
+          <li><a href="turbomachinery.html" class="mobile-nav-link">التوربينات والمضخات البترولية</a></li>
+          <li><a href="fluid-gas-sealing.html" class="mobile-nav-link">الأختام الميكانيكية والغازية الجافة</a></li>
+          <li><a href="plant-turnaround.html" class="mobile-nav-link">العمرات والصيانة الشاملة للمصانع</a></li>
+          <li><a href="advanced-engineering.html" class="mobile-nav-link">المحاكاة الرقمية والمسح ثلاثي الأبعاد</a></li>
+          <li><a href="electrical-motors.html" class="mobile-nav-link">إعادة لف المحركات الكهربائية</a></li>
+          <li><a href="industries.html" class="mobile-nav-link">القطاعات التي نخدمها</a></li>
+          <li><a href="case-studies.html" class="mobile-nav-link">دراسات الحالة والنتائج الميدانية</a></li>
+          <li><a href="diagnostic.html" class="mobile-nav-link">أداة التشخيص التفاعلي</a></li>
+          <li><a href="emergency-dispatch.html" class="mobile-nav-link">طوارئ الأعطال 24/7</a></li>
+          <li><a href="rfq.html" class="mobile-nav-link">طلب حل فني وعرض أسعار</a></li>
+          <li><a href="contact.html" class="mobile-nav-link">المواقع وفروع المملكة</a></li>
+        </ul>
+      </div>
+      <div class="mobile-drawer-footer">
+        <div class="mobile-hotline-box">
+          <strong>خط الطوارئ المباشر في المملكة</strong>
+          <span class="mobile-hotline-num">+966 54 509 2221</span>
+        </div>
+        <a href="../index.html" class="lang-toggle-btn" style="justify-content:center;">🌐 English (النسخة الإنجليزية)</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- البانر الرئيسي -->
+  <section class="hero-wrapper">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="container">
+      <div class="hero-content-grid">
+        <div>
+          <div class="hero-badge-pill">
+            <span>🇸🇦</span> الريادة الهندسية المستقلة في المملكة العربية السعودية
+          </div>
+          <h1 class="hero-main-title">
+            تعزيز موثوقية المنشآت الصناعية بـ <span class="cyan">الهندسة الدقيقة</span> و <span class="emerald">العمرات المتقدمة</span>
+          </h1>
+          <p class="hero-desc">
+            حلول متكاملة لصيانة التوربينات، واختبار الأختام الغازية الجافة (API 692)، والمحاذاة الليزرية، والتشغيل الميداني مع استجابة طوارئ على مدار 24 ساعة عبر مراكزنا في جدة والدمام وينبع.
+          </p>
+          <div class="hero-cta-group">
+            <a href="rfq.html" class="btn-primary-hero">
+              <span>طلب حل فني مخصص</span>
+            </a>
+            <a href="emergency-dispatch.html" class="btn-secondary-hero">
+              <span>طوارئ الأعطال 24/7</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual-card">
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80" alt="ورشة الهندسة الصناعية" class="hero-visual-img">
+          <div class="hero-visual-overlay">
+            <span class="hero-visual-badge">معايير الاختبار API 682 و API 692</span>
+            <div class="hero-visual-caption">منصات اختبار الغاز عالي الضغط وموازنة ديناميكية حتى 10 أطنان</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- إحصائيات حية -->
+      <div class="hero-metrics-bar" style="margin-top: 50px;">
+        <div class="metric-item">
+          <span class="metric-number"><span data-counter="450">450</span>+</span>
+          <span class="metric-label">سنوات خبرة تخصصية متراكمة</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-number"><span data-counter="1200">1200</span>+</span>
+          <span class="metric-label">مشروع صيانة وعمرة منجز</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-number"><span data-counter="5000">5000</span>+</span>
+          <span class="metric-label">مانع تسرب تم اختباره وتجديده</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-number">0.00</span>
+          <span class="metric-label">سجل الحوادث المهدرة للوقت (LTI)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- الأقسام الهندسية الستة -->
+  <section class="section-padding" style="background-color: var(--color-bg-canvas);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">تكامل هندسي شامل</span>
+        <h2 class="section-title">أقسام الخدمات الهندسية المتخصصة</h2>
+        <p class="section-subtitle">دعم دورة حياة الأصول الميكانيكية بالكامل من المعدات الدوارة الأساسية إلى أختام الضغط العالي والعمرات الميدانية.</p>
+      </div>
+
+      <div class="divisions-grid">
+        <!-- قسم 1 -->
+        <div class="division-card">
+          <div>
+            <div class="division-header-box">
+              <div class="division-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+              <div><span class="division-number">القسم 01</span><h3 class="division-title">التوربينات والمضخات البترولية</h3></div>
+            </div>
+            <p class="division-desc" style="margin: 16px 0;">صيانة وتأهيل مضخات API 610 والتوربينات البخارية، وموازنة ديناميكية حتى 10 أطنان ومحاذاة ليزرية دقيقة.</p>
+          </div>
+          <a href="turbomachinery.html" class="division-btn"><span>استعراض قدرات القسم</span> ➔</a>
+        </div>
+
+        <!-- قسم 2 -->
+        <div class="division-card">
+          <div>
+            <div class="division-header-box">
+              <div class="division-icon" style="background: rgba(0, 128, 255, 0.1); color: var(--color-tech-cyan);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/></svg></div>
+              <div><span class="division-number">القسم 02</span><h3 class="division-title">الأختام الميكانيكية والغازية الجافة</h3></div>
+            </div>
+            <p class="division-desc" style="margin: 16px 0;">أختام الكومبريسورات الغازية الجافة (API 692) في غرف معقمة مع منصة اختبار نيتروجين ديناميكية حتى 150 بار وجلخ هيليوم نانومتري.</p>
+          </div>
+          <a href="fluid-gas-sealing.html" class="division-btn"><span>استعراض تقنيات الأختام</span> ➔</a>
+        </div>
+
+        <!-- قسم 3 -->
+        <div class="division-card">
+          <div>
+            <div class="division-header-box">
+              <div class="division-icon" style="background: rgba(255, 122, 0, 0.1); color: var(--color-safety-amber);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+              <div><span class="division-number">القسم 03</span><h3 class="division-title">عمرات وصيانة المصانع (TAR)</h3></div>
+            </div>
+            <p class="division-desc" style="margin: 16px 0;">إدارة عمرات الإيقاف الحرج، والشد الهيدروليكي للبراغي (ASME PCC-1)، وخراطة الفلانجات موقعياً حتى 120 بوصة واختبار ضغط 40,000 PSI.</p>
+          </div>
+          <a href="plant-turnaround.html" class="division-btn"><span>استعراض خدمات العمرات</span> ➔</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- الفروع الثلاثية -->
+  <section class="section-padding" style="background-color: var(--color-bg-alt);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">شبكة فروع المملكة</span>
+        <h2 class="section-title">مواقعنا الاستراتيجية في المملكة</h2>
+      </div>
+
+      <div class="tri-hub-grid">
+        <div class="hub-card head-office">
+          <span class="hub-head-tag">المكتب الرئيسي والمصنع المركزي</span>
+          <div class="hub-role-badge">المنطقة الغربية</div>
+          <h3 class="hub-city-name">جدة — المقر الرئيسي</h3>
+          <p style="font-size:14px; color:var(--color-text-body);">حي السرورية، النطاق الصناعي بالخمرة، جدة</p>
+          <p style="font-size:14px; font-weight:700;">هاتف: 9249 470 56 966+ / 92221 509 54 966+</p>
+        </div>
+
+        <div class="hub-card">
+          <div class="hub-role-badge">المنطقة الشرقية</div>
+          <h3 class="hub-city-name">فرع الدمام</h3>
+          <p style="font-size:14px; color:var(--color-text-body);">المدينة الصناعية الثانية، محور الدمام والجبيل</p>
+          <p style="font-size:14px; font-weight:700;">هاتف: 92221 509 54 966+</p>
+        </div>
+
+        <div class="hub-card">
+          <div class="hub-role-badge">منطقة البحر الأحمر البتروكيماوية</div>
+          <h3 class="hub-city-name">فرع ينبع</h3>
+          <p style="font-size:14px; color:var(--color-text-body);">منطقة الهيئة الملكية الصناعية (RCJY)، ينبع</p>
+          <p style="font-size:14px; font-weight:700;">هاتف: 92221 509 54 966+</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>&copy; 2026 شركة ميك فلو السعودية المحدودة. المكتب الرئيسي: جدة | الفروع: الدمام وينبع.</span>
+        <span>متوافق مع مستهدفات رؤية المملكة 2030 لتوطين الصناعة.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- شريط التطبيق السفلي للجوال -->
+  <nav class="mobile-bottom-appbar" aria-label="شريط التنقل السفلي">
+    <a href="index.html" class="appbar-item active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span>الرئيسية</span>
+    </a>
+
+    <a href="services.html" class="appbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      <span>الخدمات</span>
+    </a>
+
+    <a href="diagnostic.html" class="appbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <span>التشخيص</span>
+    </a>
+
+    <a href="emergency-dispatch.html" class="appbar-item emergency-pill">
+      <div class="pill-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </div>
+      <span>طوارئ 24/7</span>
+    </a>
+
+    <a href="rfq.html" class="appbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      <span>طلب تسعير</span>
+    </a>
+  </nav>
+
+  <script src="../script.js"></script>
+</body>
+</html>

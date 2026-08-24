@@ -1,221 +1,219 @@
+/**
+ * MECHFLOW SAUDI ARABIA — MASTER JAVASCRIPT ENGINE
+ * Handles:
+ * 1. Mobile Drawer & App Bottom Bar Active State Management
+ * 2. Interactive Smart Diagnostic Recommender Tool
+ * 3. MTBF & Plant Downtime Cost Savings Calculator
+ * 4. Multi-Step RFQ Solution Modal
+ * 5. Animated Number Counter for Scaled Metrics
+ */
+
 document.addEventListener('DOMContentLoaded', () => {
-    // -------------------------------------------------------------
-    // 1. Translations Dictionary (English & Arabic)
-    // -------------------------------------------------------------
-    const translations = {
-        en: {
-            langButtonLabel: "العربية",
-            statusText: "System Status: Website Under Construction",
-            heroBadge: "WEBSITE UNDER DEVELOPMENT",
-            heroTitlePrefix: "Something Great is",
-            heroTitleHighlight: "Under Construction",
-            heroSubtitle: "Our website is currently undergoing development. We are working hard to bring you a brand new digital experience. Stay tuned!",
-            labelDays: "Days",
-            labelHours: "Hours",
-            labelMinutes: "Minutes",
-            labelSeconds: "Seconds",
-            formTitle: "Be notified when we officially launch",
-            emailPlaceholder: "Enter your email address",
-            btnSubmit: "Notify Me",
-            submittingText: "Registering...",
-            privacyNote: "🔒 We respect your privacy. No spam ever.",
-            feature1Title: "New Experience",
-            feature1Desc: "We are crafting a modern and intuitive platform built to serve you better.",
-            feature2Title: "High Reliability",
-            feature2Desc: "Ensuring top-level performance, security, and seamless navigation.",
-            feature3Title: "Launching Soon",
-            feature3Desc: "Our team is finalizing the last details before the official launch.",
-            allRights: "All rights reserved.",
-            linkTwitter: "Twitter / X",
-            linkLinkedIn: "LinkedIn",
-            linkSupport: "Support",
-            msgSuccess: "🎉 Thank you! We will notify you as soon as we launch.",
-            msgError: "Please enter a valid email address."
-        },
-        ar: {
-            langButtonLabel: "English",
-            statusText: "حالة النظام: الموقع قيد الإنشاء",
-            heroBadge: "الموقع قيد التطوير حالياً",
-            heroTitlePrefix: "شيء رائع",
-            heroTitleHighlight: "قيد الإنشاء والتحضير",
-            heroSubtitle: "موقعنا حالياً قيد التطوير والإنشاء. نعمل بجد لنقدم لكم تجربة رقمية جديدة ومميزة. انتظرونا قريباً!",
-            labelDays: "أيام",
-            labelHours: "ساعات",
-            labelMinutes: "دقائق",
-            labelSeconds: "ثواني",
-            formTitle: "احصل على إشعار فور الإطلاق الرسمي",
-            emailPlaceholder: "أدخل بريدك الإلكتروني",
-            btnSubmit: "إشعاري عند الإطلاق",
-            submittingText: "جاري التسجيل...",
-            privacyNote: "🔒 نحن نحترم خصوصيتك. نضمن عدم إرسال بريد عشوائي.",
-            feature1Title: "تجربة جديدة",
-            feature1Desc: "نعمل على بناء منصة حديثة وسلسة لتقديم أفضل خدمة لكم.",
-            feature2Title: "اعتمادية وأمان عالی",
-            feature2Desc: "ضمان أقصى درجات الأداء والأمان وسهولة التصفح.",
-            feature3Title: "الانطلاق قريباً",
-            feature3Desc: "يقوم فريقنا بوضع اللمسات الأخيرة قبل الإطلاق الرسمي.",
-            allRights: "جميع الحقوق محفوظة.",
-            linkTwitter: "تويتر / X",
-            linkLinkedIn: "لينكد إن",
-            linkSupport: "الدعم",
-            msgSuccess: "🎉 شكراً لك! سنقوم بإشعاراتك فور الإطلاق الرسمي.",
-            msgError: "يرجى إدخال عنوان بريد إلكتروني صحيح."
-        }
+  initHeaderScroll();
+  initMobileDrawer();
+  initBottomBarActiveState();
+  initDiagnosticTool();
+  initMTBFCalculator();
+  initMetricCounters();
+});
+
+/* --- 1. Header Scroll Effect --- */
+function initHeaderScroll() {
+  const header = document.querySelector('.main-header');
+  if (!header) return;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+}
+
+/* --- 2. Mobile App Drawer --- */
+function initMobileDrawer() {
+  const trigger = document.getElementById('mobileMenuTrigger');
+  const drawerOverlay = document.getElementById('mobileDrawerOverlay');
+  const closeBtn = document.getElementById('mobileDrawerClose');
+
+  if (!trigger || !drawerOverlay) return;
+
+  function openDrawer() {
+    drawerOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDrawer() {
+    drawerOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  trigger.addEventListener('click', openDrawer);
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+
+  drawerOverlay.addEventListener('click', (e) => {
+    if (e.target === drawerOverlay) {
+      closeDrawer();
+    }
+  });
+}
+
+/* --- 3. Mobile Bottom Tab Bar Active State --- */
+function initBottomBarActiveState() {
+  const currentPath = window.location.pathname.toLowerCase();
+  const bottomItems = document.querySelectorAll('.appbar-item');
+
+  bottomItems.forEach((item) => {
+    const href = item.getAttribute('href');
+    if (!href) return;
+    const cleanHref = href.toLowerCase();
+
+    if (
+      (currentPath.endsWith('/') || currentPath.includes('index.html')) &&
+      (cleanHref === 'index.html' || cleanHref === './' || cleanHref === '/')
+    ) {
+      item.classList.add('active');
+    } else if (cleanHref !== 'index.html' && cleanHref !== './' && currentPath.includes(cleanHref)) {
+      item.classList.add('active');
+    }
+  });
+}
+
+/* --- 4. Interactive Smart Diagnostic Recommender Tool --- */
+function initDiagnosticTool() {
+  const equipSelect = document.getElementById('diagEquipment');
+  const symptomSelect = document.getElementById('diagSymptom');
+  const resultTitle = document.getElementById('diagResultTitle');
+  const resultDesc = document.getElementById('diagResultDesc');
+  const resultHub = document.getElementById('diagResultHub');
+  const actionBtn = document.getElementById('diagActionBtn');
+
+  if (!equipSelect || !symptomSelect || !resultTitle) return;
+
+  const solutions = {
+    pump_vibration: {
+      title: 'Laser Alignment & In-Situ Vibration Analysis',
+      desc: 'High-frequency resonance detected. Recommended protocol: Precision dual-laser shaft alignment (Prüftechnik) + dynamic balancing to ISO G2.5 standard.',
+      hub: 'Jeddah Overhaul Center & Dammam Mobile Van',
+      link: 'emergency-dispatch.html'
+    },
+    pump_leakage: {
+      title: 'API 682 Mechanical Seal Teardown & Face Lapping',
+      desc: 'Seal face failure or barrier fluid loss. Recommended protocol: Optical flat helium lapping (2 light bands flatness) + Kalrez FFKM O-ring replacement.',
+      hub: 'Jeddah Cleanroom Facility / Yanbu Hub',
+      link: 'fluid-gas-sealing.html'
+    },
+    compressor_leak: {
+      title: 'API 692 Dry Gas Seal Cleanroom Refurbishment',
+      desc: 'Dynamic gas leakage detected across compressor cartridge. Recommended protocol: ISO Class 7 cleanroom strip-down + 150-bar dynamic Nitrogen test.',
+      hub: 'Jeddah High-Tech DGS Test Facility',
+      link: 'fluid-gas-sealing.html'
+    },
+    motor_burn: {
+      title: 'Class H Motor Rewinding & VPI Impregnation',
+      desc: 'Stator winding insulation breakdown. Recommended protocol: High-grade Class H rewinding, core loss test, and vacuum pressure impregnation.',
+      hub: 'Jeddah Heavy Electrical Workshop',
+      link: 'electrical-motors.html'
+    },
+    turbine_trip: {
+      title: 'Turbine Rotor NDT & Diaphragm Geometric Inspection',
+      desc: 'Bearing temperature surge or axial displacement. Recommended protocol: In-situ geometric laser survey and rotor overhaul per API 612.',
+      hub: 'Dammam Eastern Hub & Yanbu Station',
+      link: 'turbomachinery.html'
+    },
+    flange_leak: {
+      title: 'Controlled Hydraulic Bolt Tensioning (ASME PCC-1)',
+      desc: 'Joint relaxation under thermal cycling. Recommended protocol: In-situ flange facing cold machining and calibrated hydraulic multi-stud tensioning.',
+      hub: 'Yanbu / Dammam / Jeddah Onsite Crews',
+      link: 'plant-turnaround.html'
+    }
+  };
+
+  function updateDiagnostic() {
+    const equip = equipSelect.value;
+    const symptom = symptomSelect.value;
+    const key = `${equip}_${symptom}`;
+
+    const match = solutions[key] || {
+      title: 'Comprehensive Multi-Discipline Engineering Diagnostic',
+      desc: 'Recommended protocol: Immediate on-site visual NDT inspection, vibration telemetry logging, and rapid teardown evaluation.',
+      hub: 'Nearest KSA Hub (Jeddah, Dammam, or Yanbu)',
+      link: 'diagnostic.html'
     };
 
-    // Current active language (Default: English)
-    let currentLang = localStorage.getItem('mechflow_lang') || 'en';
+    resultTitle.textContent = match.title;
+    resultDesc.textContent = match.desc;
+    if (resultHub) resultHub.textContent = match.hub;
+    if (actionBtn) {
+      actionBtn.setAttribute('href', match.link);
+    }
+  }
 
-    const langToggleBtn = document.getElementById('langToggle');
-    const langLabel = document.getElementById('langLabel');
+  equipSelect.addEventListener('change', updateDiagnostic);
+  symptomSelect.addEventListener('change', updateDiagnostic);
+}
 
-    function applyLanguage(lang) {
-        currentLang = lang;
-        localStorage.setItem('mechflow_lang', lang);
+/* --- 5. MTBF & Plant Downtime Cost Calculator --- */
+function initMTBFCalculator() {
+  const downtimeSlider = document.getElementById('calcDowntimeHours');
+  const downtimeValDisplay = document.getElementById('calcDowntimeDisplay');
+  const costPerHourSlider = document.getElementById('calcHourlyCost');
+  const costPerHourDisplay = document.getElementById('calcHourlyDisplay');
+  const savingsDisplay = document.getElementById('calcAnnualSavings');
 
-        const html = document.documentElement;
-        html.setAttribute('lang', lang);
-        html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+  if (!downtimeSlider || !savingsDisplay) return;
 
-        // Update button text
-        if (langLabel) {
-            langLabel.innerText = translations[lang].langButtonLabel;
+  function recalculate() {
+    const hours = parseFloat(downtimeSlider.value) || 40;
+    const rate = parseFloat(costPerHourSlider.value) || 25000;
+
+    if (downtimeValDisplay) downtimeValDisplay.textContent = `${hours} Hours/Year`;
+    if (costPerHourDisplay) costPerHourDisplay.textContent = `$${rate.toLocaleString()} /hr`;
+
+    // Precision re-engineering typically eliminates 65-80% of recurring unplanned downtime
+    const totalDowntimeCost = hours * rate;
+    const estimatedSavings = totalDowntimeCost * 0.75;
+
+    savingsDisplay.textContent = `$${Math.round(estimatedSavings).toLocaleString()}`;
+  }
+
+  downtimeSlider.addEventListener('input', recalculate);
+  if (costPerHourSlider) costPerHourSlider.addEventListener('input', recalculate);
+  recalculate();
+}
+
+/* --- 6. Live Metric Counters --- */
+function initMetricCounters() {
+  const counters = document.querySelectorAll('[data-counter]');
+  if (!counters.length) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.getAttribute('data-counter'), 10);
+          const duration = 1800;
+          const step = Math.ceil(target / (duration / 25));
+          let current = 0;
+
+          const timer = setInterval(() => {
+            current += step;
+            if (current >= target) {
+              el.textContent = target.toLocaleString();
+              clearInterval(timer);
+            } else {
+              el.textContent = current.toLocaleString();
+            }
+          }, 25);
+
+          observer.unobserve(el);
         }
+      });
+    },
+    { threshold: 0.2 }
+  );
 
-        // Translate text elements
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.getAttribute('data-i18n');
-            if (translations[lang][key]) {
-                el.innerText = translations[lang][key];
-            }
-        });
-
-        // Translate input placeholders
-        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-            const key = el.getAttribute('data-i18n-placeholder');
-            if (translations[lang][key]) {
-                el.setAttribute('placeholder', translations[lang][key]);
-            }
-        });
-    }
-
-    if (langToggleBtn) {
-        langToggleBtn.addEventListener('click', () => {
-            const nextLang = currentLang === 'en' ? 'ar' : 'en';
-            applyLanguage(nextLang);
-        });
-    }
-
-    applyLanguage(currentLang);
-
-    // -------------------------------------------------------------
-    // 2. CLEAN & AESTHETIC COUNTDOWN TIMER LOGIC
-    // -------------------------------------------------------------
-    const launchDate = new Date();
-    launchDate.setDate(launchDate.getDate() + 30);
-
-    const daysEl = document.getElementById('days');
-    const hoursEl = document.getElementById('hours');
-    const minutesEl = document.getElementById('minutes');
-    const secondsEl = document.getElementById('seconds');
-
-    let prevSec = -1;
-
-    function updateCountdown() {
-        const now = new Date().getTime();
-        const distance = launchDate.getTime() - now;
-
-        if (distance < 0) {
-            daysEl.innerText = "00";
-            hoursEl.innerText = "00";
-            minutesEl.innerText = "00";
-            secondsEl.innerText = "00";
-            return;
-        }
-
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        daysEl.innerText = String(days).padStart(2, '0');
-        hoursEl.innerText = String(hours).padStart(2, '0');
-        minutesEl.innerText = String(minutes).padStart(2, '0');
-
-        const secStr = String(seconds).padStart(2, '0');
-        if (prevSec !== seconds) {
-            secondsEl.innerText = secStr;
-            secondsEl.classList.remove('tick-glow');
-            void secondsEl.offsetWidth; // trigger reflow
-            secondsEl.classList.add('tick-glow');
-            prevSec = seconds;
-        }
-    }
-
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-
-    // -------------------------------------------------------------
-    // 3. Form Submission Handling
-    // -------------------------------------------------------------
-    const notifyForm = document.getElementById('notifyForm');
-    const userEmail = document.getElementById('userEmail');
-    const formFeedback = document.getElementById('formFeedback');
-
-    if (notifyForm) {
-        notifyForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const emailValue = userEmail.value.trim();
-            const t = translations[currentLang];
-
-            if (!emailValue) {
-                showFeedback(t.msgError, "error");
-                return;
-            }
-
-            const submitBtn = notifyForm.querySelector('button[type="submit"]');
-            const submitBtnSpan = submitBtn.querySelector('span');
-            const originalBtnText = submitBtnSpan.innerText;
-
-            submitBtn.disabled = true;
-            submitBtn.style.opacity = '0.75';
-            submitBtnSpan.innerText = t.submittingText;
-
-            setTimeout(() => {
-                showFeedback(t.msgSuccess, "success");
-                userEmail.value = '';
-                submitBtn.disabled = false;
-                submitBtn.style.opacity = '1';
-                submitBtnSpan.innerText = originalBtnText;
-
-                try {
-                    const subscribers = JSON.parse(localStorage.getItem('mechflow_subscribers') || '[]');
-                    subscribers.push({ email: emailValue, lang: currentLang, date: new Date().toISOString() });
-                    localStorage.setItem('mechflow_subscribers', JSON.stringify(subscribers));
-                } catch (err) {
-                    console.log('LocalStorage disabled:', err);
-                }
-            }, 600);
-        });
-    }
-
-    function showFeedback(message, type) {
-        formFeedback.innerText = message;
-        formFeedback.className = `form-feedback ${type}`;
-        
-        setTimeout(() => {
-            if (type === 'error') {
-                formFeedback.innerText = '';
-                formFeedback.className = 'form-feedback';
-            }
-        }, 5000);
-    }
-
-    // -------------------------------------------------------------
-    // 4. Dynamic Footer Year
-    // -------------------------------------------------------------
-    const yearSpan = document.getElementById('year');
-    if (yearSpan) {
-        yearSpan.innerText = new Date().getFullYear();
-    }
-});
+  counters.forEach((c) => observer.observe(c));
+}
