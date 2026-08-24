@@ -1,8 +1,8 @@
 /* ==========================================================================
-   MECHFLOW SAUDI ARABIA — OFFICIAL BRAND IDENTITY & DESIGN SYSTEM
-   Brand Palette: Deep Petrol Charcoal (#1C2A31) & Warm Industrial Bronze (#B67B2B)
+   MECHFLOW SAUDI ARABIA — OFFICIAL MASTER DESIGN SYSTEM
+   Brand Palette: Deep Petrol Charcoal (#1C2A31) & Warm Industrial Bronze/Gold (#B67B2B)
    Header & Navbar: Clean Crisp White (#FFFFFF)
-   Hero Section: Cinematic Industrial with Neon Blue Slanted Showcase Cards
+   Hero Section: User Custom Background with Slanted Cards & Social Proof
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap');
@@ -11,6 +11,7 @@
 :root {
   /* Official MechFlow Brand Palette from SVG */
   --color-brand-charcoal: #1C2A31;
+  --color-brand-charcoal-light: #2B3D47;
   --color-brand-bronze: #B67B2B;
   --color-brand-bronze-light: #B97F2F;
   --color-brand-bronze-dark: #96601D;
@@ -32,7 +33,6 @@
   --color-saudi-emerald-light: #E8F5E9;
   --color-tech-cyan: #0080FF;
   --color-tech-cyan-bright: #00D2FF;
-  --color-tech-cyan-light: #EFF6FF;
   --color-safety-amber: #FF7A00;
   
   /* Typography */
@@ -54,7 +54,7 @@
   --shadow-hover: 0 20px 35px -6px rgba(28, 42, 49, 0.12), 0 8px 16px -4px rgba(28, 42, 49, 0.06);
   --shadow-bronze: 0 6px 20px rgba(182, 123, 43, 0.35);
   --shadow-amber: 0 6px 22px rgba(255, 122, 0, 0.45);
-  --shadow-cyan-glow: 0 0 25px rgba(0, 128, 255, 0.45);
+  --shadow-cyan-glow: 0 0 25px rgba(0, 128, 255, 0.4);
 
   --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
@@ -135,97 +135,7 @@ html[dir="rtl"] h6 {
 }
 
 /* ==========================================================================
-   TOPBAR (CLEAN CRISP LIGHT)
-   ========================================================================== */
-.topbar {
-  background: #F8FAFC;
-  border-bottom: 1px solid var(--color-border);
-  color: #475569;
-  font-size: 13px;
-  padding: 8px 0;
-  position: relative;
-  z-index: 60;
-}
-
-.topbar-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.topbar-hubs {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-
-.hub-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  color: #334155;
-  font-weight: 500;
-}
-
-.hub-item i {
-  color: var(--color-brand-bronze);
-  font-size: 13px;
-}
-
-.hub-item strong {
-  color: var(--color-brand-charcoal);
-  font-weight: 700;
-}
-
-.hub-sep {
-  color: #CBD5E1;
-}
-
-.topbar-right {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.topbar-hotline {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--color-brand-bronze-dark);
-  font-weight: 800;
-  font-size: 13.5px;
-}
-
-.topbar-hotline:hover {
-  color: var(--color-brand-bronze);
-}
-
-.lang-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  padding: 4px 14px;
-  border-radius: var(--radius-full);
-  background: #FFFFFF;
-  color: var(--color-brand-charcoal);
-  border: 1px solid var(--color-border);
-  font-size: 12px;
-  font-weight: 700;
-  transition: all var(--transition-fast);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-}
-
-.lang-btn:hover {
-  background: var(--color-brand-charcoal);
-  color: #FFFFFF;
-  border-color: var(--color-brand-charcoal);
-}
-
-/* ==========================================================================
-   HEADER & NAVBAR (CLEAN WHITE WITH OFFICIAL LOGO)
+   HEADER & NAVBAR (CLEAN CRISP WHITE)
    ========================================================================== */
 .main-header {
   background: #FFFFFF;
@@ -241,7 +151,7 @@ html[dir="rtl"] h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 76px;
 }
 
 .brand-logo {
@@ -251,7 +161,7 @@ html[dir="rtl"] h6 {
 }
 
 .brand-logo-img {
-  height: 48px;
+  height: 46px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -288,6 +198,41 @@ html[dir="rtl"] h6 {
   height: 2.5px;
   background: var(--color-brand-bronze);
   border-radius: 2px;
+}
+
+/* Header Actions & Lang Switcher */
+.header-actions-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.lang-switch-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  background: #F8FAFC;
+  color: var(--color-brand-charcoal);
+  border: 1.5px solid var(--color-border);
+  font-size: 13px;
+  font-weight: 700;
+  transition: all var(--transition-fast);
+}
+
+.lang-switch-badge i {
+  color: var(--color-brand-bronze);
+}
+
+.lang-switch-badge:hover {
+  background: var(--color-brand-charcoal);
+  color: #FFFFFF;
+  border-color: var(--color-brand-charcoal);
+}
+
+.lang-switch-badge:hover i {
+  color: #FFFFFF;
 }
 
 /* Mega Menu (Clean White) */
@@ -384,13 +329,13 @@ html[dir="rtl"] .mega-menu-box {
 }
 
 /* ==========================================================================
-   HERO SECTION (CINEMATIC REFINERY BACKGROUND & NEON BLUE SLANTED PARALLELOGRAM CARDS)
+   HERO SECTION (OFFICIAL DOWNLOADED BACKGROUND IMAGE + SLANTED SHOWCASE CARDS)
    ========================================================================== */
 .hero-monolith {
-  background: radial-gradient(circle at 80% 30%, rgba(0, 128, 255, 0.2) 0%, transparent 65%),
+  background: radial-gradient(circle at 75% 30%, rgba(0, 128, 255, 0.25) 0%, transparent 65%),
               linear-gradient(180deg, #051329 0%, #030B17 100%);
   position: relative;
-  padding: 65px 0 55px;
+  padding: 60px 0 50px;
   color: #FFFFFF;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   overflow: hidden;
@@ -400,10 +345,10 @@ html[dir="rtl"] .mega-menu-box {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=2000&q=85');
+  background-image: url('images/hero-bg.png');
   background-size: cover;
   background-position: center;
-  opacity: 0.16;
+  opacity: 0.32;
   mix-blend-mode: luminosity;
   pointer-events: none;
 }
@@ -417,30 +362,14 @@ html[dir="rtl"] .mega-menu-box {
   z-index: 2;
 }
 
-/* Hero Tag Pill with Blue Border */
-.hero-tag-box {
-  display: inline-block;
-  border: 1.5px solid #0080FF;
-  background: rgba(0, 128, 255, 0.12);
-  padding: 5px 14px;
-  border-radius: var(--radius-xs);
-  font-family: var(--font-heading);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  color: #38BDF8;
-  margin-bottom: 18px;
-  text-transform: uppercase;
-}
-
 /* Big Crisp Hero Title */
 .hero-title-punch {
   font-family: var(--font-heading);
-  font-size: 45px;
+  font-size: 46px;
   font-weight: 900;
   line-height: 1.12;
   color: #FFFFFF;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
@@ -453,46 +382,63 @@ html[dir="rtl"] .mega-menu-box {
   font-size: 16px;
   line-height: 1.65;
   color: #CBD5E1;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   max-width: 560px;
 }
 
-/* 4 Micro Feature Items Row with Gold Icons */
-.hero-micro-features {
+/* 4 Micro Feature Items (2-Line Grid Layout) */
+.hero-micro-features-2line {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
-  margin-bottom: 32px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 16px;
+  margin-bottom: 28px;
+  max-width: 540px;
 }
 
-.micro-feature-item {
+.micro-badge-item {
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  backdrop-filter: blur(4px);
 }
 
-.micro-feature-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  border: 1.5px solid rgba(255, 168, 0, 0.4);
-  background: rgba(255, 168, 0, 0.1);
+.micro-badge-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  background: rgba(182, 123, 43, 0.2);
+  border: 1px solid rgba(182, 123, 43, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFA800;
-  font-size: 14px;
+  color: #FDBA74;
+  font-size: 13px;
   flex-shrink: 0;
 }
 
-.micro-feature-text {
-  font-size: 11.5px;
-  font-weight: 700;
-  line-height: 1.25;
+.micro-badge-text {
+  font-size: 12.5px;
+  font-weight: 600;
   color: #F1F5F9;
+  line-height: 1.25;
 }
 
-/* Hero Button Row */
+.micro-badge-text strong {
+  color: #FFFFFF;
+  font-weight: 800;
+}
+
+/* Action Group & Social Proof */
+.hero-action-group {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
 .hero-action-buttons {
   display: flex;
   align-items: center;
@@ -500,56 +446,74 @@ html[dir="rtl"] .mega-menu-box {
   flex-wrap: wrap;
 }
 
-.btn-emergency-orange {
-  background: linear-gradient(135deg, #FF7A00 0%, #EA580C 100%);
+.btn-emergency-gold {
+  background: linear-gradient(135deg, #B67B2B 0%, #96601D 100%);
   color: #FFFFFF;
   font-family: var(--font-heading);
-  font-size: 14.5px;
-  font-weight: 800;
-  padding: 14px 28px;
-  border-radius: var(--radius-sm);
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  box-shadow: var(--shadow-amber);
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  transition: all var(--transition-fast);
-}
-
-.btn-emergency-orange:hover {
-  background: linear-gradient(135deg, #FF8C1A 0%, #F97316 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(255, 122, 0, 0.6);
-}
-
-.btn-outline-services {
-  border: 1.5px solid rgba(255, 255, 255, 0.35);
-  background: rgba(255, 255, 255, 0.05);
-  color: #FFFFFF;
-  font-family: var(--font-heading);
-  font-size: 14.5px;
+  font-size: 14px;
   font-weight: 800;
   padding: 14px 26px;
   border-radius: var(--radius-sm);
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  box-shadow: var(--shadow-bronze);
   text-transform: uppercase;
   letter-spacing: 0.02em;
   transition: all var(--transition-fast);
 }
 
-.btn-outline-services:hover {
+.btn-emergency-gold:hover {
+  background: linear-gradient(135deg, #C68B3B 0%, #A6702D 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(182, 123, 43, 0.5);
+}
+
+.btn-outline-glow {
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.06);
+  color: #FFFFFF;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 800;
+  padding: 14px 24px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  transition: all var(--transition-fast);
+}
+
+.btn-outline-glow:hover {
   background: #FFFFFF;
   color: var(--color-heading);
   border-color: #FFFFFF;
   transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   3 SLANTED / SKEWED PARALLELOGRAM SHOWCASE CARDS (EXACT MATCH TO REFERENCE IMAGE)
-   ========================================================================== */
+.hero-trust-proof {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #CBD5E1;
+}
+
+.proof-stars {
+  color: #F59E0B;
+  display: flex;
+  gap: 2px;
+  font-size: 12px;
+}
+
+.proof-text strong {
+  color: #FFFFFF;
+  font-weight: 800;
+}
+
+/* 3 Slanted Parallelogram Showcase Cards */
 .hero-cards-trio {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -558,7 +522,6 @@ html[dir="rtl"] .mega-menu-box {
   padding: 10px 0;
 }
 
-/* Outer Slanted Container (Skewed Parallelogram) */
 .skewed-hero-card {
   position: relative;
   height: 380px;
@@ -586,7 +549,6 @@ html[dir="rtl"] .skewed-hero-card:hover {
   transform: skewX(9deg) translateY(-8px);
 }
 
-/* Inner Counter-Skewed Image Wrapper to keep photo and text upright */
 .skewed-card-inner {
   position: absolute;
   inset: -20px -30px;
@@ -641,7 +603,7 @@ html[dir="rtl"] .skewed-card-inner {
 .client-marquee-section {
   background: #FFFFFF;
   border-bottom: 1px solid var(--color-border);
-  padding: 28px 0 24px;
+  padding: 26px 0 22px;
   overflow: hidden;
   position: relative;
 }
@@ -651,7 +613,7 @@ html[dir="rtl"] .skewed-card-inner {
   align-items: center;
   justify-content: center;
   gap: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   flex-wrap: wrap;
   text-align: center;
 }
@@ -700,16 +662,16 @@ html[dir="rtl"] .skewed-card-inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 52px;
-  min-width: 140px;
+  height: 50px;
+  min-width: 130px;
   padding: 0 10px;
   flex-shrink: 0;
 }
 
 .marquee-item img {
-  height: 40px;
+  height: 38px;
   width: auto;
-  max-width: 170px;
+  max-width: 160px;
   object-fit: contain;
   filter: grayscale(15%);
   opacity: 0.85;
@@ -723,12 +685,8 @@ html[dir="rtl"] .skewed-card-inner {
 }
 
 @keyframes marqueeScroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-33.333333%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.333333%); }
 }
 
 html[dir="rtl"] .marquee-track {
@@ -736,24 +694,57 @@ html[dir="rtl"] .marquee-track {
 }
 
 @keyframes marqueeScrollRTL {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(33.333333%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(33.333333%); }
 }
 
 /* ==========================================================================
-   SECTIONS & DIVISIONS (CLEAN MODERN WHITE/SLATE)
+   METRICS & SCALE STRIP
+   ========================================================================== */
+.metrics-impact-strip {
+  background: var(--color-brand-charcoal);
+  color: #FFFFFF;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.metrics-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+
+.metric-impact-card {
+  padding: 10px;
+}
+
+.metric-num {
+  font-family: var(--font-heading);
+  font-size: 38px;
+  font-weight: 900;
+  color: var(--color-brand-bronze-light);
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.metric-label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #94A3B8;
+  line-height: 1.35;
+}
+
+/* ==========================================================================
+   INTEGRATED ENGINEERING DIVISIONS (PREMIUM 6-CARD GRID)
    ========================================================================== */
 .section-spacer {
-  padding: 85px 0;
+  padding: 80px 0;
 }
 
 .section-head-center {
   text-align: center;
-  max-width: 760px;
+  max-width: 780px;
   margin: 0 auto 48px;
 }
 
@@ -778,7 +769,7 @@ html[dir="rtl"] .marquee-track {
 }
 
 .head-desc {
-  font-size: 16.5px;
+  font-size: 16px;
   color: var(--color-body);
   line-height: 1.6;
 }
@@ -793,11 +784,11 @@ html[dir="rtl"] .marquee-track {
   background: #FFFFFF;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  padding: 32px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 24px;
+  gap: 20px;
   box-shadow: var(--shadow-card);
   transition: all var(--transition-normal);
   position: relative;
@@ -826,17 +817,24 @@ html[dir="rtl"] .marquee-track {
   opacity: 1;
 }
 
+.division-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
 .division-icon-badge {
-  width: 54px;
-  height: 54px;
-  border-radius: 14px;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
   background: var(--color-brand-gold-tint);
   color: var(--color-brand-bronze);
   border: 1px solid var(--color-brand-bronze-border);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .division-tag-num {
@@ -844,41 +842,44 @@ html[dir="rtl"] .marquee-track {
   font-size: 12px;
   font-weight: 800;
   color: var(--color-muted);
-  text-transform: uppercase;
+  background: var(--color-canvas-subtle);
+  padding: 4px 10px;
+  border-radius: var(--radius-xs);
 }
 
 .division-card-title {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 800;
   color: var(--color-heading);
-  margin-top: 4px;
+  margin-bottom: 10px;
 }
 
 .division-card-desc {
-  font-size: 14.5px;
+  font-size: 14px;
   color: var(--color-body);
   line-height: 1.6;
-  margin: 16px 0;
+  margin-bottom: 16px;
 }
 
 .division-features-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-bottom: 18px;
 }
 
 .division-feature-row {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 13.5px;
+  gap: 9px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--color-heading);
 }
 
 .division-feature-row i {
   color: var(--color-brand-bronze);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .division-link-btn {
@@ -890,7 +891,7 @@ html[dir="rtl"] .marquee-track {
   background: var(--color-canvas-subtle);
   color: var(--color-heading);
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13.5px;
   transition: all var(--transition-fast);
 }
 
@@ -900,28 +901,28 @@ html[dir="rtl"] .marquee-track {
 }
 
 /* ==========================================================================
-   DIAGNOSTIC & TRI-HUBS
+   INTERACTIVE EQUIPMENT DIAGNOSTIC MATRIX (HIGH TECH SCADA STYLE)
    ========================================================================== */
 .diag-interactive-card {
   background: #FFFFFF;
   border: 1.5px solid var(--color-border);
   border-radius: var(--radius-xl);
-  padding: 44px;
+  padding: 40px;
   box-shadow: var(--shadow-card);
 }
 
 .diag-grid-3step {
   display: grid;
-  grid-template-columns: 1fr 1fr 1.15fr;
+  grid-template-columns: 1fr 1fr 1.2fr;
   gap: 24px;
-  margin-top: 32px;
+  margin-top: 28px;
 }
 
 .diag-step-box {
   background: var(--color-canvas-alt);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  padding: 24px;
+  padding: 22px;
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -932,26 +933,26 @@ html[dir="rtl"] .marquee-track {
   align-items: center;
   gap: 10px;
   font-weight: 800;
-  font-size: 15px;
+  font-size: 14.5px;
   color: var(--color-heading);
 }
 
 .step-num-pill {
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   background: var(--color-brand-bronze);
   color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 900;
 }
 
 .diag-select-control {
   width: 100%;
-  padding: 13px 16px;
+  padding: 12px 14px;
   border-radius: var(--radius-md);
   background: #FFFFFF;
   border: 1.5px solid var(--color-border);
@@ -976,20 +977,20 @@ html[dir="rtl"] .marquee-track {
   align-items: center;
   gap: 6px;
   color: var(--color-brand-bronze-dark);
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 800;
   text-transform: uppercase;
 }
 
 .diag-result-heading {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 800;
   color: var(--color-brand-charcoal);
   margin: 6px 0;
 }
 
 .diag-result-text {
-  font-size: 14px;
+  font-size: 13.5px;
   color: var(--color-body);
   line-height: 1.5;
 }
@@ -997,10 +998,10 @@ html[dir="rtl"] .marquee-track {
 .btn-dispatch-now {
   background: linear-gradient(135deg, #B67B2B 0%, #96601D 100%);
   color: #FFFFFF;
-  padding: 13px 20px;
+  padding: 12px 18px;
   border-radius: var(--radius-md);
   font-weight: 800;
-  font-size: 14px;
+  font-size: 13.5px;
   text-align: center;
   display: inline-flex;
   align-items: center;
@@ -1015,20 +1016,74 @@ html[dir="rtl"] .marquee-track {
   box-shadow: 0 10px 25px rgba(182, 123, 43, 0.45);
 }
 
+/* ==========================================================================
+   WHY CHOOSE MECHFLOW & CORE CAPABILITIES PILLARS
+   ========================================================================== */
+.pillars-4col-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.pillar-feature-card {
+  background: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  box-shadow: var(--shadow-card);
+  transition: all var(--transition-normal);
+}
+
+.pillar-feature-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-brand-bronze-border);
+  box-shadow: var(--shadow-hover);
+}
+
+.pillar-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--color-brand-gold-tint);
+  border: 1px solid var(--color-brand-bronze-border);
+  color: var(--color-brand-bronze);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.pillar-title {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-bottom: 8px;
+}
+
+.pillar-desc {
+  font-size: 13.5px;
+  color: var(--color-body);
+  line-height: 1.55;
+}
+
+/* ==========================================================================
+   TRI-HUBS FOOTPRINT MAP
+   ========================================================================== */
 .tri-hubs-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
+  gap: 24px;
 }
 
 .hub-location-card {
   background: #FFFFFF;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  padding: 32px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
   box-shadow: var(--shadow-card);
   transition: all var(--transition-normal);
 }
@@ -1062,7 +1117,7 @@ html[dir="rtl"] .head-office-ribbon {
 }
 
 .hub-city-title {
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 900;
   color: var(--color-heading);
 }
@@ -1081,8 +1136,8 @@ html[dir="rtl"] .head-office-ribbon {
 .hub-contact-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  font-size: 14px;
+  gap: 10px;
+  font-size: 13.5px;
 }
 
 .hub-contact-item {
@@ -1107,7 +1162,7 @@ html[dir="rtl"] .head-office-ribbon {
   border-radius: var(--radius-md);
   border: 1.5px solid var(--color-border);
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13.5px;
   color: var(--color-heading);
   transition: all var(--transition-fast);
 }
@@ -1119,12 +1174,12 @@ html[dir="rtl"] .head-office-ribbon {
 }
 
 /* ==========================================================================
-   MASTER FOOTER (NO EMOJIS, HIGH-END SOCIAL MEDIA, PREMIUM ICONS)
+   MASTER FOOTER
    ========================================================================== */
 .master-footer {
   background: var(--color-brand-charcoal);
   color: #94A3B8;
-  padding: 75px 0 35px;
+  padding: 70px 0 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   margin-top: auto;
 }
@@ -1133,14 +1188,14 @@ html[dir="rtl"] .head-office-ribbon {
   display: grid;
   grid-template-columns: 1.3fr 1.1fr 1fr 1.1fr;
   gap: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .footer-head-title {
   font-size: 16px;
   font-weight: 800;
   color: #FFFFFF;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1150,12 +1205,11 @@ html[dir="rtl"] .head-office-ribbon {
   color: var(--color-brand-bronze);
 }
 
-/* Social Media Bar in Footer */
 .footer-social-row {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: 22px;
+  margin-top: 18px;
 }
 
 .social-icon-btn {
@@ -1183,8 +1237,8 @@ html[dir="rtl"] .head-office-ribbon {
 .footer-nav-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  font-size: 14px;
+  gap: 11px;
+  font-size: 13.5px;
 }
 
 .footer-nav-list a {
@@ -1199,7 +1253,6 @@ html[dir="rtl"] .head-office-ribbon {
   font-size: 13px;
   width: 16px;
   color: var(--color-brand-bronze);
-  transition: color var(--transition-fast);
 }
 
 .footer-nav-list a:hover {
@@ -1211,15 +1264,10 @@ html[dir="rtl"] .footer-nav-list a:hover {
   transform: translateX(-4px);
 }
 
-.footer-nav-list a:hover i {
-  color: #E6A74E;
-}
-
-/* Corporate Presence List (Pure Clean Font Awesome Icons - No Emojis) */
 .footer-presence-list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
   font-size: 13.5px;
 }
 
@@ -1254,35 +1302,18 @@ html[dir="rtl"] .footer-nav-list a:hover {
 
 .footer-bottom-row {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding-top: 24px;
+  padding-top: 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 14px;
   font-size: 13px;
-}
-
-.iso-cert-badges {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.iso-badge-pill {
-  padding: 5px 12px;
-  border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  font-size: 11px;
-  font-weight: 800;
-  color: #FFFFFF;
 }
 
 /* ==========================================================================
    RESPONSIVE BREAKPOINTS (PERFECT MOBILE EXPERIENCE)
    ========================================================================== */
-
 @media (max-width: 1024px) {
   .desktop-nav, .topbar {
     display: none !important;
@@ -1297,6 +1328,11 @@ html[dir="rtl"] .footer-nav-list a:hover {
     gap: 32px;
   }
 
+  .metrics-impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
   .divisions-3col-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -1304,6 +1340,11 @@ html[dir="rtl"] .footer-nav-list a:hover {
 
   .diag-grid-3step {
     grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .pillars-4col-grid {
+    grid-template-columns: repeat(2, 1fr);
     gap: 18px;
   }
 
@@ -1333,9 +1374,9 @@ html[dir="rtl"] .footer-nav-list a:hover {
     max-width: 155px;
   }
 
-  .lang-btn {
+  .lang-switch-badge {
     padding: 4px 10px;
-    font-size: 11px;
+    font-size: 11.5px;
   }
 
   .mobile-menu-btn {
@@ -1346,13 +1387,7 @@ html[dir="rtl"] .footer-nav-list a:hover {
 
   /* Hero Mobile */
   .hero-monolith {
-    padding: 36px 0 32px;
-  }
-
-  .hero-tag-box {
-    font-size: 10.5px;
-    padding: 4px 10px;
-    margin-bottom: 12px;
+    padding: 36px 0 30px;
   }
 
   .hero-title-punch {
@@ -1364,29 +1399,29 @@ html[dir="rtl"] .footer-nav-list a:hover {
   .hero-desc-text {
     font-size: 14px;
     line-height: 1.55;
+    margin-bottom: 18px;
+  }
+
+  .hero-micro-features-2line {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
     margin-bottom: 20px;
   }
 
-  .hero-micro-features {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-bottom: 22px;
+  .micro-badge-item {
+    padding: 6px 8px;
+    gap: 6px;
   }
 
-  .micro-feature-item {
-    gap: 8px;
-  }
-
-  .micro-feature-icon {
-    width: 32px;
-    height: 32px;
-    font-size: 13px;
-    border-radius: 7px;
-  }
-
-  .micro-feature-text {
+  .micro-badge-icon {
+    width: 26px;
+    height: 26px;
     font-size: 11px;
-    line-height: 1.25;
+    border-radius: 5px;
+  }
+
+  .micro-badge-text {
+    font-size: 11px;
   }
 
   .hero-action-buttons {
@@ -1395,8 +1430,8 @@ html[dir="rtl"] .footer-nav-list a:hover {
     gap: 10px;
   }
 
-  .btn-emergency-orange,
-  .btn-outline-services {
+  .btn-emergency-gold,
+  .btn-outline-glow {
     width: 100%;
     justify-content: center;
     padding: 13px 18px;
@@ -1404,7 +1439,12 @@ html[dir="rtl"] .footer-nav-list a:hover {
     text-align: center;
   }
 
-  /* 3 Showcase Cards on Mobile: 3-column compact grid */
+  .hero-trust-proof {
+    font-size: 12px;
+    justify-content: center;
+  }
+
+  /* 3 Showcase Cards on Mobile */
   .hero-cards-trio {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1434,11 +1474,11 @@ html[dir="rtl"] .footer-nav-list a:hover {
 
   /* Marquee Section Mobile */
   .client-marquee-section {
-    padding: 20px 0 16px;
+    padding: 18px 0 14px;
   }
 
   .marquee-header-row {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     gap: 8px;
   }
 
@@ -1456,81 +1496,87 @@ html[dir="rtl"] .footer-nav-list a:hover {
   }
 
   .marquee-item {
-    height: 38px;
-    min-width: 100px;
+    height: 36px;
+    min-width: 95px;
     padding: 0 4px;
   }
 
   .marquee-item img {
-    height: 30px;
-    max-width: 110px;
+    height: 28px;
+    max-width: 105px;
+  }
+
+  /* Metrics Impact Strip Mobile */
+  .metrics-impact-strip {
+    padding: 26px 0;
+  }
+
+  .metrics-impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .metric-num {
+    font-size: 28px;
+  }
+
+  .metric-label {
+    font-size: 12px;
   }
 
   /* Sections Spacing */
   .section-spacer {
-    padding: 48px 0;
+    padding: 46px 0;
   }
 
   .section-head-center {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
   }
 
   .head-title-lg {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 23px;
+    margin-bottom: 8px;
   }
 
   .head-desc {
-    font-size: 14px;
+    font-size: 13.5px;
   }
 
   /* Divisions Cards */
   .divisions-3col-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 14px;
   }
 
   .division-box-card {
     padding: 20px 16px;
     border-radius: 14px;
-    gap: 16px;
-  }
-
-  .division-icon-badge {
-    width: 44px;
-    height: 44px;
-    font-size: 18px;
-    border-radius: 10px;
+    gap: 14px;
   }
 
   .division-card-title {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .division-card-desc {
-    font-size: 13.5px;
-    margin: 10px 0;
+    font-size: 13px;
+    margin-bottom: 12px;
   }
 
   .division-feature-row {
-    font-size: 12.5px;
-  }
-
-  .division-link-btn {
-    padding: 10px 14px;
-    font-size: 13px;
+    font-size: 12px;
   }
 
   /* Diagnostic Card */
   .diag-interactive-card {
-    padding: 20px 16px;
-    border-radius: 16px;
+    padding: 20px 14px;
+    border-radius: 14px;
   }
 
   .diag-step-box {
-    padding: 16px 14px;
-    border-radius: 12px;
-    gap: 10px;
+    padding: 14px 12px;
+    border-radius: 10px;
+    gap: 8px;
   }
 
   .diag-select-control {
@@ -1539,43 +1585,47 @@ html[dir="rtl"] .footer-nav-list a:hover {
   }
 
   .diag-result-box {
-    padding: 16px 14px;
-    border-radius: 12px;
+    padding: 14px 12px;
+    border-radius: 10px;
   }
 
   .diag-result-heading {
-    font-size: 16px;
+    font-size: 15.5px;
   }
 
   .diag-result-text {
-    font-size: 13px;
+    font-size: 12.5px;
   }
 
   .btn-dispatch-now {
-    padding: 11px 16px;
+    padding: 11px 14px;
     font-size: 13px;
     width: 100%;
+  }
+
+  /* Pillars */
+  .pillars-4col-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .pillar-feature-card {
+    padding: 18px 14px;
   }
 
   /* Hubs */
   .tri-hubs-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .hub-location-card {
-    padding: 22px 16px;
-    border-radius: 14px;
     gap: 14px;
   }
 
-  .hub-city-title {
-    font-size: 19px;
+  .hub-location-card {
+    padding: 20px 16px;
+    border-radius: 14px;
   }
 
-  .hub-contact-list {
-    gap: 10px;
-    font-size: 13px;
+  .hub-city-title {
+    font-size: 18px;
   }
 
   .hub-btn-action {
@@ -1586,37 +1636,28 @@ html[dir="rtl"] .footer-nav-list a:hover {
 
   /* Footer Mobile */
   .master-footer {
-    padding: 44px 0 20px;
+    padding: 40px 0 20px;
   }
 
   .footer-4col {
     grid-template-columns: 1fr;
-    gap: 28px;
-    margin-bottom: 28px;
+    gap: 26px;
+    margin-bottom: 24px;
   }
 
-  .footer-head-title {
-    font-size: 15px;
-    margin-bottom: 14px;
-  }
-
-  .footer-social-row {
-    gap: 8px;
-    margin-top: 16px;
-  }
-
-  .social-icon-btn {
-    width: 36px;
-    height: 36px;
-    font-size: 14px;
-    border-radius: 8px;
+  /* Hide Quick Links on Phone View */
+  .footer-quick-links-col {
+    display: none !important;
   }
 
   .footer-bottom-row {
-    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    gap: 12px;
-    font-size: 12px;
+  }
+
+  /* Hide Hotline in bottom row on Phone View */
+  .footer-hotline-link {
+    display: none !important;
   }
 }
 
@@ -1625,21 +1666,17 @@ html[dir="rtl"] .footer-nav-list a:hover {
     font-size: 22px;
   }
 
-  .hero-micro-features {
+  .hero-micro-features-2line {
     grid-template-columns: 1fr;
-    gap: 8px;
+    gap: 6px;
   }
 
   .hero-cards-trio {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 8px;
   }
 
   .skewed-hero-card {
     height: 110px;
-  }
-
-  .skewed-card-title {
-    font-size: 12px;
   }
 }
