@@ -1,4 +1,4 @@
-/**
+﻿/**
  * MECHFLOW SAUDI ARABIA — MASTER JAVASCRIPT ENGINE
  * Handles:
  * 1. Mobile Drawer & App Bottom Bar Active State Management
@@ -217,3 +217,4 @@ function initMetricCounters() {
 
   counters.forEach((c) => observer.observe(c));
 }
+
