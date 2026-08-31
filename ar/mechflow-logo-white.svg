@@ -73,7 +73,7 @@
 </g>
 <!-- Vertical Separator Line -->
 <line class="st-line" x1="102" y1="12" x2="102" y2="73"/>
-<!-- 2-Line Official Company Typography -->
-<text x="118" y="41" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="29" fill="#FFFFFF" letter-spacing="-0.5">MECHFLOW ENGINEERING</text>
-<text x="120" y="65" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="14.5" fill="#E5A93C" letter-spacing="2">SERVICES AND SOLUTIONS</text>
+<!-- 2-Line Official Company Typography (Arabic) -->
+<text x="118" y="41" font-family="'Cairo', 'Segoe UI', Tahoma, sans-serif" font-weight="900" font-size="28" fill="#FFFFFF">ميكفلو إنجينيرينج</text>
+<text x="120" y="65" font-family="'Cairo', 'Segoe UI', Tahoma, sans-serif" font-weight="800" font-size="14.5" fill="#E5A93C">سيرفيسز آند سولوجنز</text>
 </svg>
