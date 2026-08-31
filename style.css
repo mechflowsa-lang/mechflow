@@ -79,7 +79,16 @@ html[dir="rtl"] {
   font-family: var(--font-arabic);
 }
 
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
+  width: 100%;
+  max-width: 100%;
   background-color: var(--color-canvas);
   color: var(--color-body);
   font-size: 15.5px;
@@ -207,7 +216,8 @@ html[dir="rtl"] h6 {
   gap: 14px;
 }
 
-.lang-switch-badge {
+.lang-switch-badge,
+.lang-btn {
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -219,19 +229,23 @@ html[dir="rtl"] h6 {
   font-size: 13px;
   font-weight: 700;
   transition: all var(--transition-fast);
+  text-decoration: none;
 }
 
-.lang-switch-badge i {
+.lang-switch-badge i,
+.lang-btn i {
   color: var(--color-brand-bronze);
 }
 
-.lang-switch-badge:hover {
+.lang-switch-badge:hover,
+.lang-btn:hover {
   background: var(--color-brand-charcoal);
   color: #FFFFFF;
   border-color: var(--color-brand-charcoal);
 }
 
-.lang-switch-badge:hover i {
+.lang-switch-badge:hover i,
+.lang-btn:hover i {
   color: #FFFFFF;
 }
 
@@ -1761,7 +1775,13 @@ html[dir="rtl"] .footer-nav-list a:hover {
 
 @media (max-width: 480px) {
   .hero-title-punch {
-    font-size: 22px;
+    font-size: 23px;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-desc-text {
+    font-size: 13.5px;
+    padding: 0 4px;
   }
 
   .hero-micro-features-2line {
@@ -1771,28 +1791,37 @@ html[dir="rtl"] .footer-nav-list a:hover {
   }
 
   .micro-badge-icon {
-    width: 32px !important;
-    height: 32px !important;
-    font-size: 12px !important;
-    border-radius: 7px !important;
+    width: 34px !important;
+    height: 34px !important;
+    font-size: 13px !important;
+    border-radius: 8px !important;
   }
 
   .micro-badge-text {
-    font-size: 10px !important;
-    line-height: 1.15 !important;
+    font-size: 11px !important;
+    line-height: 1.25 !important;
   }
 
   .hero-cards-trio {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 6px !important;
+    margin-top: 16px !important;
   }
 
   .skewed-hero-card {
-    height: 135px !important;
+    height: 142px !important;
+    border-radius: 6px !important;
   }
 
   .skewed-card-title {
-    font-size: 8.5px !important;
+    font-size: 10.5px !important;
+    line-height: 1.25 !important;
+    font-weight: 800 !important;
+  }
+
+  .container {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
   }
 }
