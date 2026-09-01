@@ -1,138 +1,444 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Proven Case Studies &amp; Asset Reliability — Mechflow Engineering Services and Solutions</title>
-  <meta name="description" content="Verified operational impact: +350% MTBF extension on multistage boiler pumps, 0.00 LTI across 45-day Yanbu refinery turnaround, and hydrogen compressor seal upgrades in Saudi Arabia.">
+  <title>Proven Field Case Studies &amp; Reliability Milestones — MechFlow Saudi Arabia</title>
+  <meta name="description" content="Documented field performance: +350% MTBF extension on boiler feed pumps, 0.00 LTI across 45-day Yanbu refinery turnaround, and hydrogen compressor seal upgrades in Saudi Arabia.">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=2.5">
-  <link rel="stylesheet" href="mobile-app.css?v=2.5">
+  <link rel="stylesheet" href="style.css?v=2.7">
+  <link rel="stylesheet" href="mobile-app.css?v=2.7">
+  
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" href="favicon.svg">
 </head>
 <body>
 
+  <!-- Main Navigation Header (Clean Crisp White) -->
   <header class="main-header">
     <div class="container nav-wrapper">
       <a href="index.html" class="brand-logo" aria-label="MechFlow Homepage">
         <img src="mechflow-logo.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img">
       </a>
 
+      <!-- Desktop Navigation Menu -->
       <nav class="desktop-nav">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About Us</a>
-        <a href="services.html" class="nav-link">Services &amp; Divisions</a>
+        
+        <!-- Services Dropdown -->
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link">
+            Services &amp; Divisions
+            <i class="fa-solid fa-chevron-down" style="font-size: 11px; margin-left: 2px;"></i>
+          </a>
+          <div class="mega-menu-box">
+            <a href="turbomachinery.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-fan"></i></div>
+              <div>
+                <div class="mega-content-title">Turbomachinery &amp; Pumps</div>
+                <div class="mega-content-desc">API 610 pumps, steam turbines, 10T Schenck balancing &amp; wireless alignment.</div>
+              </div>
+            </a>
+
+            <a href="fluid-gas-sealing.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-ring"></i></div>
+              <div>
+                <div class="mega-content-title">Fluid &amp; Dry Gas Sealing</div>
+                <div class="mega-content-desc">API 682/692 seals, 150-bar dynamic nitrogen testing &amp; cleanroom facility.</div>
+              </div>
+            </a>
+
+            <a href="plant-turnaround.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-wrench"></i></div>
+              <div>
+                <div class="mega-content-title">Plant Turnaround (TAR)</div>
+                <div class="mega-content-desc">ASME PCC-1 hydraulic bolting, on-site flange facing up to 120 inches.</div>
+              </div>
+            </a>
+
+            <a href="advanced-engineering.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-microchip"></i></div>
+              <div>
+                <div class="mega-content-title">FEA, CFD &amp; 3D Scanning</div>
+                <div class="mega-content-desc">Finite element analysis, fluid dynamics &amp; HVAF tungsten carbide coatings.</div>
+              </div>
+            </a>
+
+            <a href="electrical-motors.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-bolt"></i></div>
+              <div>
+                <div class="mega-content-title">Motor Rewinding &amp; VFD</div>
+                <div class="mega-content-desc">Class H insulation, VPI treatment up to 13.8kV, VFD automation &amp; PLC panels.</div>
+              </div>
+            </a>
+
+            <a href="heat-transfer.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+              <div>
+                <div class="mega-content-title">Heat Exchangers &amp; Coolers</div>
+                <div class="mega-content-desc">Tube bundle extraction, automated retubing, PHE cleaning &amp; cooling towers.</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
         <a href="industries.html" class="nav-link">Industries</a>
         <a href="case-studies.html" class="nav-link active">Case Studies</a>
         <a href="diagnostic.html" class="nav-link">Diagnostic Tool</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
-      <div style="display: flex; align-items: center; gap: 14px;">
-        <a href="ar/case-studies.html" class="lang-btn"><i class="fa-solid fa-globe"></i> العربية</a>
-        <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="Toggle Menu"><i class="fa-solid fa-bars-staggered"></i></button>
+      <!-- Header Actions: Lang Switch & Mobile Menu Trigger -->
+      <div class="header-actions-wrap">
+        <a href="ar/case-studies.html" class="lang-switch-badge" title="النسخة العربية">
+          <i class="fa-solid fa-globe"></i>
+          <span>العربية</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="Toggle Mobile Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
+  <!-- Mobile Drawer Menu -->
   <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
     <div class="mobile-drawer">
       <div>
         <div class="mobile-drawer-header">
           <a href="index.html" class="brand-logo" aria-label="MechFlow Homepage">
-            <img src="mechflow-logo.svg" alt="MechFlow" style="height:38px; width:auto;">
+            <img src="mechflow-logo.svg" alt="MechFlow" style="height:36px; width:auto;">
           </a>
-          <button class="mobile-drawer-close" id="mobileDrawerClose"><i class="fa-solid fa-xmark"></i></button>
+          <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </div>
         <ul class="mobile-nav-list">
           <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
           <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> About Company</a></li>
-          <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> All 6 Divisions</a></li>
+          <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> All 6 Service Divisions</a></li>
           <li><a href="turbomachinery.html" class="mobile-nav-link"><i class="fa-solid fa-fan"></i> Turbomachinery &amp; Pumps</a></li>
           <li><a href="fluid-gas-sealing.html" class="mobile-nav-link"><i class="fa-solid fa-ring"></i> Fluid &amp; Dry Gas Sealing</a></li>
           <li><a href="plant-turnaround.html" class="mobile-nav-link"><i class="fa-solid fa-wrench"></i> Plant Turnaround &amp; Machining</a></li>
           <li><a href="advanced-engineering.html" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> FEA, CFD &amp; 3D Scanning</a></li>
           <li><a href="electrical-motors.html" class="mobile-nav-link"><i class="fa-solid fa-bolt"></i> Motor Rewinding &amp; VFD</a></li>
+          <li><a href="heat-transfer.html" class="mobile-nav-link"><i class="fa-solid fa-temperature-arrow-down"></i> Heat Exchangers &amp; Coolers</a></li>
           <li><a href="industries.html" class="mobile-nav-link"><i class="fa-solid fa-industry"></i> Industries</a></li>
           <li><a href="case-studies.html" class="mobile-nav-link active"><i class="fa-solid fa-chart-line"></i> Case Studies</a></li>
           <li><a href="diagnostic.html" class="mobile-nav-link"><i class="fa-solid fa-stethoscope"></i> Diagnostic Tool</a></li>
-          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> 24/7 Dispatch</a></li>
+          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> 24/7 Breakdown Dispatch</a></li>
           <li><a href="rfq.html" class="mobile-nav-link"><i class="fa-solid fa-file-signature"></i> Request RFQ</a></li>
-          <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> Contact Us</a></li>
+          <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> Contact &amp; Hub Locations</a></li>
         </ul>
       </div>
+      
+      <!-- Hotline Card in Drawer -->
       <div class="mobile-drawer-footer">
-        <a href="ar/case-studies.html" class="lang-btn" style="justify-content:center; padding:10px;"><i class="fa-solid fa-globe"></i> العربية</a>
+        <a href="tel:+966592151506" class="mobile-hotline-banner">
+          <strong><i class="fa-solid fa-phone-volume fa-shake"></i> 24/7 Breakdown Response Hotline</strong>
+          <span class="mobile-hotline-digits">+966 59 215 1506</span>
+        </a>
+        <a href="ar/case-studies.html" class="lang-switch-badge" style="justify-content:center; padding:10px; width:100%;">
+          <i class="fa-solid fa-globe"></i> العربية (Arabic Version)
+        </a>
       </div>
     </div>
   </div>
 
-  <section class="hero-monolith" style="padding: 70px 0;">
+  <!-- HERO SECTION: DOCUMENTED FIELD PERFORMANCE -->
+  <section class="case-hero-wrap">
     <div class="container">
-      <span class="hero-badge-pill"><span class="pulse-dot"></span> DOCUMENTED FIELD PERFORMANCE</span>
-      <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px;">Proven Case Studies &amp; Asset Life Extension</h1>
-      <p class="hero-lead-text">
-        Demonstrating tangible MTBF increases, zero-leak startup milestones, and substantial maintenance cost savings across Saudi industrial facilities.
-      </p>
-    </div>
-  </section>
-
-  <section class="section-spacer" style="background: var(--color-canvas-alt);">
-    <div class="container">
-      <div style="display: flex; flex-direction: column; gap: 32px;">
+      <div style="position: relative; z-index: 2;">
         
-        <!-- Case 1 -->
-        <div style="background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 36px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 36px; box-shadow: var(--shadow-card);">
-          <div>
-            <span class="tag-accent"><i class="fa-solid fa-bolt"></i> Power &amp; Utilities • Western Province</span>
-            <h3 style="font-size: 24px; color: var(--color-heading); margin: 12px 0;">14-Stage Boiler Feed Pump Re-Engineering (+350% MTBF)</h3>
-            <p style="color: var(--color-body); margin-bottom: 16px; line-height: 1.68;">
-              A Rabigh coastal power station experienced chronic pump failures every 5 months due to hydraulic cavitation and shaft deflection. MechFlow re-engineered the impellers in super duplex stainless steel, performed ISO G1.0 balancing, and upgraded mechanical seals to API 682 Plan 53B.
-            </p>
-          </div>
-          <div style="background: var(--color-canvas-subtle); border-radius: var(--radius-lg); padding: 24px; display: flex; flex-direction: column; justify-content: center; text-align: center; gap: 10px; border: 1px solid var(--color-border);">
-            <span class="mono" style="font-size: 44px; font-weight: 900; color: var(--color-saudi-emerald);">+350%</span>
-            <span style="font-size: 15px; font-weight: 800; color: var(--color-heading);">MTBF Extension (from 5 to 24+ continuous months)</span>
-            <span style="font-size: 13px; color: var(--color-muted);">$680,000+ estimated downtime loss prevented</span>
-          </div>
-        </div>
+        <span class="hero-badge-pill" style="margin-bottom: 18px;">
+          <span class="pulse-dot"></span>
+          <span>DOCUMENTED FIELD PERFORMANCE &amp; ASSET LIFE EXTENSION</span>
+        </span>
 
-        <!-- Case 2 -->
-        <div style="background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 36px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 36px; box-shadow: var(--shadow-card);">
-          <div>
-            <span class="tag-accent" style="color: var(--color-tech-cyan);"><i class="fa-solid fa-flask-vial"></i> Petrochemical Refining • Yanbu Industrial City</span>
-            <h3 style="font-size: 24px; color: var(--color-heading); margin: 12px 0;">Turnaround Overhaul of 140 Heat Exchangers (45 Days, Zero LTI)</h3>
-            <p style="color: var(--color-body); margin-bottom: 16px; line-height: 1.68;">
-              MechFlow deployed a 120-man specialist task force executing bundle pulling, ultrasonic chemical tube cleaning, and ASME PCC-1 hydraulic torqueing of 850 critical flange joints 72 hours ahead of critical path schedule.
-            </p>
-          </div>
-          <div style="background: var(--color-canvas-subtle); border-radius: var(--radius-lg); padding: 24px; display: flex; flex-direction: column; justify-content: center; text-align: center; gap: 10px; border: 1px solid var(--color-border);">
-            <span class="mono" style="font-size: 44px; font-weight: 900; color: var(--color-tech-cyan);">0.00 LTI</span>
-            <span style="font-size: 15px; font-weight: 800; color: var(--color-heading);">180,000 Safe Work Hours &amp; 100% Zero-Leak Startup</span>
-            <span style="font-size: 13px; color: var(--color-muted);">Delivered 3 Days Ahead of Shutdown Deadline</span>
-          </div>
+        <h1 class="case-hero-title">
+          Proven Field Case Studies &amp;<br>
+          <span style="color: var(--color-brand-bronze-light);">Asset Reliability Milestones</span>
+        </h1>
+
+        <p class="case-hero-desc">
+          Verified operational impact: +350% MTBF extensions, zero-leak startup milestones, and millions saved in unplanned outages across Saudi Arabia's core energy, mining, and petrochemical infrastructure.
+        </p>
+
+        <!-- Quick Contact Pill Badges -->
+        <div class="contact-quick-badges">
+          <a href="tel:+966592151506" class="contact-badge-pill">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>24/7 Hotline: +966 59 215 1506</span>
+          </a>
+
+          <a href="rfq.html" class="contact-badge-pill">
+            <i class="fa-solid fa-file-signature"></i>
+            <span>Request Technical Case Study Review</span>
+          </a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- Master Footer with Rich Icons -->
+  <!-- KEY VERIFIED IMPACT METRICS STRIP -->
+  <section class="metrics-impact-strip">
+    <div class="container">
+      <div class="metrics-impact-grid">
+        <div class="metric-impact-card">
+          <div class="metric-num">+350%</div>
+          <div class="metric-label">MTBF Life Extension on High-Pressure Boiler Feed Pumps</div>
+        </div>
+        <div class="metric-impact-card">
+          <div class="metric-num">0.00 LTI</div>
+          <div class="metric-label">180,000+ Safe Work Hours in Major Refinery Turnaround</div>
+        </div>
+        <div class="metric-impact-card">
+          <div class="metric-num">72 Hours</div>
+          <div class="metric-label">Delivered Ahead of Schedule in 140 Exchanger TAR</div>
+        </div>
+        <div class="metric-impact-card">
+          <div class="metric-num">$1.8M+</div>
+          <div class="metric-label">Annual Downtime &amp; Flaring Losses Prevented</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES DETAILED SHOWCASE -->
+  <section class="section-spacer" style="background: var(--color-canvas-alt);">
+    <div class="container">
+      
+      <div style="display: flex; flex-direction: column; gap: 32px;">
+        
+        <!-- CASE STUDY 1: Rabigh Power Boiler Feed Pump -->
+        <div class="case-study-card">
+          <div>
+            <span class="tag-accent" style="color: var(--color-brand-bronze);"><i class="fa-solid fa-bolt"></i> Power &amp; Utilities &bull; Western Province</span>
+            <h2 style="font-size: 24px; font-weight: 800; color: var(--color-heading); margin: 12px 0 8px;">
+              14-Stage High-Pressure Boiler Feed Pump Re-Engineering (+350% MTBF)
+            </h2>
+            
+            <div class="case-challenge-box">
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <div><strong>Operational Challenge:</strong> A Rabigh coastal power station experienced chronic pump trips every 5 months due to severe hydraulic cavitation, impeller erosion, and shaft deflection under high differential pressure.</div>
+              </div>
+
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-wrench"></i>
+                <div><strong>MechFlow Engineering Solution:</strong> Reverse-engineered impellers in Super Duplex (UNS S32750), dynamic balancing to ISO G1.0 on our 10-ton Schenck rig, upgraded to API 682 Plan 53B dual pressurized cartridge seals, and precision laser shaft alignment.</div>
+              </div>
+
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-circle-check" style="color: #16A34A;"></i>
+                <div><strong>Verified Impact:</strong> Continuous operation extended from 5 to 24+ months without maintenance intervention, preventing over $680,000 in unplanned outage losses.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-metric-box">
+            <div class="case-metric-num">+350%</div>
+            <div class="case-metric-label">MTBF Continuous Runtime</div>
+            <div class="case-metric-sub">Increased from 5 to 24+ months</div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; margin-top: 6px; font-size: 13px; font-weight: 700; color: #FDBA74;">
+              <i class="fa-solid fa-shield-halved"></i> $680,000+ Outage Loss Saved
+            </div>
+          </div>
+        </div>
+
+        <!-- CASE STUDY 2: Yanbu Petrochemical TAR Overhaul -->
+        <div class="case-study-card">
+          <div>
+            <span class="tag-accent" style="color: #0080FF;"><i class="fa-solid fa-flask-vial"></i> Petrochemical Refining &bull; Yanbu Industrial City</span>
+            <h2 style="font-size: 24px; font-weight: 800; color: var(--color-heading); margin: 12px 0 8px;">
+              Major Turnaround (TAR) Overhaul of 140 Heat Exchangers (45 Days, Zero LTI)
+            </h2>
+            
+            <div class="case-challenge-box">
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <div><strong>Operational Challenge:</strong> A mega petrochemical refinery in Yanbu faced a critical 45-day shutdown deadline requiring complete bundle pulling, hydrojetting, re-tubing, and flange leak-free commissioning on 140 critical shell-and-tube exchangers.</div>
+              </div>
+
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-wrench"></i>
+                <div><strong>MechFlow Engineering Solution:</strong> Deployed a 120-man specialist turnaround task force with mobile bundle extractors, on-site pneumatic tube expansion rigs, and ASME PCC-1 multi-stud hydraulic torque tensioning on 850 flanged joints.</div>
+              </div>
+
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-circle-check" style="color: #16A34A;"></i>
+                <div><strong>Verified Impact:</strong> Completed 72 hours ahead of critical path deadline with 180,000 safe man-hours, 0.00 LTI, and 100% first-pass leak-free hydrotest startup.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-metric-box">
+            <div class="case-metric-num">0.00 LTI</div>
+            <div class="case-metric-label">180,000 Safe Work Hours</div>
+            <div class="case-metric-sub">100% First-Pass Leak-Free Startup</div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; margin-top: 6px; font-size: 13px; font-weight: 700; color: #38BDF8;">
+              <i class="fa-solid fa-clock-rotate-left"></i> Delivered 72 Hours Ahead
+            </div>
+          </div>
+        </div>
+
+        <!-- CASE STUDY 3: Jubail Hydrogen Compressor Dry Gas Seal Upgrade -->
+        <div class="case-study-card">
+          <div>
+            <span class="tag-accent" style="color: #006C35;"><i class="fa-solid fa-ring"></i> Chemical &amp; Petrochemicals &bull; Jubail Industrial City</span>
+            <h2 style="font-size: 24px; font-weight: 800; color: var(--color-heading); margin: 12px 0 8px;">
+              High-Pressure Hydrogen Compressor Dry Gas Seal Retrofit (API 692)
+            </h2>
+            
+            <div class="case-challenge-box">
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <div><strong>Operational Challenge:</strong> A Jubail synthesis gas plant suffered chronic hydrogen leakage across legacy wet seals at 110-bar operating pressure, causing process gas flaring and high seal oil contamination costs.</div>
+              </div>
+
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-wrench"></i>
+                <div><strong>MechFlow Engineering Solution:</strong> Engineered a turnkey conversion from wet seals to API 692 Tandem Dry Gas Seals with intermediate nitrogen buffer labyrinth. Precision helium optical flat lapping (2 light bands) and 150-bar dynamic nitrogen run verification in our ISO Class 7 cleanroom.</div>
+              </div>
+
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-circle-check" style="color: #16A34A;"></i>
+                <div><strong>Verified Impact:</strong> Zero flaring achieved, $450,000 annual seal oil savings, and seamless continuous operation across a 36-month run cycle.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-metric-box">
+            <div class="case-metric-num">$450K/yr</div>
+            <div class="case-metric-label">Seal Oil &amp; Flaring Savings</div>
+            <div class="case-metric-sub">API 692 Dry Gas Seal Conversion</div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; margin-top: 6px; font-size: 13px; font-weight: 700; color: #4ADE80;">
+              <i class="fa-solid fa-leaf"></i> Zero Flaring Milestone
+            </div>
+          </div>
+        </div>
+
+        <!-- CASE STUDY 4: Dammam 3,500kW Heavy Mill Motor Rewind -->
+        <div class="case-study-card">
+          <div>
+            <span class="tag-accent" style="color: #EF4444;"><i class="fa-solid fa-bolt"></i> Mining &amp; Mineral Processing &bull; Eastern Province</span>
+            <h2 style="font-size: 24px; font-weight: 800; color: var(--color-heading); margin: 12px 0 8px;">
+              6.6kV 3,500kW SAG Mill Motor Emergency Rewind &amp; VPI in 9 Days
+            </h2>
+            
+            <div class="case-challenge-box">
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <div><strong>Operational Challenge:</strong> A catastrophic stator winding phase-to-phase short halted a primary ore grinding mill in the Eastern Province. The European OEM quoted a 6-month replacement lead time.</div>
+              </div>
+
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-wrench"></i>
+                <div><strong>MechFlow Engineering Solution:</strong> In-house manufacturing of Class H mica-glass resin-rich diamond coils, automated precision robotic forming, dual-cycle Vacuum Pressure Impregnation (VPI), and 13.8kV high-potential dielectric surge testing at our Jeddah electrical workshop.</div>
+              </div>
+
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-circle-check" style="color: #16A34A;"></i>
+                <div><strong>Verified Impact:</strong> Motor fully overhauled, tested, and re-commissioned on-site in just 9 days, resuming 12,000 tons/day mineral processing operations.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-metric-box">
+            <div class="case-metric-num">9 Days</div>
+            <div class="case-metric-label">Emergency Turnaround vs 6 Mo OEM</div>
+            <div class="case-metric-sub">6.6kV 3,500kW Motor Rewind &amp; VPI</div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; margin-top: 6px; font-size: 13px; font-weight: 700; color: #F87171;">
+              <i class="fa-solid fa-industry"></i> 12,000 T/Day Production Resumed
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DIRECT ACTION & RFQ CONSULTATION STRIP -->
+  <section class="section-spacer" style="background: #FFFFFF;">
+    <div class="container">
+      <div class="whatsapp-duty-box" style="text-align: center; max-width: 900px; margin: 0 auto;">
+        <span style="font-size: 12px; font-weight: 800; color: #25D366; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">
+          PROVEN OPERATIONAL RELIABILITY
+        </span>
+        <h3 style="font-size: 26px; font-weight: 900; color: #FFFFFF; margin-bottom: 12px;">Ready to Maximize Your Plant MTBF?</h3>
+        <p style="font-size: 14.5px; color: #CBD5E1; line-height: 1.65; max-width: 650px; margin: 0 auto 24px;">
+          Contact our reliability engineering team for a customized asset feasibility study, turnaround planning consultation, or emergency dispatch across the Kingdom.
+        </p>
+
+        <div style="display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap;">
+          <a href="rfq.html" class="btn-hero-primary" style="padding: 14px 28px; font-size: 14px;">
+            <span>REQUEST ENGINEERING FEASIBILITY STUDY</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a href="tel:+966592151506" class="btn-emergency-call" style="padding: 14px 28px; font-size: 14px;">
+            <i class="fa-solid fa-phone"></i>
+            <span>CALL RELIABILITY DESK: +966 59 215 1506</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROVED CLIENT TRUST LOGO MARQUEE -->
+  <section class="client-marquee-section">
+    <div class="container">
+      <div class="marquee-header-row">
+        <span class="marquee-tag">APPROVED INDUSTRIAL PARTNER</span>
+        <span class="marquee-sub">Trusted by the Kingdom's Critical Energy, Petrochemical &amp; Utility Plants</span>
+      </div>
+    </div>
+    
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <div class="marquee-item"><img src="images/clients/saudi-aramco.svg" alt="Saudi Aramco"></div>
+        <div class="marquee-item"><img src="images/clients/sabic.svg" alt="SABIC"></div>
+        <div class="marquee-item"><img src="images/clients/maaden.svg" alt="Ma'aden Mining"></div>
+        <div class="marquee-item"><img src="images/clients/sadara-chemical.svg" alt="Sadara Chemical Company"></div>
+        <div class="marquee-item"><img src="images/clients/saudi-electricity.svg" alt="Saudi Electricity / Energy Company"></div>
+
+        <div class="marquee-item"><img src="images/clients/saudi-aramco.svg" alt="Saudi Aramco"></div>
+        <div class="marquee-item"><img src="images/clients/sabic.svg" alt="SABIC"></div>
+        <div class="marquee-item"><img src="images/clients/maaden.svg" alt="Ma'aden Mining"></div>
+        <div class="marquee-item"><img src="images/clients/sadara-chemical.svg" alt="Sadara Chemical Company"></div>
+        <div class="marquee-item"><img src="images/clients/saudi-electricity.svg" alt="Saudi Electricity / Energy Company"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MASTER FOOTER -->
   <footer class="master-footer">
     <div class="container">
       <div class="footer-4col">
+        <!-- Col 1: Brand & Social Media -->
         <div>
           <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
             <img src="mechflow-logo-white.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img" style="height:44px;">
           </a>
-          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #94A3B8;">
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 18px; color: #94A3B8;">
             Kingdom-wide OEM-independent engineering leader providing Turbomachinery overhaul, Dry Gas Seals (API 692), laser alignment, and plant turnaround (TAR) services.
           </p>
+
+          <!-- Social Media Icons Row -->
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://wa.me/966592151506" target="_blank" rel="noopener" class="social-icon-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
         </div>
 
+        <!-- Col 2: Service Divisions -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-layer-group"></i> Service Divisions</h4>
           <div class="footer-nav-list">
@@ -145,7 +451,8 @@
           </div>
         </div>
 
-        <div>
+        <!-- Col 3: Quick Links (Hidden on Phone View) -->
+        <div class="footer-quick-links-col">
           <h4 class="footer-head-title"><i class="fa-solid fa-compass"></i> Quick Links</h4>
           <div class="footer-nav-list">
             <a href="about.html"><i class="fa-solid fa-shield-halved"></i> About Company &amp; Governance</a>
@@ -158,36 +465,68 @@
           </div>
         </div>
 
+        <!-- Col 4: Corporate Presence -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-building-flag"></i> Corporate Presence</h4>
-          <p style="font-size: 13.5px; margin-bottom: 12px; line-height: 1.6; color: #94A3B8;">
-            🏢 <strong style="color:#FFFFFF;">Head Office:</strong> Jeddah, Saudi Arabia<br>
-            📍 <strong style="color:#FFFFFF;">Branch Offices:</strong> Dammam &amp; Yanbu
-          </p>
-          <p style="font-size: 13.5px; color: var(--color-safety-amber); font-weight: 700;">
-            📞 <span style="color:#CBD5E1;">24/7 Hotline:</span> +966 59 215 1506<br>
-            📧 <span style="color:#CBD5E1;">RFQ Email:</span> rfq@mechflow.sa
-          </p>
+          <div class="footer-presence-list">
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-building"></i>
+              <span><strong>Head Office:</strong> Jeddah, Saudi Arabia</span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <span><strong>Branch Offices:</strong> Dammam &amp; Yanbu</span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span><strong>24/7 Hotline:</strong> <a href="tel:+966592151506">+966 59 215 1506</a></span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-envelope"></i>
+              <span><strong>RFQ Email:</strong> <a href="mailto:rfq@mechflow.sa">rfq@mechflow.sa</a></span>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- Minimal Bottom Row -->
       <div class="footer-bottom-row">
-        <span>&copy; 2026 Mechflow Engineering Services and Solutions Head Office: Jeddah | Branches: Dammam &amp; Yanbu</span>
-        <a href="rfq.html" style="color: var(--color-safety-amber); font-weight:700;">Request Engineering Study <i class="fa-solid fa-arrow-right"></i></a>
+        <span>&copy; 2026 Mechflow Engineering Services and Solutions. All Rights Reserved.</span>
+        <a href="tel:+966592151506" class="footer-hotline-link" style="color: #FFA800; font-weight:700;">24/7 Breakdown Dispatch: +966 59 215 1506 <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </footer>
 
-  <nav class="mobile-bottom-appbar">
-    <a href="index.html" class="appbar-item"><i class="fa-solid fa-house"></i><span>Home</span></a>
-    <a href="services.html" class="appbar-item"><i class="fa-solid fa-layer-group"></i><span>Services</span></a>
-    <a href="diagnostic.html" class="appbar-item"><i class="fa-solid fa-stethoscope"></i><span>Diagnose</span></a>
-    <a href="emergency-dispatch.html" class="appbar-item emergency-pill"><div class="pill-icon-wrap"><i class="fa-solid fa-phone-volume"></i></div><span>24/7 Call</span></a>
-    <a href="rfq.html" class="appbar-item"><i class="fa-solid fa-file-signature"></i><span>RFQ</span></a>
+  <!-- Mobile Bottom App Bar -->
+  <nav class="mobile-bottom-appbar" aria-label="Mobile Navigation">
+    <a href="index.html" class="appbar-item">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+
+    <a href="services.html" class="appbar-item">
+      <i class="fa-solid fa-layer-group"></i>
+      <span>Services</span>
+    </a>
+
+    <a href="diagnostic.html" class="appbar-item">
+      <i class="fa-solid fa-stethoscope"></i>
+      <span>Diagnose</span>
+    </a>
+
+    <a href="emergency-dispatch.html" class="appbar-item emergency-pill">
+      <div class="pill-icon-wrap">
+        <i class="fa-solid fa-phone-volume"></i>
+      </div>
+      <span>24/7 Call</span>
+    </a>
+
+    <a href="rfq.html" class="appbar-item">
+      <i class="fa-solid fa-file-signature"></i>
+      <span>RFQ</span>
+    </a>
   </nav>
 
-  <script src="script.js?v=2.5"></script>
+  <script src="script.js?v=2.7"></script>
 </body>
 </html>
-
-

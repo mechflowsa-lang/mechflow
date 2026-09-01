@@ -1,138 +1,443 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>دراسات الحالة وسجلات الموثوقية — ميكفلو إنجينيرينج سيرفيسز آند سولوجنز</title>
-  <meta name="description" content="سجلات الأداء والنتائج الميدانية: مضاعفة عمر مضخات المراجل بنسبة 350%، إنجاز عمرة مصفاة ينبع في 45 يوماً بصفر حوادث، وتأهيل أختام ضواغط الهيدروجين في السعودية.">
+  <title>دراسات الحالة وسجل الموثوقية التشغيلية — ميك فلو السعودية</title>
+  <meta name="description" content="أثر تشغيلي موثق بالأرقام: زيادة عمر المضخات بنسبة 350%+، تنفيذ 180,000 ساعة عمل آمنة بدون أي إصابة (0.00 LTI) في عمرة مصفاة ينبع، وتطوير أختام ضواغط الهيدروجين بالمملكة.">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="../style.css?v=2.5">
-  <link rel="stylesheet" href="../mobile-app.css?v=2.5">
+  <link rel="stylesheet" href="../style.css?v=2.7">
+  <link rel="stylesheet" href="../mobile-app.css?v=2.7">
+  
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="apple-touch-icon" href="../favicon.svg">
 </head>
 <body>
 
+  <!-- ترويسة الموقع الرئيسية -->
   <header class="main-header">
     <div class="container nav-wrapper">
-      <a href="index.html" class="brand-logo" aria-label="MechFlow Homepage">
+      <a href="index.html" class="brand-logo" aria-label="الرئيسية ميك فلو">
         <img src="mechflow-logo.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img">
       </a>
 
+      <!-- القائمة الرئيسية -->
       <nav class="desktop-nav">
         <a href="index.html" class="nav-link">الرئيسية</a>
         <a href="about.html" class="nav-link">عن الشركة</a>
-        <a href="services.html" class="nav-link">الخدمات والأقسام</a>
+        
+        <!-- القائمة المنسدلة للخدمات -->
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link">
+            الخدمات والأقسام
+            <i class="fa-solid fa-chevron-down" style="font-size: 11px; margin-right: 2px;"></i>
+          </a>
+          <div class="mega-menu-box">
+            <a href="turbomachinery.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-fan"></i></div>
+              <div>
+                <div class="mega-content-title">التوربينات والمضخات</div>
+                <div class="mega-content-desc">مضخات API 610، توربينات بخارية، موازنة ديناميكية 10 طن ومحاذاة ليزرية.</div>
+              </div>
+            </a>
+
+            <a href="fluid-gas-sealing.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-ring"></i></div>
+              <div>
+                <div class="mega-content-title">الأختام الميكانيكية والغازية</div>
+                <div class="mega-content-desc">أختام API 682/692، منصة فحص نيتروجين 150 بار وغرف نظيفة.</div>
+              </div>
+            </a>
+
+            <a href="plant-turnaround.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-wrench"></i></div>
+              <div>
+                <div class="mega-content-title">عمرات المصانع (TAR)</div>
+                <div class="mega-content-desc">عزم وشد هيدروليكي ASME PCC-1، تشغيل الفلانجات موقعياً حتى 120 بوصة.</div>
+              </div>
+            </a>
+
+            <a href="advanced-engineering.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-microchip"></i></div>
+              <div>
+                <div class="mega-content-title">المحاكاة والمسح ثلاثي الأبعاد</div>
+                <div class="mega-content-desc">تحليل الإجهادات FEA، محاكاة السريان CFD، وطلاءات HVAF المقاومة للتآكل.</div>
+              </div>
+            </a>
+
+            <a href="electrical-motors.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-bolt"></i></div>
+              <div>
+                <div class="mega-content-title">لف المحركات والأتمتة</div>
+                <div class="mega-content-desc">عزل حراري Class H، تشريب بالضغط والتفريغ VPI، ومغيرات السرعة VFD.</div>
+              </div>
+            </a>
+
+            <a href="heat-transfer.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+              <div>
+                <div class="mega-content-title">المبادلات الحرارية والتبريد</div>
+                <div class="mega-content-desc">سحب حزم الأنابيب وإعادة التتييب، تنظيف المبادلات الصفائحية وتأهيل الأبراج.</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
         <a href="industries.html" class="nav-link">القطاعات الصناعية</a>
         <a href="case-studies.html" class="nav-link active">دراسات الحالة</a>
         <a href="diagnostic.html" class="nav-link">أداة التشخيص</a>
         <a href="contact.html" class="nav-link">تواصل معنا</a>
       </nav>
 
-      <div style="display: flex; align-items: center; gap: 14px;">
-        <a href="../case-studies.html" class="lang-btn"><i class="fa-solid fa-globe"></i> English</a>
-        <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="Toggle Menu"><i class="fa-solid fa-bars-staggered"></i></button>
+      <!-- تحويل اللغة وزر القائمة للهواتف -->
+      <div class="header-actions-wrap">
+        <a href="../case-studies.html" class="lang-switch-badge" title="English Version">
+          <i class="fa-solid fa-globe"></i>
+          <span>English</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="فتح القائمة">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
+  <!-- القائمة الجانبية للشاشات الصغيرة -->
   <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
     <div class="mobile-drawer">
       <div>
         <div class="mobile-drawer-header">
           <a href="index.html" class="brand-logo" aria-label="MechFlow Homepage">
-            <img src="mechflow-logo.svg" alt="MechFlow" style="height:38px; width:auto;">
+            <img src="mechflow-logo.svg" alt="MechFlow" style="height:36px; width:auto;">
           </a>
-          <button class="mobile-drawer-close" id="mobileDrawerClose"><i class="fa-solid fa-xmark"></i></button>
+          <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="إغلاق">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </div>
         <ul class="mobile-nav-list">
           <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
-          <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> عن الشركة</a></li>
-          <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> كافة الأقسام</a></li>
+          <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> عن الشركة والحوكمة</a></li>
+          <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> كافة الأقسام الهندسية الستة</a></li>
           <li><a href="turbomachinery.html" class="mobile-nav-link"><i class="fa-solid fa-fan"></i> التوربينات والمضخات</a></li>
           <li><a href="fluid-gas-sealing.html" class="mobile-nav-link"><i class="fa-solid fa-ring"></i> الأختام الميكانيكية والغازية</a></li>
           <li><a href="plant-turnaround.html" class="mobile-nav-link"><i class="fa-solid fa-wrench"></i> عمرات المصانع والتشغيل الموقعي</a></li>
           <li><a href="advanced-engineering.html" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> المحاكاة والمسح ثلاثي الأبعاد</a></li>
           <li><a href="electrical-motors.html" class="mobile-nav-link"><i class="fa-solid fa-bolt"></i> لف المحركات الكهربائية والتحكم</a></li>
-          <li><a href="industries.html" class="mobile-nav-link"><i class="fa-solid fa-industry"></i> القطاعات</a></li>
-          <li><a href="case-studies.html" class="mobile-nav-link active"><i class="fa-solid fa-chart-line"></i> دراسات الحالة</a></li>
-          <li><a href="diagnostic.html" class="mobile-nav-link"><i class="fa-solid fa-stethoscope"></i> أداة التشخيص</a></li>
-          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> طوارئ الأعطال</a></li>
-          <li><a href="rfq.html" class="mobile-nav-link"><i class="fa-solid fa-file-signature"></i> طلب تسعير</a></li>
-          <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> مواقع الفروع</a></li>
+          <li><a href="industries.html" class="mobile-nav-link"><i class="fa-solid fa-industry"></i> القطاعات الصناعية</a></li>
+          <li><a href="case-studies.html" class="mobile-nav-link active"><i class="fa-solid fa-chart-line"></i> دراسات الحالة الموثقة</a></li>
+          <li><a href="diagnostic.html" class="mobile-nav-link"><i class="fa-solid fa-stethoscope"></i> أداة التشخيص الهندسي</a></li>
+          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> طوارئ الأعطال 24/7</a></li>
+          <li><a href="rfq.html" class="mobile-nav-link"><i class="fa-solid fa-file-signature"></i> طلب حل فني وتسعير</a></li>
+          <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> مواقع الفروع والتواصل</a></li>
         </ul>
       </div>
+      
+      <!-- بطاقة الطوارئ في القائمة الجانبية -->
       <div class="mobile-drawer-footer">
-        <a href="../case-studies.html" class="lang-btn" style="justify-content:center; padding:10px;"><i class="fa-solid fa-globe"></i> English</a>
+        <a href="tel:+966592151506" class="mobile-hotline-banner">
+          <strong><i class="fa-solid fa-phone-volume fa-shake"></i> مركز طوارئ الأعطال على مدار 24 ساعة</strong>
+          <span class="mobile-hotline-digits">1506 215 59 966+</span>
+        </a>
+        <a href="../case-studies.html" class="lang-switch-badge" style="justify-content:center; padding:10px; width:100%;">
+          <i class="fa-solid fa-globe"></i> English (النسخة الإنجليزية)
+        </a>
       </div>
     </div>
   </div>
 
-  <section class="hero-monolith" style="padding: 70px 0;">
+  <!-- القسم الرئيسي: دراسات الحالة وسجل الموثوقية الميدانية -->
+  <section class="case-hero-wrap">
     <div class="container">
-      <span class="hero-badge-pill"><span class="pulse-dot"></span> سجلات الأداء الموثقة</span>
-      <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px;">دراسات الحالة ونتائج تمديد عمر المعدات</h1>
-      <p class="hero-lead-text">
-        مؤشرات أداء ملموسة بالأرقام لتمديد فترات التشغيل بين الأعطال (MTBF) وتوفير تكاليف الصيانة في كبرى المنشآت السعودية.
-      </p>
-    </div>
-  </section>
-
-  <section class="section-spacer" style="background: var(--color-canvas-alt);">
-    <div class="container">
-      <div style="display: flex; flex-direction: column; gap: 32px;">
+      <div style="position: relative; z-index: 2;">
         
-        <!-- حالة 1 -->
-        <div style="background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 36px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 36px; box-shadow: var(--shadow-card);">
-          <div>
-            <span class="tag-accent"><i class="fa-solid fa-bolt"></i> قطاع الطاقة والمرافق • المنطقة الغربية</span>
-            <h3 style="font-size: 24px; color: var(--color-heading); margin: 12px 0;">إعادة هندسة مضخة تغذية غلايات 14 مرحلة (+350% MTBF)</h3>
-            <p style="color: var(--color-body); margin-bottom: 16px; line-height: 1.68;">
-              عانت محطة توليد في رابغ من توقف متكرر للمضخة كل 5 أشهر نتيجة انحراف العمود وتلف الأختام. قامت ميك فلو بإعادة مسح السريان الهيدروليكي، وموازنة ديناميكية ISO G1.0، وتركيب أختام API 682 Plan 53B متطورة.
-            </p>
-          </div>
-          <div style="background: var(--color-canvas-subtle); border-radius: var(--radius-lg); padding: 24px; display: flex; flex-direction: column; justify-content: center; text-align: center; gap: 10px; border: 1px solid var(--color-border);">
-            <span class="mono" style="font-size: 44px; font-weight: 900; color: var(--color-saudi-emerald);">+350%</span>
-            <span style="font-size: 15px; font-weight: 800; color: var(--color-heading);">زيادة في فترة التشغيل المستمر (من 5 إلى 24+ شهراً)</span>
-            <span style="font-size: 13px; color: var(--color-muted);">وفورات تقديرية تفوق 680,000 دولار من كلفة التوقف الطارئ</span>
-          </div>
-        </div>
+        <span class="hero-badge-pill" style="margin-bottom: 18px;">
+          <span class="pulse-dot"></span>
+          <span>سجل أداء ميداني موثق ومضاعفة العمر التشغيلي للمعدات</span>
+        </span>
 
-        <!-- حالة 2 -->
-        <div style="background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 36px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 36px; box-shadow: var(--shadow-card);">
-          <div>
-            <span class="tag-accent" style="color: var(--color-tech-cyan);"><i class="fa-solid fa-flask-vial"></i> البتروكيماويات • مدينة ينبع الصناعية</span>
-            <h3 style="font-size: 24px; color: var(--color-heading); margin: 12px 0;">عمرة شاملة لمصفاة كبرى خلال 45 يوماً بصفر حوادث</h3>
-            <p style="color: var(--color-body); margin-bottom: 16px; line-height: 1.68;">
-              تنفيذ صيانة أكثر من 140 مبادل حراري، والشد المتزامن لـ 850 فلانجة وفق ASME PCC-1 عبر 120 فنياً مؤهلاً مع تسليم الموقع قبل الموعد الحرج بثلاثة أيام.
-            </p>
-          </div>
-          <div style="background: var(--color-canvas-subtle); border-radius: var(--radius-lg); padding: 24px; display: flex; flex-direction: column; justify-content: center; text-align: center; gap: 10px; border: 1px solid var(--color-border);">
-            <span class="mono" style="font-size: 44px; font-weight: 900; color: var(--color-tech-cyan);">0.00 LTI</span>
-            <span style="font-size: 15px; font-weight: 800; color: var(--color-heading);">180,000 ساعة عمل آمنة مع خلو كافة الوصلات من التسريب</span>
-            <span style="font-size: 13px; color: var(--color-muted);">تسليم قبل الموعد بـ 72 ساعة</span>
-          </div>
+        <h1 class="case-hero-title">
+          دراسات الحالة الموثقة<br>
+          <span style="color: var(--color-brand-bronze-light);">&amp; إنجازات تعزيز الاعتمادية للمصانع</span>
+        </h1>
+
+        <p class="case-hero-desc">
+          أثر تشغيلي ملموس بالأرقام: تمديد العمر التشغيلي للمضخات بنسبة 350%+، إنجاز عمرات مجمعات التكرير بدون أي إصابات عمل، وتوفير ملايين الريالات من خسائر التوقف المفاجئ في كبرى قطاعات الطاقة والتعدين بالمملكة.
+        </p>
+
+        <!-- شارات التواصل السريع -->
+        <div class="contact-quick-badges">
+          <a href="tel:+966592151506" class="contact-badge-pill">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>طوارئ 24/7: 1506 215 59 966+</span>
+          </a>
+
+          <a href="rfq.html" class="contact-badge-pill">
+            <i class="fa-solid fa-file-signature"></i>
+            <span>طلب دراسة جدوى فنية للمعدات</span>
+          </a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- Master Footer with Rich Icons -->
+  <!-- شريط مؤشرات الأثر التشغيلي الموثق -->
+  <section class="metrics-impact-strip">
+    <div class="container">
+      <div class="metrics-impact-grid">
+        <div class="metric-impact-card">
+          <div class="metric-num">+350%</div>
+          <div class="metric-label">تمديد العمر التشغيلي (MTBF) لمضخات تغذية المراجل البخارية</div>
+        </div>
+        <div class="metric-impact-card">
+          <div class="metric-num">0.00 LTI</div>
+          <div class="metric-label">تنفيذ 180,000 ساعة عمل آمنة بدون أي وقت ضائع في عمرة مصفاة ينبع</div>
+        </div>
+        <div class="metric-impact-card">
+          <div class="metric-num">72 ساعة</div>
+          <div class="metric-label">تسليم الأعمال قبل الموعد الحرج في عمرة 140 مبادل حراري</div>
+        </div>
+        <div class="metric-impact-card">
+          <div class="metric-num">+1.8M$</div>
+          <div class="metric-label">وفورات سنوية مباشرة من منع التوقفات المفاجئة وحرق الغاز</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- عرض دراسات الحالة الأربع الموثقة -->
+  <section class="section-spacer" style="background: var(--color-canvas-alt);">
+    <div class="container">
+      
+      <div style="display: flex; flex-direction: column; gap: 32px;">
+        
+        <!-- دراسة حالة 1: مضخة تغذية المراجل بمحطة رابغ -->
+        <div class="case-study-card">
+          <div>
+            <span class="tag-accent" style="color: var(--color-brand-bronze);"><i class="fa-solid fa-bolt"></i> الطاقة والمرافق &bull; المنطقة الغربية</span>
+            <h2 style="font-size: 24px; font-weight: 800; color: var(--color-heading); margin: 12px 0 8px;">
+              إعادة هندسة مضخة تغذية مراجل 14 مرحلة (+350% تمديد MTBF)
+            </h2>
+            
+            <div class="case-challenge-box">
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <div><strong>التحدي التشغيلي:</strong> عانت محطة توليد وتحلية ساحلية برابغ من توقفات متكررة لمضخة المراجل كل 5 أشهر نتيجة التكهف الهيدروليكي، وتآكل الدواسر، وانحراف عمود الدوران تحت الضغط العالي.</div>
+              </div>
+
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-wrench"></i>
+                <div><strong>الحل الهندسي من ميك فلو:</strong> تصنيع دواسر من الفولاذ السوبر دوبلكس (Super Duplex)، موازنة ديناميكية بمعيار ISO G1.0 على جهاز Schenck سعة 10 طن، ترقية الأختام إلى API 682 Plan 53B والمحاذاة الليزرية الدقيقة.</div>
+              </div>
+
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-circle-check" style="color: #16A34A;"></i>
+                <div><strong>الأثر الموثق:</strong> استمرار التشغيل المتواصل لأكثر من 24 شهراً بدون أي توقف، مع منع خسائر توقف بلغت أكثر من 680,000 دولار.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-metric-box">
+            <div class="case-metric-num">+350%</div>
+            <div class="case-metric-label">تمديد زمن التشغيل المتواصل</div>
+            <div class="case-metric-sub">ارتفع من 5 أشهر إلى 24+ شهراً متواصلاً</div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; margin-top: 6px; font-size: 13px; font-weight: 700; color: #FDBA74;">
+              <i class="fa-solid fa-shield-halved"></i> توفير 680,000$+ من خسائر التوقف
+            </div>
+          </div>
+        </div>
+
+        <!-- دراسة حالة 2: عمرة مصفاة ينبع (140 مبادل حراري) -->
+        <div class="case-study-card">
+          <div>
+            <span class="tag-accent" style="color: #0080FF;"><i class="fa-solid fa-flask-vial"></i> التكرير والبتروكيماويات &bull; مدينة ينبع الصناعية</span>
+            <h2 style="font-size: 24px; font-weight: 800; color: var(--color-heading); margin: 12px 0 8px;">
+              عمرة شاملة لـ 140 مبادل حراري (45 يوماً، صفر إصابات LTI)
+            </h2>
+            
+            <div class="case-challenge-box">
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <div><strong>التحدي التشغيلي:</strong> جدول إيقاف حرج مدته 45 يوماً بمصفاة كبرى بينبع يتطلب سحب حزم الأنابيب، التنظيف الهيدروليكي والكيميائي، وإعادة التتييب وإحكام 850 وصلة فلانجة حرجة بدون أي تسريب.</div>
+              </div>
+
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-wrench"></i>
+                <div><strong>الحل الهندسي من ميك فلو:</strong> حشد فرقة متخصصة قوامها 120 فنياً ومهندساً مع ساحبات حزم الأنابيب المتنقلة وتطبيق بروتوكول الشد الهيدروليكي المتزامن ASME PCC-1.</div>
+              </div>
+
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-circle-check" style="color: #16A34A;"></i>
+                <div><strong>الأثر الموثق:</strong> تسليم كامل نطاق العمل قبل 72 ساعة من الموعد النهائي، مع 180,000 ساعة عمل آمنة وتشغيل تجريبي سليم 100% بدون أي تسريب.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-metric-box">
+            <div class="case-metric-num">0.00 LTI</div>
+            <div class="case-metric-label">180,000 ساعة عمل آمنة</div>
+            <div class="case-metric-sub">تشغيل تجريبي خالي من أي تسريب 100%</div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; margin-top: 6px; font-size: 13px; font-weight: 700; color: #38BDF8;">
+              <i class="fa-solid fa-clock-rotate-left"></i> إنجاز قبل 72 ساعة من الموعد
+            </div>
+          </div>
+        </div>
+
+        <!-- دراسة حالة 3: ضاغط الهيدروجين بالجبيل (ترقية الأختام API 692) -->
+        <div class="case-study-card">
+          <div>
+            <span class="tag-accent" style="color: #006C35;"><i class="fa-solid fa-ring"></i> الصناعات الكيميائية والبتروكيماويات &bull; الجبيل الصناعية</span>
+            <h2 style="font-size: 24px; font-weight: 800; color: var(--color-heading); margin: 12px 0 8px;">
+              تطوير أختام ضاغط غاز الهيدروجين إلى الأختام الغازية الجافة (API 692)
+            </h2>
+            
+            <div class="case-challenge-box">
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <div><strong>التحدي التشغيلي:</strong> تسريب مستمر لغاز الهيدروجين عبر الأختام الزيتية القديمة بضاغط يعمل تحت ضغط 110 بار، مما كان يتسبب في حرق الغاز وتلوث زيت التزييت بتكاليف باهظة.</div>
+              </div>
+
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-wrench"></i>
+                <div><strong>الحل الهندسي من ميك فلو:</strong> التحويل الشامل لمنظومة أختام غازية جافة ترادفية Tandem DGS وفق معيار API 692، تسوية الأسطح بالهيليوم (2 Light Bands)، وفحص ديناميكي بالنيتروجين حتى 150 بار بغرفتنا النظيفة.</div>
+              </div>
+
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-circle-check" style="color: #16A34A;"></i>
+                <div><strong>الأثر الموثق:</strong> إيقاف حرق الغاز نهائياً، توفير 450,000 دولار سنوياً من تكاليف الزيت، وتحقيق دورة تشغيلية مستقرة لمدة 36 شهراً متواصلاً.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-metric-box">
+            <div class="case-metric-num">450K$ سنوياً</div>
+            <div class="case-metric-label">وفورات زيت الأختام وحرق الغاز</div>
+            <div class="case-metric-sub">ترقية شاملة إلى أختام API 692 DGS</div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; margin-top: 6px; font-size: 13px; font-weight: 700; color: #4ADE80;">
+              <i class="fa-solid fa-leaf"></i> تحقيق صفر انبعاثات حرق للغاز
+            </div>
+          </div>
+        </div>
+
+        <!-- دراسة حالة 4: محرك طاحونة التعدين 3,500kW بالدمام -->
+        <div class="case-study-card">
+          <div>
+            <span class="tag-accent" style="color: #EF4444;"><i class="fa-solid fa-bolt"></i> التعدين والصناعات الثقيلة &bull; المنطقة الشرقية</span>
+            <h2 style="font-size: 24px; font-weight: 800; color: var(--color-heading); margin: 12px 0 8px;">
+              إعادة لف طارئ لمحرك طاحونة 6.6kV بقدرة 3,500kW خلال 9 أيام
+            </h2>
+            
+            <div class="case-challenge-box">
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <div><strong>التحدي التشغيلي:</strong> احتراق وانهيار عزل ملفات محرك طاحونة الخام الرئيسية بالمنطقة الشرقية، حيث طلبت الشركة المصنعة الأوروبية مهلة توريد 6 أشهر لاستبدال المحرك.</div>
+              </div>
+
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-wrench"></i>
+                <div><strong>الحل الهندسي من ميك فلو:</strong> تصنيع ملفات ماسية عالية الجهد معزولة بالميكا والراتنج فئة Class H، وتشكيل آلي، وتشريب مزدوج بالضغط والتفريغ VPI مع اختبارات الجهد العالي حتى 13.8kV بورشة جدة.</div>
+              </div>
+
+              <div class="case-challenge-item">
+                <i class="fa-solid fa-circle-check" style="color: #16A34A;"></i>
+                <div><strong>الأثر الموثق:</strong> إنجاز العمرة واختبار المحرك وإعادة تشغيله في الموقع خلال 9 أيام فقط، واستئناف إنتاج 12,000 طن يومياً من المعادن.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-metric-box">
+            <div class="case-metric-num">9 أيام</div>
+            <div class="case-metric-label">عمرة طارئة مقابل 6 أشهر من المصنع</div>
+            <div class="case-metric-sub">إعادة لف وتشريب VPI لمحرك 3,500kW</div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; margin-top: 6px; font-size: 13px; font-weight: 700; color: #F87171;">
+              <i class="fa-solid fa-industry"></i> استئناف إنتاج 12,000 طن/يوم
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- شريط الاستشارة وطلب دراسة الجدوى الهندسية -->
+  <section class="section-spacer" style="background: #FFFFFF;">
+    <div class="container">
+      <div class="whatsapp-duty-box" style="text-align: center; max-width: 900px; margin: 0 auto;">
+        <span style="font-size: 12px; font-weight: 800; color: #25D366; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">
+          موثوقية تشغيلية معتمدة بالأرقام
+        </span>
+        <h3 style="font-size: 26px; font-weight: 900; color: #FFFFFF; margin-bottom: 12px;">هل ترغب في مضاعفة العمر التشغيلي لمعداتكم؟</h3>
+        <p style="font-size: 14.5px; color: #CBD5E1; line-height: 1.65; max-width: 650px; margin: 0 auto 24px;">
+          تواصل مع فريق مهندسي الاعتمادية لإعداد دراسة جدوى فنية مخصصة لمنشأتكم، التخطيط للعمرات الكبرى، أو طلب فرق التدخل الميداني في كافة مناطق المملكة.
+        </p>
+
+        <div style="display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap;">
+          <a href="rfq.html" class="btn-hero-primary" style="padding: 14px 28px; font-size: 14px;">
+            <span>طلب دراسة جدوى فنية وهندسية</span>
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+
+          <a href="tel:+966592151506" class="btn-emergency-call" style="padding: 14px 28px; font-size: 14px;">
+            <i class="fa-solid fa-phone"></i>
+            <span>اتصال بمكتب الاعتمادية: 1506 215 59 966+</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- شريط اعتمادات كبرى المنشآت الصناعية -->
+  <section class="client-marquee-section">
+    <div class="container">
+      <div class="marquee-header-row">
+        <span class="marquee-tag">شريك صناعي معتمد</span>
+        <span class="marquee-sub">شريك موثوق لأكبر قلاع الطاقة والتعدين والبتروكيماويات في المملكة العربية السعودية</span>
+      </div>
+    </div>
+    
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <div class="marquee-item"><img src="../images/clients/saudi-aramco.svg" alt="أرامكو السعودية"></div>
+        <div class="marquee-item"><img src="../images/clients/sabic.svg" alt="سابك"></div>
+        <div class="marquee-item"><img src="../images/clients/maaden.svg" alt="معادن"></div>
+        <div class="marquee-item"><img src="../images/clients/sadara-chemical.svg" alt="شركة صدارة للكيميائيات"></div>
+        <div class="marquee-item"><img src="../images/clients/saudi-electricity.svg" alt="الشركة السعودية للكهرباء"></div>
+
+        <div class="marquee-item"><img src="../images/clients/saudi-aramco.svg" alt="أرامكو السعودية"></div>
+        <div class="marquee-item"><img src="../images/clients/sabic.svg" alt="سابك"></div>
+        <div class="marquee-item"><img src="../images/clients/maaden.svg" alt="معادن"></div>
+        <div class="marquee-item"><img src="../images/clients/sadara-chemical.svg" alt="شركة صدارة للكيميائيات"></div>
+        <div class="marquee-item"><img src="../images/clients/saudi-electricity.svg" alt="الشركة السعودية للكهرباء"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- تذييل الصفحة الرئيسي -->
   <footer class="master-footer">
     <div class="container">
       <div class="footer-4col">
+        <!-- عمود 1 -->
         <div>
           <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
             <img src="mechflow-logo-white.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img" style="height:44px;">
           </a>
-          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #94A3B8;">
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 18px; color: #94A3B8;">
             الريادة الهندسية المستقلة في المملكة العربية السعودية لخدمات عمرات التوربينات والمضخات، الأختام الغازية الجافة (API 692)، المحاذاة الليزرية، وعمرات المصانع الكبرى.
           </p>
+
+          <!-- شريط شبكات التواصل الاجتماعي -->
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://wa.me/966592151506" target="_blank" rel="noopener" class="social-icon-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
         </div>
 
+        <!-- عمود 2 -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-layer-group"></i> الأقسام الهندسية</h4>
           <div class="footer-nav-list">
@@ -145,7 +450,8 @@
           </div>
         </div>
 
-        <div>
+        <!-- عمود 3 (مخفي في شاشات الهواتف) -->
+        <div class="footer-quick-links-col">
           <h4 class="footer-head-title"><i class="fa-solid fa-compass"></i> روابط سريعة</h4>
           <div class="footer-nav-list">
             <a href="about.html"><i class="fa-solid fa-shield-halved"></i> عن الشركة والحوكمة</a>
@@ -158,36 +464,68 @@
           </div>
         </div>
 
+        <!-- عمود 4 -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-building-flag"></i> التواجد المؤسسي</h4>
-          <p style="font-size: 13.5px; margin-bottom: 12px; line-height: 1.6; color: #94A3B8;">
-            🏢 <strong style="color:#FFFFFF;">المكتب الرئيسي:</strong> جدة، المملكة العربية السعودية<br>
-            📍 <strong style="color:#FFFFFF;">الفروع التشغيلية:</strong> الدمام وينبع
-          </p>
-          <p style="font-size: 13.5px; color: var(--color-safety-amber); font-weight: 700;">
-            📞 <span style="color:#CBD5E1;">طوارئ الأعطال 24/7:</span> 1506 215 59 966+<br>
-            📧 <span style="color:#CBD5E1;">طلبات التسعير:</span> rfq@mechflow.sa
-          </p>
+          <div class="footer-presence-list">
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-building"></i>
+              <span><strong>المكتب الرئيسي:</strong> جدة، المملكة العربية السعودية</span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <span><strong>الفروع التشغيلية:</strong> الدمام وينبع</span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span><strong>طوارئ الأعطال 24/7:</strong> <a href="tel:+966592151506">1506 215 59 966+</a></span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-envelope"></i>
+              <span><strong>طلبات التسعير:</strong> <a href="mailto:rfq@mechflow.sa">rfq@mechflow.sa</a></span>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- سطر حقوق النشر المصغر -->
       <div class="footer-bottom-row">
-        <span>&copy; 2026 ميكفلو إنجينيرينج سيرفيسز آند سولوجنز. المقر الرئيسي: جدة | الفروع: الدمام وينبع</span>
-        <a href="rfq.html" style="color: var(--color-safety-amber); font-weight:700;">طلب دراسة فنية لمصنعكم <i class="fa-solid fa-arrow-left"></i></a>
+        <span>&copy; 2026 شركة ميك فلو للخدمات والحلول الهندسية. كافة الحقوق محفوظة.</span>
+        <a href="tel:+966592151506" class="footer-hotline-link" style="color: #FFA800; font-weight:700;">طوارئ الأعطال 24/7: 1506 215 59 966+ <i class="fa-solid fa-arrow-left"></i></a>
       </div>
     </div>
   </footer>
 
-  <nav class="mobile-bottom-appbar">
-    <a href="index.html" class="appbar-item"><i class="fa-solid fa-house"></i><span>الرئيسية</span></a>
-    <a href="services.html" class="appbar-item active"><i class="fa-solid fa-layer-group"></i><span>الخدمات</span></a>
-    <a href="diagnostic.html" class="appbar-item"><i class="fa-solid fa-stethoscope"></i><span>التشخيص</span></a>
-    <a href="emergency-dispatch.html" class="appbar-item emergency-pill"><div class="pill-icon-wrap"><i class="fa-solid fa-phone-volume"></i></div><span>طوارئ 24/7</span></a>
-    <a href="rfq.html" class="appbar-item"><i class="fa-solid fa-file-signature"></i><span>طلب تسعير</span></a>
+  <!-- شريط التنقل السفلي للهواتف الذكية -->
+  <nav class="mobile-bottom-appbar" aria-label="شريط التنقل السفلي">
+    <a href="index.html" class="appbar-item">
+      <i class="fa-solid fa-house"></i>
+      <span>الرئيسية</span>
+    </a>
+
+    <a href="services.html" class="appbar-item">
+      <i class="fa-solid fa-layer-group"></i>
+      <span>الخدمات</span>
+    </a>
+
+    <a href="diagnostic.html" class="appbar-item">
+      <i class="fa-solid fa-stethoscope"></i>
+      <span>التشخيص</span>
+    </a>
+
+    <a href="emergency-dispatch.html" class="appbar-item emergency-pill">
+      <div class="pill-icon-wrap">
+        <i class="fa-solid fa-phone-volume"></i>
+      </div>
+      <span>طوارئ 24/7</span>
+    </a>
+
+    <a href="rfq.html" class="appbar-item">
+      <i class="fa-solid fa-file-signature"></i>
+      <span>طلب تسعير</span>
+    </a>
   </nav>
 
-  <script src="../script.js?v=2.5"></script>
+  <script src="../script.js?v=2.7"></script>
 </body>
 </html>
-
-
