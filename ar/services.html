@@ -3,59 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>الخدمات الهندسية والأقسام التخصصية — ميكفلو إنجينيرينج سيرفيسز آند سولوجنز</title>
-  <meta name="description" content="استكشف الأقسام الهندسية الستة لشركة ميكفلو إنجينيرينج سيرفيسز آند سولوجنز: صيانة التوربينات، الأختام الغازية الجافة، عمرات المصانع، المحاكاة الرقمية، لف المحركات والمبادلات الحرارية.">
+  <title>الأقسام الهندسية التخصصية والحلول الصناعية — ميك فلو السعودية</title>
+  <meta name="description" content="استكشف الأقسام الهندسية الستة التخصصية لشركة ميك فلو في السعودية: التوربينات والمضخات، الأختام الغازية الجافة، عمرات المصانع، المحاكاة والمسح ثلاثي الأبعاد، لف المحركات والمبادلات الحرارية.">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="../style.css?v=2.5">
-  <link rel="stylesheet" href="../mobile-app.css?v=2.5">
+  <link rel="stylesheet" href="../style.css?v=2.8">
+  <link rel="stylesheet" href="../mobile-app.css?v=2.8">
+  
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="apple-touch-icon" href="../favicon.svg">
 </head>
 <body>
 
+  <!-- شريط الترويسة الرئيسي -->
   <header class="main-header">
     <div class="container nav-wrapper">
-      <a href="index.html" class="brand-logo" aria-label="MechFlow Homepage">
+      <a href="index.html" class="brand-logo" aria-label="الرئيسية ميك فلو">
         <img src="mechflow-logo.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img" decoding="async">
       </a>
 
+      <!-- القائمة الرئيسية للأجهزة المكتبية -->
       <nav class="desktop-nav">
         <a href="index.html" class="nav-link">الرئيسية</a>
         <a href="about.html" class="nav-link">عن الشركة</a>
-        <a href="services.html" class="nav-link active">الخدمات والأقسام</a>
+        
+        <!-- القائمة المنسدلة للخدمات والأقسام -->
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link active">
+            الخدمات والأقسام
+            <i class="fa-solid fa-chevron-down" style="font-size: 11px; margin-right: 2px;"></i>
+          </a>
+          <div class="mega-menu-box">
+            <a href="turbomachinery.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-fan"></i></div>
+              <div>
+                <div class="mega-content-title">التوربينات والمضخات</div>
+                <div class="mega-content-desc">مضخات API 610، توربينات بخارية، موازنة ديناميكية 10 طن ومحاذاة ليزرية.</div>
+              </div>
+            </a>
+
+            <a href="fluid-gas-sealing.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-ring"></i></div>
+              <div>
+                <div class="mega-content-title">الأختام الميكانيكية والغازية</div>
+                <div class="mega-content-desc">أختام API 682/692، فحص نيتروجين ديناميكي 150 بار وغرفة نظيفة.</div>
+              </div>
+            </a>
+
+            <a href="plant-turnaround.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-wrench"></i></div>
+              <div>
+                <div class="mega-content-title">عمرات المصانع الميدانية</div>
+                <div class="mega-content-desc">شد هيدروليكي ASME PCC-1، تشغيل الفلانجات موقعياً حتى 120 بوصة.</div>
+              </div>
+            </a>
+
+            <a href="advanced-engineering.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-microchip"></i></div>
+              <div>
+                <div class="mega-content-title">المحاكاة والمسح ثلاثي الأبعاد</div>
+                <div class="mega-content-desc">تحليلات FEA/CFD، هندسة عكسية وطلاءات كربيد التنجستن HVAF.</div>
+              </div>
+            </a>
+
+            <a href="electrical-motors.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-bolt"></i></div>
+              <div>
+                <div class="mega-content-title">لف المحركات والأتمتة</div>
+                <div class="mega-content-desc">عزل Class H، معالجة تفريغ وضغط VPI حتى 13.8kV ولوحات تحكم PLC.</div>
+              </div>
+            </a>
+
+            <a href="heat-transfer.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+              <div>
+                <div class="mega-content-title">المبادلات الحرارية والتبريد</div>
+                <div class="mega-content-desc">سحب حزم الأنابيب، إعادة تتييب، تنظيف المبادلات PHE وأبراج التبريد.</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
         <a href="industries.html" class="nav-link">القطاعات الصناعية</a>
         <a href="case-studies.html" class="nav-link">دراسات الحالة</a>
         <a href="diagnostic.html" class="nav-link">أداة التشخيص</a>
         <a href="contact.html" class="nav-link">تواصل معنا</a>
       </nav>
 
-      <div style="display: flex; align-items: center; gap: 14px;">
-        <a href="../services.html" class="lang-btn"><i class="fa-solid fa-globe"></i> English</a>
-        <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="Toggle Menu"><i class="fa-solid fa-bars-staggered"></i></button>
+      <!-- إجراءات الترويسة: تبديل اللغة وزر القائمة -->
+      <div class="header-actions-wrap">
+        <a href="../services.html" class="lang-switch-badge" title="English Version">
+          <i class="fa-solid fa-globe"></i>
+          <span>English</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="تبديل القائمة">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
+  <!-- القائمة الجانبية للهواتف -->
   <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
     <div class="mobile-drawer">
       <div>
         <div class="mobile-drawer-header">
           <a href="index.html" class="brand-logo" aria-label="MechFlow Homepage">
-            <img src="mechflow-logo.svg" alt="MechFlow" style="height:38px; width:auto;" decoding="async">
+            <img src="mechflow-logo.svg" alt="MechFlow" style="height:36px; width:auto;" decoding="async">
           </a>
-          <button class="mobile-drawer-close" id="mobileDrawerClose"><i class="fa-solid fa-xmark"></i></button>
+          <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="إغلاق القائمة">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </div>
         <ul class="mobile-nav-list">
           <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
           <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> عن الشركة</a></li>
-          <li><a href="services.html" class="mobile-nav-link active"><i class="fa-solid fa-layer-group"></i> كافة الأقسام</a></li>
+          <li><a href="services.html" class="mobile-nav-link active"><i class="fa-solid fa-layer-group"></i> كافة الأقسام الهندسية الستة</a></li>
           <li><a href="turbomachinery.html" class="mobile-nav-link"><i class="fa-solid fa-fan"></i> التوربينات والمضخات</a></li>
           <li><a href="fluid-gas-sealing.html" class="mobile-nav-link"><i class="fa-solid fa-ring"></i> الأختام الميكانيكية والغازية</a></li>
           <li><a href="plant-turnaround.html" class="mobile-nav-link"><i class="fa-solid fa-wrench"></i> عمرات المصانع والتشغيل الموقعي</a></li>
           <li><a href="advanced-engineering.html" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> المحاكاة والمسح ثلاثي الأبعاد</a></li>
-          <li><a href="electrical-motors.html" class="mobile-nav-link"><i class="fa-solid fa-bolt"></i> لف المحركات الكهربائية والتحكم</a></li>
+          <li><a href="electrical-motors.html" class="mobile-nav-link"><i class="fa-solid fa-bolt"></i> لف المحركات الكهربائية والأتمتة</a></li>
+          <li><a href="heat-transfer.html" class="mobile-nav-link"><i class="fa-solid fa-temperature-arrow-down"></i> المبادلات الحرارية وأنظمة التبريد</a></li>
           <li><a href="industries.html" class="mobile-nav-link"><i class="fa-solid fa-industry"></i> القطاعات الصناعية</a></li>
           <li><a href="case-studies.html" class="mobile-nav-link"><i class="fa-solid fa-chart-line"></i> دراسات الحالة الموثقة</a></li>
           <li><a href="diagnostic.html" class="mobile-nav-link"><i class="fa-solid fa-stethoscope"></i> أداة التشخيص الهندسي</a></li>
@@ -65,108 +134,367 @@
         </ul>
       </div>
       <div class="mobile-drawer-footer">
-        <a href="../services.html" class="lang-btn" style="justify-content:center; padding:10px;"><i class="fa-solid fa-globe"></i> English</a>
+        <a href="../services.html" class="lang-switch-badge" style="justify-content:center; padding:10px; width:100%;">
+          <i class="fa-solid fa-globe"></i> <span>English Version</span>
+        </a>
       </div>
     </div>
   </div>
 
-  <section class="hero-monolith" style="padding: 70px 0;">
+  <!-- بنر هيرو الصفحة التخصصية -->
+  <section class="service-hero-banner">
+    <div class="service-hero-bg" style="background-image: url('../images/div-turbomachinery.webp');"></div>
     <div class="container">
-      <span class="hero-badge-pill"><span class="pulse-dot"></span> 6 أقسام صناعية تخصصية</span>
-      <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px;">الهندسة الميكانيكية الشاملة وتأهيل المعدات</h1>
-      <p class="hero-lead-text">
-        حلول مستقلة وشاملة لصيانة التوربينات، الأختام الغازية الجافة، الفحص الموقعي، وعمرات المصانع الكبرى في المملكة العربية السعودية.
-      </p>
+      <div class="service-hero-grid">
+        <div>
+          <span class="service-hero-badge"><i class="fa-solid fa-layer-group"></i> 6 أقسام هندسية تخصصية</span>
+          <h1 class="service-hero-title">دقة هندسية متقدمة. أختام موثوقة. عمرات ميدانية شاملة.</h1>
+          <p class="service-hero-desc">
+            الريادة الهندسية المستقلة في المملكة لعمرات التوربينات والمضخات، فحص الأختام الغازية الجافة (API 692)، لف المحركات الكهربائية، وعمرات المصانع الكبرى.
+          </p>
+          <div class="service-hero-actions">
+            <a href="#servicesGrid" class="btn-emergency-gold">
+              <i class="fa-solid fa-compass"></i>
+              <span>استكشف الأقسام الهندسية</span>
+            </a>
+            <a href="rfq.html" class="btn-outline-glow">
+              <i class="fa-solid fa-file-signature"></i>
+              <span>طلب عرض فني وتسعير</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="service-hero-media-card">
+          <img src="../images/div-turnaround.webp" alt="خدمات ميك فلو الصناعية" loading="lazy" decoding="async">
+          <div class="service-hero-floating-stat">
+            <div>
+              <div class="floating-stat-num">6 أقسام</div>
+              <div class="floating-stat-lbl">أسطول وورش متكاملة 100%</div>
+            </div>
+            <div style="text-align: left;">
+              <div class="floating-stat-num">2-4 ساعات</div>
+              <div class="floating-stat-lbl">سرعة الاستجابة الميدانية</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section-spacer" style="background: var(--color-canvas-alt);">
+  <!-- شريط المؤشرات الهندسية -->
+  <section class="metrics-impact-strip">
     <div class="container">
+      <div class="metrics-impact-grid">
+        <div class="metric-impact-item">
+          <div class="metric-impact-val">100%</div>
+          <div class="metric-impact-lbl">تغطية شاملة لمعدات المصانع باستقلالية كاملة</div>
+        </div>
+        <div class="metric-impact-item">
+          <div class="metric-impact-val">150 بار</div>
+          <div class="metric-impact-lbl">طاقة منصة الفحص الديناميكي بالنيتروجين</div>
+        </div>
+        <div class="metric-impact-item">
+          <div class="metric-impact-val">10 طن</div>
+          <div class="metric-impact-lbl">سعة الموازنة الديناميكية الدقيقة (ISO G2.5)</div>
+        </div>
+        <div class="metric-impact-item">
+          <div class="metric-impact-val">0.00 LTI</div>
+          <div class="metric-impact-lbl">180,000+ ساعة عمل موقعية بدون إصابات</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- بطاقات الأقسام الهندسية الستة التخصصية -->
+  <section class="section-spacer" id="servicesGrid" style="background-color: var(--color-canvas-alt);">
+    <div class="container">
+      <div class="section-head-center">
+        <span class="tag-accent"><i class="fa-solid fa-cubes-stacked"></i> قدرات هندسية متكاملة</span>
+        <h2 class="head-title-lg">الحلول الهندسية الميدانية الشاملة للأصول الصناعية</h2>
+        <p class="head-desc">دعم دورة الحياة الكاملة للمعدات الحرجة، من الأختام الميكانيكية والتوربينات إلى عمرات المصانع والتوائم الرقمية.</p>
+      </div>
+
       <div class="divisions-3col-grid">
         
+        <!-- قسم 01 -->
         <div class="division-box-card">
-          <div>
-            <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge"><i class="fa-solid fa-fan"></i></div>
-              <div><span class="division-tag-num">القسم 01</span><h3 class="division-card-title">التوربينات والمضخات</h3></div>
-            </div>
-            <p class="division-card-desc">مضخات API 610، توربينات بخارية، ضواغط، موازنة ديناميكية 10 طن، ومحاذاة ليزرية لاسلكية.</p>
+          <div class="division-img-wrap">
+            <img src="../images/div-turbomachinery.webp" alt="التوربينات والمضخات" class="division-card-img" loading="lazy" decoding="async">
+            <span class="division-img-badge">قسم 01 &bull; التوربينات والمضخات</span>
           </div>
-          <a href="turbomachinery.html" class="division-link-btn"><span>تفاصيل القسم الكاملة</span> <i class="fa-solid fa-arrow-left"></i></a>
+          <div class="division-card-body">
+            <div>
+              <div class="division-overlap-icon-box"><i class="fa-solid fa-fan"></i></div>
+              <h3 class="division-card-title">التوربينات والمضخات</h3>
+              <p class="division-card-desc">
+                عمرات وإصلاح وموازنة ديناميكية لمضخات العمليات البترولية API ومضخات تغذية الغلايات والتوربينات البخارية.
+              </p>
+              <div class="division-features-list">
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>موازنة ديناميكية حتى 10 طن لمعيار ISO G2.5</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>محاذاة ليزرية لاسلكية وتحليل اهتزازات FFT</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>عمرات مضخات API 610 طرازات BB2 / BB3 / BB5</span>
+                </div>
+              </div>
+            </div>
+            <a href="turbomachinery.html" class="division-link-btn">
+              <span>استكشف قسم التوربينات</span>
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+          </div>
         </div>
 
+        <!-- قسم 02 -->
         <div class="division-box-card">
-          <div>
-            <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge" style="background: var(--color-tech-cyan-light); color: var(--color-tech-cyan);"><i class="fa-solid fa-ring"></i></div>
-              <div><span class="division-tag-num">القسم 02</span><h3 class="division-card-title">الأختام الغازية والميكانيكية</h3></div>
-            </div>
-            <p class="division-card-desc">أختام ميكانيكية متقدمة، أختام غازية جافة API 692، منصة فحص غازية 150 بار، وصقل بالهيليوم.</p>
+          <div class="division-img-wrap">
+            <img src="../images/div-sealing.webp" alt="الأختام الميكانيكية والغازية" class="division-card-img" loading="lazy" decoding="async">
+            <span class="division-img-badge">قسم 02 &bull; أختام الغاز الجاف</span>
           </div>
-          <a href="fluid-gas-sealing.html" class="division-link-btn"><span>تفاصيل القسم الكاملة</span> <i class="fa-solid fa-arrow-left"></i></a>
+          <div class="division-card-body">
+            <div>
+              <div class="division-overlap-icon-box"><i class="fa-solid fa-ring"></i></div>
+              <h3 class="division-card-title">الأختام الميكانيكية والغازية</h3>
+              <p class="division-card-desc">
+                أختام ميكانيكية خرطوشية متقدمة وأختام الغاز الجاف (API 692) للضواغط الغازية والمضخات فائقة الضغط.
+              </p>
+              <div class="division-features-list">
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>منصة فحص أختام بالنيتروجين حتى 150 بار</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>غرفة نظيفة ISO Class 7 وصقل بأشرطة الهيليوم</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>تأهيل واختبار معتمد وفق API 682 و API 692</span>
+                </div>
+              </div>
+            </div>
+            <a href="fluid-gas-sealing.html" class="division-link-btn">
+              <span>استكشف تقنيات الأختام</span>
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+          </div>
         </div>
 
+        <!-- قسم 03 -->
         <div class="division-box-card">
-          <div>
-            <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge" style="background: var(--color-safety-amber-light); color: var(--color-safety-amber);"><i class="fa-solid fa-wrench"></i></div>
-              <div><span class="division-tag-num">القسم 03</span><h3 class="division-card-title">عمرات المصانع (TAR)</h3></div>
-            </div>
-            <p class="division-card-desc">إدارة الإيقاف المبرمج، الشد الهيدروليكي ASME PCC-1، تشغيل الفلانجات موقعياً، واختبارات 40k PSI.</p>
+          <div class="division-img-wrap">
+            <img src="../images/div-turnaround.webp" alt="عمرات المصانع الميدانية" class="division-card-img" loading="lazy" decoding="async">
+            <span class="division-img-badge">قسم 03 &bull; عمرات المصانع TAR</span>
           </div>
-          <a href="plant-turnaround.html" class="division-link-btn"><span>تفاصيل القسم الكاملة</span> <i class="fa-solid fa-arrow-left"></i></a>
+          <div class="division-card-body">
+            <div>
+              <div class="division-overlap-icon-box"><i class="fa-solid fa-wrench"></i></div>
+              <h3 class="division-card-title">عمرات المصانع الميدانية (TAR)</h3>
+              <p class="division-card-desc">
+                تنفيذ أعمال التوقف المبرمج، الشد الهيدروليكي المتزامن، تشغيل الفلانجات موقعياً، واختبارات الضغط الهيدروستاتيكي.
+              </p>
+              <div class="division-features-list">
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>تشغيل الفلانجات موقعياً بماكينات حتى 120 بوصة</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>شد وعزم هيدروليكي للمسامير وفق ASME PCC-1</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>اختبارات ضغط هيدروستاتيكي حتى 40,000 PSI</span>
+                </div>
+              </div>
+            </div>
+            <a href="plant-turnaround.html" class="division-link-btn">
+              <span>استكشف خدمات العمرات</span>
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+          </div>
         </div>
 
+        <!-- قسم 04 -->
         <div class="division-box-card">
-          <div>
-            <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge" style="background: var(--color-saudi-emerald-light); color: var(--color-saudi-emerald);"><i class="fa-solid fa-microchip"></i></div>
-              <div><span class="division-tag-num">القسم 04</span><h3 class="division-card-title">المحاكاة والمسح ثلاثي الأبعاد</h3></div>
-            </div>
-            <p class="division-card-desc">تحليل الإجهادات FEA، محاكاة السريان CFD، مسح FaroArm ليزري، وتطبيق طلاءات كربيد التنجستن HVAF.</p>
+          <div class="division-img-wrap">
+            <img src="../images/div-advanced-engineering.webp" alt="المحاكاة والمسح ثلاثي الأبعاد" class="division-card-img" loading="lazy" decoding="async">
+            <span class="division-img-badge">قسم 04 &bull; المسح ثلاثي الأبعاد</span>
           </div>
-          <a href="advanced-engineering.html" class="division-link-btn"><span>تفاصيل القسم الكاملة</span> <i class="fa-solid fa-arrow-left"></i></a>
+          <div class="division-card-body">
+            <div>
+              <div class="division-overlap-icon-box"><i class="fa-solid fa-microchip"></i></div>
+              <h3 class="division-card-title">المحاكاة والمسح ثلاثي الأبعاد</h3>
+              <p class="division-card-desc">
+                مسح ليزري متري فائق الدقة، محاكاة الإجهادات FEA، هندسة عكسية، وطلاءات كربيد التنجستن المقاومة للتآكل HVAF.
+              </p>
+              <div class="division-features-list">
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>مسح ليزري ثلاثي الأبعاد بدقة &plusmn;0.025 مم</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>تحليل إجهادات FEA ومحاكاة موائع وتكهف CFD</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>تطبيق طلاءات HVAF بكربيد التنجستن ضد التآكل</span>
+                </div>
+              </div>
+            </div>
+            <a href="advanced-engineering.html" class="division-link-btn">
+              <span>استكشف الهندسة المتقدمة</span>
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+          </div>
         </div>
 
+        <!-- قسم 05 -->
         <div class="division-box-card">
-          <div>
-            <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge" style="background: var(--color-safety-amber-light); color: #D97706;"><i class="fa-solid fa-bolt"></i></div>
-              <div><span class="division-tag-num">القسم 05</span><h3 class="division-card-title">لف المحركات والأتمتة</h3></div>
-            </div>
-            <p class="division-card-desc">لف محركات الجهد المنخفض والمتوسط، تشريب بالضغط والتفريغ VPI، مغيرات السرعة VFD، ولوحات PLC.</p>
+          <div class="division-img-wrap">
+            <img src="../images/div-electrical.webp" alt="لف المحركات الكهربائية والأتمتة" class="division-card-img" loading="lazy" decoding="async">
+            <span class="division-img-badge">قسم 05 &bull; المحركات والتحكم</span>
           </div>
-          <a href="electrical-motors.html" class="division-link-btn"><span>تفاصيل القسم الكاملة</span> <i class="fa-solid fa-arrow-left"></i></a>
+          <div class="division-card-body">
+            <div>
+              <div class="division-overlap-icon-box"><i class="fa-solid fa-bolt"></i></div>
+              <h3 class="division-card-title">لف المحركات الكهربائية والأتمتة</h3>
+              <p class="division-card-desc">
+                إعادة لف محركات الجهد المنخفض والمتوسط، تشريب بالضغط والتفريغ (VPI)، صيانة مغيرات السرعة VFD، ولوحات PLC.
+              </p>
+              <div class="division-features-list">
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>لف محركات الجهد العالي حتى 13.8 كيلو فولت</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>غرفة تشريب مزدوجة بالضغط والتفريغ (VPI)</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>تشخيص مغيرات السرعة VFD وبرمجة لوحات PLC</span>
+                </div>
+              </div>
+            </div>
+            <a href="electrical-motors.html" class="division-link-btn">
+              <span>استكشف قسم المحركات</span>
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+          </div>
         </div>
 
+        <!-- قسم 06 -->
         <div class="division-box-card">
-          <div>
-            <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge" style="background: #FEE2E2; color: #DC2626;"><i class="fa-solid fa-temperature-arrow-down"></i></div>
-              <div><span class="division-tag-num">القسم 06</span><h3 class="division-card-title">المبادلات الحرارية والتبريد</h3></div>
-            </div>
-            <p class="division-card-desc">سحب حزم الأنابيب وإعادة التتييب، تنظيف المبادلات الصفائحية PHE، وصيانة محركات أبراج التبريد.</p>
+          <div class="division-img-wrap">
+            <img src="../images/div-heat-transfer.webp" alt="المبادلات الحرارية وأبراج التبريد" class="division-card-img" loading="lazy" decoding="async">
+            <span class="division-img-badge">قسم 06 &bull; المبادلات والتبريد</span>
           </div>
-          <a href="heat-transfer.html" class="division-link-btn"><span>تفاصيل القسم الكاملة</span> <i class="fa-solid fa-arrow-left"></i></a>
+          <div class="division-card-body">
+            <div>
+              <div class="division-overlap-icon-box"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+              <h3 class="division-card-title">المبادلات الحرارية والتبريد</h3>
+              <p class="division-card-desc">
+                إعادة تتييب المبادلات الغلافية، سحب حزم الأنابيب هيدروليكياً، تنظيف المبادلات الصفائحية PHE، وصيانة أبراج التبريد.
+              </p>
+              <div class="division-features-list">
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>سحب حزم الأنابيب آلياً وإعادة تتييب هيدروليكي</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>تنظيف بالموجات فوق الصوتية واستبدال جوانات PHE</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>صيانة مراوح وصناديق تروس أبراج التبريد</span>
+                </div>
+              </div>
+            </div>
+            <a href="heat-transfer.html" class="division-link-btn">
+              <span>استكشف المبادلات الحرارية</span>
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+          </div>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- Master Footer with Rich Icons -->
+  <!-- شريط شعارات العملاء المعتمدين -->
+  <section class="trust-marquee-section">
+    <div class="container">
+      <p class="trust-marquee-title">شريك هندسي معتمد لدى كبرى المجمعات البتروكيماوية ومحطات الطاقة بالمملكة</p>
+      <div class="marquee-track">
+        <div class="marquee-item"><img src="../images/clients/saudi-aramco.svg" alt="أرامكو السعودية" decoding="async"></div>
+        <div class="marquee-item"><img src="../images/clients/sabic.svg" alt="شركة سابك" decoding="async"></div>
+        <div class="marquee-item"><img src="../images/clients/maaden.svg" alt="شركة معادن" decoding="async"></div>
+        <div class="marquee-item"><img src="../images/clients/sadara-chemical.svg" alt="شركة صدارة للكيميائيات" decoding="async"></div>
+        <div class="marquee-item"><img src="../images/clients/saudi-electricity.svg" alt="الشركة السعودية للكهرباء" decoding="async"></div>
+        <div class="marquee-item"><img src="../images/clients/saudi-aramco.svg" alt="أرامكو السعودية" decoding="async"></div>
+        <div class="marquee-item"><img src="../images/clients/sabic.svg" alt="شركة سابك" decoding="async"></div>
+        <div class="marquee-item"><img src="../images/clients/maaden.svg" alt="شركة معادن" decoding="async"></div>
+        <div class="marquee-item"><img src="../images/clients/sadara-chemical.svg" alt="شركة صدارة للكيميائيات" decoding="async"></div>
+        <div class="marquee-item"><img src="../images/clients/saudi-electricity.svg" alt="الشركة السعودية للكهرباء" decoding="async"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- شريط الإجراء المباشر -->
+  <section class="section-spacer" style="background: #FFFFFF; padding-top: 20px;">
+    <div class="container">
+      <div class="service-cta-strip">
+        <div class="service-cta-info">
+          <h3>هل تحتاج إلى دعم هندسي متخصص أو تحرك ميداني فوري؟</h3>
+          <p>تواصل مع فريق الاستجابة الهندسي للإرسال الميداني الفوري لفرق العمل من مراكزنا في جدة، الدمام، وينبع.</p>
+        </div>
+        <div class="service-cta-actions">
+          <a href="rfq.html" class="btn-emergency-gold">
+            <i class="fa-solid fa-file-signature"></i>
+            <span>طلب عرض فني ومواصفات</span>
+          </a>
+          <a href="tel:+966592151506" class="btn-outline-glow">
+            <i class="fa-solid fa-phone"></i>
+            <span>الاتصال بهاتف الطوارئ 24/7</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- تذييل الصفحة الرئيسي -->
   <footer class="master-footer">
     <div class="container">
       <div class="footer-4col">
+        <!-- عمود 1 -->
         <div>
           <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
-            <img src="mechflow-logo-white.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img" style="height:44px;" decoding="async">
+            <img src="../mechflow-logo-white.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img" style="height:44px;" decoding="async">
           </a>
-          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #94A3B8;">
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 18px; color: #94A3B8;">
             الشريك الهندسي الصناعي المتخصص في المملكة لخدمات عمرات المعدات الدوارة، حلول الأختام المتقدمة، لف المحركات الكهربائية، عمرات المصانع، والدعم الميداني للطوارئ 24/7.
           </p>
+
+          <!-- شريط شبكات التواصل الاجتماعي -->
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://wa.me/966592151506" target="_blank" rel="noopener" class="social-icon-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
         </div>
 
+        <!-- عمود 2: الأقسام الهندسية -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-layer-group"></i> الأقسام الهندسية</h4>
           <div class="footer-nav-list">
@@ -179,7 +507,8 @@
           </div>
         </div>
 
-        <div>
+        <!-- عمود 3: روابط سريعة -->
+        <div class="footer-quick-links-col">
           <h4 class="footer-head-title"><i class="fa-solid fa-compass"></i> روابط سريعة</h4>
           <div class="footer-nav-list">
             <a href="about.html"><i class="fa-solid fa-shield-halved"></i> عن الشركة والحوكمة</a>
@@ -192,6 +521,7 @@
           </div>
         </div>
 
+        <!-- عمود 4: المقرات والفروع -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-building-flag"></i> المقرات والفروع</h4>
           <div class="footer-presence-list">
@@ -217,12 +547,12 @@
 
       <div class="footer-bottom-row">
         <span>&copy; 2026 شركة ميك فلو للخدمات والحلول الهندسية</span>
-        <a href="rfq.html" style="color: var(--color-safety-amber); font-weight:700;">تقديم طلب تسعير فني <i class="fa-solid fa-arrow-left"></i></a>
+        <a href="tel:+966592151506" class="footer-hotline-link" style="color: #FFA800; font-weight:700;">طوارئ الأعطال 24/7: +966 59 215 1506 <i class="fa-solid fa-arrow-left"></i></a>
       </div>
     </div>
   </footer>
 
-    <!-- شريط التنقل السفلي للهواتف -->
+  <!-- شريط التنقل السفلي للهواتف -->
   <nav class="mobile-bottom-appbar" aria-label="شريط التنقل السفلي">
     <a href="index.html" class="appbar-item">
       <i class="fa-solid fa-house"></i>
@@ -250,8 +580,6 @@
     </a>
   </nav>
 
-  <script src="../script.js?v=2.5"></script>
+  <script src="../script.js?v=2.8"></script>
 </body>
 </html>
-
-

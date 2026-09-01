@@ -3,159 +3,470 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Specialized Engineering Services &amp; Divisions — Mechflow Engineering Services and Solutions</title>
-  <meta name="description" content="Explore MechFlow's 6 industrial engineering divisions: Turbomachinery, Fluid & Dry Gas Sealing, Plant Turnaround (TAR), CAE/FEA Simulation, Motor Rewinding, and Heat Transfer across KSA.">
+  <title>Specialized Industrial Engineering Divisions — MechFlow Saudi Arabia</title>
+  <meta name="description" content="Explore MechFlow's 6 specialized industrial engineering divisions: Turbomachinery, Fluid & Dry Gas Sealing, Plant Turnarounds (TAR), 3D Metrology, Motor Rewinding, and Heat Transfer across Saudi Arabia.">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=2.5">
-  <link rel="stylesheet" href="mobile-app.css?v=2.5">
+  <link rel="stylesheet" href="style.css?v=2.8">
+  <link rel="stylesheet" href="mobile-app.css?v=2.8">
+  
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" href="favicon.svg">
 </head>
 <body>
 
+  <!-- Main Navigation Header (Clean Crisp White) -->
   <header class="main-header">
     <div class="container nav-wrapper">
       <a href="index.html" class="brand-logo" aria-label="MechFlow Homepage">
         <img src="mechflow-logo.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img" decoding="async">
       </a>
 
+      <!-- Desktop Navigation Menu -->
       <nav class="desktop-nav">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About Us</a>
-        <a href="services.html" class="nav-link active">Services &amp; Divisions</a>
+        
+        <!-- Services Dropdown -->
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link active">
+            Services &amp; Divisions
+            <i class="fa-solid fa-chevron-down" style="font-size: 11px; margin-left: 2px;"></i>
+          </a>
+          <div class="mega-menu-box">
+            <a href="turbomachinery.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-fan"></i></div>
+              <div>
+                <div class="mega-content-title">Turbomachinery &amp; Pumps</div>
+                <div class="mega-content-desc">API 610 pumps, steam turbines, 10T Schenck balancing &amp; wireless alignment.</div>
+              </div>
+            </a>
+
+            <a href="fluid-gas-sealing.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-ring"></i></div>
+              <div>
+                <div class="mega-content-title">Fluid &amp; Dry Gas Sealing</div>
+                <div class="mega-content-desc">API 682/692 seals, 150-bar dynamic nitrogen testing &amp; cleanroom facility.</div>
+              </div>
+            </a>
+
+            <a href="plant-turnaround.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-wrench"></i></div>
+              <div>
+                <div class="mega-content-title">Plant Turnaround (TAR)</div>
+                <div class="mega-content-desc">ASME PCC-1 hydraulic bolting, on-site flange facing up to 120 inches.</div>
+              </div>
+            </a>
+
+            <a href="advanced-engineering.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-microchip"></i></div>
+              <div>
+                <div class="mega-content-title">FEA, CFD &amp; 3D Scanning</div>
+                <div class="mega-content-desc">Finite element analysis, fluid dynamics &amp; HVAF tungsten carbide coatings.</div>
+              </div>
+            </a>
+
+            <a href="electrical-motors.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-bolt"></i></div>
+              <div>
+                <div class="mega-content-title">Motor Rewinding &amp; VFD</div>
+                <div class="mega-content-desc">Class H insulation, VPI treatment up to 13.8kV, VFD automation &amp; PLC panels.</div>
+              </div>
+            </a>
+
+            <a href="heat-transfer.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+              <div>
+                <div class="mega-content-title">Heat Exchangers &amp; Coolers</div>
+                <div class="mega-content-desc">Tube bundle extraction, automated retubing, PHE cleaning &amp; cooling towers.</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
         <a href="industries.html" class="nav-link">Industries</a>
         <a href="case-studies.html" class="nav-link">Case Studies</a>
         <a href="diagnostic.html" class="nav-link">Diagnostic Tool</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
-      <div style="display: flex; align-items: center; gap: 14px;">
-        <a href="ar/services.html" class="lang-btn"><i class="fa-solid fa-globe"></i> العربية</a>
-        <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="Toggle Menu"><i class="fa-solid fa-bars-staggered"></i></button>
+      <!-- Header Actions: Lang Switch & Mobile Menu Trigger -->
+      <div class="header-actions-wrap">
+        <a href="ar/services.html" class="lang-switch-badge" title="النسخة العربية">
+          <i class="fa-solid fa-globe"></i>
+          <span>العربية</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="Toggle Mobile Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
+  <!-- Mobile Drawer Menu -->
   <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
     <div class="mobile-drawer">
       <div>
         <div class="mobile-drawer-header">
           <a href="index.html" class="brand-logo" aria-label="MechFlow Homepage">
-            <img src="mechflow-logo.svg" alt="MechFlow" style="height:38px; width:auto;" decoding="async">
+            <img src="mechflow-logo.svg" alt="MechFlow" style="height:36px; width:auto;" decoding="async">
           </a>
-          <button class="mobile-drawer-close" id="mobileDrawerClose"><i class="fa-solid fa-xmark"></i></button>
+          <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </div>
         <ul class="mobile-nav-list">
           <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
           <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> About Company</a></li>
-          <li><a href="services.html" class="mobile-nav-link active"><i class="fa-solid fa-layer-group"></i> All 6 Divisions</a></li>
+          <li><a href="services.html" class="mobile-nav-link active"><i class="fa-solid fa-layer-group"></i> All 6 Service Divisions</a></li>
           <li><a href="turbomachinery.html" class="mobile-nav-link"><i class="fa-solid fa-fan"></i> Turbomachinery &amp; Pumps</a></li>
           <li><a href="fluid-gas-sealing.html" class="mobile-nav-link"><i class="fa-solid fa-ring"></i> Fluid &amp; Dry Gas Sealing</a></li>
           <li><a href="plant-turnaround.html" class="mobile-nav-link"><i class="fa-solid fa-wrench"></i> Plant Turnaround &amp; Machining</a></li>
           <li><a href="advanced-engineering.html" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> FEA, CFD &amp; 3D Scanning</a></li>
           <li><a href="electrical-motors.html" class="mobile-nav-link"><i class="fa-solid fa-bolt"></i> Motor Rewinding &amp; VFD</a></li>
+          <li><a href="heat-transfer.html" class="mobile-nav-link"><i class="fa-solid fa-temperature-arrow-down"></i> Heat Exchangers &amp; Coolers</a></li>
           <li><a href="industries.html" class="mobile-nav-link"><i class="fa-solid fa-industry"></i> Industries</a></li>
           <li><a href="case-studies.html" class="mobile-nav-link"><i class="fa-solid fa-chart-line"></i> Case Studies</a></li>
           <li><a href="diagnostic.html" class="mobile-nav-link"><i class="fa-solid fa-stethoscope"></i> Diagnostic Tool</a></li>
-          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> 24/7 Dispatch</a></li>
+          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> 24/7 Breakdown Dispatch</a></li>
           <li><a href="rfq.html" class="mobile-nav-link"><i class="fa-solid fa-file-signature"></i> Request RFQ</a></li>
-          <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> Contact Us</a></li>
+          <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> Contact &amp; Hubs</a></li>
         </ul>
       </div>
       <div class="mobile-drawer-footer">
-        <a href="ar/services.html" class="lang-btn" style="justify-content:center; padding:10px;"><i class="fa-solid fa-globe"></i> العربية</a>
+        <a href="ar/services.html" class="lang-switch-badge" style="justify-content:center; padding:10px; width:100%;">
+          <i class="fa-solid fa-globe"></i> <span>النسخة العربية</span>
+        </a>
       </div>
     </div>
   </div>
 
-  <section class="hero-monolith" style="padding: 70px 0;">
+  <!-- SERVICE HERO BANNER -->
+  <section class="service-hero-banner">
+    <div class="service-hero-bg" style="background-image: url('images/div-turbomachinery.webp');"></div>
     <div class="container">
-      <span class="hero-badge-pill"><span class="pulse-dot"></span> 6 SPECIALIZED INDUSTRIAL DIVISIONS</span>
-      <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px;">Integrated Mechanical &amp; Sealing Engineering</h1>
-      <p class="hero-lead-text">
-        Providing OEM-independent overhaul, cleanroom dynamic testing, precision machining, and rapid turnaround field services across the Kingdom of Saudi Arabia.
-      </p>
+      <div class="service-hero-grid">
+        <div>
+          <span class="service-hero-badge"><i class="fa-solid fa-layer-group"></i> 6 SPECIALIZED DIVISIONS</span>
+          <h1 class="service-hero-title">Precision Overhauls. Advanced Sealing. Plant Turnarounds.</h1>
+          <p class="service-hero-desc">
+            Kingdom-wide OEM-independent engineering leader providing turbomachinery overhaul, dry gas seals (API 692), high-voltage motor rewinding, and plant turnaround services.
+          </p>
+          <div class="service-hero-actions">
+            <a href="#servicesGrid" class="btn-emergency-gold">
+              <i class="fa-solid fa-compass"></i>
+              <span>EXPLORE DIVISIONS</span>
+            </a>
+            <a href="rfq.html" class="btn-outline-glow">
+              <i class="fa-solid fa-file-signature"></i>
+              <span>REQUEST A PROPOSAL</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="service-hero-media-card">
+          <img src="images/div-turnaround.webp" alt="MechFlow Industrial Services" loading="lazy" decoding="async">
+          <div class="service-hero-floating-stat">
+            <div>
+              <div class="floating-stat-num">6 Divisions</div>
+              <div class="floating-stat-lbl">100% In-House Fleet</div>
+            </div>
+            <div style="text-align: right;">
+              <div class="floating-stat-num">2-4 Hrs</div>
+              <div class="floating-stat-lbl">Rapid Mobilization SLA</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section-spacer" style="background: var(--color-canvas-alt);">
+  <!-- KEY METRICS STRIP -->
+  <section class="metrics-impact-strip">
     <div class="container">
+      <div class="metrics-impact-grid">
+        <div class="metric-impact-item">
+          <div class="metric-impact-val">100%</div>
+          <div class="metric-impact-lbl">OEM-Independent Equipment Coverage</div>
+        </div>
+        <div class="metric-impact-item">
+          <div class="metric-impact-val">150 Bar</div>
+          <div class="metric-impact-lbl">Dynamic N2 Seal Test Rig Capacity</div>
+        </div>
+        <div class="metric-impact-item">
+          <div class="metric-impact-val">10-Ton</div>
+          <div class="metric-impact-lbl">Dynamic Balancing Capacity (ISO G2.5)</div>
+        </div>
+        <div class="metric-impact-item">
+          <div class="metric-impact-val">0.00 LTI</div>
+          <div class="metric-impact-lbl">180,000+ Safe Site Working Hours</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 SPECIALIZED SERVICE DIVISIONS (MODERN CARDS) -->
+  <section class="section-spacer" id="servicesGrid" style="background-color: var(--color-canvas-alt);">
+    <div class="container">
+      <div class="section-head-center">
+        <span class="tag-accent"><i class="fa-solid fa-cubes-stacked"></i> Full Lifecycle Capabilities</span>
+        <h2 class="head-title-lg">Integrated Engineering &amp; Plant Solutions</h2>
+        <p class="head-desc">Complete lifecycle support for mission-critical industrial assets, from mechanical seals and turbomachinery to turnarounds and digital twins.</p>
+      </div>
+
       <div class="divisions-3col-grid">
         
-        <!-- Div 1 -->
+        <!-- Division 01 -->
         <div class="division-box-card">
-          <div>
-            <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge"><i class="fa-solid fa-fan"></i></div>
-              <div><span class="division-tag-num">DIVISION 01</span><h3 class="division-card-title">Turbomachinery &amp; Pumps</h3></div>
-            </div>
-            <p class="division-card-desc">API 610 process pumps, steam turbines, gas compressors, 10-ton dynamic balancing, and wireless laser shaft alignment.</p>
+          <div class="division-img-wrap">
+            <img src="images/div-turbomachinery.webp" alt="Turbomachinery & Pumps" class="division-card-img" loading="lazy" decoding="async">
+            <span class="division-img-badge">DIV 01 &bull; TURBOMACHINERY</span>
           </div>
-          <a href="turbomachinery.html" class="division-link-btn"><span>View Full Division</span> <i class="fa-solid fa-arrow-right"></i></a>
+          <div class="division-card-body">
+            <div>
+              <div class="division-overlap-icon-box"><i class="fa-solid fa-fan"></i></div>
+              <h3 class="division-card-title">Turbomachinery &amp; Pumps</h3>
+              <p class="division-card-desc">
+                Overhaul, repair, and dynamic balancing for API process pumps, boiler feed pumps, and steam turbines across Saudi plants.
+              </p>
+              <div class="division-features-list">
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>10-Ton dynamic balancing to ISO G2.5</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Precision laser shaft alignment &amp; FFT vibration</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>API 610 BB2 / BB3 / BB5 pump overhauls</span>
+                </div>
+              </div>
+            </div>
+            <a href="turbomachinery.html" class="division-link-btn">
+              <span>Explore Turbomachinery</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
 
-        <!-- Div 2 -->
+        <!-- Division 02 -->
         <div class="division-box-card">
-          <div>
-            <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge" style="background: var(--color-tech-cyan-light); color: var(--color-tech-cyan);"><i class="fa-solid fa-ring"></i></div>
-              <div><span class="division-tag-num">DIVISION 02</span><h3 class="division-card-title">Fluid &amp; Dry Gas Sealing</h3></div>
-            </div>
-            <p class="division-card-desc">Heavy mechanical seals, API 692 Dry Gas Seals, cleanroom Nitrogen dynamic test stand (150 bar), and helium flat lapping.</p>
+          <div class="division-img-wrap">
+            <img src="images/div-sealing.webp" alt="Fluid & Dry Gas Sealing" class="division-card-img" loading="lazy" decoding="async">
+            <span class="division-img-badge">DIV 02 &bull; GAS SEALING</span>
           </div>
-          <a href="fluid-gas-sealing.html" class="division-link-btn"><span>View Full Division</span> <i class="fa-solid fa-arrow-right"></i></a>
+          <div class="division-card-body">
+            <div>
+              <div class="division-overlap-icon-box"><i class="fa-solid fa-ring"></i></div>
+              <h3 class="division-card-title">Fluid &amp; Gas Sealing</h3>
+              <p class="division-card-desc">
+                Advanced cartridge mechanical seals and Dry Gas Seals (API 692) for compressors and high-pressure pumps.
+              </p>
+              <div class="division-features-list">
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>150-bar dynamic nitrogen gas seal testing</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>ISO Class 7 cleanroom &amp; helium light band lapping</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>API 682 &amp; API 692 certified refurbishment</span>
+                </div>
+              </div>
+            </div>
+            <a href="fluid-gas-sealing.html" class="division-link-btn">
+              <span>Explore Sealing Technology</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
 
-        <!-- Div 3 -->
+        <!-- Division 03 -->
         <div class="division-box-card">
-          <div>
-            <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge" style="background: var(--color-safety-amber-light); color: var(--color-safety-amber);"><i class="fa-solid fa-wrench"></i></div>
-              <div><span class="division-tag-num">DIVISION 03</span><h3 class="division-card-title">Plant Turnaround (TAR)</h3></div>
-            </div>
-            <p class="division-card-desc">Shutdown mechanical execution, hydraulic bolt torquing/tensioning per ASME PCC-1, onsite flange facing, and 40k PSI hydro-test.</p>
+          <div class="division-img-wrap">
+            <img src="images/div-turnaround.webp" alt="Plant Turnaround & Machining" class="division-card-img" loading="lazy" decoding="async">
+            <span class="division-img-badge">DIV 03 &bull; PLANT TAR</span>
           </div>
-          <a href="plant-turnaround.html" class="division-link-btn"><span>View Full Division</span> <i class="fa-solid fa-arrow-right"></i></a>
+          <div class="division-card-body">
+            <div>
+              <div class="division-overlap-icon-box"><i class="fa-solid fa-wrench"></i></div>
+              <h3 class="division-card-title">Plant Turnaround (TAR)</h3>
+              <p class="division-card-desc">
+                On-site turnaround execution, hydraulic bolt torque/tensioning, mobile flange machining, and hydrostatic pressure testing.
+              </p>
+              <div class="division-features-list">
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>On-site portable flange facing up to 120"</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Hydraulic bolt torque &amp; tensioning (ASME PCC-1)</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Hydrostatic testing up to 40,000 PSI</span>
+                </div>
+              </div>
+            </div>
+            <a href="plant-turnaround.html" class="division-link-btn">
+              <span>Explore TAR Services</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
 
-        <!-- Div 4 -->
+        <!-- Division 04 -->
         <div class="division-box-card">
-          <div>
-            <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge" style="background: var(--color-saudi-emerald-light); color: var(--color-saudi-emerald);"><i class="fa-solid fa-microchip"></i></div>
-              <div><span class="division-tag-num">DIVISION 04</span><h3 class="division-card-title">Advanced CAE &amp; 3D Scan</h3></div>
-            </div>
-            <p class="division-card-desc">FEA structural/thermal stress analysis, CFD cavitation simulations, FaroArm 3D scanning, and HVAF tungsten carbide coatings.</p>
+          <div class="division-img-wrap">
+            <img src="images/div-advanced-engineering.webp" alt="3D Scanning & Engineering" class="division-card-img" loading="lazy" decoding="async">
+            <span class="division-img-badge">DIV 04 &bull; 3D METROLOGY</span>
           </div>
-          <a href="advanced-engineering.html" class="division-link-btn"><span>View Full Division</span> <i class="fa-solid fa-arrow-right"></i></a>
+          <div class="division-card-body">
+            <div>
+              <div class="division-overlap-icon-box"><i class="fa-solid fa-microchip"></i></div>
+              <h3 class="division-card-title">3D Scanning &amp; Simulation</h3>
+              <p class="division-card-desc">
+                High-precision 3D laser metrology scanning, FEA stress simulation, reverse engineering, and anti-wear HVAF coatings.
+              </p>
+              <div class="division-features-list">
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>3D laser scanning accurate to &plusmn;0.025 mm</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>FEA thermal/stress &amp; CFD cavitation simulation</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>HVAF tungsten carbide anti-wear coatings</span>
+                </div>
+              </div>
+            </div>
+            <a href="advanced-engineering.html" class="division-link-btn">
+              <span>Explore 3D &amp; Engineering</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
 
-        <!-- Div 5 -->
+        <!-- Division 05 -->
         <div class="division-box-card">
-          <div>
-            <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge" style="background: var(--color-safety-amber-light); color: #D97706;"><i class="fa-solid fa-bolt"></i></div>
-              <div><span class="division-tag-num">DIVISION 05</span><h3 class="division-card-title">Electric Motors &amp; VFD</h3></div>
-            </div>
-            <p class="division-card-desc">Low &amp; medium voltage motor rewinding, Vacuum Pressure Impregnation (VPI), VFD troubleshooting, and PLC control panels.</p>
+          <div class="division-img-wrap">
+            <img src="images/div-electrical.webp" alt="Electric Motors & Rewinding" class="division-card-img" loading="lazy" decoding="async">
+            <span class="division-img-badge">DIV 05 &bull; MOTORS &amp; VFD</span>
           </div>
-          <a href="electrical-motors.html" class="division-link-btn"><span>View Full Division</span> <i class="fa-solid fa-arrow-right"></i></a>
+          <div class="division-card-body">
+            <div>
+              <div class="division-overlap-icon-box"><i class="fa-solid fa-bolt"></i></div>
+              <h3 class="division-card-title">Electric Motors &amp; VFD</h3>
+              <p class="division-card-desc">
+                Low &amp; medium voltage motor rewinding, Vacuum Pressure Impregnation (VPI), VFD troubleshooting, and PLC control panels.
+              </p>
+              <div class="division-features-list">
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>High-voltage motor rewinding up to 13.8kV</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Dual-chamber Vacuum Pressure Impregnation (VPI)</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>VFD automation &amp; PLC panel troubleshooting</span>
+                </div>
+              </div>
+            </div>
+            <a href="electrical-motors.html" class="division-link-btn">
+              <span>Explore Motor &amp; VFD</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
 
-        <!-- Div 6 -->
+        <!-- Division 06 -->
         <div class="division-box-card">
-          <div>
-            <div style="display: flex; align-items: center; gap: 16px;">
-              <div class="division-icon-badge" style="background: #FEE2E2; color: #DC2626;"><i class="fa-solid fa-temperature-arrow-down"></i></div>
-              <div><span class="division-tag-num">DIVISION 06</span><h3 class="division-card-title">Heat Exchangers &amp; Towers</h3></div>
-            </div>
-            <p class="division-card-desc">Shell &amp; tube exchanger retubing, bundle pulling, plate exchanger ultrasonic cleaning, and cooling tower drive maintenance.</p>
+          <div class="division-img-wrap">
+            <img src="images/div-heat-transfer.webp" alt="Heat Exchangers & Towers" class="division-card-img" loading="lazy" decoding="async">
+            <span class="division-img-badge">DIV 06 &bull; HEAT TRANSFER</span>
           </div>
-          <a href="heat-transfer.html" class="division-link-btn"><span>View Full Division</span> <i class="fa-solid fa-arrow-right"></i></a>
+          <div class="division-card-body">
+            <div>
+              <div class="division-overlap-icon-box"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+              <h3 class="division-card-title">Heat Exchangers &amp; Towers</h3>
+              <p class="division-card-desc">
+                Shell &amp; tube exchanger retubing, bundle pulling, plate exchanger ultrasonic cleaning, and cooling tower drive maintenance.
+              </p>
+              <div class="division-features-list">
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Automated tube bundle extraction &amp; retubing</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Plate heat exchanger ultrasonic cleaning &amp; regasketing</span>
+                </div>
+                <div class="division-feature-row">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Cooling tower fan drive &amp; gearbox maintenance</span>
+                </div>
+              </div>
+            </div>
+            <a href="heat-transfer.html" class="division-link-btn">
+              <span>Explore Heat Transfer</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROVED CLIENT TRUST LOGO MARQUEE -->
+  <section class="trust-marquee-section">
+    <div class="container">
+      <p class="trust-marquee-title">TRUSTED BY LEADING ENERGY, CHEMICAL &amp; UTILITY INFRASTRUCTURE ACROSS SAUDI ARABIA</p>
+      <div class="marquee-track">
+        <div class="marquee-item"><img src="images/clients/saudi-aramco.svg" alt="Saudi Aramco Approved Engineering Partner" decoding="async"></div>
+        <div class="marquee-item"><img src="images/clients/sabic.svg" alt="SABIC Petrochemical Facilities" decoding="async"></div>
+        <div class="marquee-item"><img src="images/clients/maaden.svg" alt="Ma'aden Mining Infrastructure" decoding="async"></div>
+        <div class="marquee-item"><img src="images/clients/sadara-chemical.svg" alt="Sadara Chemical Complex" decoding="async"></div>
+        <div class="marquee-item"><img src="images/clients/saudi-electricity.svg" alt="Saudi Electricity Company (SEC)" decoding="async"></div>
+        <div class="marquee-item"><img src="images/clients/saudi-aramco.svg" alt="Saudi Aramco Approved Engineering Partner" decoding="async"></div>
+        <div class="marquee-item"><img src="images/clients/sabic.svg" alt="SABIC Petrochemical Facilities" decoding="async"></div>
+        <div class="marquee-item"><img src="images/clients/maaden.svg" alt="Ma'aden Mining Infrastructure" decoding="async"></div>
+        <div class="marquee-item"><img src="images/clients/sadara-chemical.svg" alt="Sadara Chemical Complex" decoding="async"></div>
+        <div class="marquee-item"><img src="images/clients/saudi-electricity.svg" alt="Saudi Electricity Company (SEC)" decoding="async"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIRECT ACTION STRIP -->
+  <section class="section-spacer" style="background: #FFFFFF; padding-top: 20px;">
+    <div class="container">
+      <div class="service-cta-strip">
+        <div class="service-cta-info">
+          <h3>Need Specialized Engineering or Rapid Mobilization?</h3>
+          <p>Contact our technical response team for immediate field dispatch across Jeddah, Dammam, and Yanbu hubs.</p>
+        </div>
+        <div class="service-cta-actions">
+          <a href="rfq.html" class="btn-emergency-gold">
+            <i class="fa-solid fa-file-signature"></i>
+            <span>REQUEST AN RFQ PROPOSAL</span>
+          </a>
+          <a href="tel:+966592151506" class="btn-outline-glow">
+            <i class="fa-solid fa-phone"></i>
+            <span>CALL 24/7 HOTLINE</span>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -164,15 +475,26 @@
   <footer class="master-footer">
     <div class="container">
       <div class="footer-4col">
+        <!-- Col 1 -->
         <div>
           <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
             <img src="mechflow-logo-white.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img" style="height:44px;" decoding="async">
           </a>
-          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #94A3B8;">
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 18px; color: #94A3B8;">
             Specialized Saudi industrial engineering partner delivering precision rotating equipment overhauls, advanced sealing solutions, motor rewinding, plant turnarounds, and 24/7 emergency site support.
           </p>
+
+          <!-- Social Row -->
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://wa.me/966592151506" target="_blank" rel="noopener" class="social-icon-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
         </div>
 
+        <!-- Col 2: Service Divisions -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-layer-group"></i> Service Divisions</h4>
           <div class="footer-nav-list">
@@ -185,7 +507,8 @@
           </div>
         </div>
 
-        <div>
+        <!-- Col 3: Quick Links -->
+        <div class="footer-quick-links-col">
           <h4 class="footer-head-title"><i class="fa-solid fa-compass"></i> Quick Links</h4>
           <div class="footer-nav-list">
             <a href="about.html"><i class="fa-solid fa-shield-halved"></i> About Company &amp; Governance</a>
@@ -198,6 +521,7 @@
           </div>
         </div>
 
+        <!-- Col 4: Corporate Presence -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-building-flag"></i> Corporate Presence</h4>
           <div class="footer-presence-list">
@@ -223,12 +547,12 @@
 
       <div class="footer-bottom-row">
         <span>&copy; 2026 Mechflow Engineering Services and Solutions</span>
-        <a href="rfq.html" style="color: var(--color-safety-amber); font-weight:700;">Submit RFQ Specification <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="tel:+966592151506" class="footer-hotline-link" style="color: #FFA800; font-weight:700;">24/7 Breakdown Dispatch: +966 59 215 1506 <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </footer>
 
-    <!-- Mobile Bottom App Bar -->
+  <!-- Mobile Bottom App Bar -->
   <nav class="mobile-bottom-appbar" aria-label="Mobile Navigation">
     <a href="index.html" class="appbar-item">
       <i class="fa-solid fa-house"></i>
@@ -256,8 +580,6 @@
     </a>
   </nav>
 
-  <script src="script.js?v=2.5"></script>
+  <script src="script.js?v=2.8"></script>
 </body>
 </html>
-
-
