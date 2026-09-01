@@ -2218,6 +2218,136 @@ html[dir="rtl"] .hq-badge-ribbon {
 }
 
 /* ==========================================================================
+   INDUSTRIES WE SERVE STYLES
+   ========================================================================== */
+.industry-hero-wrap {
+  background: radial-gradient(circle at 75% 25%, rgba(182, 123, 43, 0.28) 0%, transparent 60%),
+              radial-gradient(circle at 20% 80%, rgba(0, 128, 255, 0.18) 0%, transparent 50%),
+              linear-gradient(180deg, #091523 0%, #030B17 100%);
+  position: relative;
+  padding: 80px 0 65px;
+  color: #FFFFFF;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.industry-hero-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('images/hero-bg-opt.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+  mix-blend-mode: luminosity;
+  pointer-events: none;
+}
+
+.industry-hero-title {
+  font-size: 46px;
+  font-weight: 900;
+  color: #FFFFFF;
+  line-height: 1.15;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.industry-hero-desc {
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: #CBD5E1;
+  max-width: 740px;
+  margin-bottom: 26px;
+}
+
+.industry-sector-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 32px 28px;
+  box-shadow: var(--shadow-card);
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.industry-sector-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-brand-bronze-border);
+  box-shadow: var(--shadow-hover);
+}
+
+.industry-icon-pill {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.industry-card-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-bottom: 10px;
+}
+
+.industry-card-desc {
+  font-size: 13.5px;
+  color: var(--color-body);
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.industry-spec-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.industry-spec-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12.5px;
+  color: var(--color-body);
+}
+
+.industry-spec-row i {
+  color: var(--color-brand-bronze);
+  font-size: 12px;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.industry-standards-row {
+  border-top: 1px dashed var(--color-border);
+  padding-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--color-muted);
+}
+
+.industry-standards-badge {
+  background: var(--color-canvas-subtle);
+  border: 1px solid var(--color-border);
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: var(--color-heading);
+}
+
+/* ==========================================================================
    RESPONSIVE BREAKPOINTS (CLEAN & ORDERED)
    ========================================================================== */
 @media (max-width: 1024px) {
@@ -2531,6 +2661,25 @@ html[dir="rtl"] .hq-badge-ribbon {
 
   .case-metric-num {
     font-size: 38px;
+  }
+
+  /* Industries Mobile */
+  .industry-hero-wrap {
+    padding: 40px 0 32px;
+  }
+
+  .industry-hero-title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .industry-hero-desc {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .industry-sector-card {
+    padding: 24px 18px;
   }
 
   /* Marquee Section Mobile */

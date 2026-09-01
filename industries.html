@@ -1,154 +1,420 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Industries We Serve — Mechflow Engineering Services and Solutions</title>
+  <title>Vital Industries We Serve — MechFlow Saudi Arabia</title>
   <meta name="description" content="Specialized engineering support for Oil & Gas, Petrochemical, Desalination (SWCC), Power Generation (SEC), Mining (Ma'aden), and Marine sectors across Saudi Arabia.">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=2.5">
-  <link rel="stylesheet" href="mobile-app.css?v=2.5">
+  <link rel="stylesheet" href="style.css?v=2.7">
+  <link rel="stylesheet" href="mobile-app.css?v=2.7">
+  
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" href="favicon.svg">
 </head>
 <body>
 
+  <!-- Main Navigation Header (Clean Crisp White) -->
   <header class="main-header">
     <div class="container nav-wrapper">
       <a href="index.html" class="brand-logo" aria-label="MechFlow Homepage">
         <img src="mechflow-logo.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img">
       </a>
 
+      <!-- Desktop Navigation Menu -->
       <nav class="desktop-nav">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About Us</a>
-        <a href="services.html" class="nav-link">Services &amp; Divisions</a>
+        
+        <!-- Services Dropdown -->
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link">
+            Services &amp; Divisions
+            <i class="fa-solid fa-chevron-down" style="font-size: 11px; margin-left: 2px;"></i>
+          </a>
+          <div class="mega-menu-box">
+            <a href="turbomachinery.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-fan"></i></div>
+              <div>
+                <div class="mega-content-title">Turbomachinery &amp; Pumps</div>
+                <div class="mega-content-desc">API 610 pumps, steam turbines, 10T Schenck balancing &amp; wireless alignment.</div>
+              </div>
+            </a>
+
+            <a href="fluid-gas-sealing.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-ring"></i></div>
+              <div>
+                <div class="mega-content-title">Fluid &amp; Dry Gas Sealing</div>
+                <div class="mega-content-desc">API 682/692 seals, 150-bar dynamic nitrogen testing &amp; cleanroom facility.</div>
+              </div>
+            </a>
+
+            <a href="plant-turnaround.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-wrench"></i></div>
+              <div>
+                <div class="mega-content-title">Plant Turnaround (TAR)</div>
+                <div class="mega-content-desc">ASME PCC-1 hydraulic bolting, on-site flange facing up to 120 inches.</div>
+              </div>
+            </a>
+
+            <a href="advanced-engineering.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-microchip"></i></div>
+              <div>
+                <div class="mega-content-title">FEA, CFD &amp; 3D Scanning</div>
+                <div class="mega-content-desc">Finite element analysis, fluid dynamics &amp; HVAF tungsten carbide coatings.</div>
+              </div>
+            </a>
+
+            <a href="electrical-motors.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-bolt"></i></div>
+              <div>
+                <div class="mega-content-title">Motor Rewinding &amp; VFD</div>
+                <div class="mega-content-desc">Class H insulation, VPI treatment up to 13.8kV, VFD automation &amp; PLC panels.</div>
+              </div>
+            </a>
+
+            <a href="heat-transfer.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+              <div>
+                <div class="mega-content-title">Heat Exchangers &amp; Coolers</div>
+                <div class="mega-content-desc">Tube bundle extraction, automated retubing, PHE cleaning &amp; cooling towers.</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
         <a href="industries.html" class="nav-link active">Industries</a>
         <a href="case-studies.html" class="nav-link">Case Studies</a>
         <a href="diagnostic.html" class="nav-link">Diagnostic Tool</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
-      <div style="display: flex; align-items: center; gap: 14px;">
-        <a href="ar/industries.html" class="lang-btn"><i class="fa-solid fa-globe"></i> العربية</a>
-        <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="Toggle Menu"><i class="fa-solid fa-bars-staggered"></i></button>
+      <!-- Header Actions: Lang Switch & Mobile Menu Trigger -->
+      <div class="header-actions-wrap">
+        <a href="ar/industries.html" class="lang-switch-badge" title="النسخة العربية">
+          <i class="fa-solid fa-globe"></i>
+          <span>العربية</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="Toggle Mobile Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
+  <!-- Mobile Drawer Menu -->
   <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
     <div class="mobile-drawer">
       <div>
         <div class="mobile-drawer-header">
           <a href="index.html" class="brand-logo" aria-label="MechFlow Homepage">
-            <img src="mechflow-logo.svg" alt="MechFlow" style="height:38px; width:auto;">
+            <img src="mechflow-logo.svg" alt="MechFlow" style="height:36px; width:auto;">
           </a>
-          <button class="mobile-drawer-close" id="mobileDrawerClose"><i class="fa-solid fa-xmark"></i></button>
+          <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </div>
         <ul class="mobile-nav-list">
           <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
           <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> About Company</a></li>
-          <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> All 6 Divisions</a></li>
+          <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> All 6 Service Divisions</a></li>
           <li><a href="turbomachinery.html" class="mobile-nav-link"><i class="fa-solid fa-fan"></i> Turbomachinery &amp; Pumps</a></li>
           <li><a href="fluid-gas-sealing.html" class="mobile-nav-link"><i class="fa-solid fa-ring"></i> Fluid &amp; Dry Gas Sealing</a></li>
           <li><a href="plant-turnaround.html" class="mobile-nav-link"><i class="fa-solid fa-wrench"></i> Plant Turnaround &amp; Machining</a></li>
           <li><a href="advanced-engineering.html" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> FEA, CFD &amp; 3D Scanning</a></li>
           <li><a href="electrical-motors.html" class="mobile-nav-link"><i class="fa-solid fa-bolt"></i> Motor Rewinding &amp; VFD</a></li>
+          <li><a href="heat-transfer.html" class="mobile-nav-link"><i class="fa-solid fa-temperature-arrow-down"></i> Heat Exchangers &amp; Coolers</a></li>
           <li><a href="industries.html" class="mobile-nav-link active"><i class="fa-solid fa-industry"></i> Industries</a></li>
           <li><a href="case-studies.html" class="mobile-nav-link"><i class="fa-solid fa-chart-line"></i> Case Studies</a></li>
           <li><a href="diagnostic.html" class="mobile-nav-link"><i class="fa-solid fa-stethoscope"></i> Diagnostic Tool</a></li>
-          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> 24/7 Dispatch</a></li>
+          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> 24/7 Breakdown Dispatch</a></li>
           <li><a href="rfq.html" class="mobile-nav-link"><i class="fa-solid fa-file-signature"></i> Request RFQ</a></li>
-          <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> Contact Us</a></li>
+          <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> Contact &amp; Hub Locations</a></li>
         </ul>
       </div>
+      
+      <!-- Hotline Card in Drawer -->
       <div class="mobile-drawer-footer">
-        <a href="ar/industries.html" class="lang-btn" style="justify-content:center; padding:10px;"><i class="fa-solid fa-globe"></i> العربية</a>
+        <a href="tel:+966592151506" class="mobile-hotline-banner">
+          <strong><i class="fa-solid fa-phone-volume fa-shake"></i> 24/7 Breakdown Response Hotline</strong>
+          <span class="mobile-hotline-digits">+966 59 215 1506</span>
+        </a>
+        <a href="ar/industries.html" class="lang-switch-badge" style="justify-content:center; padding:10px; width:100%;">
+          <i class="fa-solid fa-globe"></i> العربية (Arabic Version)
+        </a>
       </div>
     </div>
   </div>
 
-  <section class="hero-monolith" style="padding: 70px 0;">
+  <!-- HERO SECTION: SECTOR-SPECIFIC ENGINEERING EXCELLENCE -->
+  <section class="industry-hero-wrap">
     <div class="container">
-      <span class="hero-badge-pill"><span class="pulse-dot"></span> SECTOR-SPECIFIC ENGINEERING EXCELLENCE</span>
-      <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px;">Vital Industrial Sectors We Power &amp; Protect</h1>
-      <p class="hero-lead-text">
-        Delivering high-reliability asset support to mission-critical infrastructure across the Kingdom of Saudi Arabia.
-      </p>
-    </div>
-  </section>
-
-  <section class="section-spacer" style="background: var(--color-canvas-alt);">
-    <div class="container">
-      <div class="divisions-3col-grid">
+      <div style="position: relative; z-index: 2;">
         
-        <div class="division-box-card">
-          <div class="division-icon-badge" style="background: var(--color-tech-cyan-light); color: var(--color-tech-cyan);">
-            <i class="fa-solid fa-oil-well"></i>
-          </div>
-          <h3 class="division-card-title">Oil, Gas &amp; Refining</h3>
-          <p class="division-card-desc">Multiphase booster pumps, API 617 centrifugal hydrogen compressors, API 682 Plan 53B seals, and refinery turnaround execution.</p>
-        </div>
+        <span class="hero-badge-pill" style="margin-bottom: 18px;">
+          <span class="pulse-dot"></span>
+          <span>SECTOR-SPECIFIC PRECISION &amp; ASSET RELIABILITY</span>
+        </span>
 
-        <div class="division-box-card">
-          <div class="division-icon-badge" style="background: var(--color-saudi-emerald-light); color: var(--color-saudi-emerald);">
-            <i class="fa-solid fa-flask-vial"></i>
-          </div>
-          <h3 class="division-card-title">Petrochemicals &amp; Polymers</h3>
-          <p class="division-card-desc">Polymerization reactor mixer seals, hot oil thermal pumps, and ultrasonic NDT testing under corrosive Gulf ambient conditions.</p>
-        </div>
+        <h1 class="industry-hero-title">
+          Vital Industrial Sectors<br>
+          <span style="color: var(--color-brand-bronze-light);">We Power &amp; Protect Across Saudi Arabia</span>
+        </h1>
 
-        <div class="division-box-card">
-          <div class="division-icon-badge" style="background: var(--color-safety-amber-light); color: var(--color-safety-amber);">
-            <i class="fa-solid fa-droplet"></i>
-          </div>
-          <h3 class="division-card-title">Desalination &amp; Water (SWCC)</h3>
-          <p class="division-card-desc">High-pressure reverse osmosis (RO) feed pumps, super duplex impeller fabrication, and cavitation-resistant thermal coatings.</p>
-        </div>
+        <p class="industry-hero-desc">
+          Turnkey turbomachinery overhaul, dry gas sealing (API 692), plant turnaround execution, and high-voltage motor rewinding engineered to safeguard continuous production in the Kingdom's core industrial corridors.
+        </p>
 
-        <div class="division-box-card">
-          <div class="division-icon-badge" style="background: #E0F2FE; color: #0284C7);">
-            <i class="fa-solid fa-plug-circle-bolt"></i>
-          </div>
-          <h3 class="division-card-title">Power Generation (SEC)</h3>
-          <p class="division-card-desc">Multistage boiler feed pumps, steam turbine auxiliaries, high-pressure steam valve servicing, and hot line bolting.</p>
-        </div>
+        <!-- Quick Contact Pill Badges -->
+        <div class="contact-quick-badges">
+          <a href="tel:+966592151506" class="contact-badge-pill">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>24/7 Hotline: +966 59 215 1506</span>
+          </a>
 
-        <div class="division-box-card">
-          <div class="division-icon-badge" style="background: #FEF3C7; color: #D97706);">
-            <i class="fa-solid fa-gem"></i>
-          </div>
-          <h3 class="division-card-title">Mining &amp; Minerals (Ma'aden)</h3>
-          <p class="division-card-desc">Abrasive slurry slurry pumps, heavy conveyor gearboxes, and HVAF tungsten carbide protective cladding against severe abrasion.</p>
-        </div>
-
-        <div class="division-box-card">
-          <div class="division-icon-badge" style="background: #EEF2FF; color: #4F46E5);">
-            <i class="fa-solid fa-ship"></i>
-          </div>
-          <h3 class="division-card-title">Marine &amp; Port Terminals</h3>
-          <p class="division-card-desc">Dewatering pumps, marine propulsion laser alignment, ballast pumps, and seawater intake cooling bundle overhauls.</p>
+          <a href="rfq.html" class="contact-badge-pill">
+            <i class="fa-solid fa-file-signature"></i>
+            <span>Request Sector Technical RFQ</span>
+          </a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- Master Footer with Rich Icons -->
+  <!-- 6 CORE INDUSTRIAL SECTOR CARDS -->
+  <section class="section-spacer" style="background: var(--color-canvas-alt);">
+    <div class="container">
+      
+      <div class="divisions-3col-grid">
+        
+        <!-- Sector 1: Oil, Gas & Refining -->
+        <div class="industry-sector-card">
+          <div>
+            <div class="industry-icon-pill" style="background: rgba(0, 128, 255, 0.1); color: #0080FF; border: 1px solid rgba(0, 128, 255, 0.25);">
+              <i class="fa-solid fa-oil-well"></i>
+            </div>
+            <h3 class="industry-card-title">Oil, Gas &amp; Refining</h3>
+            <p class="industry-card-desc">
+              High-pressure rotating equipment solutions engineered to resist severe H2S sour gas, high differential pressure, and extreme Gulf ambient temperatures.
+            </p>
+
+            <div class="industry-spec-list">
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>API 610 BB2 / BB3 / BB5 multistage crude export &amp; charge pumps</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>API 617 centrifugal gas compressors &amp; API 612 steam turbines</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>Tandem Dry Gas Seals (API 692) &amp; Plan 53B seal cartridge overhauls</span></div>
+            </div>
+          </div>
+
+          <div class="industry-standards-row">
+            <span>Primary Standards:</span>
+            <span class="industry-standards-badge">API 610 / 682 / 692</span>
+          </div>
+        </div>
+
+        <!-- Sector 2: Petrochemicals & Polymers -->
+        <div class="industry-sector-card">
+          <div>
+            <div class="industry-icon-pill" style="background: rgba(0, 108, 53, 0.1); color: #006C35; border: 1px solid rgba(0, 108, 53, 0.25);">
+              <i class="fa-solid fa-flask-vial"></i>
+            </div>
+            <h3 class="industry-card-title">Petrochemicals &amp; Chemicals</h3>
+            <p class="industry-card-desc">
+              Precision sealing and machining for aggressive chemical process loops, polymerization reactors, ethylene cracking units, and cryogenic transfer lines.
+            </p>
+
+            <div class="industry-spec-list">
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>Top-entry reactor mixer &amp; agitator mechanical seals (Plan 54)</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>Cleanroom optical flat lapping (2 light bands flatness)</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>ASME PCC-1 flanged joint management during plant turnarounds</span></div>
+            </div>
+          </div>
+
+          <div class="industry-standards-row">
+            <span>Primary Standards:</span>
+            <span class="industry-standards-badge">ASME PCC-1 / API 682</span>
+          </div>
+        </div>
+
+        <!-- Sector 3: Desalination & Water Utilities -->
+        <div class="industry-sector-card">
+          <div>
+            <div class="industry-icon-pill" style="background: rgba(2, 132, 199, 0.1); color: #0284C7; border: 1px solid rgba(2, 132, 199, 0.25);">
+              <i class="fa-solid fa-droplet"></i>
+            </div>
+            <h3 class="industry-card-title">Desalination &amp; Water (SWCC)</h3>
+            <p class="industry-card-desc">
+              Comprehensive maintenance for high-pressure seawater reverse osmosis (SWRO) booster pumps, intake vertical turbines, and energy recovery devices (ERD).
+            </p>
+
+            <div class="industry-spec-list">
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>Super Duplex (UNS S32750) impeller fabrication &amp; dynamic balancing</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>Cavitation-resistant HVAF tungsten carbide protective cladding</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>Submersible seawater pump rebuilds and dielectric testing</span></div>
+            </div>
+          </div>
+
+          <div class="industry-standards-row">
+            <span>Primary Standards:</span>
+            <span class="industry-standards-badge">ISO 10816-7 / ISO G1.0</span>
+          </div>
+        </div>
+
+        <!-- Sector 4: Power Generation & Utilities -->
+        <div class="industry-sector-card">
+          <div>
+            <div class="industry-icon-pill" style="background: rgba(182, 123, 43, 0.1); color: #B67B2B; border: 1px solid rgba(182, 123, 43, 0.25);">
+              <i class="fa-solid fa-plug-circle-bolt"></i>
+            </div>
+            <h3 class="industry-card-title">Power Generation (SEC / IPPs)</h3>
+            <p class="industry-card-desc">
+              Supporting thermal and combined-cycle power utilities with high-pressure boiler feed pump overhauls, turbine rotor NDT, and generator motor services.
+            </p>
+
+            <div class="industry-spec-list">
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>Multistage boiler feed water pump re-engineering (+350% MTBF)</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>Steam turbine diaphragm survey &amp; babbit journal bearing rebabbitting</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>13.8kV generator rotor &amp; stator Class H rewind &amp; VPI treatment</span></div>
+            </div>
+          </div>
+
+          <div class="industry-standards-row">
+            <span>Primary Standards:</span>
+            <span class="industry-standards-badge">API 612 / IEEE 522</span>
+          </div>
+        </div>
+
+        <!-- Sector 5: Mining & Minerals Processing -->
+        <div class="industry-sector-card">
+          <div>
+            <div class="industry-icon-pill" style="background: rgba(217, 119, 6, 0.1); color: #D97706; border: 1px solid rgba(217, 119, 6, 0.25);">
+              <i class="fa-solid fa-gem"></i>
+            </div>
+            <h3 class="industry-card-title">Mining &amp; Minerals (Ma'aden)</h3>
+            <p class="industry-card-desc">
+              Severe-duty equipment servicing designed for high abrasive wear environments across phosphate, bauxite, and gold extraction plants.
+            </p>
+
+            <div class="industry-spec-list">
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>Heavy-duty slurry pump wet-end component rebuilds &amp; shaft sleeving</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>SAG and ball mill drive motor rewinding (up to 3,500kW in 9 days)</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>10-ton Schenck dynamic balancing of heavy fan &amp; mill rotors</span></div>
+            </div>
+          </div>
+
+          <div class="industry-standards-row">
+            <span>Primary Standards:</span>
+            <span class="industry-standards-badge">ASTM G65 / ISO G2.5</span>
+          </div>
+        </div>
+
+        <!-- Sector 6: Marine & Offshore Terminals -->
+        <div class="industry-sector-card">
+          <div>
+            <div class="industry-icon-pill" style="background: rgba(79, 70, 229, 0.1); color: #4F46E5; border: 1px solid rgba(79, 70, 229, 0.25);">
+              <i class="fa-solid fa-ship"></i>
+            </div>
+            <h3 class="industry-card-title">Marine &amp; Port Terminals</h3>
+            <p class="industry-card-desc">
+              Fast-turnaround marine propulsion shafting, seawater cooling bundles, and port terminal liquid transfer pumps at King Fahd and King Abdulaziz Ports.
+            </p>
+
+            <div class="industry-spec-list">
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>Multi-coupling wireless laser shaft alignment up to 50m offset</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>On-site portable flange facing &amp; cold pipe machining (2" to 120")</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>Plate heat exchanger (PHE) chemical re-gasketing &amp; retubing</span></div>
+            </div>
+          </div>
+
+          <div class="industry-standards-row">
+            <span>Primary Standards:</span>
+            <span class="industry-standards-badge">IACS Marine / ASME VIII</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DIRECT ACTION & SECTOR RFQ STRIP -->
+  <section class="section-spacer" style="background: #FFFFFF;">
+    <div class="container">
+      <div class="whatsapp-duty-box" style="text-align: center; max-width: 900px; margin: 0 auto;">
+        <span style="font-size: 12px; font-weight: 800; color: #25D366; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">
+          DEDICATED SECTOR ENGINEERING TEAMS
+        </span>
+        <h3 style="font-size: 26px; font-weight: 900; color: #FFFFFF; margin-bottom: 12px;">Need Sector-Specific Engineering Support?</h3>
+        <p style="font-size: 14.5px; color: #CBD5E1; line-height: 1.65; max-width: 650px; margin: 0 auto 24px;">
+          Speak directly with our Sector Reliability Lead or request an on-site equipment health audit for your plant.
+        </p>
+
+        <div style="display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap;">
+          <a href="rfq.html" class="btn-hero-primary" style="padding: 14px 28px; font-size: 14px;">
+            <span>REQUEST SECTOR TECHNICAL PROPOSAL</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a href="tel:+966592151506" class="btn-emergency-call" style="padding: 14px 28px; font-size: 14px;">
+            <i class="fa-solid fa-phone"></i>
+            <span>CALL SECTOR LEAD: +966 59 215 1506</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROVED CLIENT TRUST LOGO MARQUEE -->
+  <section class="client-marquee-section">
+    <div class="container">
+      <div class="marquee-header-row">
+        <span class="marquee-tag">APPROVED INDUSTRIAL PARTNER</span>
+        <span class="marquee-sub">Trusted by the Kingdom's Critical Energy, Petrochemical &amp; Utility Plants</span>
+      </div>
+    </div>
+    
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <div class="marquee-item"><img src="images/clients/saudi-aramco.svg" alt="Saudi Aramco"></div>
+        <div class="marquee-item"><img src="images/clients/sabic.svg" alt="SABIC"></div>
+        <div class="marquee-item"><img src="images/clients/maaden.svg" alt="Ma'aden Mining"></div>
+        <div class="marquee-item"><img src="images/clients/sadara-chemical.svg" alt="Sadara Chemical Company"></div>
+        <div class="marquee-item"><img src="images/clients/saudi-electricity.svg" alt="Saudi Electricity / Energy Company"></div>
+
+        <div class="marquee-item"><img src="images/clients/saudi-aramco.svg" alt="Saudi Aramco"></div>
+        <div class="marquee-item"><img src="images/clients/sabic.svg" alt="SABIC"></div>
+        <div class="marquee-item"><img src="images/clients/maaden.svg" alt="Ma'aden Mining"></div>
+        <div class="marquee-item"><img src="images/clients/sadara-chemical.svg" alt="Sadara Chemical Company"></div>
+        <div class="marquee-item"><img src="images/clients/saudi-electricity.svg" alt="Saudi Electricity / Energy Company"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MASTER FOOTER -->
   <footer class="master-footer">
     <div class="container">
       <div class="footer-4col">
+        <!-- Col 1: Brand & Social Media -->
         <div>
           <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
             <img src="mechflow-logo-white.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img" style="height:44px;">
           </a>
-          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #94A3B8;">
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 18px; color: #94A3B8;">
             Kingdom-wide OEM-independent engineering leader providing Turbomachinery overhaul, Dry Gas Seals (API 692), laser alignment, and plant turnaround (TAR) services.
           </p>
+
+          <!-- Social Media Icons Row -->
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://wa.me/966592151506" target="_blank" rel="noopener" class="social-icon-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
         </div>
 
+        <!-- Col 2: Service Divisions -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-layer-group"></i> Service Divisions</h4>
           <div class="footer-nav-list">
@@ -161,7 +427,8 @@
           </div>
         </div>
 
-        <div>
+        <!-- Col 3: Quick Links (Hidden on Phone View) -->
+        <div class="footer-quick-links-col">
           <h4 class="footer-head-title"><i class="fa-solid fa-compass"></i> Quick Links</h4>
           <div class="footer-nav-list">
             <a href="about.html"><i class="fa-solid fa-shield-halved"></i> About Company &amp; Governance</a>
@@ -174,36 +441,68 @@
           </div>
         </div>
 
+        <!-- Col 4: Corporate Presence -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-building-flag"></i> Corporate Presence</h4>
-          <p style="font-size: 13.5px; margin-bottom: 12px; line-height: 1.6; color: #94A3B8;">
-            🏢 <strong style="color:#FFFFFF;">Head Office:</strong> Jeddah, Saudi Arabia<br>
-            📍 <strong style="color:#FFFFFF;">Branch Offices:</strong> Dammam &amp; Yanbu
-          </p>
-          <p style="font-size: 13.5px; color: var(--color-safety-amber); font-weight: 700;">
-            📞 <span style="color:#CBD5E1;">24/7 Hotline:</span> +966 59 215 1506<br>
-            📧 <span style="color:#CBD5E1;">RFQ Email:</span> rfq@mechflow.sa
-          </p>
+          <div class="footer-presence-list">
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-building"></i>
+              <span><strong>Head Office:</strong> Jeddah, Saudi Arabia</span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <span><strong>Branch Offices:</strong> Dammam &amp; Yanbu</span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span><strong>24/7 Hotline:</strong> <a href="tel:+966592151506">+966 59 215 1506</a></span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-envelope"></i>
+              <span><strong>RFQ Email:</strong> <a href="mailto:rfq@mechflow.sa">rfq@mechflow.sa</a></span>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- Minimal Bottom Row -->
       <div class="footer-bottom-row">
-        <span>&copy; 2026 Mechflow Engineering Services and Solutions Head Office: Jeddah | Branches: Dammam &amp; Yanbu</span>
-        <a href="rfq.html" style="color: var(--color-safety-amber); font-weight:700;">Request Sector Solution <i class="fa-solid fa-arrow-right"></i></a>
+        <span>&copy; 2026 Mechflow Engineering Services and Solutions. All Rights Reserved.</span>
+        <a href="tel:+966592151506" class="footer-hotline-link" style="color: #FFA800; font-weight:700;">24/7 Breakdown Dispatch: +966 59 215 1506 <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </footer>
 
-  <nav class="mobile-bottom-appbar">
-    <a href="index.html" class="appbar-item"><i class="fa-solid fa-house"></i><span>Home</span></a>
-    <a href="services.html" class="appbar-item"><i class="fa-solid fa-layer-group"></i><span>Services</span></a>
-    <a href="diagnostic.html" class="appbar-item"><i class="fa-solid fa-stethoscope"></i><span>Diagnose</span></a>
-    <a href="emergency-dispatch.html" class="appbar-item emergency-pill"><div class="pill-icon-wrap"><i class="fa-solid fa-phone-volume"></i></div><span>24/7 Call</span></a>
-    <a href="rfq.html" class="appbar-item"><i class="fa-solid fa-file-signature"></i><span>RFQ</span></a>
+  <!-- Mobile Bottom App Bar -->
+  <nav class="mobile-bottom-appbar" aria-label="Mobile Navigation">
+    <a href="index.html" class="appbar-item">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+
+    <a href="services.html" class="appbar-item">
+      <i class="fa-solid fa-layer-group"></i>
+      <span>Services</span>
+    </a>
+
+    <a href="diagnostic.html" class="appbar-item">
+      <i class="fa-solid fa-stethoscope"></i>
+      <span>Diagnose</span>
+    </a>
+
+    <a href="emergency-dispatch.html" class="appbar-item emergency-pill">
+      <div class="pill-icon-wrap">
+        <i class="fa-solid fa-phone-volume"></i>
+      </div>
+      <span>24/7 Call</span>
+    </a>
+
+    <a href="rfq.html" class="appbar-item">
+      <i class="fa-solid fa-file-signature"></i>
+      <span>RFQ</span>
+    </a>
   </nav>
 
-  <script src="script.js?v=2.5"></script>
+  <script src="script.js?v=2.7"></script>
 </body>
 </html>
-
-
