@@ -220,14 +220,14 @@ html[dir="rtl"] h6 {
 .lang-btn {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
-  padding: 6px 14px;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
   border-radius: var(--radius-full);
   background: #F8FAFC;
   color: var(--color-brand-charcoal);
   border: 1.5px solid var(--color-border);
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 16px;
   transition: all var(--transition-fast);
   text-decoration: none;
 }
@@ -235,6 +235,8 @@ html[dir="rtl"] h6 {
 .lang-switch-badge i,
 .lang-btn i {
   color: var(--color-brand-bronze);
+  font-size: 17px;
+  transition: all var(--transition-fast);
 }
 
 .lang-switch-badge:hover,
@@ -242,11 +244,13 @@ html[dir="rtl"] h6 {
   background: var(--color-brand-charcoal);
   color: #FFFFFF;
   border-color: var(--color-brand-charcoal);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
 }
 
 .lang-switch-badge:hover i,
 .lang-btn:hover i {
-  color: #FFFFFF;
+  color: #FFA800;
 }
 
 /* Mega Menu (Clean White) */
