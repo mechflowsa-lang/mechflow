@@ -3629,8 +3629,11 @@ html[dir="rtl"] .btn-inquiry-submit:hover i {
     margin-bottom: 24px;
   }
 
-  /* Hide Quick Links on Phone View */
-  .footer-quick-links-col {
+  /* Hide Service Divisions and Quick Links on Phone View */
+  .footer-services-col,
+  .footer-quick-links-col,
+  .footer-4col > div:nth-child(2),
+  .footer-4col > div:nth-child(3) {
     display: none !important;
   }
 

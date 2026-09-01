@@ -251,4 +251,14 @@
     font-weight: 900 !important;
     color: #1C2A31 !important;
   }
+
+  /* Hide Service Divisions & Quick Links in footer on Phone View */
+  @media (max-width: 768px) {
+    .footer-services-col,
+    .footer-quick-links-col,
+    .footer-4col > div:nth-child(2),
+    .footer-4col > div:nth-child(3) {
+      display: none !important;
+    }
+  }
 }
