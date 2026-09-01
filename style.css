@@ -2916,15 +2916,15 @@ html[dir="rtl"] .btn-inquiry-submit:hover i {
 
 .about-highlight-card {
   background: linear-gradient(145deg, #1C2A31 0%, #0F172A 100%);
-  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border: 1.5px solid rgba(182, 123, 43, 0.35);
   border-radius: var(--radius-xl);
-  padding: 36px;
+  padding: 34px;
   color: #FFFFFF;
-  box-shadow: var(--shadow-card);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.15);
 }
 
 .about-highlight-title {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 800;
   color: #FFFFFF;
   margin-bottom: 20px;
@@ -2934,27 +2934,34 @@ html[dir="rtl"] .btn-inquiry-submit:hover i {
 }
 
 .about-highlight-title i {
-  color: var(--color-brand-bronze);
+  color: var(--color-brand-bronze-light);
 }
 
 .about-stats-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 18px;
+  gap: 16px;
 }
 
 .about-stat-item {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-lg);
   padding: 20px 16px;
   text-align: center;
+  transition: all 0.25s ease;
+}
+
+.about-stat-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(182, 123, 43, 0.5);
+  transform: translateY(-2px);
 }
 
 .about-stat-num {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 900;
-  color: var(--color-brand-bronze-light);
+  color: #FDBA74;
   line-height: 1;
   margin-bottom: 6px;
 }
@@ -2964,6 +2971,71 @@ html[dir="rtl"] .btn-inquiry-submit:hover i {
   color: #CBD5E1;
   font-weight: 600;
   line-height: 1.35;
+}
+
+/* Specific Distinctive Themed Icon Boxes */
+.pillar-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.pillar-icon-box.is-blue {
+  background: rgba(2, 132, 199, 0.12);
+  color: #0284C7;
+  border: 1.5px solid rgba(2, 132, 199, 0.3);
+}
+
+.pillar-icon-box.is-gold {
+  background: rgba(182, 123, 43, 0.12);
+  color: #B67B2B;
+  border: 1.5px solid rgba(182, 123, 43, 0.3);
+}
+
+.pillar-icon-box.is-green {
+  background: rgba(5, 150, 105, 0.12);
+  color: #059669;
+  border: 1.5px solid rgba(5, 150, 105, 0.3);
+}
+
+.pillar-icon-box.is-amber {
+  background: rgba(234, 88, 12, 0.12);
+  color: #EA580C;
+  border: 1.5px solid rgba(234, 88, 12, 0.3);
+}
+
+.pillar-feature-card {
+  background: #FFFFFF;
+  border: 1.5px solid #E2E8F0;
+  border-radius: var(--radius-xl);
+  padding: 26px 22px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+}
+
+.pillar-feature-card:hover {
+  transform: translateY(-4px);
+  border-color: #CBD5E1;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.pillar-title {
+  font-size: 17px;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 8px;
+}
+
+.pillar-desc {
+  font-size: 13.5px;
+  color: #475569;
+  line-height: 1.55;
+  margin: 0;
 }
 
 /* ==========================================================================
