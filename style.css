@@ -218,38 +218,32 @@ html[dir="rtl"] h6 {
 
 .lang-switch-badge,
 .lang-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   background: transparent !important;
+  background-color: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  padding: 6px;
-  color: var(--color-brand-charcoal);
-  font-size: 20px;
-  cursor: pointer;
-  text-decoration: none;
+  padding: 4px !important;
+  color: var(--color-brand-charcoal) !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
   transition: all var(--transition-fast);
 }
 
-.lang-switch-badge i,
-.lang-btn i {
+.lang-switch-svg {
+  width: 24px;
+  height: 24px;
+  display: block;
   color: var(--color-brand-charcoal);
-  font-size: 21px;
   transition: all var(--transition-fast);
 }
 
-.lang-switch-badge:hover,
-.lang-btn:hover {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  transform: scale(1.15);
-}
-
-.lang-switch-badge:hover i,
-.lang-btn:hover i {
+.lang-switch-badge:hover .lang-switch-svg,
+.lang-btn:hover .lang-switch-svg {
   color: var(--color-brand-bronze);
+  transform: scale(1.15);
 }
 
 /* Mega Menu (Clean White) */
@@ -1919,6 +1913,26 @@ html[dir="rtl"] .head-office-ribbon {
   padding: 70px 0 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   margin-top: auto;
+}
+
+.master-footer .brand-logo {
+  display: inline-block !important;
+  margin-bottom: 8px !important;
+}
+
+.master-footer .brand-logo-img {
+  height: 44px;
+  width: auto;
+  max-width: 260px;
+  display: block;
+  margin-bottom: 0 !important;
+}
+
+.master-footer p {
+  margin-top: 0 !important;
+  margin-bottom: 16px;
+  line-height: 1.55;
+  color: #94A3B8;
 }
 
 .footer-4col {
