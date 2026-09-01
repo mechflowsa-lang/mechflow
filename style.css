@@ -908,6 +908,49 @@ html[dir="rtl"] .marquee-track {
   opacity: 1;
 }
 
+.division-img-wrap {
+  width: 100%;
+  height: 165px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 18px;
+  background: #0A1624;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.division-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.division-box-card:hover .division-card-img {
+  transform: scale(1.06);
+}
+
+.division-img-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(10, 22, 36, 0.85);
+  backdrop-filter: blur(6px);
+  color: var(--color-brand-bronze-light);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  z-index: 2;
+}
+
+[dir="rtl"] .division-img-badge {
+  right: auto;
+  left: 10px;
+}
+
 .division-card-header {
   display: flex;
   align-items: center;
