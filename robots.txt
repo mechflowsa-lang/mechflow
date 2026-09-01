@@ -1,0 +1,41 @@
+# ==============================================================================
+# MechFlow Engineering Services and Solutions — Robots.txt
+# Domain: https://mechflow-saudi.com
+# ==============================================================================
+
+User-agent: *
+Allow: /
+Disallow: /scratch/
+
+# ------------------------------------------------------------------------------
+# Generative AI & LLM Search Crawlers (ChatGPT, Perplexity, Claude, Gemini, Apple)
+# ------------------------------------------------------------------------------
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# ------------------------------------------------------------------------------
+# Sitemaps & Host
+# ------------------------------------------------------------------------------
+Sitemap: https://mechflow-saudi.com/sitemap.xml
+Host: https://mechflow-saudi.com
