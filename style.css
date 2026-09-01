@@ -2348,6 +2348,109 @@ html[dir="rtl"] .hq-badge-ribbon {
 }
 
 /* ==========================================================================
+   ABOUT US & CORPORATE GOVERNANCE STYLES
+   ========================================================================== */
+.about-hero-wrap {
+  background: radial-gradient(circle at 75% 25%, rgba(182, 123, 43, 0.28) 0%, transparent 60%),
+              radial-gradient(circle at 20% 80%, rgba(0, 128, 255, 0.18) 0%, transparent 50%),
+              linear-gradient(180deg, #091523 0%, #030B17 100%);
+  position: relative;
+  padding: 80px 0 65px;
+  color: #FFFFFF;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.about-hero-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('images/hero-bg-opt.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+  mix-blend-mode: luminosity;
+  pointer-events: none;
+}
+
+.about-hero-title {
+  font-size: 46px;
+  font-weight: 900;
+  color: #FFFFFF;
+  line-height: 1.15;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.about-hero-desc {
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: #CBD5E1;
+  max-width: 740px;
+  margin-bottom: 26px;
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.about-highlight-card {
+  background: linear-gradient(145deg, #1C2A31 0%, #0F172A 100%);
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  color: #FFFFFF;
+  box-shadow: var(--shadow-card);
+}
+
+.about-highlight-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-highlight-title i {
+  color: var(--color-brand-bronze);
+}
+
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.about-stat-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.about-stat-num {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--color-brand-bronze-light);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.about-stat-lbl {
+  font-size: 12.5px;
+  color: #CBD5E1;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+/* ==========================================================================
    RESPONSIVE BREAKPOINTS (CLEAN & ORDERED)
    ========================================================================== */
 @media (max-width: 1024px) {
@@ -2680,6 +2783,35 @@ html[dir="rtl"] .hq-badge-ribbon {
 
   .industry-sector-card {
     padding: 24px 18px;
+  }
+
+  /* About Page Mobile */
+  .about-hero-wrap {
+    padding: 40px 0 32px;
+  }
+
+  .about-hero-title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .about-hero-desc {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .about-story-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .about-highlight-card {
+    padding: 24px 18px;
+  }
+
+  .about-stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
   }
 
   /* Marquee Section Mobile */
