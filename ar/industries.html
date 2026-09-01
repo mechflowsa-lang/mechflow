@@ -146,45 +146,78 @@
     </div>
   </div>
 
-  <!-- القسم الرئيسي: القطاعات الصناعية الحيوية -->
-  <section class="industry-hero-wrap">
+  <!-- SERVICE HERO BANNER -->
+  <section class="service-hero-banner">
+    <div class="service-hero-bg" style="background-image: url('../images/div-turbomachinery.jpg');"></div>
     <div class="container">
-      <div style="position: relative; z-index: 2;">
-        
-        <span class="hero-badge-pill" style="margin-bottom: 18px;">
-          <span class="pulse-dot"></span>
-          <span>خبرة هندسية متخصصة وموثوقية تشغيلية لكبرى القطاعات</span>
-        </span>
-
-        <h1 class="industry-hero-title">
-          القطاعات الصناعية الحيوية<br>
-          <span style="color: var(--color-brand-bronze-light);">التي ندعم استمراريتها وإنتاجها في المملكة</span>
-        </h1>
-
-        <p class="industry-hero-desc">
-          حلول متكاملة لصيانة وعمرات التوربينات والمضخات، الأختام الغازية الجافة (API 692)، عمرات المصانع الكبرى، ولف المحركات الكهربائية المصممة خصيصاً لتلبية متطلبات كبرى المنشآت الطاقية والصناعية في المملكة العربية السعودية.
-        </p>
-
-        <!-- شارات التواصل السريع -->
-        <div class="contact-quick-badges">
-          <a href="tel:+966592151506" class="contact-badge-pill">
-            <i class="fa-solid fa-phone-volume"></i>
-            <span>طوارئ 24/7: 1506 215 59 966+</span>
-          </a>
-
-          <a href="rfq.html" class="contact-badge-pill">
-            <i class="fa-solid fa-file-signature"></i>
-            <span>طلب حل فني مخصص للقطاع</span>
-          </a>
+      <div class="service-hero-grid">
+        <div>
+          <span class="service-hero-badge"><i class="fa-solid fa-industry"></i> القطاعات الصناعية الحيوية</span>
+          <h1 class="service-hero-title">حلول هندسية متخصصة للقطاعات الاستراتيجية</h1>
+          <p class="service-hero-desc">
+            توضيب الآلات الدوارة، الأختام الغازية (API 692)، تنفيذ عمرات المصانع، ولف المحركات الكهربائية بالمملكة.
+          </p>
+          <div class="service-hero-actions">
+            <a href="#sectorsList" class="btn-emergency-gold">
+              <i class="fa-solid fa-layer-group"></i>
+              <span>استعراض القطاعات الـ 6</span>
+            </a>
+            <a href="rfq.html" class="btn-outline-glow">
+              <i class="fa-solid fa-file-signature"></i>
+              <span>طلب عرض فني مخصص</span>
+            </a>
+          </div>
         </div>
 
+        <div class="service-hero-media-card">
+          <img src="../images/div-plant-turnaround.jpg" alt="القطاعات الصناعية الحيوية في المملكة" loading="lazy">
+          <div class="service-hero-floating-stat">
+            <div>
+              <div class="floating-stat-num">6 قطاعات</div>
+              <div class="floating-stat-lbl">تغطية شاملة بالمملكة</div>
+            </div>
+            <div style="text-align: left;">
+              <div class="floating-stat-num">2-4 س</div>
+              <div class="floating-stat-lbl">سرعة الاستجابة الميدانية</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- شريط مؤشرات الأداء للقطاعات -->
+  <section class="metrics-impact-strip">
+    <div class="container">
+      <div class="metrics-impact-grid">
+        <div class="metric-impact-card">
+          <div class="metric-num">100%</div>
+          <div class="metric-label">تغطية شاملة لكافة المعدات الحيوية</div>
+        </div>
+        <div class="metric-impact-card">
+          <div class="metric-num">2-4 س</div>
+          <div class="metric-label">سرعة التحرك الميداني بكافة مناطق المملكة</div>
+        </div>
+        <div class="metric-impact-card">
+          <div class="metric-num">0.00 LTI</div>
+          <div class="metric-label">180k+ ساعة عمل آمنة بمواقع التشغيل</div>
+        </div>
+        <div class="metric-impact-card">
+          <div class="metric-num">3 مراكز</div>
+          <div class="metric-label">جدة، الدمام، وينبع للتدخل السريع</div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- بطاقات القطاعات الستة الحيوية -->
-  <section class="section-spacer" style="background: var(--color-canvas-alt);">
+  <section class="section-spacer" id="sectorsList" style="background: var(--color-canvas-alt);">
     <div class="container">
+      <div class="section-head-center">
+        <span class="tag-accent"><i class="fa-solid fa-industry"></i> الحلول المتخصصة</span>
+        <h2 class="head-title-lg">القطاعات التي ندعم استمراريتها</h2>
+        <p class="head-desc">موثوقية تشغيلية لأهم المنشآت الحيوية في المملكة العربية السعودية.</p>
+      </div>
       
       <div class="divisions-3col-grid">
         
@@ -196,12 +229,12 @@
             </div>
             <h3 class="industry-card-title">النفط والغاز والتكرير</h3>
             <p class="industry-card-desc">
-              حلول الآلات الدوارة عالية الضغط والمصممة لمقاومة غاز كبريتيد الهيدروجين الحامضي H2S، والضغوط الفائقة، والظروف المناخية القاسية للخليج.
+              حلول الآلات الدوارة لبيئات غاز H2S الحامضي، والضغوط العالية والحرارة الشديدة.
             </p>
 
             <div class="industry-spec-list">
               <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>مضخات تصدير الزيت وتغذية المعالجة API 610 (BB2 / BB3 / BB5)</span></div>
-              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>ضواغط الغاز الطاردة المركزية API 617 والتوربينات البخارية API 612</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>ضواغط الغاز الطاردة API 617 والتوربينات البخارية API 612</span></div>
               <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>الأختام الغازية الترادفية (API 692) وخراطيش Plan 53B المعتمدة</span></div>
             </div>
           </div>
@@ -212,7 +245,7 @@
           </div>
         </div>
 
-        <!-- قطاع 2: البتروكيماويات والبوليمرات -->
+        <!-- قطاع 2: البتروكيماويات والصناعات الكيميائية -->
         <div class="industry-sector-card">
           <div>
             <div class="industry-icon-pill" style="background: rgba(0, 108, 53, 0.1); color: #006C35; border: 1px solid rgba(0, 108, 53, 0.25);">
@@ -220,13 +253,13 @@
             </div>
             <h3 class="industry-card-title">البتروكيماويات والصناعات الكيميائية</h3>
             <p class="industry-card-desc">
-              خدمات الإحكام الميكانيكي والتشغيل الدقيق لخطوط السوائل الكيميائية المسببة للتآكل، مفاعلات البلمرة، ووحدات تكسير الإيثيلين.
+              خدمات الإحكام الميكانيكي لخطوط السوائل الكيميائية الكاشطة ومفاعلات البلمرة.
             </p>
 
             <div class="industry-spec-list">
               <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>أختام خلاطات ومفاعلات البلمرة العلوية (API 682 Plan 54)</span></div>
-              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>تنعيم أسطح الأختام بالهيليوم (2 Light Bands) بالغرف النظيفة</span></div>
-              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>إدارة وشد وصلات الفلانجات ASME PCC-1 أثناء عمرات الإيقاف</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>تنعيم أسطح الأختام بالهيليوم (2 Light Bands) بالغرفة النظيفة</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>إدارة وشد وصلات الفلانجات ASME PCC-1 أثناء العمرات</span></div>
             </div>
           </div>
 
@@ -244,12 +277,12 @@
             </div>
             <h3 class="industry-card-title">تحلية المياه والمرافق (SWCC)</h3>
             <p class="industry-card-desc">
-              صيانة شاملة لمضخات التناضح العكسي عالي الضغط (SWRO)، مضخات سحب مياه البحر الرأسية، وأجهزة استرداد الطاقة (ERD).
+              صيانة مضخات التناضح العكسي (SWRO)، مضخات السحب الرأسية، وأجهزة استرداد الطاقة.
             </p>
 
             <div class="industry-spec-list">
               <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>تصنيع دواسر السوبر دوبلكس والموازنة الديناميكية الدقيقة</span></div>
-              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>طلاءات HVAF تنجستن كاربيد المقاومة للتكهف والتآكل البحري</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>طلاءات HVAF تنجستن كاربيد المقاومة للتكهف والتآكل</span></div>
               <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>تأهيل المضخات الغاطسة واختبارات العزل الكهربائي</span></div>
             </div>
           </div>
@@ -266,14 +299,14 @@
             <div class="industry-icon-pill" style="background: rgba(182, 123, 43, 0.1); color: #B67B2B; border: 1px solid rgba(182, 123, 43, 0.25);">
               <i class="fa-solid fa-plug-circle-bolt"></i>
             </div>
-            <h3 class="industry-card-title">توليد الكهرباء والمحطات (SEC / IPPs)</h3>
+            <h3 class="industry-card-title">توليد الكهرباء والمحطات (SEC)</h3>
             <p class="industry-card-desc">
-              دعم محطات التوليد الحرارية والدورة المركبة بعمرات مضخات تغذية المراجل البخارية، فحص روتورات التوربينات، وصيانة المولدات.
+              دعم محطات التوليد: عمرات مضخات المراجل، فحص روتورات التوربينات، وصيانة المولدات.
             </p>
 
             <div class="industry-spec-list">
               <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>إعادة هندسة مضخات تغذية المراجل متعددة المراحل (+350% MTBF)</span></div>
-              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>مسح حجاب التوربينات البخارية وصب محامل البابت وتنعيمها</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>مسح حجاب التوربينات البخارية وصب وتنعيم محامل البابت</span></div>
               <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>لف ملفات المولدات فئة Class H والتشريب VPI حتى 13.8kV</span></div>
             </div>
           </div>
@@ -292,13 +325,13 @@
             </div>
             <h3 class="industry-card-title">التعدين والمعادن (معادن)</h3>
             <p class="industry-card-desc">
-              صيانة المعدات الثقيلة المقاومة للتآكل الاحتكاكي الشديد في مصانع الفوسفات والبوكسيت واستخلاص الذهب والمعادن.
+              صيانة المعدات الثقيلة المقاومة للتآكل في مصانع الفوسفات، البوكسيت، والذهب.
             </p>
 
             <div class="industry-spec-list">
               <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>تأهيل أجزاء مضخات الملاط الكاشط (Slurry) وتلبيس الأعمدة</span></div>
-              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>إعادة لف محركات طواحين الخام SAG Mill حتى 3,500kW خلال 9 أيام</span></div>
-              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>موازنة ديناميكية حتى 10 طن لمراوح وسواحب الأفران الثقيلة</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>إعادة لف محركات طواحين SAG Mill حتى 3,500kW في 9 أيام</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>موازنة ديناميكية حتى 10 طن لمراوح وسواحب الأفران</span></div>
             </div>
           </div>
 
@@ -316,13 +349,13 @@
             </div>
             <h3 class="industry-card-title">الموانئ والمنشآت البحرية</h3>
             <p class="industry-card-desc">
-              صيانة خطوط الدفع البحري، حزم أنابيب التبريد بمياه البحر، ومضخات مناولة السوائل في ميناء الملك فهد وميناء الملك عبدالعزيز.
+              صيانة خطوط الدفع البحري، مبادلات التبريد بمياه البحر، ومضخات مناولة السوائل.
             </p>
 
             <div class="industry-spec-list">
               <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>محاذاة ليزرية لاسلكية لخطوط الدفع البحرية حتى إزاحة 50 متراً</span></div>
-              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>تشغيل وتنعيم الفلانجات موقعياً والقطع البارد من 2 إلى 120 بوصة</span></div>
-              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>صيانة وتتييب المبادلات الصفائحية وتجديد الجوانات المقاومة للملوحة</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>تشغيل الفلانجات موقعياً والقطع البارد من 2 إلى 120 بوصة</span></div>
+              <div class="industry-spec-row"><i class="fa-solid fa-check"></i><span>صيانة وتتييب المبادلات الصفائحية وتجديد الجوانات المقاومة</span></div>
             </div>
           </div>
 
@@ -338,26 +371,21 @@
   </section>
 
   <!-- شريط الإجراء والدعم المخصص للقطاعات -->
-  <section class="section-spacer" style="background: #FFFFFF;">
+  <section class="section-spacer" style="background: #FFFFFF; padding-top: 20px;">
     <div class="container">
-      <div class="whatsapp-duty-box" style="text-align: center; max-width: 900px; margin: 0 auto;">
-        <span style="font-size: 12px; font-weight: 800; color: #25D366; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">
-          فرق هندسية مخصصة لكل قطاع
-        </span>
-        <h3 style="font-size: 26px; font-weight: 900; color: #FFFFFF; margin-bottom: 12px;">هل تحتاج إلى دعم هندسي متخصص لمنشأتكم؟</h3>
-        <p style="font-size: 14.5px; color: #CBD5E1; line-height: 1.65; max-width: 650px; margin: 0 auto 24px;">
-          تواصل مباشرة مع مسؤول الاعتمادية لقطاعكم أو اطلب زيارة وفحص فني ميداني للمعدات في موقع المصنع.
-        </p>
-
-        <div style="display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap;">
-          <a href="rfq.html" class="btn-hero-primary" style="padding: 14px 28px; font-size: 14px;">
-            <span>طلب عرض فني مخصص للقطاع</span>
-            <i class="fa-solid fa-arrow-left"></i>
+      <div class="service-cta-strip">
+        <div class="service-cta-info">
+          <h3>هل تحتاج إلى دعم هندسي متخصص لمنشأتكم؟</h3>
+          <p>تواصل مباشرة مع مسؤول الاعتمادية لقطاعكم أو اطلب زيارة وفحص فني ميداني للمعدات في موقع المصنع.</p>
+        </div>
+        <div class="service-cta-actions">
+          <a href="rfq.html" class="btn-emergency-gold">
+            <i class="fa-solid fa-file-signature"></i>
+            <span>طلب عرض فني مخصص</span>
           </a>
-
-          <a href="tel:+966592151506" class="btn-emergency-call" style="padding: 14px 28px; font-size: 14px;">
-            <i class="fa-solid fa-phone"></i>
-            <span>اتصال بمسؤول القطاع: 1506 215 59 966+</span>
+          <a href="tel:+966592151506" class="btn-outline-glow">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>1506 215 59 966+</span>
           </a>
         </div>
       </div>
@@ -397,7 +425,7 @@
         <!-- عمود 1 -->
         <div>
           <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
-            <img src="mechflow-logo-white.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img" style="height:44px;">
+            <img src="../mechflow-logo-white.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img" style="height:44px;">
           </a>
           <p style="font-size: 14px; line-height: 1.6; margin-bottom: 18px; color: #94A3B8;">
             الريادة الهندسية المستقلة في المملكة العربية السعودية لخدمات عمرات التوربينات والمضخات، الأختام الغازية الجافة (API 692)، المحاذاة الليزرية، وعمرات المصانع الكبرى.
