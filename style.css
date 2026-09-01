@@ -170,9 +170,9 @@ html[dir="rtl"] h6 {
 }
 
 .brand-logo-img {
-  height: 48px;
+  height: 42px;
   width: auto;
-  max-width: 320px;
+  max-width: 280px;
   object-fit: contain;
   display: block;
 }
@@ -1936,20 +1936,22 @@ html[dir="rtl"] .head-office-ribbon {
 
 .master-footer .brand-logo {
   display: inline-block !important;
-  margin-bottom: 8px !important;
+  margin-bottom: 0px !important;
+  line-height: 1 !important;
 }
 
 .master-footer .brand-logo-img {
-  height: 44px;
+  height: 48px;
   width: auto;
-  max-width: 260px;
+  max-width: 280px;
   display: block;
   margin-bottom: 0 !important;
 }
 
-.master-footer p {
-  margin-top: 0 !important;
-  margin-bottom: 16px;
+.master-footer p,
+.master-footer .brand-logo + p {
+  margin-top: 6px !important;
+  margin-bottom: 16px !important;
   line-height: 1.55;
   color: #94A3B8;
 }
@@ -3323,32 +3325,38 @@ html[dir="rtl"] .btn-inquiry-submit:hover i {
   }
 
   .nav-wrapper {
-    height: 80px;
+    height: 68px;
   }
 
   .brand-logo-img {
-    height: 54px !important;
-    max-height: 58px !important;
-    max-width: calc(100vw - 88px) !important;
+    height: 38px !important;
+    max-height: 42px !important;
+    max-width: 230px !important;
     width: auto !important;
   }
 
   .master-footer .brand-logo {
     display: inline-block !important;
-    margin-bottom: 6px !important;
+    margin-bottom: 0px !important;
+    line-height: 1 !important;
   }
 
   .master-footer .brand-logo-img {
-    height: 60px !important;
-    max-height: 66px !important;
-    max-width: 330px !important;
+    height: 48px !important;
+    max-height: 52px !important;
+    max-width: 280px !important;
     width: auto !important;
     margin-bottom: 0 !important;
   }
 
+  .master-footer p,
+  .master-footer .brand-logo + p {
+    margin-top: 6px !important;
+  }
+
   .mobile-drawer-header .brand-logo img {
-    height: 48px !important;
-    max-width: 260px !important;
+    height: 38px !important;
+    max-width: 230px !important;
     width: auto !important;
   }
 
@@ -4310,21 +4318,33 @@ html[dir="rtl"] .rfq-division-card input[type="radio"] {
 
 @media (max-width: 480px) {
   .nav-wrapper {
-    height: 76px !important;
+    height: 66px !important;
   }
 
   .brand-logo-img {
-    height: 50px !important;
-    max-height: 54px !important;
-    max-width: calc(100vw - 80px) !important;
+    height: 36px !important;
+    max-height: 38px !important;
+    max-width: 210px !important;
     width: auto !important;
   }
 
+  .master-footer .brand-logo {
+    display: inline-block !important;
+    margin-bottom: 0px !important;
+    line-height: 1 !important;
+  }
+
   .master-footer .brand-logo-img {
-    height: 56px !important;
-    max-height: 62px !important;
-    max-width: 300px !important;
+    height: 46px !important;
+    max-height: 50px !important;
+    max-width: 260px !important;
     width: auto !important;
+    margin-bottom: 0 !important;
+  }
+
+  .master-footer p,
+  .master-footer .brand-logo + p {
+    margin-top: 6px !important;
   }
 
   .hero-title-punch {
