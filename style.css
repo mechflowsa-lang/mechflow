@@ -1576,6 +1576,123 @@ html[dir="rtl"] .marquee-track {
 }
 
 /* ==========================================================================
+   THE MECHFLOW ADVANTAGE — PRESTIGE 4-CARD GRID
+   ========================================================================== */
+.advantage-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.advantage-card {
+  background: #FFFFFF;
+  border: 1.5px solid #E2E8F0;
+  border-radius: var(--radius-xl);
+  padding: 28px 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.advantage-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.09);
+  border-color: #CBD5E1;
+}
+
+.advantage-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.advantage-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.advantage-icon.is-gold {
+  background: rgba(182, 123, 43, 0.12);
+  color: #B67B2B;
+  border: 1.5px solid rgba(182, 123, 43, 0.28);
+}
+
+.advantage-icon.is-blue {
+  background: rgba(2, 132, 199, 0.12);
+  color: #0284C7;
+  border: 1.5px solid rgba(2, 132, 199, 0.28);
+}
+
+.advantage-icon.is-purple {
+  background: rgba(99, 102, 241, 0.12);
+  color: #6366F1;
+  border: 1.5px solid rgba(99, 102, 241, 0.28);
+}
+
+.advantage-icon.is-green {
+  background: rgba(5, 150, 105, 0.12);
+  color: #059669;
+  border: 1.5px solid rgba(5, 150, 105, 0.28);
+}
+
+.advantage-metric-pill {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.advantage-metric-pill.is-gold {
+  background: rgba(182, 123, 43, 0.1);
+  color: #B67B2B;
+  border: 1px solid rgba(182, 123, 43, 0.25);
+}
+
+.advantage-metric-pill.is-blue {
+  background: rgba(2, 132, 199, 0.1);
+  color: #0284C7;
+  border: 1px solid rgba(2, 132, 199, 0.25);
+}
+
+.advantage-metric-pill.is-purple {
+  background: rgba(99, 102, 241, 0.1);
+  color: #6366F1;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+}
+
+.advantage-metric-pill.is-green {
+  background: rgba(5, 150, 105, 0.1);
+  color: #059669;
+  border: 1px solid rgba(5, 150, 105, 0.25);
+}
+
+.advantage-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.advantage-desc {
+  font-size: 13.5px;
+  color: #475569;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ==========================================================================
    WHY CHOOSE MECHFLOW & CORE CAPABILITIES PILLARS
    ========================================================================== */
 .pillars-4col-grid {
@@ -3075,6 +3192,11 @@ html[dir="rtl"] .btn-inquiry-submit:hover i {
     gap: 18px;
   }
 
+  .advantage-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
   .tri-hubs-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -3097,6 +3219,10 @@ html[dir="rtl"] .btn-inquiry-submit:hover i {
 }
 
 @media (max-width: 768px) {
+  .advantage-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
   .container {
     padding-left: 18px;
     padding-right: 18px;
