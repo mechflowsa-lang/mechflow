@@ -221,36 +221,35 @@ html[dir="rtl"] h6 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: var(--radius-full);
-  background: #F8FAFC;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 6px;
   color: var(--color-brand-charcoal);
-  border: 1.5px solid var(--color-border);
-  font-size: 16px;
-  transition: all var(--transition-fast);
+  font-size: 20px;
+  cursor: pointer;
   text-decoration: none;
+  transition: all var(--transition-fast);
 }
 
 .lang-switch-badge i,
 .lang-btn i {
-  color: var(--color-brand-bronze);
-  font-size: 17px;
+  color: var(--color-brand-charcoal);
+  font-size: 21px;
   transition: all var(--transition-fast);
 }
 
 .lang-switch-badge:hover,
 .lang-btn:hover {
-  background: var(--color-brand-charcoal);
-  color: #FFFFFF;
-  border-color: var(--color-brand-charcoal);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  transform: scale(1.15);
 }
 
 .lang-switch-badge:hover i,
 .lang-btn:hover i {
-  color: #FFA800;
+  color: var(--color-brand-bronze);
 }
 
 /* Mega Menu (Clean White) */
