@@ -70,103 +70,292 @@
     </div>
   </div>
 
-  <section class="hero-monolith" style="padding: 70px 0;">
+  <!-- SERVICE HERO BANNER -->
+  <section class="service-hero-banner">
+    <div class="service-hero-bg" style="background-image: url('images/div-turbomachinery.jpg');"></div>
     <div class="container">
-      <span class="hero-badge-pill"><span class="pulse-dot"></span> INTERACTIVE RFQ CONFIGURATOR</span>
-      <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px;">Request a Technical Solution &amp; Proposal</h1>
-      <p class="hero-lead-text">
-        Configure your asset parameters, maintenance scope, and facility location to receive an engineered proposal and commercial quotation.
-      </p>
+      <div class="service-hero-grid">
+        <div>
+          <span class="service-hero-badge"><i class="fa-solid fa-file-contract"></i> OFFICIAL RFQ &amp; PROPOSAL CONFIGURATOR</span>
+          <h1 class="service-hero-title">Request an Engineered Proposal &amp; Commercial Quotation</h1>
+          <p class="service-hero-desc">
+            Submit your equipment parameters, operating conditions, or maintenance scope. Our rotating equipment and reliability engineering team responds within 2-4 hours Kingdom-wide.
+          </p>
+          <div class="service-hero-actions">
+            <a href="#rfqFormSection" class="btn-emergency-gold">
+              <i class="fa-solid fa-arrow-down"></i>
+              <span>START RFQ CONFIGURATOR</span>
+            </a>
+            <a href="https://wa.me/966592151506" target="_blank" rel="noopener noreferrer" class="btn-outline-glow">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>WHATSAPP SUPPORT +966 59 215 1506</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="service-hero-media-card">
+          <img src="images/div-advanced-engineering.jpg" alt="Engineering Technical RFQ Review" loading="lazy">
+          <div class="service-hero-floating-stat">
+            <div>
+              <div class="floating-stat-num">2 - 4 Hrs</div>
+              <div class="floating-stat-lbl">Technical Triage SLA</div>
+            </div>
+            <div style="text-align: right;">
+              <div class="floating-stat-num">100% OEM</div>
+              <div class="floating-stat-lbl">Independent Cost Advantage</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section-spacer" style="background: var(--color-canvas-alt);">
+  <!-- MAIN RFQ CONFIGURATOR SECTION -->
+  <section class="section-spacer" id="rfqFormSection" style="background: var(--color-canvas-alt);">
     <div class="container">
-      <div style="max-width: 860px; margin: 0 auto; background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 44px; box-shadow: var(--shadow-card);">
+      <div class="rfq-layout-grid">
         
-        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! Your technical RFQ has been submitted to Mechflow Engineering Services and Solutions.');">
+        <!-- Left: Interactive RFQ Configurator Form -->
+        <div class="rfq-form-card">
+          <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! Your technical RFQ has been received by MechFlow Engineering Services. A senior rotating equipment specialist will contact you within 2-4 hours.');">
+            
+            <!-- STEP 01 -->
+            <div class="rfq-step-box">
+              <div class="rfq-step-header">
+                <span class="rfq-step-num">1</span>
+                <div>
+                  <h3 class="rfq-step-title">Select Service Division</h3>
+                  <div style="font-size: 12.5px; color: var(--color-muted);">Choose the primary engineering domain for this RFQ</div>
+                </div>
+              </div>
+
+              <div class="rfq-division-grid">
+                <!-- Div 1 -->
+                <label class="rfq-division-card">
+                  <input type="radio" name="rfqDivision" value="turbomachinery" checked>
+                  <div class="rfq-div-icon"><i class="fa-solid fa-fan"></i></div>
+                  <div class="rfq-div-title">Turbomachinery &amp; Pumps</div>
+                  <div class="rfq-div-tag">API 610 / Dynamic Balancing</div>
+                </label>
+
+                <!-- Div 2 -->
+                <label class="rfq-division-card">
+                  <input type="radio" name="rfqDivision" value="sealing">
+                  <div class="rfq-div-icon"><i class="fa-solid fa-ring"></i></div>
+                  <div class="rfq-div-title">Fluid &amp; Gas Sealing</div>
+                  <div class="rfq-div-tag">API 682 / API 692 DGS</div>
+                </label>
+
+                <!-- Div 3 -->
+                <label class="rfq-division-card">
+                  <input type="radio" name="rfqDivision" value="turnaround">
+                  <div class="rfq-div-icon"><i class="fa-solid fa-wrench"></i></div>
+                  <div class="rfq-div-title">Plant Turnaround (TAR)</div>
+                  <div class="rfq-div-tag">ASME PCC-1 / Flange Facing</div>
+                </label>
+
+                <!-- Div 4 -->
+                <label class="rfq-division-card">
+                  <input type="radio" name="rfqDivision" value="advanced_cae">
+                  <div class="rfq-div-icon"><i class="fa-solid fa-microchip"></i></div>
+                  <div class="rfq-div-title">3D Metrology &amp; FEA/CFD</div>
+                  <div class="rfq-div-tag">FaroArm / Reverse Eng.</div>
+                </label>
+
+                <!-- Div 5 -->
+                <label class="rfq-division-card">
+                  <input type="radio" name="rfqDivision" value="electrical">
+                  <div class="rfq-div-icon"><i class="fa-solid fa-bolt"></i></div>
+                  <div class="rfq-div-title">Motor Rewinding &amp; VFD</div>
+                  <div class="rfq-div-tag">Class H (180&deg;C) / VPI</div>
+                </label>
+
+                <!-- Div 6 -->
+                <label class="rfq-division-card">
+                  <input type="radio" name="rfqDivision" value="heat_transfer">
+                  <div class="rfq-div-icon"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+                  <div class="rfq-div-title">Heat Transfer &amp; Coolers</div>
+                  <div class="rfq-div-tag">TEMA Retubing / PHE</div>
+                </label>
+              </div>
+            </div>
+
+            <!-- STEP 02 -->
+            <div class="rfq-step-box">
+              <div class="rfq-step-header">
+                <span class="rfq-step-num">2</span>
+                <div>
+                  <h3 class="rfq-step-title">Equipment Parameters &amp; Urgency</h3>
+                  <div style="font-size: 12.5px; color: var(--color-muted);">Define operating conditions and timeline requirements</div>
+                </div>
+              </div>
+
+              <!-- Urgency Level -->
+              <div class="rfq-label" style="margin-bottom: 8px;"><i class="fa-solid fa-clock"></i> Project Timeline / Urgency:</div>
+              <div class="rfq-urgency-grid">
+                <label class="rfq-urgency-card">
+                  <input type="radio" name="rfqUrgency" value="standard" checked>
+                  <span class="rfq-urgency-label">Planned Scope (1-2 Weeks)</span>
+                </label>
+                <label class="rfq-urgency-card">
+                  <input type="radio" name="rfqUrgency" value="tar">
+                  <span class="rfq-urgency-label">Upcoming Turnaround (TAR)</span>
+                </label>
+                <label class="rfq-urgency-card">
+                  <input type="radio" name="rfqUrgency" value="emergency">
+                  <span class="rfq-urgency-label" style="color: #DC2626;">Emergency Breakdown (24/7)</span>
+                </label>
+              </div>
+
+              <div class="rfq-form-2col">
+                <div class="rfq-input-wrap">
+                  <label class="rfq-label"><i class="fa-solid fa-tag"></i> Equipment Tag / Asset Name:</label>
+                  <input type="text" class="rfq-input" placeholder="e.g., Boiler Feed Pump (BFP-01) or DGS-Compressor" required>
+                </div>
+                <div class="rfq-input-wrap">
+                  <label class="rfq-label"><i class="fa-solid fa-gauge-high"></i> Operating Parameters:</label>
+                  <input type="text" class="rfq-input" placeholder="e.g., 180&deg;C / 65 Bar / Seawater / H2S">
+                </div>
+              </div>
+
+              <div class="rfq-input-wrap">
+                <label class="rfq-label"><i class="fa-solid fa-list-check"></i> Scope Requirements:</label>
+                <input type="text" class="rfq-input" placeholder="e.g., Complete Overhaul, Dynamic Balancing, Laser Alignment, Hydro-test">
+              </div>
+            </div>
+
+            <!-- STEP 03 -->
+            <div class="rfq-step-box">
+              <div class="rfq-step-header">
+                <span class="rfq-step-num">3</span>
+                <div>
+                  <h3 class="rfq-step-title">Facility &amp; Contact Details</h3>
+                  <div style="font-size: 12.5px; color: var(--color-muted);">Where should our engineering squad mobilize?</div>
+                </div>
+              </div>
+
+              <div class="rfq-form-2col">
+                <div class="rfq-input-wrap">
+                  <label class="rfq-label"><i class="fa-solid fa-building-flag"></i> Preferred Service Hub:</label>
+                  <select class="rfq-select">
+                    <option value="jeddah">Jeddah Headquarters &amp; Central Works (Western Hub)</option>
+                    <option value="dammam">Dammam 2nd Industrial Hub (Eastern Province)</option>
+                    <option value="yanbu">Yanbu Red Sea Industrial Depot</option>
+                    <option value="onsite">On-Site Field Support Squad (Anywhere in KSA)</option>
+                  </select>
+                </div>
+                <div class="rfq-input-wrap">
+                  <label class="rfq-label"><i class="fa-solid fa-industry"></i> Company / Plant Name:</label>
+                  <input type="text" class="rfq-input" placeholder="e.g., Saudi Aramco, SABIC, Ma'aden, SEC" required>
+                </div>
+              </div>
+
+              <div class="rfq-form-2col">
+                <div class="rfq-input-wrap">
+                  <label class="rfq-label"><i class="fa-solid fa-user-tie"></i> Contact Person &amp; Title:</label>
+                  <input type="text" class="rfq-input" placeholder="e.g., Maintenance Superintendent" required>
+                </div>
+                <div class="rfq-input-wrap">
+                  <label class="rfq-label"><i class="fa-solid fa-phone"></i> Mobile / WhatsApp Hotline:</label>
+                  <input type="tel" class="rfq-input" placeholder="e.g., +966 5X XXX XXXX" required>
+                </div>
+              </div>
+
+              <div class="rfq-input-wrap" style="margin-bottom: 14px;">
+                <label class="rfq-label"><i class="fa-solid fa-envelope"></i> Corporate Email Address:</label>
+                <input type="email" class="rfq-input" placeholder="e.g., engineer@company.com" required>
+              </div>
+
+              <div class="rfq-input-wrap">
+                <label class="rfq-label"><i class="fa-solid fa-file-lines"></i> Technical Scope Details &amp; Special Instructions:</label>
+                <textarea class="rfq-textarea" rows="4" placeholder="Provide any additional failure symptoms, material metallurgy preferences, turnaround dates, or urgent requirements..."></textarea>
+              </div>
+            </div>
+
+            <!-- Submit Button & Direct WhatsApp Alternative -->
+            <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 10px;">
+              <button type="submit" class="btn-hero-primary" style="width: 100%; justify-content: center; font-size: 16.5px; padding: 16px; border-radius: var(--radius-md);">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>SUBMIT RFQ SPECIFICATION</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+
+              <div style="display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 13px; color: var(--color-muted);">
+                <span>Or bypass the form for instant triage:</span>
+                <a href="https://wa.me/966592151506?text=Hello%20MechFlow,%20I%20would%20like%20to%20request%20an%20engineering%20proposal%20and%20quotation." target="_blank" rel="noopener noreferrer" style="color: #22C55E; font-weight: 700; display: inline-flex; align-items: center; gap: 5px;">
+                  <i class="fa-brands fa-whatsapp"></i> Direct WhatsApp Dispatch
+                </a>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Right: RFQ Assurance & Trust Sidebar -->
+        <div class="rfq-sidebar-sticky">
           
-          <!-- Step 1 -->
-          <div style="margin-bottom: 32px;">
-            <h3 style="font-size: 18px; color: var(--color-heading); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;">
-              <span class="step-num-pill" style="width:28px; height:28px; font-size:13px;">1</span>
-              Select Engineering Division
-            </h3>
-            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
-              <label style="background: var(--color-canvas-subtle); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
-                <input type="radio" name="rfqDivision" value="turbomachinery" checked> Turbomachinery &amp; Pumps (API 610)
-              </label>
-              <label style="background: var(--color-canvas-subtle); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
-                <input type="radio" name="rfqDivision" value="sealing"> Fluid &amp; Dry Gas Sealing (API 682/692)
-              </label>
-              <label style="background: var(--color-canvas-subtle); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
-                <input type="radio" name="rfqDivision" value="turnaround"> Plant Turnaround &amp; Bolting (TAR)
-              </label>
-              <label style="background: var(--color-canvas-subtle); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
-                <input type="radio" name="rfqDivision" value="electrical"> Electric Motor Rewinding &amp; VFD
-              </label>
+          <!-- Card 1: Response Guarantee -->
+          <div class="rfq-trust-sidebar-card">
+            <span class="tag-accent" style="margin-bottom: 10px;"><i class="fa-solid fa-shield-check"></i> RFQ SLA Guarantee</span>
+            <h3 style="font-size: 18px; color: var(--color-heading); margin-bottom: 6px;">Why RFQ with MechFlow?</h3>
+            <p style="font-size: 13px; color: var(--color-body); line-height: 1.5; margin-bottom: 16px;">
+              Direct access to senior rotating equipment specialists and transparent OEM-independent technical proposals.
+            </p>
+
+            <div class="rfq-sla-badge-list">
+              <div class="rfq-sla-row">
+                <div class="rfq-sla-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="rfq-sla-info">
+                  <h4>2 - 4 Hour Triage</h4>
+                  <p>Rapid engineering evaluation and mobilization schedule across KSA.</p>
+                </div>
+              </div>
+
+              <div class="rfq-sla-row">
+                <div class="rfq-sla-icon"><i class="fa-solid fa-certificate"></i></div>
+                <div class="rfq-sla-info">
+                  <h4>Certified QA/QC Deliverables</h4>
+                  <p>ASME, API, and ISO compliant inspection reports with every project.</p>
+                </div>
+              </div>
+
+              <div class="rfq-sla-row">
+                <div class="rfq-sla-icon"><i class="fa-solid fa-lock"></i></div>
+                <div class="rfq-sla-info">
+                  <h4>Confidentiality &amp; NDA</h4>
+                  <p>Strict data protection for all drawings, tolerances, and plant data.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="tel:+966592151506" class="btn-emergency-gold" style="width: 100%; justify-content: center;">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span>HOTLINE: +966 59 215 1506</span>
+            </a>
+          </div>
+
+          <!-- Card 2: Regional Hubs Summary -->
+          <div class="rfq-trust-sidebar-card">
+            <span class="tag-accent" style="margin-bottom: 10px;"><i class="fa-solid fa-map-location-dot"></i> Regional Reach</span>
+            <h3 style="font-size: 17px; color: var(--color-heading); margin-bottom: 12px;">Active Service Centers</h3>
+
+            <div class="rfq-hubs-mini-grid">
+              <div class="rfq-hub-mini-row">
+                <div class="rfq-hub-city"><i class="fa-solid fa-building"></i> Jeddah</div>
+                <span class="rfq-hub-type">HQ &amp; Central Works</span>
+              </div>
+              <div class="rfq-hub-mini-row">
+                <div class="rfq-hub-city"><i class="fa-solid fa-location-dot"></i> Dammam</div>
+                <span class="rfq-hub-type">Eastern Province Hub</span>
+              </div>
+              <div class="rfq-hub-mini-row">
+                <div class="rfq-hub-city"><i class="fa-solid fa-anchor"></i> Yanbu</div>
+                <span class="rfq-hub-type">Red Sea Center</span>
+              </div>
             </div>
           </div>
 
-          <!-- Step 2 -->
-          <div style="margin-bottom: 32px;">
-            <h3 style="font-size: 18px; color: var(--color-heading); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;">
-              <span class="step-num-pill" style="width:28px; height:28px; font-size:13px;">2</span>
-              Equipment &amp; Operating Parameters
-            </h3>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-              <div>
-                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Equipment Tag / Model:</label>
-                <input type="text" placeholder="e.g., Multistage Boiler Feed Pump" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
-              </div>
-              <div>
-                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Operating Temp / Pressure:</label>
-                <input type="text" placeholder="e.g., 180°C / 65 Bar" style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
-              </div>
-            </div>
-          </div>
-
-          <!-- Step 3 -->
-          <div style="margin-bottom: 32px;">
-            <h3 style="font-size: 18px; color: var(--color-heading); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;">
-              <span class="step-num-pill" style="width:28px; height:28px; font-size:13px;">3</span>
-              Facility &amp; Contact Details
-            </h3>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
-              <div>
-                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Preferred KSA Hub:</label>
-                <select style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px; background: #FFFFFF;">
-                  <option value="jeddah">Jeddah Headquarters &amp; Central Works</option>
-                  <option value="dammam">Dammam Eastern Province Branch</option>
-                  <option value="yanbu">Yanbu Red Sea Hub</option>
-                  <option value="onsite">On-Site Field Support Squad</option>
-                </select>
-              </div>
-              <div>
-                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Company / Plant Name:</label>
-                <input type="text" placeholder="e.g., Saudi Aramco / SABIC" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
-              </div>
-              <div>
-                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Contact Person &amp; Title:</label>
-                <input type="text" placeholder="e.g., Maintenance Manager" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
-              </div>
-              <div>
-                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Phone / Mobile:</label>
-                <input type="tel" placeholder="e.g., +966 5X XXX XXXX" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
-              </div>
-            </div>
-
-            <div>
-              <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Scope of Work / Anomaly Details:</label>
-              <textarea rows="4" placeholder="Describe the maintenance requirements or symptoms..." style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;"></textarea>
-            </div>
-          </div>
-
-          <button type="submit" class="btn-hero-primary" style="width: 100%; justify-content: center; font-size: 17px; padding: 16px;">
-            <span>Submit RFQ &amp; Request Engineered Solution</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </form>
+        </div>
 
       </div>
     </div>

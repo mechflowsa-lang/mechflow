@@ -3597,6 +3597,328 @@ html[dir="rtl"] .hq-badge-ribbon {
   }
 }
 
+/* ==========================================================================
+   INTERACTIVE RFQ CONFIGURATOR & PROPOSAL STYLES
+   ========================================================================== */
+.rfq-layout-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 36px;
+  align-items: flex-start;
+}
+
+.rfq-form-card {
+  background: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 38px;
+  box-shadow: var(--shadow-card);
+}
+
+.rfq-step-box {
+  margin-bottom: 34px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.rfq-step-box:last-of-type {
+  border-bottom: none;
+  margin-bottom: 24px;
+  padding-bottom: 0;
+}
+
+.rfq-step-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.rfq-step-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-brand-bronze), var(--color-safety-amber));
+  color: #0F172A;
+  font-weight: 800;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.rfq-step-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin: 0;
+}
+
+.rfq-division-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.rfq-division-card {
+  position: relative;
+  background: var(--color-canvas-subtle);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 14px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rfq-division-card input[type="radio"] {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  accent-color: var(--color-brand-bronze);
+}
+
+html[dir="rtl"] .rfq-division-card input[type="radio"] {
+  right: auto;
+  left: 12px;
+}
+
+.rfq-division-card:hover {
+  border-color: var(--color-brand-bronze);
+  background: #FFFFFF;
+}
+
+.rfq-division-card:has(input[type="radio"]:checked) {
+  border-color: var(--color-brand-bronze);
+  background: rgba(182, 123, 43, 0.06);
+  box-shadow: 0 0 0 1px var(--color-brand-bronze);
+}
+
+.rfq-div-icon {
+  font-size: 18px;
+  color: var(--color-brand-bronze);
+  margin-bottom: 2px;
+}
+
+.rfq-div-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--color-heading);
+  line-height: 1.3;
+}
+
+.rfq-div-tag {
+  font-size: 11.5px;
+  color: var(--color-muted);
+}
+
+.rfq-urgency-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.rfq-urgency-card {
+  position: relative;
+  background: var(--color-canvas-subtle);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rfq-urgency-card:has(input[type="radio"]:checked) {
+  border-color: #FFA800;
+  background: rgba(255, 168, 0, 0.08);
+}
+
+.rfq-urgency-card input[type="radio"] {
+  accent-color: #FFA800;
+}
+
+.rfq-urgency-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-heading);
+}
+
+.rfq-form-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.rfq-input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rfq-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-heading);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rfq-label i {
+  color: var(--color-brand-bronze);
+  font-size: 12px;
+}
+
+.rfq-input,
+.rfq-select,
+.rfq-textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  color: var(--color-heading);
+  background: #FFFFFF;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.rfq-input:focus,
+.rfq-select:focus,
+.rfq-textarea:focus {
+  outline: none;
+  border-color: var(--color-brand-bronze);
+  box-shadow: 0 0 0 3px rgba(182, 123, 43, 0.2);
+}
+
+/* Sidebar Info Card */
+.rfq-sidebar-sticky {
+  position: sticky;
+  top: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rfq-trust-sidebar-card {
+  background: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  box-shadow: var(--shadow-card);
+}
+
+.rfq-sla-badge-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.rfq-sla-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.rfq-sla-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(182, 123, 43, 0.12);
+  color: var(--color-brand-bronze);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.rfq-sla-info h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin: 0 0 2px 0;
+}
+
+.rfq-sla-info p {
+  font-size: 12.5px;
+  color: var(--color-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.rfq-hubs-mini-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.rfq-hub-mini-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: var(--color-canvas-subtle);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.rfq-hub-city {
+  font-weight: 700;
+  color: var(--color-heading);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rfq-hub-city i {
+  color: var(--color-brand-bronze);
+}
+
+.rfq-hub-type {
+  font-size: 11.5px;
+  color: var(--color-muted);
+}
+
+@media (max-width: 992px) {
+  .rfq-layout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rfq-division-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .rfq-form-card {
+    padding: 22px 18px;
+  }
+
+  .rfq-division-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rfq-urgency-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rfq-form-2col {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 480px) {
   .hero-title-punch {
     font-size: 23px;
@@ -3649,4 +3971,5 @@ html[dir="rtl"] .hq-badge-ribbon {
     padding-right: 14px !important;
   }
 }
+
 

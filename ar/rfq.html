@@ -70,103 +70,292 @@
     </div>
   </div>
 
-  <section class="hero-monolith" style="padding: 70px 0;">
+  <!-- SERVICE HERO BANNER -->
+  <section class="service-hero-banner">
+    <div class="service-hero-bg" style="background-image: url('../images/div-turbomachinery.jpg');"></div>
     <div class="container">
-      <span class="hero-badge-pill"><span class="pulse-dot"></span> منظومة التسعير والحلول الفنية التفاعلية</span>
-      <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px;">طلب حل فني وعرض أسعار (RFQ)</h1>
-      <p class="hero-lead-text">
-        حدد متطلبات المعدات وظروف التشغيل والفرع المفضل لاستلام مقترح هندسي وعرض تجاري متكامل.
-      </p>
+      <div class="service-hero-grid">
+        <div>
+          <span class="service-hero-badge"><i class="fa-solid fa-file-contract"></i> منظومة التسعير والحلول الفنية التفاعلية</span>
+          <h1 class="service-hero-title">طلب حل فني معتمد وعرض أسعار تجاري (RFQ)</h1>
+          <p class="service-hero-desc">
+            حدد بيانات المعدات، ظروف التشغيل، ومتطلبات الصيانة الميدانية أو الورشية. يقوم فريق هندسة الاعتمادية والتوربينات بالرد خلال 2 - 4 ساعات في كافة مناطق المملكة.
+          </p>
+          <div class="service-hero-actions">
+            <a href="#rfqFormSection" class="btn-emergency-gold">
+              <i class="fa-solid fa-arrow-down"></i>
+              <span>بدء تعبئة نموذج التسعير</span>
+            </a>
+            <a href="https://wa.me/966592151506" target="_blank" rel="noopener noreferrer" class="btn-outline-glow">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>واتساب الدعم الفني +966 59 215 1506</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="service-hero-media-card">
+          <img src="../images/div-advanced-engineering.jpg" alt="المراجعة الهندسية الفنية لطلبات التسعير" loading="lazy">
+          <div class="service-hero-floating-stat">
+            <div>
+              <div class="floating-stat-num">2 - 4 ساعات</div>
+              <div class="floating-stat-lbl">زمن الاستجابة الفنية</div>
+            </div>
+            <div style="text-align: left;">
+              <div class="floating-stat-num">100% حلول</div>
+              <div class="floating-stat-lbl">مستقلة وتوفير بالتكاليف</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section-spacer" style="background: var(--color-canvas-alt);">
+  <!-- MAIN RFQ CONFIGURATOR SECTION -->
+  <section class="section-spacer" id="rfqFormSection" style="background: var(--color-canvas-alt);">
     <div class="container">
-      <div style="max-width: 860px; margin: 0 auto; background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 44px; box-shadow: var(--shadow-card);">
+      <div class="rfq-layout-grid">
         
-        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('شكراً لكم، تم استلام طلبكم الفني وسيتم التواصل معكم من قِبل الفريق الهندسي المختص فوراً.');">
+        <!-- اليمين: نموذج طلب التسعير الفني التفاعلي -->
+        <div class="rfq-form-card">
+          <form action="#" method="POST" onsubmit="event.preventDefault(); alert('شكراً لكم، تم استلام طلبكم الفني وسيتم التواصل معكم من قِبل كبير مهندسي المعدات الدوارة خلال 2 - 4 ساعات.');">
+            
+            <!-- خطوة 1 -->
+            <div class="rfq-step-box">
+              <div class="rfq-step-header">
+                <span class="rfq-step-num">1</span>
+                <div>
+                  <h3 class="rfq-step-title">اختيار القسم الهندسي المطلوب</h3>
+                  <div style="font-size: 12.5px; color: var(--color-muted);">حدد المجال التخصصي الرئيسي لهذا الطلب</div>
+                </div>
+              </div>
+
+              <div class="rfq-division-grid">
+                <!-- قسم 1 -->
+                <label class="rfq-division-card">
+                  <input type="radio" name="rfqDivision" value="turbomachinery" checked>
+                  <div class="rfq-div-icon"><i class="fa-solid fa-fan"></i></div>
+                  <div class="rfq-div-title">التوربينات والمضخات</div>
+                  <div class="rfq-div-tag">API 610 / موازنة ديناميكية</div>
+                </label>
+
+                <!-- قسم 2 -->
+                <label class="rfq-division-card">
+                  <input type="radio" name="rfqDivision" value="sealing">
+                  <div class="rfq-div-icon"><i class="fa-solid fa-ring"></i></div>
+                  <div class="rfq-div-title">الأختام الغازية والميكانيكية</div>
+                  <div class="rfq-div-tag">API 682 / API 692 DGS</div>
+                </label>
+
+                <!-- قسم 3 -->
+                <label class="rfq-division-card">
+                  <input type="radio" name="rfqDivision" value="turnaround">
+                  <div class="rfq-div-icon"><i class="fa-solid fa-wrench"></i></div>
+                  <div class="rfq-div-title">عمرات المصانع (TAR)</div>
+                  <div class="rfq-div-tag">ASME PCC-1 / تشغيل الفلانجات</div>
+                </label>
+
+                <!-- قسم 4 -->
+                <label class="rfq-division-card">
+                  <input type="radio" name="rfqDivision" value="advanced_cae">
+                  <div class="rfq-div-icon"><i class="fa-solid fa-microchip"></i></div>
+                  <div class="rfq-div-title">المسح الليزري والمحاكاة</div>
+                  <div class="rfq-div-tag">FaroArm / هندسة عكسية</div>
+                </label>
+
+                <!-- قسم 5 -->
+                <label class="rfq-division-card">
+                  <input type="radio" name="rfqDivision" value="electrical">
+                  <div class="rfq-div-icon"><i class="fa-solid fa-bolt"></i></div>
+                  <div class="rfq-div-title">لف المحركات والأتمتة</div>
+                  <div class="rfq-div-tag">Class H (180&deg;C) / VPI</div>
+                </label>
+
+                <!-- قسم 6 -->
+                <label class="rfq-division-card">
+                  <input type="radio" name="rfqDivision" value="heat_transfer">
+                  <div class="rfq-div-icon"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+                  <div class="rfq-div-title">المبادلات الحرارية والتبريد</div>
+                  <div class="rfq-div-tag">إعادة التتييب TEMA / PHE</div>
+                </label>
+              </div>
+            </div>
+
+            <!-- خطوة 2 -->
+            <div class="rfq-step-box">
+              <div class="rfq-step-header">
+                <span class="rfq-step-num">2</span>
+                <div>
+                  <h3 class="rfq-step-title">مواصفات المعدة ودرجة الأهمية</h3>
+                  <div style="font-size: 12.5px; color: var(--color-muted);">حدد ظروف التشغيل والجدول الزمني المطلوب</div>
+                </div>
+              </div>
+
+              <!-- درجة الأهمية -->
+              <div class="rfq-label" style="margin-bottom: 8px;"><i class="fa-solid fa-clock"></i> الجدول الزمني / درجة الأولوية:</div>
+              <div class="rfq-urgency-grid">
+                <label class="rfq-urgency-card">
+                  <input type="radio" name="rfqUrgency" value="standard" checked>
+                  <span class="rfq-urgency-label">صيانة مجدولة ومخططة (1-2 أسبوع)</span>
+                </label>
+                <label class="rfq-urgency-card">
+                  <input type="radio" name="rfqUrgency" value="tar">
+                  <span class="rfq-urgency-label">إيقاف مبرمج قادم (عمرة TAR)</span>
+                </label>
+                <label class="rfq-urgency-card">
+                  <input type="radio" name="rfqUrgency" value="emergency">
+                  <span class="rfq-urgency-label" style="color: #DC2626;">عطل طارئ وتوقف تشغيل (24/7)</span>
+                </label>
+              </div>
+
+              <div class="rfq-form-2col">
+                <div class="rfq-input-wrap">
+                  <label class="rfq-label"><i class="fa-solid fa-tag"></i> تاق المعدة / الموديل:</label>
+                  <input type="text" class="rfq-input" placeholder="مثال: مضخة تغذية غلايات (BFP-01) أو ضاغط غاز" required>
+                </div>
+                <div class="rfq-input-wrap">
+                  <label class="rfq-label"><i class="fa-solid fa-gauge-high"></i> ظروف التشغيل (الحرارة / الضغط / المائع):</label>
+                  <input type="text" class="rfq-input" placeholder="مثال: 180°C / 65 Bar / مياه بحر / H2S">
+                </div>
+              </div>
+
+              <div class="rfq-input-wrap">
+                <label class="rfq-label"><i class="fa-solid fa-list-check"></i> نطاق العمل المطلوب:</label>
+                <input type="text" class="rfq-input" placeholder="مثال: عمرة شاملة، اتزان ديناميكي، محاذاة ليزرية، فحص هيدروستاتيكي">
+              </div>
+            </div>
+
+            <!-- خطوة 3 -->
+            <div class="rfq-step-box">
+              <div class="rfq-step-header">
+                <span class="rfq-step-num">3</span>
+                <div>
+                  <h3 class="rfq-step-title">معلومات المنشأة والتواصل</h3>
+                  <div style="font-size: 12.5px; color: var(--color-muted);">أين ترغب في توجيه الفريق الهندسي؟</div>
+                </div>
+              </div>
+
+              <div class="rfq-form-2col">
+                <div class="rfq-input-wrap">
+                  <label class="rfq-label"><i class="fa-solid fa-building-flag"></i> الفرع المفضل في المملكة:</label>
+                  <select class="rfq-select">
+                    <option value="jeddah">المقر الرئيسي والمصنع المركزي: جدة (المنطقة الغربية)</option>
+                    <option value="dammam">فرع المدينة الصناعية الثانية: الدمام (المنطقة الشرقية)</option>
+                    <option value="yanbu">فرع الهيئة الملكية: ينبع (منطقة البحر الأحمر)</option>
+                    <option value="onsite">فريق دعم ميداني موقعي (أي موقع بالمملكة)</option>
+                  </select>
+                </div>
+                <div class="rfq-input-wrap">
+                  <label class="rfq-label"><i class="fa-solid fa-industry"></i> اسم المنشأة / المصنع:</label>
+                  <input type="text" class="rfq-input" placeholder="مثال: أرامكو السعودية، سابك، معادن، الكهرباء" required>
+                </div>
+              </div>
+
+              <div class="rfq-form-2col">
+                <div class="rfq-input-wrap">
+                  <label class="rfq-label"><i class="fa-solid fa-user-tie"></i> الاسم والمسمى الوظيفي:</label>
+                  <input type="text" class="rfq-input" placeholder="مثال: مدير الصيانة والموثوقية" required>
+                </div>
+                <div class="rfq-input-wrap">
+                  <label class="rfq-label"><i class="fa-solid fa-phone"></i> رقم الجوال / الواتساب:</label>
+                  <input type="tel" class="rfq-input" placeholder="مثال: 9665XXXXXXXX+" required>
+                </div>
+              </div>
+
+              <div class="rfq-input-wrap" style="margin-bottom: 14px;">
+                <label class="rfq-label"><i class="fa-solid fa-envelope"></i> البريد الإلكتروني الرسمي:</label>
+                <input type="email" class="rfq-input" placeholder="مثال: engineer@company.com" required>
+              </div>
+
+              <div class="rfq-input-wrap">
+                <label class="rfq-label"><i class="fa-solid fa-file-lines"></i> تفاصيل النطاق وملاحظات إضافية:</label>
+                <textarea class="rfq-textarea" rows="4" placeholder="يرجى كتابة أي ملاحظات عن أعراض الأعطال، نوعية السبائك المطلوبة، مواعيد العمرة، أو أي متطلبات خاصة..."></textarea>
+              </div>
+            </div>
+
+            <!-- زر الإرسال وبديل الواتساب المباشر -->
+            <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 10px;">
+              <button type="submit" class="btn-hero-primary" style="width: 100%; justify-content: center; font-size: 16.5px; padding: 16px; border-radius: var(--radius-md);">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>إرسال طلب التسعير والحل الفني</span>
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+
+              <div style="display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 13px; color: var(--color-muted);">
+                <span>أو تواصل فوراً للإحالة العاجلة:</span>
+                <a href="https://wa.me/966592151506?text=مرحباً%20ميكفلو،%20أرغب%20في%20طلب%20عرض%20سعر%20ودراسة%20فنية." target="_blank" rel="noopener noreferrer" style="color: #22C55E; font-weight: 700; display: inline-flex; align-items: center; gap: 5px;">
+                  <i class="fa-brands fa-whatsapp"></i> واتساب مباشر +966 59 215 1506
+                </a>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- اليسار: ضمانات التسعير والمحددات الفنية -->
+        <div class="rfq-sidebar-sticky">
           
-          <!-- خطوة 1 -->
-          <div style="margin-bottom: 32px;">
-            <h3 style="font-size: 18px; color: var(--color-heading); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;">
-              <span class="step-num-pill" style="width:28px; height:28px; font-size:13px;">1</span>
-              اختيار القسم الهندسي المطلوب
-            </h3>
-            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
-              <label style="background: var(--color-canvas-subtle); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
-                <input type="radio" name="rfqDivision" value="turbomachinery" checked> التوربينات والمضخات البترولية (API 610)
-              </label>
-              <label style="background: var(--color-canvas-subtle); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
-                <input type="radio" name="rfqDivision" value="sealing"> الأختام الميكانيكية والغازية الجافة (API 682/692)
-              </label>
-              <label style="background: var(--color-canvas-subtle); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
-                <input type="radio" name="rfqDivision" value="turnaround"> عمرات المصانع الشاملة والشد الهيدروليكي (TAR)
-              </label>
-              <label style="background: var(--color-canvas-subtle); padding: 14px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; display:flex; align-items:center; gap: 10px; cursor:pointer;">
-                <input type="radio" name="rfqDivision" value="electrical"> إعادة لف المحركات الكهربائية والأتمتة (VFD)
-              </label>
+          <!-- بطاقة 1: ضمانات الخدمة -->
+          <div class="rfq-trust-sidebar-card">
+            <span class="tag-accent" style="margin-bottom: 10px;"><i class="fa-solid fa-shield-check"></i> ضمانات الاستجابة SLA</span>
+            <h3 style="font-size: 18px; color: var(--color-heading); margin-bottom: 6px;">لماذا تطلب التسعير من ميك فلو؟</h3>
+            <p style="font-size: 13px; color: var(--color-body); line-height: 1.5; margin-bottom: 16px;">
+              تواصل مباشر مع كبار مهندسي التوربينات والمعدات الدوارة وعروض أسعار مستقلة وشفافة.
+            </p>
+
+            <div class="rfq-sla-badge-list">
+              <div class="rfq-sla-row">
+                <div class="rfq-sla-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="rfq-sla-info">
+                  <h4>استجابة خلال 2 - 4 ساعات</h4>
+                  <p>تقييم هندسي سريع وجدولة التحرك الميداني في كافة مدن المملكة.</p>
+                </div>
+              </div>
+
+              <div class="rfq-sla-row">
+                <div class="rfq-sla-icon"><i class="fa-solid fa-certificate"></i></div>
+                <div class="rfq-sla-info">
+                  <h4>شهادات جودة معتمدة QA/QC</h4>
+                  <p>تقارير فحص وتوثيق متوافقة مع معايير ASME و API و ISO مع كل مشروع.</p>
+                </div>
+              </div>
+
+              <div class="rfq-sla-row">
+                <div class="rfq-sla-icon"><i class="fa-solid fa-lock"></i></div>
+                <div class="rfq-sla-info">
+                  <h4>السرية التامة واتفاقية NDA</h4>
+                  <p>حماية مشددة لكافة المخططات الهندسية والمحددات التشغيلية للمصنع.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="tel:+966592151506" class="btn-emergency-gold" style="width: 100%; justify-content: center;">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span>هاتف الطوارئ: 1506 215 59 966+</span>
+            </a>
+          </div>
+
+          <!-- بطاقة 2: شبكة الفروع بالمملكة -->
+          <div class="rfq-trust-sidebar-card">
+            <span class="tag-accent" style="margin-bottom: 10px;"><i class="fa-solid fa-map-location-dot"></i> التغطية الجغرافية</span>
+            <h3 style="font-size: 17px; color: var(--color-heading); margin-bottom: 12px;">مراكز الخدمة والورش المركزية</h3>
+
+            <div class="rfq-hubs-mini-grid">
+              <div class="rfq-hub-mini-row">
+                <div class="rfq-hub-city"><i class="fa-solid fa-building"></i> جدة</div>
+                <span class="rfq-hub-type">المقر الرئيسي والمصنع المركزي</span>
+              </div>
+              <div class="rfq-hub-mini-row">
+                <div class="rfq-hub-city"><i class="fa-solid fa-location-dot"></i> الدمام</div>
+                <span class="rfq-hub-type">مركز خدمات المنطقة الشرقية</span>
+              </div>
+              <div class="rfq-hub-mini-row">
+                <div class="rfq-hub-city"><i class="fa-solid fa-anchor"></i> ينبع</div>
+                <span class="rfq-hub-type">مركز منطقة البحر الأحمر الصناعي</span>
+              </div>
             </div>
           </div>
 
-          <!-- خطوة 2 -->
-          <div style="margin-bottom: 32px;">
-            <h3 style="font-size: 18px; color: var(--color-heading); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;">
-              <span class="step-num-pill" style="width:28px; height:28px; font-size:13px;">2</span>
-              بيانات ومواصفات التشغيل الفنية
-            </h3>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-              <div>
-                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">رقم تاق المعدة / الموديل:</label>
-                <input type="text" placeholder="مثال: مضخة تغذية غلايات متعددة المراحل" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
-              </div>
-              <div>
-                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">درجة الحرارة والضغط التشغيلي:</label>
-                <input type="text" placeholder="مثال: 180°C / 65 Bar" style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
-              </div>
-            </div>
-          </div>
-
-          <!-- خطوة 3 -->
-          <div style="margin-bottom: 32px;">
-            <h3 style="font-size: 18px; color: var(--color-heading); margin-bottom: 14px; display: flex; align-items: center; gap: 10px;">
-              <span class="step-num-pill" style="width:28px; height:28px; font-size:13px;">3</span>
-              معلومات الاتصال والفرع المفضل
-            </h3>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
-              <div>
-                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">الفرع المفضل في المملكة:</label>
-                <select style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px; background: #FFFFFF;">
-                  <option value="jeddah">المقر الرئيسي والمصنع المركزي: جدة</option>
-                  <option value="dammam">فرع المنطقة الشرقية: الدمام</option>
-                  <option value="yanbu">فرع منطقة البحر الأحمر: ينبع</option>
-                  <option value="onsite">فريق دعم ميداني موقعي (أي موقع بالمملكة)</option>
-                </select>
-              </div>
-              <div>
-                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">اسم المنشأة / المصنع:</label>
-                <input type="text" placeholder="مثال: أرامكو السعودية / سابك" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
-              </div>
-              <div>
-                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">الاسم والمسمى الوظيفي:</label>
-                <input type="text" placeholder="مثال: مدير الصيانة والموثوقية" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
-              </div>
-              <div>
-                <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">رقم الجوال / الواتساب:</label>
-                <input type="tel" placeholder="مثال: 9665XXXXXXXX+" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
-              </div>
-            </div>
-
-            <div>
-              <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">ملاحظات وشرح متطلبات الصيانة:</label>
-              <textarea rows="4" placeholder="يرجى كتابة تفاصيل الأعطال أو جدول العمرة المطلوب..." style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;"></textarea>
-            </div>
-          </div>
-
-          <button type="submit" class="btn-hero-primary" style="width: 100%; justify-content: center; font-size: 17px; padding: 16px;">
-            <span>إرسال طلب الحل الفني وعرض الأسعار</span>
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-        </form>
+        </div>
 
       </div>
     </div>
