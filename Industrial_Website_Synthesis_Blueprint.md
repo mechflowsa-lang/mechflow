@@ -200,7 +200,7 @@ The platform highlights full Kingdom-wide coverage structured around three strat
 
 #### 1. Global Top Notification Bar
 * **Multi-City Presence Badges:** `Jeddah (HQ)` | `Dammam` | `Yanbu`
-* **Direct Contacts:** 24/7 Breakdown Dispatch Hotline (`+966 5X XXX XXXX`) | Direct RFQ Email (`rfq@mechflow.sa`)
+* **Direct Contacts:** 24/7 Breakdown Dispatch Hotline (`+966 5X XXX XXXX`) | Direct RFQ Email (`info@mechflow.sa`)
 * **Bilingual Switcher:** 1-click seamless toggle between **English** (LTR) and **العربية (Arabic)** (RTL).
 
 #### 2. Main Navigation Header (Sticky Mega-Menu)
