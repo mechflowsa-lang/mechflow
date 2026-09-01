@@ -1,126 +1,243 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Interactive Equipment Diagnostic Tool — Mechflow Engineering Services and Solutions</title>
-  <meta name="description" content="Instant engineering troubleshooting for rotating machinery and mechanical seals. Select asset type and observed symptoms for immediate technical guidance and dispatch in Saudi Arabia.">
+  <title>Interactive Equipment Diagnostic Tool — MechFlow Saudi Arabia</title>
+  <meta name="description" content="Instant engineering troubleshooting for rotating machinery and mechanical seals. Select asset type and observed symptoms for immediate technical guidance and dispatch across Saudi Arabia.">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=2.5">
-  <link rel="stylesheet" href="mobile-app.css?v=2.5">
+  <link rel="stylesheet" href="style.css?v=2.7">
+  <link rel="stylesheet" href="mobile-app.css?v=2.7">
+  
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" href="favicon.svg">
 </head>
 <body>
 
+  <!-- Main Navigation Header (Clean Crisp White) -->
   <header class="main-header">
     <div class="container nav-wrapper">
       <a href="index.html" class="brand-logo" aria-label="MechFlow Homepage">
         <img src="mechflow-logo.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img">
       </a>
 
+      <!-- Desktop Navigation Menu -->
       <nav class="desktop-nav">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About Us</a>
-        <a href="services.html" class="nav-link">Services &amp; Divisions</a>
+        
+        <!-- Services Dropdown -->
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link">
+            Services &amp; Divisions
+            <i class="fa-solid fa-chevron-down" style="font-size: 11px; margin-left: 2px;"></i>
+          </a>
+          <div class="mega-menu-box">
+            <a href="turbomachinery.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-fan"></i></div>
+              <div>
+                <div class="mega-content-title">Turbomachinery &amp; Pumps</div>
+                <div class="mega-content-desc">API 610 pumps, steam turbines, 10T Schenck balancing &amp; wireless alignment.</div>
+              </div>
+            </a>
+
+            <a href="fluid-gas-sealing.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-ring"></i></div>
+              <div>
+                <div class="mega-content-title">Fluid &amp; Dry Gas Sealing</div>
+                <div class="mega-content-desc">API 682/692 seals, 150-bar dynamic nitrogen testing &amp; cleanroom facility.</div>
+              </div>
+            </a>
+
+            <a href="plant-turnaround.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-wrench"></i></div>
+              <div>
+                <div class="mega-content-title">Plant Turnaround (TAR)</div>
+                <div class="mega-content-desc">ASME PCC-1 hydraulic bolting, on-site flange facing up to 120 inches.</div>
+              </div>
+            </a>
+
+            <a href="advanced-engineering.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-microchip"></i></div>
+              <div>
+                <div class="mega-content-title">FEA, CFD &amp; 3D Scanning</div>
+                <div class="mega-content-desc">Finite element analysis, fluid dynamics &amp; HVAF tungsten carbide coatings.</div>
+              </div>
+            </a>
+
+            <a href="electrical-motors.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-bolt"></i></div>
+              <div>
+                <div class="mega-content-title">Motor Rewinding &amp; VFD</div>
+                <div class="mega-content-desc">Class H insulation, VPI treatment up to 13.8kV, VFD automation &amp; PLC panels.</div>
+              </div>
+            </a>
+
+            <a href="heat-transfer.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+              <div>
+                <div class="mega-content-title">Heat Exchangers &amp; Coolers</div>
+                <div class="mega-content-desc">Tube bundle extraction, automated retubing, PHE cleaning &amp; cooling towers.</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
         <a href="industries.html" class="nav-link">Industries</a>
         <a href="case-studies.html" class="nav-link">Case Studies</a>
         <a href="diagnostic.html" class="nav-link active">Diagnostic Tool</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
-      <div style="display: flex; align-items: center; gap: 14px;">
-        <a href="ar/diagnostic.html" class="lang-btn"><i class="fa-solid fa-globe"></i> العربية</a>
-        <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="Toggle Menu"><i class="fa-solid fa-bars-staggered"></i></button>
+      <!-- Header Actions: Lang Switch & Mobile Menu Trigger -->
+      <div class="header-actions-wrap">
+        <a href="ar/diagnostic.html" class="lang-switch-badge" title="النسخة العربية">
+          <i class="fa-solid fa-globe"></i>
+          <span>العربية</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="Toggle Mobile Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
+  <!-- Mobile Drawer Menu -->
   <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
     <div class="mobile-drawer">
       <div>
         <div class="mobile-drawer-header">
           <a href="index.html" class="brand-logo" aria-label="MechFlow Homepage">
-            <img src="mechflow-logo.svg" alt="MechFlow" style="height:38px; width:auto;">
+            <img src="mechflow-logo.svg" alt="MechFlow" style="height:36px; width:auto;">
           </a>
-          <button class="mobile-drawer-close" id="mobileDrawerClose"><i class="fa-solid fa-xmark"></i></button>
+          <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </div>
         <ul class="mobile-nav-list">
           <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
           <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> About Company</a></li>
-          <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> All 6 Divisions</a></li>
+          <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> All 6 Service Divisions</a></li>
           <li><a href="turbomachinery.html" class="mobile-nav-link"><i class="fa-solid fa-fan"></i> Turbomachinery &amp; Pumps</a></li>
           <li><a href="fluid-gas-sealing.html" class="mobile-nav-link"><i class="fa-solid fa-ring"></i> Fluid &amp; Dry Gas Sealing</a></li>
           <li><a href="plant-turnaround.html" class="mobile-nav-link"><i class="fa-solid fa-wrench"></i> Plant Turnaround &amp; Machining</a></li>
           <li><a href="advanced-engineering.html" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> FEA, CFD &amp; 3D Scanning</a></li>
           <li><a href="electrical-motors.html" class="mobile-nav-link"><i class="fa-solid fa-bolt"></i> Motor Rewinding &amp; VFD</a></li>
+          <li><a href="heat-transfer.html" class="mobile-nav-link"><i class="fa-solid fa-temperature-arrow-down"></i> Heat Exchangers &amp; Coolers</a></li>
           <li><a href="industries.html" class="mobile-nav-link"><i class="fa-solid fa-industry"></i> Industries</a></li>
           <li><a href="case-studies.html" class="mobile-nav-link"><i class="fa-solid fa-chart-line"></i> Case Studies</a></li>
           <li><a href="diagnostic.html" class="mobile-nav-link active"><i class="fa-solid fa-stethoscope"></i> Diagnostic Tool</a></li>
-          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> 24/7 Dispatch</a></li>
+          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> 24/7 Breakdown Dispatch</a></li>
           <li><a href="rfq.html" class="mobile-nav-link"><i class="fa-solid fa-file-signature"></i> Request RFQ</a></li>
-          <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> Contact Us</a></li>
+          <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> Contact &amp; Hub Locations</a></li>
         </ul>
       </div>
+      
+      <!-- Hotline Card in Drawer -->
       <div class="mobile-drawer-footer">
-        <a href="ar/diagnostic.html" class="lang-btn" style="justify-content:center; padding:10px;"><i class="fa-solid fa-globe"></i> العربية</a>
+        <a href="tel:+966592151506" class="mobile-hotline-banner">
+          <strong><i class="fa-solid fa-phone-volume fa-shake"></i> 24/7 Breakdown Response Hotline</strong>
+          <span class="mobile-hotline-digits">+966 59 215 1506</span>
+        </a>
+        <a href="ar/diagnostic.html" class="lang-switch-badge" style="justify-content:center; padding:10px; width:100%;">
+          <i class="fa-solid fa-globe"></i> العربية (Arabic Version)
+        </a>
       </div>
     </div>
   </div>
 
-  <section class="hero-monolith" style="padding: 70px 0;">
+  <!-- HERO SECTION: INTERACTIVE DIAGNOSTIC & TRIAGE PROTOCOL -->
+  <section class="diag-hero-wrap">
     <div class="container">
-      <span class="hero-badge-pill"><span class="pulse-dot"></span> INTERACTIVE RELIABILITY ASSISTANT</span>
-      <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px;">Interactive Plant Diagnostic &amp; Dispatch Protocol</h1>
-      <p class="hero-lead-text">
-        Troubleshoot rotating asset anomalies and route your breakdown directly to our rapid technical teams in Jeddah, Dammam, and Yanbu.
-      </p>
+      <div style="position: relative; z-index: 2;">
+        
+        <span class="hero-badge-pill" style="margin-bottom: 18px;">
+          <span class="pulse-dot"></span>
+          <span>LIVE ROTATING ASSET TRIAGE &amp; ROOT CAUSE ENGINE</span>
+        </span>
+
+        <h1 class="diag-hero-title">
+          Interactive Asset Diagnostic &amp;<br>
+          <span style="color: var(--color-brand-bronze-light);">Engineering Dispatch Protocol</span>
+        </h1>
+
+        <p class="diag-hero-desc">
+          Identify root causes for critical rotating asset anomalies in real time. Select your equipment classification and observed symptoms to get instant technical guidance and deploy specialized mobile squads across Saudi Arabia.
+        </p>
+
+        <!-- Quick Contact Pill Badges -->
+        <div class="contact-quick-badges">
+          <a href="tel:+966592151506" class="contact-badge-pill">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>Duty Hotline: +966 59 215 1506</span>
+          </a>
+
+          <a href="https://wa.me/966592151506?text=Hello%20MechFlow,%20I%20am%20using%20the%20Diagnostic%20Tool%20and%20need%20engineering%20consultation." target="_blank" rel="noopener" class="contact-badge-pill">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp Live Data Desk</span>
+          </a>
+        </div>
+
+      </div>
     </div>
   </section>
 
+  <!-- INTERACTIVE DIAGNOSTIC ENGINE CARD -->
   <section class="section-spacer" style="background: var(--color-canvas-alt);">
     <div class="container">
+      
       <div class="diag-interactive-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+          <div>
+            <span class="tag-accent" style="color: var(--color-brand-bronze);"><i class="fa-solid fa-microchip"></i> Smart Decision Engine</span>
+            <h2 class="head-title-lg" style="font-size: 26px; margin: 6px 0 0;">3-Step Failure Analysis &amp; Action Protocol</h2>
+          </div>
+          <span style="font-size: 12px; font-weight: 700; color: #16A34A; background: rgba(22, 163, 74, 0.1); border: 1px solid rgba(22, 163, 74, 0.25); padding: 4px 12px; border-radius: var(--radius-full);">
+            <i class="fa-solid fa-circle-check"></i> Real-Time Telemetry Active
+          </span>
+        </div>
+
         <div class="diag-grid-3step">
-          <!-- Step 1 -->
+          <!-- Step 1: Equipment Selection -->
           <div class="diag-step-box">
             <div class="diag-step-badge">
               <span class="step-num-pill">1</span>
               <span>Asset Classification</span>
             </div>
-            <select class="diag-select-control" id="diagEquipment">
+            <p style="font-size: 12.5px; color: var(--color-muted); margin: 0;">Select your critical plant machinery:</p>
+            <select class="diag-select-control" id="diagEquipment" aria-label="Select Equipment Type">
               <option value="pump">API 610 Centrifugal Process Pump</option>
-              <option value="compressor">Centrifugal Gas Compressor</option>
-              <option value="turbine">Steam / Gas Turbine</option>
-              <option value="motor">Electric Motor (LV/MV)</option>
+              <option value="compressor">Centrifugal Gas Compressor (API 617)</option>
+              <option value="turbine">Steam / Gas Turbine (API 612)</option>
+              <option value="motor">Electric Motor (LV/MV Induction)</option>
               <option value="flange">Pipeline Flange / Pressure Joint</option>
             </select>
           </div>
 
-          <!-- Step 2 -->
+          <!-- Step 2: Symptom Selection -->
           <div class="diag-step-box">
             <div class="diag-step-badge">
               <span class="step-num-pill">2</span>
               <span>Observed Symptom</span>
             </div>
-            <select class="diag-select-control" id="diagSymptom">
+            <p style="font-size: 12.5px; color: var(--color-muted); margin: 0;">Select observed operational anomaly:</p>
+            <select class="diag-select-control" id="diagSymptom" aria-label="Select Observed Symptom">
               <option value="vibration">High Vibration Level (> 7.1 mm/s RMS)</option>
-              <option value="leakage">Mechanical Seal Leakage / Smoke</option>
-              <option value="burn">Winding Burnout / Overheating</option>
-              <option value="trip">Emergency Trip / Bearing Temp Surge</option>
+              <option value="leakage">Mechanical / Gas Seal Leakage &amp; Smoke</option>
+              <option value="burn">Winding Thermal Breakdown / Overheating</option>
+              <option value="trip">Sudden Trip / Bearing Temp Surge</option>
             </select>
           </div>
 
-          <!-- Step 3 -->
+          <!-- Step 3: Result & Engineering Protocol -->
           <div class="diag-result-box">
             <div>
               <span class="diag-result-status"><i class="fa-solid fa-circle-check"></i> Standard Engineering Protocol</span>
               <h4 class="diag-result-heading" id="diagResultTitle">Laser Alignment &amp; Dynamic Balancing</h4>
               <p class="diag-result-text" id="diagResultDesc">Dynamic unbalance or angular misalignment detected. Laser alignment &amp; ISO G2.5 balancing required.</p>
               
-              <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--color-saudi-emerald-border); font-size: 13px; color: var(--color-saudi-emerald); font-weight:700;">
+              <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--color-brand-bronze-border); font-size: 13px; color: var(--color-brand-bronze-dark); font-weight:700;">
                 <i class="fa-solid fa-truck-fast"></i> Field Mobilization: <strong id="diagResultHub" style="color: var(--color-heading);">Jeddah HQ &amp; Dammam Mobile Squads</strong>
               </div>
             </div>
@@ -131,23 +248,199 @@
             </a>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Master Footer with Rich Icons -->
+  <!-- COMMON FAILURE MODES & ROOT CAUSE MATRIX (6 CARDS) -->
+  <section class="section-spacer" style="background: #FFFFFF;">
+    <div class="container">
+      <div class="section-head-center">
+        <span class="tag-accent"><i class="fa-solid fa-triangle-exclamation"></i> Root Cause Knowledge Base</span>
+        <h2 class="head-title-lg">Common Rotating Asset Failure Modes</h2>
+        <p class="head-desc">Engineering reference guide for key failure signatures encountered in petrochemical, power, and desalination plants.</p>
+      </div>
+
+      <div class="diag-modes-grid">
+        
+        <!-- Failure Mode 1 -->
+        <div class="diag-mode-card">
+          <div>
+            <div class="diag-mode-header">
+              <span class="diag-mode-tag diag-tag-pumps">API 610 Centrifugal Pumps</span>
+              <h3 class="diag-mode-title">1X &amp; 2X Shaft Misalignment / Unbalance</h3>
+            </div>
+            <p class="diag-mode-body">
+              Causes elevated 1X RPM radial vibration, bearing race pitting, and premature seal face grooving. Requires wireless dual-laser shaft alignment and in-situ balancing to ISO G2.5 standard.
+            </p>
+          </div>
+          <div class="diag-mode-footer">
+            <i class="fa-solid fa-wrench"></i> Recommended: Laser Alignment + Dynamic Balancing
+          </div>
+        </div>
+
+        <!-- Failure Mode 2 -->
+        <div class="diag-mode-card">
+          <div>
+            <div class="diag-mode-header">
+              <span class="diag-mode-tag diag-tag-seals">API 682/692 Sealing Systems</span>
+              <h3 class="diag-mode-title">Dry Gas Seal Face Thermal Distortion</h3>
+            </div>
+            <p class="diag-mode-body">
+              Occurs during low flow or barrier gas contamination leading to groove clogging, frictional heat checking, and dynamic gas blowout. Requires ISO Class 7 cleanroom re-lapping and 150-bar dynamic nitrogen testing.
+            </p>
+          </div>
+          <div class="diag-mode-footer">
+            <i class="fa-solid fa-ring"></i> Recommended: Cleanroom Seal Lapping + Nitrogen Run
+          </div>
+        </div>
+
+        <!-- Failure Mode 3 -->
+        <div class="diag-mode-card">
+          <div>
+            <div class="diag-mode-header">
+              <span class="diag-mode-tag diag-tag-turbines">API 612 Steam / Gas Turbines</span>
+              <h3 class="diag-mode-title">Axial Thrust Bearing Surge &amp; Blade Rub</h3>
+            </div>
+            <p class="diag-mode-body">
+              Steam contamination or balance piston seal wear shifts the rotor axially, causing babbit bearing wipe and diaphragm rubbing. Requires laser geometry survey, rotor NDT, and casing remachining.
+            </p>
+          </div>
+          <div class="diag-mode-footer">
+            <i class="fa-solid fa-fan"></i> Recommended: Rotor NDT + Diaphragm Laser Survey
+          </div>
+        </div>
+
+        <!-- Failure Mode 4 -->
+        <div class="diag-mode-card">
+          <div>
+            <div class="diag-mode-header">
+              <span class="diag-mode-tag diag-tag-motors">MV / HV Induction Motors</span>
+              <h3 class="diag-mode-title">Stator Winding Insulation Breakdown</h3>
+            </div>
+            <p class="diag-mode-body">
+              Thermal cycling and VFD harmonic spikes degrade magnet wire enamel, resulting in phase-to-ground turn shorts. Requires Class H mica/polyimide rewinding and high-vacuum pressure impregnation (VPI).
+            </p>
+          </div>
+          <div class="diag-mode-footer">
+            <i class="fa-solid fa-bolt"></i> Recommended: Class H Rewind + 13.8kV VPI Treatment
+          </div>
+        </div>
+
+        <!-- Failure Mode 5 -->
+        <div class="diag-mode-card">
+          <div>
+            <div class="diag-mode-header">
+              <span class="diag-mode-tag diag-tag-pumps">Flanged Pipeline Joints</span>
+              <h3 class="diag-mode-title">Thermal Relaxation &amp; Gasket Creep (ASME PCC-1)</h3>
+            </div>
+            <p class="diag-mode-body">
+              Uneven manual torquing during turnaround causes flange rotation, gasket crush, and runaway VOC leaks under thermal cycling. Requires mobile flange facing and calibrated multi-stud hydraulic tensioning.
+            </p>
+          </div>
+          <div class="diag-mode-footer">
+            <i class="fa-solid fa-screwdriver-wrench"></i> Recommended: Mobile Flange Facing + Hydraulic Bolting
+          </div>
+        </div>
+
+        <!-- Failure Mode 6 -->
+        <div class="diag-mode-card">
+          <div>
+            <div class="diag-mode-header">
+              <span class="diag-mode-tag diag-tag-seals">High-Pressure Compressors</span>
+              <h3 class="diag-mode-title">Subharmonic Oil Whirl &amp; Aerodynamic Surge</h3>
+            </div>
+            <p class="diag-mode-body">
+              Tilting pad bearing instability and impeller shroud erosion cause severe 0.43X subsynchronous vibration and machine trip. Requires full rotor modal analysis, HVAF tungsten carbide coating, and bearing optimization.
+            </p>
+          </div>
+          <div class="diag-mode-footer">
+            <i class="fa-solid fa-microchip"></i> Recommended: Modal FEA / CFD + HVAF Coating
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIRECT ACTION STRIP -->
+  <section class="section-spacer" style="background: var(--color-canvas-alt);">
+    <div class="container">
+      <div class="whatsapp-duty-box" style="text-align: center; max-width: 900px; margin: 0 auto;">
+        <span style="font-size: 12px; font-weight: 800; color: #25D366; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">
+          IMMEDIATE ENGINEERING SUPPORT
+        </span>
+        <h3 style="font-size: 26px; font-weight: 900; color: #FFFFFF; margin-bottom: 12px;">Need Direct Expert Verification?</h3>
+        <p style="font-size: 14.5px; color: #CBD5E1; line-height: 1.65; max-width: 650px; margin: 0 auto 24px;">
+          Send your FFT spectrum graphs, thermal images, or failure videos directly to our Senior Rotating Equipment Specialist on WhatsApp.
+        </p>
+
+        <div style="display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap;">
+          <a href="https://wa.me/966592151506?text=Hello%20MechFlow,%20we%20have%20an%20equipment%20vibration/seal%20anomaly%20and%20need%20diagnostic%20support." target="_blank" rel="noopener" class="btn-emergency-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>START WHATSAPP DIAGNOSTIC CHAT</span>
+          </a>
+
+          <a href="tel:+966592151506" class="btn-emergency-call">
+            <i class="fa-solid fa-phone"></i>
+            <span>CALL DUTY ENGINEER: +966 59 215 1506</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROVED CLIENT TRUST LOGO MARQUEE -->
+  <section class="client-marquee-section">
+    <div class="container">
+      <div class="marquee-header-row">
+        <span class="marquee-tag">APPROVED INDUSTRIAL PARTNER</span>
+        <span class="marquee-sub">Trusted by the Kingdom's Critical Energy, Petrochemical &amp; Utility Plants</span>
+      </div>
+    </div>
+    
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <div class="marquee-item"><img src="images/clients/saudi-aramco.svg" alt="Saudi Aramco"></div>
+        <div class="marquee-item"><img src="images/clients/sabic.svg" alt="SABIC"></div>
+        <div class="marquee-item"><img src="images/clients/maaden.svg" alt="Ma'aden Mining"></div>
+        <div class="marquee-item"><img src="images/clients/sadara-chemical.svg" alt="Sadara Chemical Company"></div>
+        <div class="marquee-item"><img src="images/clients/saudi-electricity.svg" alt="Saudi Electricity / Energy Company"></div>
+
+        <div class="marquee-item"><img src="images/clients/saudi-aramco.svg" alt="Saudi Aramco"></div>
+        <div class="marquee-item"><img src="images/clients/sabic.svg" alt="SABIC"></div>
+        <div class="marquee-item"><img src="images/clients/maaden.svg" alt="Ma'aden Mining"></div>
+        <div class="marquee-item"><img src="images/clients/sadara-chemical.svg" alt="Sadara Chemical Company"></div>
+        <div class="marquee-item"><img src="images/clients/saudi-electricity.svg" alt="Saudi Electricity / Energy Company"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MASTER FOOTER -->
   <footer class="master-footer">
     <div class="container">
       <div class="footer-4col">
+        <!-- Col 1: Brand & Social Media -->
         <div>
           <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
             <img src="mechflow-logo-white.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img" style="height:44px;">
           </a>
-          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #94A3B8;">
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 18px; color: #94A3B8;">
             Kingdom-wide OEM-independent engineering leader providing Turbomachinery overhaul, Dry Gas Seals (API 692), laser alignment, and plant turnaround (TAR) services.
           </p>
+
+          <!-- Social Media Icons Row -->
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://wa.me/966592151506" target="_blank" rel="noopener" class="social-icon-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
         </div>
 
+        <!-- Col 2: Service Divisions -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-layer-group"></i> Service Divisions</h4>
           <div class="footer-nav-list">
@@ -160,7 +453,8 @@
           </div>
         </div>
 
-        <div>
+        <!-- Col 3: Quick Links (Hidden on Phone View) -->
+        <div class="footer-quick-links-col">
           <h4 class="footer-head-title"><i class="fa-solid fa-compass"></i> Quick Links</h4>
           <div class="footer-nav-list">
             <a href="about.html"><i class="fa-solid fa-shield-halved"></i> About Company &amp; Governance</a>
@@ -173,36 +467,68 @@
           </div>
         </div>
 
+        <!-- Col 4: Corporate Presence -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-building-flag"></i> Corporate Presence</h4>
-          <p style="font-size: 13.5px; margin-bottom: 12px; line-height: 1.6; color: #94A3B8;">
-            🏢 <strong style="color:#FFFFFF;">Head Office:</strong> Jeddah, Saudi Arabia<br>
-            📍 <strong style="color:#FFFFFF;">Branch Offices:</strong> Dammam &amp; Yanbu
-          </p>
-          <p style="font-size: 13.5px; color: var(--color-safety-amber); font-weight: 700;">
-            📞 <span style="color:#CBD5E1;">24/7 Hotline:</span> +966 59 215 1506<br>
-            📧 <span style="color:#CBD5E1;">RFQ Email:</span> rfq@mechflow.sa
-          </p>
+          <div class="footer-presence-list">
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-building"></i>
+              <span><strong>Head Office:</strong> Jeddah, Saudi Arabia</span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <span><strong>Branch Offices:</strong> Dammam &amp; Yanbu</span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span><strong>24/7 Hotline:</strong> <a href="tel:+966592151506">+966 59 215 1506</a></span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-envelope"></i>
+              <span><strong>RFQ Email:</strong> <a href="mailto:rfq@mechflow.sa">rfq@mechflow.sa</a></span>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- Minimal Bottom Row -->
       <div class="footer-bottom-row">
-        <span>&copy; 2026 Mechflow Engineering Services and Solutions Head Office: Jeddah | Branches: Dammam &amp; Yanbu</span>
-        <a href="emergency-dispatch.html" style="color: var(--color-safety-amber); font-weight:700;">24/7 Emergency Hotline: +966 59 215 1506 <i class="fa-solid fa-arrow-right"></i></a>
+        <span>&copy; 2026 Mechflow Engineering Services and Solutions. All Rights Reserved.</span>
+        <a href="tel:+966592151506" class="footer-hotline-link" style="color: #FFA800; font-weight:700;">24/7 Breakdown Dispatch: +966 59 215 1506 <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </footer>
 
-  <nav class="mobile-bottom-appbar">
-    <a href="index.html" class="appbar-item"><i class="fa-solid fa-house"></i><span>Home</span></a>
-    <a href="services.html" class="appbar-item"><i class="fa-solid fa-layer-group"></i><span>Services</span></a>
-    <a href="diagnostic.html" class="appbar-item active"><i class="fa-solid fa-stethoscope"></i><span>Diagnose</span></a>
-    <a href="emergency-dispatch.html" class="appbar-item emergency-pill"><div class="pill-icon-wrap"><i class="fa-solid fa-phone-volume"></i></div><span>24/7 Call</span></a>
-    <a href="rfq.html" class="appbar-item"><i class="fa-solid fa-file-signature"></i><span>RFQ</span></a>
+  <!-- Mobile Bottom App Bar -->
+  <nav class="mobile-bottom-appbar" aria-label="Mobile Navigation">
+    <a href="index.html" class="appbar-item">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+
+    <a href="services.html" class="appbar-item">
+      <i class="fa-solid fa-layer-group"></i>
+      <span>Services</span>
+    </a>
+
+    <a href="diagnostic.html" class="appbar-item active">
+      <i class="fa-solid fa-stethoscope"></i>
+      <span>Diagnose</span>
+    </a>
+
+    <a href="emergency-dispatch.html" class="appbar-item emergency-pill">
+      <div class="pill-icon-wrap">
+        <i class="fa-solid fa-phone-volume"></i>
+      </div>
+      <span>24/7 Call</span>
+    </a>
+
+    <a href="rfq.html" class="appbar-item">
+      <i class="fa-solid fa-file-signature"></i>
+      <span>RFQ</span>
+    </a>
   </nav>
 
-  <script src="script.js?v=2.5"></script>
+  <script src="script.js?v=2.7"></script>
 </body>
 </html>
-
-

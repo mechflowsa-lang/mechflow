@@ -1961,6 +1961,137 @@ html[dir="rtl"] .hq-badge-ribbon {
   color: #FFFFFF;
 }
 
+/* ==========================================================================
+   DIAGNOSTIC TOOL & TECHNICAL FAILURE MODES STYLES
+   ========================================================================== */
+.diag-hero-wrap {
+  background: radial-gradient(circle at 75% 25%, rgba(182, 123, 43, 0.28) 0%, transparent 60%),
+              radial-gradient(circle at 20% 80%, rgba(0, 128, 255, 0.18) 0%, transparent 50%),
+              linear-gradient(180deg, #091523 0%, #030B17 100%);
+  position: relative;
+  padding: 80px 0 65px;
+  color: #FFFFFF;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.diag-hero-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('images/hero-bg-opt.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+  mix-blend-mode: luminosity;
+  pointer-events: none;
+}
+
+.diag-hero-title {
+  font-size: 46px;
+  font-weight: 900;
+  color: #FFFFFF;
+  line-height: 1.15;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.diag-hero-desc {
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: #CBD5E1;
+  max-width: 740px;
+  margin-bottom: 26px;
+}
+
+/* Failure Mode Reference Grid */
+.diag-modes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.diag-mode-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  box-shadow: var(--shadow-card);
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.diag-mode-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-brand-bronze-border);
+  box-shadow: var(--shadow-hover);
+}
+
+.diag-mode-header {
+  margin-bottom: 14px;
+}
+
+.diag-mode-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: var(--radius-xs);
+  margin-bottom: 10px;
+}
+
+.diag-tag-pumps {
+  background: rgba(182, 123, 43, 0.12);
+  color: var(--color-brand-bronze-dark);
+  border: 1px solid var(--color-brand-bronze-border);
+}
+
+.diag-tag-seals {
+  background: rgba(0, 128, 255, 0.1);
+  color: #0080FF;
+  border: 1px solid rgba(0, 128, 255, 0.3);
+}
+
+.diag-tag-turbines {
+  background: rgba(0, 108, 53, 0.1);
+  color: #006C35;
+  border: 1px solid rgba(0, 108, 53, 0.3);
+}
+
+.diag-tag-motors {
+  background: rgba(239, 68, 68, 0.1);
+  color: #EF4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.diag-mode-title {
+  font-size: 17.5px;
+  font-weight: 800;
+  color: var(--color-heading);
+  line-height: 1.35;
+}
+
+.diag-mode-body {
+  font-size: 13.5px;
+  color: var(--color-body);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.diag-mode-footer {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--color-brand-bronze-dark);
+  border-top: 1px dashed var(--color-border);
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 
 /* ==========================================================================
    RESPONSIVE BREAKPOINTS (CLEAN & ORDERED)
@@ -2227,6 +2358,26 @@ html[dir="rtl"] .hq-badge-ribbon {
 
   .contact-hub-card {
     padding: 24px 18px;
+  }
+
+  /* Diagnostic Page Mobile */
+  .diag-hero-wrap {
+    padding: 40px 0 32px;
+  }
+
+  .diag-hero-title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .diag-hero-desc {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .diag-modes-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   /* Marquee Section Mobile */
