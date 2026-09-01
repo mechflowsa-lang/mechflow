@@ -147,51 +147,55 @@
     </div>
   </div>
 
-  <!-- HERO SECTION: INTERACTIVE DIAGNOSTIC & TRIAGE PROTOCOL -->
-  <section class="diag-hero-wrap">
+  <!-- SERVICE HERO BANNER -->
+  <section class="service-hero-banner">
+    <div class="service-hero-bg" style="background-image: url('images/div-advanced-engineering.jpg');"></div>
     <div class="container">
-      <div style="position: relative; z-index: 2;">
-        
-        <span class="hero-badge-pill" style="margin-bottom: 18px;">
-          <span class="pulse-dot"></span>
-          <span>LIVE ROTATING ASSET TRIAGE &amp; ROOT CAUSE ENGINE</span>
-        </span>
-
-        <h1 class="diag-hero-title">
-          Interactive Asset Diagnostic &amp;<br>
-          <span style="color: var(--color-brand-bronze-light);">Engineering Dispatch Protocol</span>
-        </h1>
-
-        <p class="diag-hero-desc">
-          Identify root causes for critical rotating asset anomalies in real time. Select your equipment classification and observed symptoms to get instant technical guidance and deploy specialized mobile squads across Saudi Arabia.
-        </p>
-
-        <!-- Quick Contact Pill Badges -->
-        <div class="contact-quick-badges">
-          <a href="tel:+966592151506" class="contact-badge-pill">
-            <i class="fa-solid fa-phone-volume"></i>
-            <span>Duty Hotline: +966 59 215 1506</span>
-          </a>
-
-          <a href="https://wa.me/966592151506?text=Hello%20MechFlow,%20I%20am%20using%20the%20Diagnostic%20Tool%20and%20need%20engineering%20consultation." target="_blank" rel="noopener" class="contact-badge-pill">
-            <i class="fa-brands fa-whatsapp"></i>
-            <span>WhatsApp Live Data Desk</span>
-          </a>
+      <div class="service-hero-grid">
+        <div>
+          <span class="service-hero-badge"><i class="fa-solid fa-stethoscope"></i> ASSET DIAGNOSTIC MATRIX</span>
+          <h1 class="service-hero-title">Interactive Equipment Failure Diagnostic Matrix</h1>
+          <p class="service-hero-desc">
+            Instant root-cause analysis and recommended engineering intervention protocols for mission-critical rotating assets across Saudi Arabia.
+          </p>
+          <div class="service-hero-actions">
+            <a href="#diagnosticEngine" class="btn-emergency-gold">
+              <i class="fa-solid fa-bolt"></i>
+              <span>START DIAGNOSTIC TOOL</span>
+            </a>
+            <a href="tel:+966592151506" class="btn-outline-glow">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span>24/7 HOTLINE: +966 59 215 1506</span>
+            </a>
+          </div>
         </div>
 
+        <div class="service-hero-media-card">
+          <img src="images/div-turbomachinery.jpg" alt="Machinery Vibration & Failure Diagnostic" loading="lazy">
+          <div class="service-hero-floating-stat">
+            <div>
+              <div class="floating-stat-num">Instant</div>
+              <div class="floating-stat-lbl">Triage Protocol</div>
+            </div>
+            <div style="text-align: right;">
+              <div class="floating-stat-num">2-4 Hrs</div>
+              <div class="floating-stat-lbl">Field Mobilization</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- INTERACTIVE DIAGNOSTIC ENGINE CARD -->
-  <section class="section-spacer" style="background: var(--color-canvas-alt);">
+  <section class="section-spacer" id="diagnosticEngine" style="background: var(--color-canvas-alt);">
     <div class="container">
       
       <div class="diag-interactive-card">
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 8px;">
           <div>
             <span class="tag-accent" style="color: var(--color-brand-bronze);"><i class="fa-solid fa-microchip"></i> Smart Decision Engine</span>
-            <h2 class="head-title-lg" style="font-size: 26px; margin: 6px 0 0;">3-Step Failure Analysis &amp; Action Protocol</h2>
+            <h2 class="head-title-lg" style="font-size: 24px; margin: 4px 0 0;">3-Step Failure Analysis &amp; Action Protocol</h2>
           </div>
           <span style="font-size: 12px; font-weight: 700; color: #16A34A; background: rgba(22, 163, 74, 0.1); border: 1px solid rgba(22, 163, 74, 0.25); padding: 4px 12px; border-radius: var(--radius-full);">
             <i class="fa-solid fa-circle-check"></i> Real-Time Telemetry Active
@@ -205,7 +209,7 @@
               <span class="step-num-pill">1</span>
               <span>Asset Classification</span>
             </div>
-            <p style="font-size: 12.5px; color: var(--color-muted); margin: 0;">Select your critical plant machinery:</p>
+            <p style="font-size: 12.5px; color: var(--color-muted); margin: 0;">Select your machinery type:</p>
             <select class="diag-select-control" id="diagEquipment" aria-label="Select Equipment Type">
               <option value="pump">API 610 Centrifugal Process Pump</option>
               <option value="compressor">Centrifugal Gas Compressor (API 617)</option>
@@ -221,9 +225,9 @@
               <span class="step-num-pill">2</span>
               <span>Observed Symptom</span>
             </div>
-            <p style="font-size: 12.5px; color: var(--color-muted); margin: 0;">Select observed operational anomaly:</p>
+            <p style="font-size: 12.5px; color: var(--color-muted); margin: 0;">Select observed anomaly:</p>
             <select class="diag-select-control" id="diagSymptom" aria-label="Select Observed Symptom">
-              <option value="vibration">High Vibration Level (> 7.1 mm/s RMS)</option>
+              <option value="vibration">High Vibration Level (&gt; 7.1 mm/s RMS)</option>
               <option value="leakage">Mechanical / Gas Seal Leakage &amp; Smoke</option>
               <option value="burn">Winding Thermal Breakdown / Overheating</option>
               <option value="trip">Sudden Trip / Bearing Temp Surge</option>
@@ -234,16 +238,16 @@
           <div class="diag-result-box">
             <div>
               <span class="diag-result-status"><i class="fa-solid fa-circle-check"></i> Standard Engineering Protocol</span>
-              <h4 class="diag-result-heading" id="diagResultTitle">Laser Alignment &amp; Dynamic Balancing</h4>
-              <p class="diag-result-text" id="diagResultDesc">Dynamic unbalance or angular misalignment detected. Laser alignment &amp; ISO G2.5 balancing required.</p>
+              <h4 class="diag-result-heading" id="diagResultTitle">Laser Alignment &amp; In-Situ Vibration Analysis</h4>
+              <p class="diag-result-text" id="diagResultDesc">Dynamic unbalance or angular misalignment detected. Precision dual-laser shaft alignment &amp; ISO G2.5 balancing required.</p>
               
-              <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--color-brand-bronze-border); font-size: 13px; color: var(--color-brand-bronze-dark); font-weight:700;">
-                <i class="fa-solid fa-truck-fast"></i> Field Mobilization: <strong id="diagResultHub" style="color: var(--color-heading);">Jeddah HQ &amp; Dammam Mobile Squads</strong>
+              <div style="margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 12.5px; color: var(--color-brand-bronze-light); font-weight:700;">
+                <i class="fa-solid fa-truck-fast"></i> Mobilization: <strong id="diagResultHub" style="color: #FFFFFF;">Jeddah HQ &amp; Dammam Mobile Squads</strong>
               </div>
             </div>
             
             <a href="emergency-dispatch.html" class="btn-dispatch-now" id="diagActionBtn">
-              <span>Dispatch On-Site Engineer / RFQ</span>
+              <span>DISPATCH ON-SITE ENGINEER / RFQ</span>
               <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
@@ -253,110 +257,116 @@
     </div>
   </section>
 
-  <!-- COMMON FAILURE MODES & ROOT CAUSE MATRIX (6 CARDS) -->
+  <!-- COMMON FAILURE MODES & ROOT CAUSE MATRIX (6 CONCISE CARDS) -->
   <section class="section-spacer" style="background: #FFFFFF;">
     <div class="container">
       <div class="section-head-center">
         <span class="tag-accent"><i class="fa-solid fa-triangle-exclamation"></i> Root Cause Knowledge Base</span>
-        <h2 class="head-title-lg">Common Rotating Asset Failure Modes</h2>
-        <p class="head-desc">Engineering reference guide for key failure signatures encountered in petrochemical, power, and desalination plants.</p>
+        <h2 class="head-title-lg">Failure Signatures &amp; Solutions</h2>
+        <p class="head-desc">Quick engineering reference for critical rotating machinery anomalies.</p>
       </div>
 
       <div class="diag-modes-grid">
         
-        <!-- Failure Mode 1 -->
+        <!-- Mode 1 -->
         <div class="diag-mode-card">
           <div>
             <div class="diag-mode-header">
-              <span class="diag-mode-tag diag-tag-pumps">API 610 Centrifugal Pumps</span>
-              <h3 class="diag-mode-title">1X &amp; 2X Shaft Misalignment / Unbalance</h3>
+              <span class="diag-mode-tag diag-tag-pumps">API 610 Pumps</span>
+              <h3 class="diag-mode-title">1X &amp; 2X Unbalance / Misalignment</h3>
             </div>
             <p class="diag-mode-body">
-              Causes elevated 1X RPM radial vibration, bearing race pitting, and premature seal face grooving. Requires wireless dual-laser shaft alignment and in-situ balancing to ISO G2.5 standard.
+              <strong>Symptom:</strong> Elevated 1X RPM radial vibration &amp; bearing race pitting.<br>
+              <strong>Protocol:</strong> Dual-laser shaft alignment &amp; in-situ dynamic balancing to ISO G2.5.
             </p>
           </div>
           <div class="diag-mode-footer">
-            <i class="fa-solid fa-wrench"></i> Recommended: Laser Alignment + Dynamic Balancing
+            <i class="fa-solid fa-wrench"></i> Laser Alignment + Dynamic Balancing
           </div>
         </div>
 
-        <!-- Failure Mode 2 -->
+        <!-- Mode 2 -->
         <div class="diag-mode-card">
           <div>
             <div class="diag-mode-header">
-              <span class="diag-mode-tag diag-tag-seals">API 682/692 Sealing Systems</span>
-              <h3 class="diag-mode-title">Dry Gas Seal Face Thermal Distortion</h3>
+              <span class="diag-mode-tag diag-tag-seals">API 682/692 Seals</span>
+              <h3 class="diag-mode-title">Seal Face Thermal Distortion</h3>
             </div>
             <p class="diag-mode-body">
-              Occurs during low flow or barrier gas contamination leading to groove clogging, frictional heat checking, and dynamic gas blowout. Requires ISO Class 7 cleanroom re-lapping and 150-bar dynamic nitrogen testing.
+              <strong>Symptom:</strong> Barrier fluid loss, face grooving &amp; gas leakage.<br>
+              <strong>Protocol:</strong> Cleanroom diamond re-lapping &amp; 150-bar dynamic nitrogen run.
             </p>
           </div>
           <div class="diag-mode-footer">
-            <i class="fa-solid fa-ring"></i> Recommended: Cleanroom Seal Lapping + Nitrogen Run
+            <i class="fa-solid fa-ring"></i> Cleanroom Lapping + N2 Test
           </div>
         </div>
 
-        <!-- Failure Mode 3 -->
+        <!-- Mode 3 -->
         <div class="diag-mode-card">
           <div>
             <div class="diag-mode-header">
-              <span class="diag-mode-tag diag-tag-turbines">API 612 Steam / Gas Turbines</span>
-              <h3 class="diag-mode-title">Axial Thrust Bearing Surge &amp; Blade Rub</h3>
+              <span class="diag-mode-tag diag-tag-turbines">API 612 Turbines</span>
+              <h3 class="diag-mode-title">Thrust Surge &amp; Blade Rub</h3>
             </div>
             <p class="diag-mode-body">
-              Steam contamination or balance piston seal wear shifts the rotor axially, causing babbit bearing wipe and diaphragm rubbing. Requires laser geometry survey, rotor NDT, and casing remachining.
+              <strong>Symptom:</strong> Axial rotor displacement &amp; babbit bearing wipe.<br>
+              <strong>Protocol:</strong> Laser geometric survey, rotor NDT &amp; casing remachining.
             </p>
           </div>
           <div class="diag-mode-footer">
-            <i class="fa-solid fa-fan"></i> Recommended: Rotor NDT + Diaphragm Laser Survey
+            <i class="fa-solid fa-fan"></i> Geometric Survey + Rotor NDT
           </div>
         </div>
 
-        <!-- Failure Mode 4 -->
+        <!-- Mode 4 -->
         <div class="diag-mode-card">
           <div>
             <div class="diag-mode-header">
-              <span class="diag-mode-tag diag-tag-motors">MV / HV Induction Motors</span>
-              <h3 class="diag-mode-title">Stator Winding Insulation Breakdown</h3>
+              <span class="diag-mode-tag diag-tag-motors">LV / MV Motors</span>
+              <h3 class="diag-mode-title">Winding Insulation Breakdown</h3>
             </div>
             <p class="diag-mode-body">
-              Thermal cycling and VFD harmonic spikes degrade magnet wire enamel, resulting in phase-to-ground turn shorts. Requires Class H mica/polyimide rewinding and high-vacuum pressure impregnation (VPI).
+              <strong>Symptom:</strong> Thermal degradation &amp; phase-to-ground turn shorts.<br>
+              <strong>Protocol:</strong> Class H (180&deg;C) rewinding &amp; 13.8kV dual-VPI treatment.
             </p>
           </div>
           <div class="diag-mode-footer">
-            <i class="fa-solid fa-bolt"></i> Recommended: Class H Rewind + 13.8kV VPI Treatment
+            <i class="fa-solid fa-bolt"></i> Class H Rewind + 13.8kV VPI
           </div>
         </div>
 
-        <!-- Failure Mode 5 -->
+        <!-- Mode 5 -->
         <div class="diag-mode-card">
           <div>
             <div class="diag-mode-header">
-              <span class="diag-mode-tag diag-tag-pumps">Flanged Pipeline Joints</span>
-              <h3 class="diag-mode-title">Thermal Relaxation &amp; Gasket Creep (ASME PCC-1)</h3>
+              <span class="diag-mode-tag diag-tag-pumps">Flanged Joints</span>
+              <h3 class="diag-mode-title">Thermal Relaxation &amp; Gasket Creep</h3>
             </div>
             <p class="diag-mode-body">
-              Uneven manual torquing during turnaround causes flange rotation, gasket crush, and runaway VOC leaks under thermal cycling. Requires mobile flange facing and calibrated multi-stud hydraulic tensioning.
+              <strong>Symptom:</strong> Flange rotation, gasket crush &amp; runaway VOC leaks.<br>
+              <strong>Protocol:</strong> Mobile flange facing &amp; ASME PCC-1 hydraulic stud tensioning.
             </p>
           </div>
           <div class="diag-mode-footer">
-            <i class="fa-solid fa-screwdriver-wrench"></i> Recommended: Mobile Flange Facing + Hydraulic Bolting
+            <i class="fa-solid fa-screwdriver-wrench"></i> Flange Facing + Hydraulic Bolting
           </div>
         </div>
 
-        <!-- Failure Mode 6 -->
+        <!-- Mode 6 -->
         <div class="diag-mode-card">
           <div>
             <div class="diag-mode-header">
-              <span class="diag-mode-tag diag-tag-seals">High-Pressure Compressors</span>
-              <h3 class="diag-mode-title">Subharmonic Oil Whirl &amp; Aerodynamic Surge</h3>
+              <span class="diag-mode-tag diag-tag-seals">Compressors</span>
+              <h3 class="diag-mode-title">Oil Whirl &amp; Aerodynamic Surge</h3>
             </div>
             <p class="diag-mode-body">
-              Tilting pad bearing instability and impeller shroud erosion cause severe 0.43X subsynchronous vibration and machine trip. Requires full rotor modal analysis, HVAF tungsten carbide coating, and bearing optimization.
+              <strong>Symptom:</strong> Severe 0.43X subsynchronous vibration &amp; machine trip.<br>
+              <strong>Protocol:</strong> Modal FEA/CFD simulation, HVAF coating &amp; bearing tuning.
             </p>
           </div>
           <div class="diag-mode-footer">
-            <i class="fa-solid fa-microchip"></i> Recommended: Modal FEA / CFD + HVAF Coating
+            <i class="fa-solid fa-microchip"></i> Modal FEA/CFD + HVAF Coating
           </div>
         </div>
 
@@ -365,26 +375,21 @@
   </section>
 
   <!-- DIRECT ACTION STRIP -->
-  <section class="section-spacer" style="background: var(--color-canvas-alt);">
+  <section class="section-spacer" style="background: var(--color-canvas-alt); padding-top: 20px;">
     <div class="container">
-      <div class="whatsapp-duty-box" style="text-align: center; max-width: 900px; margin: 0 auto;">
-        <span style="font-size: 12px; font-weight: 800; color: #25D366; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">
-          IMMEDIATE ENGINEERING SUPPORT
-        </span>
-        <h3 style="font-size: 26px; font-weight: 900; color: #FFFFFF; margin-bottom: 12px;">Need Direct Expert Verification?</h3>
-        <p style="font-size: 14.5px; color: #CBD5E1; line-height: 1.65; max-width: 650px; margin: 0 auto 24px;">
-          Send your FFT spectrum graphs, thermal images, or failure videos directly to our Senior Rotating Equipment Specialist on WhatsApp.
-        </p>
-
-        <div style="display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap;">
-          <a href="https://wa.me/966592151506?text=Hello%20MechFlow,%20we%20have%20an%20equipment%20vibration/seal%20anomaly%20and%20need%20diagnostic%20support." target="_blank" rel="noopener" class="btn-emergency-whatsapp">
+      <div class="service-cta-strip">
+        <div class="service-cta-info">
+          <h3>Need Direct Expert Diagnostics?</h3>
+          <p>Send your vibration spectrum data, thermal images, or failure logs directly to our Senior Reliability Engineer.</p>
+        </div>
+        <div class="service-cta-actions">
+          <a href="https://wa.me/966592151506?text=Hello%20MechFlow,%20we%20have%20an%20equipment%20vibration/seal%20anomaly%20and%20need%20diagnostic%20support." target="_blank" rel="noopener noreferrer" class="btn-emergency-gold">
             <i class="fa-brands fa-whatsapp"></i>
-            <span>START WHATSAPP DIAGNOSTIC CHAT</span>
+            <span>WHATSAPP DIAGNOSTIC CHAT</span>
           </a>
-
-          <a href="tel:+966592151506" class="btn-emergency-call">
-            <i class="fa-solid fa-phone"></i>
-            <span>CALL DUTY ENGINEER: +966 59 215 1506</span>
+          <a href="tel:+966592151506" class="btn-outline-glow">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>+966 59 215 1506</span>
           </a>
         </div>
       </div>
