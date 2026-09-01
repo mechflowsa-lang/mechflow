@@ -1,206 +1,548 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Contact &amp; Operational Hub Directory — Mechflow Engineering Services and Solutions</title>
-  <meta name="description" content="Contact Mechflow Engineering Services and Solutions: Headquarters in Jeddah (Al Sarooriya / Al Khumra), Dammam 2nd Industrial City Branch, and Yanbu RCJY Branch. 24/7 Breakdown Dispatch hotline.">
+  <title>Contact &amp; Operational Hub Directory — MechFlow Saudi Arabia</title>
+  <meta name="description" content="Contact MechFlow Saudi Arabia: Headquarters in Jeddah (Al Khumra Industrial District), Dammam 2nd Industrial City, and Yanbu RCJY Hubs. Direct 24/7 Hotline +966 59 215 1506.">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=2.5">
-  <link rel="stylesheet" href="mobile-app.css?v=2.5">
+  <link rel="stylesheet" href="style.css?v=2.7">
+  <link rel="stylesheet" href="mobile-app.css?v=2.7">
+  
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" href="favicon.svg">
 </head>
 <body>
 
+  <!-- Main Navigation Header (Clean Crisp White) -->
   <header class="main-header">
     <div class="container nav-wrapper">
       <a href="index.html" class="brand-logo" aria-label="MechFlow Homepage">
         <img src="mechflow-logo.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img">
       </a>
 
+      <!-- Desktop Navigation Menu -->
       <nav class="desktop-nav">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About Us</a>
-        <a href="services.html" class="nav-link">Services &amp; Divisions</a>
+        
+        <!-- Services Dropdown -->
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link">
+            Services &amp; Divisions
+            <i class="fa-solid fa-chevron-down" style="font-size: 11px; margin-left: 2px;"></i>
+          </a>
+          <div class="mega-menu-box">
+            <a href="turbomachinery.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-fan"></i></div>
+              <div>
+                <div class="mega-content-title">Turbomachinery &amp; Pumps</div>
+                <div class="mega-content-desc">API 610 pumps, steam turbines, 10T Schenck balancing &amp; wireless alignment.</div>
+              </div>
+            </a>
+
+            <a href="fluid-gas-sealing.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-ring"></i></div>
+              <div>
+                <div class="mega-content-title">Fluid &amp; Dry Gas Sealing</div>
+                <div class="mega-content-desc">API 682/692 seals, 150-bar dynamic nitrogen testing &amp; cleanroom facility.</div>
+              </div>
+            </a>
+
+            <a href="plant-turnaround.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-wrench"></i></div>
+              <div>
+                <div class="mega-content-title">Plant Turnaround (TAR)</div>
+                <div class="mega-content-desc">ASME PCC-1 hydraulic bolting, on-site flange facing up to 120 inches.</div>
+              </div>
+            </a>
+
+            <a href="advanced-engineering.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-microchip"></i></div>
+              <div>
+                <div class="mega-content-title">FEA, CFD &amp; 3D Scanning</div>
+                <div class="mega-content-desc">Finite element analysis, fluid dynamics &amp; HVAF tungsten carbide coatings.</div>
+              </div>
+            </a>
+
+            <a href="electrical-motors.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-bolt"></i></div>
+              <div>
+                <div class="mega-content-title">Motor Rewinding &amp; VFD</div>
+                <div class="mega-content-desc">Class H insulation, VPI treatment up to 13.8kV, VFD automation &amp; PLC panels.</div>
+              </div>
+            </a>
+
+            <a href="heat-transfer.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+              <div>
+                <div class="mega-content-title">Heat Exchangers &amp; Coolers</div>
+                <div class="mega-content-desc">Tube bundle extraction, automated retubing, PHE cleaning &amp; cooling towers.</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
         <a href="industries.html" class="nav-link">Industries</a>
         <a href="case-studies.html" class="nav-link">Case Studies</a>
         <a href="diagnostic.html" class="nav-link">Diagnostic Tool</a>
         <a href="contact.html" class="nav-link active">Contact</a>
       </nav>
 
-      <div style="display: flex; align-items: center; gap: 14px;">
-        <a href="ar/contact.html" class="lang-btn"><i class="fa-solid fa-globe"></i> العربية</a>
-        <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="Toggle Menu"><i class="fa-solid fa-bars-staggered"></i></button>
+      <!-- Header Actions: Lang Switch & Mobile Menu Trigger -->
+      <div class="header-actions-wrap">
+        <a href="ar/contact.html" class="lang-switch-badge" title="النسخة العربية">
+          <i class="fa-solid fa-globe"></i>
+          <span>العربية</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="Toggle Mobile Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
+  <!-- Mobile Drawer Menu -->
   <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
     <div class="mobile-drawer">
       <div>
         <div class="mobile-drawer-header">
           <a href="index.html" class="brand-logo" aria-label="MechFlow Homepage">
-            <img src="mechflow-logo.svg" alt="MechFlow" style="height:38px; width:auto;">
+            <img src="mechflow-logo.svg" alt="MechFlow" style="height:36px; width:auto;">
           </a>
-          <button class="mobile-drawer-close" id="mobileDrawerClose"><i class="fa-solid fa-xmark"></i></button>
+          <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </div>
         <ul class="mobile-nav-list">
           <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
           <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> About Company</a></li>
-          <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> All 6 Divisions</a></li>
+          <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> All 6 Service Divisions</a></li>
           <li><a href="turbomachinery.html" class="mobile-nav-link"><i class="fa-solid fa-fan"></i> Turbomachinery &amp; Pumps</a></li>
           <li><a href="fluid-gas-sealing.html" class="mobile-nav-link"><i class="fa-solid fa-ring"></i> Fluid &amp; Dry Gas Sealing</a></li>
           <li><a href="plant-turnaround.html" class="mobile-nav-link"><i class="fa-solid fa-wrench"></i> Plant Turnaround &amp; Machining</a></li>
           <li><a href="advanced-engineering.html" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> FEA, CFD &amp; 3D Scanning</a></li>
           <li><a href="electrical-motors.html" class="mobile-nav-link"><i class="fa-solid fa-bolt"></i> Motor Rewinding &amp; VFD</a></li>
+          <li><a href="heat-transfer.html" class="mobile-nav-link"><i class="fa-solid fa-temperature-arrow-down"></i> Heat Exchangers &amp; Coolers</a></li>
           <li><a href="industries.html" class="mobile-nav-link"><i class="fa-solid fa-industry"></i> Industries</a></li>
           <li><a href="case-studies.html" class="mobile-nav-link"><i class="fa-solid fa-chart-line"></i> Case Studies</a></li>
           <li><a href="diagnostic.html" class="mobile-nav-link"><i class="fa-solid fa-stethoscope"></i> Diagnostic Tool</a></li>
-          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> 24/7 Dispatch</a></li>
+          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> 24/7 Breakdown Dispatch</a></li>
           <li><a href="rfq.html" class="mobile-nav-link"><i class="fa-solid fa-file-signature"></i> Request RFQ</a></li>
-          <li><a href="contact.html" class="mobile-nav-link active"><i class="fa-solid fa-map-location-dot"></i> Contact Us</a></li>
+          <li><a href="contact.html" class="mobile-nav-link active"><i class="fa-solid fa-map-location-dot"></i> Contact &amp; Hub Locations</a></li>
         </ul>
       </div>
+      
+      <!-- Hotline Card in Drawer -->
       <div class="mobile-drawer-footer">
-        <a href="ar/contact.html" class="lang-btn" style="justify-content:center; padding:10px;"><i class="fa-solid fa-globe"></i> العربية</a>
+        <a href="tel:+966592151506" class="mobile-hotline-banner">
+          <strong><i class="fa-solid fa-phone-volume fa-shake"></i> 24/7 Breakdown Response Hotline</strong>
+          <span class="mobile-hotline-digits">+966 59 215 1506</span>
+        </a>
+        <a href="ar/contact.html" class="lang-switch-badge" style="justify-content:center; padding:10px; width:100%;">
+          <i class="fa-solid fa-globe"></i> العربية (Arabic Version)
+        </a>
       </div>
     </div>
   </div>
 
-  <section class="hero-monolith" style="padding: 70px 0;">
+  <!-- HERO SECTION: CONTACT & OPERATIONAL HUBS DIRECTORY -->
+  <section class="contact-hero-wrap">
     <div class="container">
-      <span class="hero-badge-pill"><span class="pulse-dot"></span> KINGDOM-WIDE STRATEGIC REACH</span>
-      <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px;">Operational Hubs &amp; Direct Engineering Contact</h1>
-      <p class="hero-lead-text">
-        Headquartered in Jeddah with fully equipped operational hubs in Dammam and Yanbu to support your plant anywhere in Saudi Arabia.
-      </p>
+      <div style="position: relative; z-index: 2;">
+        
+        <span class="hero-badge-pill" style="margin-bottom: 18px;">
+          <span class="pulse-dot"></span>
+          <span>KINGDOM-WIDE STRATEGIC REACH &amp; DIRECT ACCESS</span>
+        </span>
+
+        <h1 class="contact-hero-title">
+          Operational Hubs &amp;<br>
+          <span style="color: var(--color-brand-bronze-light);">Direct Engineering Contact</span>
+        </h1>
+
+        <p class="contact-hero-desc">
+          Headquartered in Jeddah with fully equipped service centers and rapid dispatch squads stationed in Dammam and Yanbu to support critical industrial plants anywhere across Saudi Arabia.
+        </p>
+
+        <!-- Quick Contact Pill Badges -->
+        <div class="contact-quick-badges">
+          <a href="tel:+966592151506" class="contact-badge-pill">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>24/7 Hotline: +966 59 215 1506</span>
+          </a>
+
+          <a href="mailto:info@mechflow.sa" class="contact-badge-pill">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email: info@mechflow.sa</span>
+          </a>
+
+          <div class="contact-badge-pill">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Central HQ: Jeddah, Saudi Arabia</span>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
+  <!-- 3 REGIONAL OPERATIONAL HUBS -->
   <section class="section-spacer" style="background: var(--color-canvas-alt);">
     <div class="container">
-      <div class="tri-hubs-grid" style="margin-bottom: 60px;">
-        
-        <!-- Jeddah HQ -->
-        <div class="hub-location-card is-head-office">
-          <span class="head-office-ribbon">Head Office &amp; Central Works</span>
-          <div class="hub-tag-badge">Western Province Hub</div>
-          <h3 class="hub-city-title">Jeddah Headquarters</h3>
-          <div class="hub-contact-list">
-            <div class="hub-contact-item">
-              <i class="fa-solid fa-location-dot"></i>
-              <span>Al Sarooriya Dist, Al Khumra Industrial Corridor, Jeddah, Saudi Arabia</span>
-            </div>
-            <div class="hub-contact-item">
-              <i class="fa-solid fa-phone"></i>
-              <span>Phone: +966 59 215 1506</span>
-            </div>
-            <div class="hub-contact-item">
-              <i class="fa-solid fa-envelope"></i>
-              <span>Email: jeddah.hq@mechflow.sa</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Dammam Branch -->
-        <div class="hub-location-card">
-          <div class="hub-tag-badge">Eastern Province Hub</div>
-          <h3 class="hub-city-title">Dammam Branch</h3>
-          <div class="hub-contact-list">
-            <div class="hub-contact-item">
-              <i class="fa-solid fa-location-dot"></i>
-              <span>2nd Industrial City, Dammam &amp; Jubail Corridor, Saudi Arabia</span>
-            </div>
-            <div class="hub-contact-item">
-              <i class="fa-solid fa-phone"></i>
-              <span>Phone: +966 59 215 1506</span>
-            </div>
-            <div class="hub-contact-item">
-              <i class="fa-solid fa-envelope"></i>
-              <span>Email: dammam@mechflow.sa</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Yanbu Branch -->
-        <div class="hub-location-card">
-          <div class="hub-tag-badge">Red Sea Petrochem Hub</div>
-          <h3 class="hub-city-title">Yanbu Branch</h3>
-          <div class="hub-contact-list">
-            <div class="hub-contact-item">
-              <i class="fa-solid fa-location-dot"></i>
-              <span>Royal Commission Industrial Zone (RCJY), Yanbu, Saudi Arabia</span>
-            </div>
-            <div class="hub-contact-item">
-              <i class="fa-solid fa-phone"></i>
-              <span>Phone: +966 59 215 1506</span>
-            </div>
-            <div class="hub-contact-item">
-              <i class="fa-solid fa-envelope"></i>
-              <span>Email: yanbu@mechflow.sa</span>
-            </div>
-          </div>
-        </div>
+      <div class="section-head-center">
+        <span class="tag-accent"><i class="fa-solid fa-map-location-dot"></i> Strategic Facilities</span>
+        <h2 class="head-title-lg">Regional Workshop Centers &amp; Hubs</h2>
+        <p class="head-desc">Fully operational base workshops equipped with dynamic balancing, cleanroom seal overhaul, and mobile field squads.</p>
       </div>
 
-      <!-- General Inquiries Form -->
-      <div style="max-width: 800px; margin: 0 auto; background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 40px; box-shadow: var(--shadow-card);">
-        <h3 style="font-size: 22px; color: var(--color-heading); margin-bottom: 20px; text-align: center;">Send a Direct Engineering Inquiry</h3>
+      <div class="tri-hubs-grid">
         
-        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Mechflow Engineering Services and Solutions.');">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
-            <div>
-              <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Your Full Name:</label>
-              <input type="text" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
+        <!-- Jeddah HQ Card -->
+        <div class="contact-hub-card is-hq">
+          <span class="hq-badge-ribbon"><i class="fa-solid fa-crown"></i> Head Office &amp; Central Works</span>
+          
+          <div class="contact-hub-header">
+            <span class="hub-badge-zone hub-badge-west">Western Province Command</span>
+            <h3 class="contact-hub-title">Jeddah Headquarters</h3>
+          </div>
+
+          <div class="contact-hub-details">
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Facility Address:</strong><br>
+                Al Sarooriya Dist, Al Khumra Industrial Corridor, Jeddah, Saudi Arabia
+              </div>
             </div>
-            <div>
-              <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Corporate Email:</label>
-              <input type="email" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
+
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Direct Line:</strong><br>
+                <a href="tel:+966592151506" style="color: var(--color-heading); font-weight: 700;">+966 59 215 1506</a>
+              </div>
             </div>
-            <div>
-              <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Phone / Mobile:</label>
-              <input type="tel" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
+
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Branch Inquiries:</strong><br>
+                <a href="mailto:jeddah.hq@mechflow.sa" style="color: var(--color-brand-bronze-dark); font-weight: 700;">jeddah.hq@mechflow.sa</a>
+              </div>
             </div>
-            <div>
-              <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Target Regional Hub:</label>
-              <select style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px; background: #FFFFFF;">
-                <option value="jeddah">Jeddah Headquarters</option>
-                <option value="dammam">Dammam Operational Branch</option>
-                <option value="yanbu">Yanbu Operational Branch</option>
-              </select>
+
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-compass"></i>
+              <div>
+                <strong>Coverage Corridor:</strong><br>
+                Jeddah Industrial Cities (1, 2, 3), Rabigh, Makkah, Medina, KAEC &amp; NEOM
+              </div>
             </div>
           </div>
 
-          <div style="margin-bottom: 24px;">
-            <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">Message / Technical Requirements:</label>
-            <textarea rows="4" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;"></textarea>
+          <div class="contact-hub-actions">
+            <a href="tel:+966592151506" class="btn-hub-call">
+              <i class="fa-solid fa-phone"></i> Call HQ
+            </a>
+            <a href="https://wa.me/966592151506?text=Hello%20MechFlow%20Jeddah%20HQ,%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener" class="btn-hub-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Dammam Branch Card -->
+        <div class="contact-hub-card">
+          <div class="contact-hub-header">
+            <span class="hub-badge-zone hub-badge-east">Eastern Province Operations</span>
+            <h3 class="contact-hub-title">Dammam Branch</h3>
           </div>
 
-          <button type="submit" class="btn-hero-primary" style="width: 100%; justify-content: center;">
-            <span>Send Message to Engineering Team</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </form>
+          <div class="contact-hub-details">
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Facility Address:</strong><br>
+                2nd Industrial City, Dammam &amp; Jubail Corridor, Saudi Arabia
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Direct Line:</strong><br>
+                <a href="tel:+966592151506" style="color: var(--color-heading); font-weight: 700;">+966 59 215 1506</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Branch Inquiries:</strong><br>
+                <a href="mailto:dammam@mechflow.sa" style="color: var(--color-brand-bronze-dark); font-weight: 700;">dammam@mechflow.sa</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-compass"></i>
+              <div>
+                <strong>Coverage Corridor:</strong><br>
+                Jubail Industrial 1 &amp; 2, Ras Al Khair, Abqaiq, Dhahran &amp; Tanajib
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-hub-actions">
+            <a href="tel:+966592151506" class="btn-hub-call">
+              <i class="fa-solid fa-phone"></i> Call Dammam
+            </a>
+            <a href="https://wa.me/966592151506?text=Hello%20MechFlow%20Dammam%20Branch,%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener" class="btn-hub-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Yanbu Branch Card -->
+        <div class="contact-hub-card">
+          <div class="contact-hub-header">
+            <span class="hub-badge-zone hub-badge-redsea">Red Sea Petrochemical Hub</span>
+            <h3 class="contact-hub-title">Yanbu Branch</h3>
+          </div>
+
+          <div class="contact-hub-details">
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Facility Address:</strong><br>
+                Royal Commission Industrial Zone (RCJY), Yanbu, Saudi Arabia
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Direct Line:</strong><br>
+                <a href="tel:+966592151506" style="color: var(--color-heading); font-weight: 700;">+966 59 215 1506</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Branch Inquiries:</strong><br>
+                <a href="mailto:yanbu@mechflow.sa" style="color: var(--color-brand-bronze-dark); font-weight: 700;">yanbu@mechflow.sa</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-compass"></i>
+              <div>
+                <strong>Coverage Corridor:</strong><br>
+                Yanbu Petrochemical Complex, SWCC Desalination &amp; King Fahd Port
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-hub-actions">
+            <a href="tel:+966592151506" class="btn-hub-call">
+              <i class="fa-solid fa-phone"></i> Call Yanbu
+            </a>
+            <a href="https://wa.me/966592151506?text=Hello%20MechFlow%20Yanbu%20Branch,%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener" class="btn-hub-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Master Footer with Rich Icons -->
+  <!-- DIRECT ENGINEERING INQUIRY & SUPPORT STACK -->
+  <section class="section-spacer" style="background: #FFFFFF;">
+    <div class="container">
+      <div class="contact-main-grid">
+        
+        <!-- Left Column: Inquiry Form -->
+        <div class="contact-inquiry-card">
+          <span class="tag-accent"><i class="fa-solid fa-paper-plane"></i> Direct Inquiry</span>
+          <h2 class="head-title-lg" style="font-size: 26px; margin-bottom: 8px;">Send a Technical Inquiry</h2>
+          <p style="font-size: 14px; color: var(--color-muted); margin-bottom: 24px;">
+            Submit your plant requirements, turnaround schedule, or rotating equipment challenge to our engineering desk.
+          </p>
+
+          <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for reaching out! A MechFlow Technical Specialist will contact you within 2 business hours.');">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px;">
+              <div>
+                <label style="display:block; font-size: 12.5px; font-weight: 700; color: var(--color-heading); margin-bottom: 6px;">Full Name *</label>
+                <input type="text" class="diag-select-control" placeholder="e.g. Eng. Abdullah Al-Harbi" required>
+              </div>
+              <div>
+                <label style="display:block; font-size: 12.5px; font-weight: 700; color: var(--color-heading); margin-bottom: 6px;">Corporate Email *</label>
+                <input type="email" class="diag-select-control" placeholder="name@company.com.sa" required>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px;">
+              <div>
+                <label style="display:block; font-size: 12.5px; font-weight: 700; color: var(--color-heading); margin-bottom: 6px;">Phone / Mobile *</label>
+                <input type="tel" class="diag-select-control" placeholder="+966 5X XXX XXXX" required>
+              </div>
+              <div>
+                <label style="display:block; font-size: 12.5px; font-weight: 700; color: var(--color-heading); margin-bottom: 6px;">Facility / Company *</label>
+                <input type="text" class="diag-select-control" placeholder="e.g. Petrochemical Plant" required>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px;">
+              <div>
+                <label style="display:block; font-size: 12.5px; font-weight: 700; color: var(--color-heading); margin-bottom: 6px;">Service Area of Interest *</label>
+                <select class="diag-select-control" required>
+                  <option value="turbomachinery">Turbomachinery &amp; API 610 Pumps</option>
+                  <option value="dry-gas-seals">Fluid &amp; Dry Gas Sealing (API 682/692)</option>
+                  <option value="plant-tar">Plant Turnaround &amp; On-Site Machining</option>
+                  <option value="advanced-eng">FEA / CFD Simulation &amp; 3D Scanning</option>
+                  <option value="electrical-motors">Electric Motor Rewinding &amp; VFD</option>
+                  <option value="heat-transfer">Heat Exchangers &amp; Cooling Towers</option>
+                  <option value="general">General Commercial Partnership</option>
+                </select>
+              </div>
+              <div>
+                <label style="display:block; font-size: 12.5px; font-weight: 700; color: var(--color-heading); margin-bottom: 6px;">Preferred Regional Hub *</label>
+                <select class="diag-select-control" required>
+                  <option value="jeddah">Jeddah Headquarters (Western Province)</option>
+                  <option value="dammam">Dammam Branch (Eastern Province)</option>
+                  <option value="yanbu">Yanbu Branch (Red Sea Petrochem)</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 22px;">
+              <label style="display:block; font-size: 12.5px; font-weight: 700; color: var(--color-heading); margin-bottom: 6px;">Scope &amp; Technical Requirements *</label>
+              <textarea class="diag-select-control" rows="4" placeholder="Detail equipment specs, operating conditions, turnaround schedule, or required deliverables..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-hero-primary" style="width: 100%; justify-content: center; padding: 14px 24px; font-size: 14.5px;">
+              <span>Submit Technical Inquiry</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Column: Channels Stack -->
+        <div class="contact-side-stack">
+          
+          <!-- 24/7 Breakdown Dispatch Box -->
+          <div class="contact-side-info-card is-dark">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+              <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(182, 123, 43, 0.2); border: 1px solid var(--color-brand-bronze); display: flex; align-items: center; justify-content: center; color: #FDBA74; font-size: 18px;">
+                <i class="fa-solid fa-truck-medical"></i>
+              </div>
+              <div>
+                <span style="font-size: 11px; font-weight: 800; color: #FDBA74; text-transform: uppercase; letter-spacing: 0.05em;">24/7 EMERGENCY DISPATCH</span>
+                <h4 style="font-size: 18px; font-weight: 800; color: #FFFFFF;">Rapid Field Mobilization</h4>
+              </div>
+            </div>
+
+            <p style="font-size: 13.5px; color: #CBD5E1; line-height: 1.6; margin-bottom: 18px;">
+              Immediate dispatch of vibration diagnostic teams and laser alignment squads within 2 to 4 hours Kingdom-wide.
+            </p>
+
+            <a href="tel:+966592151506" class="btn-emergency-call" style="width: 100%; justify-content: center; padding: 12px 18px; font-size: 13.5px;">
+              <i class="fa-solid fa-phone"></i> +966 59 215 1506
+            </a>
+          </div>
+
+          <!-- Official Inboxes & Hours -->
+          <div class="contact-side-info-card">
+            <h4 style="font-size: 17px; font-weight: 800; color: var(--color-heading); margin-bottom: 14px;">
+              <i class="fa-solid fa-envelope-open-text" style="color: var(--color-brand-bronze); margin-right: 6px;"></i> Official Inboxes
+            </h4>
+
+            <div style="display: flex; flex-direction: column; gap: 10px; font-size: 13.5px;">
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed var(--color-border); padding-bottom: 8px;">
+                <span style="color: var(--color-muted);">RFQ &amp; Commercial:</span>
+                <a href="mailto:rfq@mechflow.sa" style="font-weight: 700; color: var(--color-brand-bronze-dark);">rfq@mechflow.sa</a>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed var(--color-border); padding-bottom: 8px;">
+                <span style="color: var(--color-muted);">General Inquiries:</span>
+                <a href="mailto:info@mechflow.sa" style="font-weight: 700; color: var(--color-brand-bronze-dark);">info@mechflow.sa</a>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed var(--color-border); padding-bottom: 8px;">
+                <span style="color: var(--color-muted);">Careers &amp; HR:</span>
+                <a href="mailto:careers@mechflow.sa" style="font-weight: 700; color: var(--color-brand-bronze-dark);">careers@mechflow.sa</a>
+              </div>
+            </div>
+
+            <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--color-border);">
+              <h5 style="font-size: 13px; font-weight: 800; color: var(--color-heading); margin-bottom: 6px;">
+                <i class="fa-solid fa-clock" style="color: var(--color-brand-bronze); margin-right: 4px;"></i> Business Working Hours
+              </h5>
+              <p style="font-size: 12.5px; color: var(--color-body); line-height: 1.5;">
+                Sunday &ndash; Thursday: 8:00 AM &ndash; 5:30 PM (AST)<br>
+                <strong style="color: var(--color-brand-bronze-dark);">* 24/7 Breakdown Dispatch operates non-stop 365 days.</strong>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROVED CLIENT TRUST LOGO MARQUEE -->
+  <section class="client-marquee-section">
+    <div class="container">
+      <div class="marquee-header-row">
+        <span class="marquee-tag">APPROVED INDUSTRIAL PARTNER</span>
+        <span class="marquee-sub">Trusted by the Kingdom's Critical Energy, Petrochemical &amp; Utility Plants</span>
+      </div>
+    </div>
+    
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <div class="marquee-item"><img src="images/clients/saudi-aramco.svg" alt="Saudi Aramco"></div>
+        <div class="marquee-item"><img src="images/clients/sabic.svg" alt="SABIC"></div>
+        <div class="marquee-item"><img src="images/clients/maaden.svg" alt="Ma'aden Mining"></div>
+        <div class="marquee-item"><img src="images/clients/sadara-chemical.svg" alt="Sadara Chemical Company"></div>
+        <div class="marquee-item"><img src="images/clients/saudi-electricity.svg" alt="Saudi Electricity / Energy Company"></div>
+
+        <div class="marquee-item"><img src="images/clients/saudi-aramco.svg" alt="Saudi Aramco"></div>
+        <div class="marquee-item"><img src="images/clients/sabic.svg" alt="SABIC"></div>
+        <div class="marquee-item"><img src="images/clients/maaden.svg" alt="Ma'aden Mining"></div>
+        <div class="marquee-item"><img src="images/clients/sadara-chemical.svg" alt="Sadara Chemical Company"></div>
+        <div class="marquee-item"><img src="images/clients/saudi-electricity.svg" alt="Saudi Electricity / Energy Company"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MASTER FOOTER -->
   <footer class="master-footer">
     <div class="container">
       <div class="footer-4col">
+        <!-- Col 1: Brand & Social Media -->
         <div>
           <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
             <img src="mechflow-logo-white.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img" style="height:44px;">
           </a>
-          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #94A3B8;">
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 18px; color: #94A3B8;">
             Kingdom-wide OEM-independent engineering leader providing Turbomachinery overhaul, Dry Gas Seals (API 692), laser alignment, and plant turnaround (TAR) services.
           </p>
+
+          <!-- Social Media Icons Row -->
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://wa.me/966592151506" target="_blank" rel="noopener" class="social-icon-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
         </div>
 
+        <!-- Col 2: Service Divisions -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-layer-group"></i> Service Divisions</h4>
           <div class="footer-nav-list">
@@ -213,7 +555,8 @@
           </div>
         </div>
 
-        <div>
+        <!-- Col 3: Quick Links (Hidden on Phone View) -->
+        <div class="footer-quick-links-col">
           <h4 class="footer-head-title"><i class="fa-solid fa-compass"></i> Quick Links</h4>
           <div class="footer-nav-list">
             <a href="about.html"><i class="fa-solid fa-shield-halved"></i> About Company &amp; Governance</a>
@@ -226,36 +569,68 @@
           </div>
         </div>
 
+        <!-- Col 4: Corporate Presence -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-building-flag"></i> Corporate Presence</h4>
-          <p style="font-size: 13.5px; margin-bottom: 12px; line-height: 1.6; color: #94A3B8;">
-            🏢 <strong style="color:#FFFFFF;">Head Office:</strong> Jeddah, Saudi Arabia<br>
-            📍 <strong style="color:#FFFFFF;">Branch Offices:</strong> Dammam &amp; Yanbu
-          </p>
-          <p style="font-size: 13.5px; color: var(--color-safety-amber); font-weight: 700;">
-            📞 <span style="color:#CBD5E1;">24/7 Hotline:</span> +966 59 215 1506<br>
-            📧 <span style="color:#CBD5E1;">RFQ Email:</span> rfq@mechflow.sa
-          </p>
+          <div class="footer-presence-list">
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-building"></i>
+              <span><strong>Head Office:</strong> Jeddah, Saudi Arabia</span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <span><strong>Branch Offices:</strong> Dammam &amp; Yanbu</span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span><strong>24/7 Hotline:</strong> <a href="tel:+966592151506">+966 59 215 1506</a></span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-envelope"></i>
+              <span><strong>RFQ Email:</strong> <a href="mailto:rfq@mechflow.sa">rfq@mechflow.sa</a></span>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- Minimal Bottom Row -->
       <div class="footer-bottom-row">
-        <span>&copy; 2026 Mechflow Engineering Services and Solutions Head Office: Jeddah | Branches: Dammam &amp; Yanbu</span>
-        <a href="emergency-dispatch.html" style="color: var(--color-safety-amber); font-weight:700;">24/7 Breakdown Dispatch: +966 59 215 1506 <i class="fa-solid fa-arrow-right"></i></a>
+        <span>&copy; 2026 Mechflow Engineering Services and Solutions. All Rights Reserved.</span>
+        <a href="tel:+966592151506" class="footer-hotline-link" style="color: #FFA800; font-weight:700;">24/7 Breakdown Dispatch: +966 59 215 1506 <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </footer>
 
-  <nav class="mobile-bottom-appbar">
-    <a href="index.html" class="appbar-item"><i class="fa-solid fa-house"></i><span>Home</span></a>
-    <a href="services.html" class="appbar-item"><i class="fa-solid fa-layer-group"></i><span>Services</span></a>
-    <a href="diagnostic.html" class="appbar-item"><i class="fa-solid fa-stethoscope"></i><span>Diagnose</span></a>
-    <a href="emergency-dispatch.html" class="appbar-item emergency-pill"><div class="pill-icon-wrap"><i class="fa-solid fa-phone-volume"></i></div><span>24/7 Call</span></a>
-    <a href="rfq.html" class="appbar-item"><i class="fa-solid fa-file-signature"></i><span>RFQ</span></a>
+  <!-- Mobile Bottom App Bar -->
+  <nav class="mobile-bottom-appbar" aria-label="Mobile Navigation">
+    <a href="index.html" class="appbar-item">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+
+    <a href="services.html" class="appbar-item">
+      <i class="fa-solid fa-layer-group"></i>
+      <span>Services</span>
+    </a>
+
+    <a href="diagnostic.html" class="appbar-item">
+      <i class="fa-solid fa-stethoscope"></i>
+      <span>Diagnose</span>
+    </a>
+
+    <a href="emergency-dispatch.html" class="appbar-item emergency-pill">
+      <div class="pill-icon-wrap">
+        <i class="fa-solid fa-phone-volume"></i>
+      </div>
+      <span>24/7 Call</span>
+    </a>
+
+    <a href="contact.html" class="appbar-item active">
+      <i class="fa-solid fa-map-location-dot"></i>
+      <span>Contact</span>
+    </a>
   </nav>
 
-  <script src="script.js?v=2.5"></script>
+  <script src="script.js?v=2.7"></script>
 </body>
 </html>
-
-

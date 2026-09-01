@@ -1,206 +1,547 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>تواصل معنا ومواقع الفروع — ميكفلو إنجينيرينج سيرفيسز آند سولوجنز</title>
-  <meta name="description" content="تواصل مع ميكفلو إنجينيرينج سيرفيسز آند سولوجنز: المقر الرئيسي في جدة، والفروع التشغيلية في الدمام وينبع. خط طوارئ الأعطال 24/7 والدعم الهندسي المباشر.">
+  <title>دليل الفروع التشغيلية والتواصل الهندسي — ميك فلو السعودية</title>
+  <meta name="description" content="تواصل مع شركة ميك فلو للخدمات الهندسية: المقر الرئيسي بجدة (المنطقة الصناعية بالخمرة)، فرع المدينة الصناعية الثانية بالدمام، وفرع الهيئة الملكية بينبع. هاتف الطوارئ المباشر 1506 215 59 966+.">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="../style.css?v=2.5">
-  <link rel="stylesheet" href="../mobile-app.css?v=2.5">
+  <link rel="stylesheet" href="../style.css?v=2.7">
+  <link rel="stylesheet" href="../mobile-app.css?v=2.7">
+  
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="apple-touch-icon" href="../favicon.svg">
 </head>
 <body>
 
+  <!-- ترويسة الموقع الرئيسية -->
   <header class="main-header">
     <div class="container nav-wrapper">
-      <a href="index.html" class="brand-logo" aria-label="MechFlow Homepage">
+      <a href="index.html" class="brand-logo" aria-label="الرئيسية ميك فلو">
         <img src="mechflow-logo.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img">
       </a>
 
+      <!-- القائمة الرئيسية -->
       <nav class="desktop-nav">
         <a href="index.html" class="nav-link">الرئيسية</a>
         <a href="about.html" class="nav-link">عن الشركة</a>
-        <a href="services.html" class="nav-link">الخدمات والأقسام</a>
+        
+        <!-- القائمة المنسدلة للخدمات -->
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link">
+            الخدمات والأقسام
+            <i class="fa-solid fa-chevron-down" style="font-size: 11px; margin-right: 2px;"></i>
+          </a>
+          <div class="mega-menu-box">
+            <a href="turbomachinery.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-fan"></i></div>
+              <div>
+                <div class="mega-content-title">التوربينات والمضخات</div>
+                <div class="mega-content-desc">مضخات API 610، توربينات بخارية، موازنة ديناميكية 10 طن ومحاذاة ليزرية.</div>
+              </div>
+            </a>
+
+            <a href="fluid-gas-sealing.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-ring"></i></div>
+              <div>
+                <div class="mega-content-title">الأختام الميكانيكية والغازية</div>
+                <div class="mega-content-desc">أختام API 682/692، منصة فحص نيتروجين 150 بار وغرف نظيفة.</div>
+              </div>
+            </a>
+
+            <a href="plant-turnaround.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-wrench"></i></div>
+              <div>
+                <div class="mega-content-title">عمرات المصانع (TAR)</div>
+                <div class="mega-content-desc">عزم وشد هيدروليكي ASME PCC-1، تشغيل الفلانجات موقعياً حتى 120 بوصة.</div>
+              </div>
+            </a>
+
+            <a href="advanced-engineering.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-microchip"></i></div>
+              <div>
+                <div class="mega-content-title">المحاكاة والمسح ثلاثي الأبعاد</div>
+                <div class="mega-content-desc">تحليل الإجهادات FEA، محاكاة السريان CFD، وطلاءات HVAF المقاومة للتآكل.</div>
+              </div>
+            </a>
+
+            <a href="electrical-motors.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-bolt"></i></div>
+              <div>
+                <div class="mega-content-title">لف المحركات والأتمتة</div>
+                <div class="mega-content-desc">عزل حراري Class H، تشريب بالضغط والتفريغ VPI، ومغيرات السرعة VFD.</div>
+              </div>
+            </a>
+
+            <a href="heat-transfer.html" class="mega-item">
+              <div class="mega-icon-circle"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+              <div>
+                <div class="mega-content-title">المبادلات الحرارية والتبريد</div>
+                <div class="mega-content-desc">سحب حزم الأنابيب وإعادة التتييب، تنظيف المبادلات الصفائحية وتأهيل الأبراج.</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
         <a href="industries.html" class="nav-link">القطاعات الصناعية</a>
         <a href="case-studies.html" class="nav-link">دراسات الحالة</a>
         <a href="diagnostic.html" class="nav-link">أداة التشخيص</a>
         <a href="contact.html" class="nav-link active">تواصل معنا</a>
       </nav>
 
-      <div style="display: flex; align-items: center; gap: 14px;">
-        <a href="../contact.html" class="lang-btn"><i class="fa-solid fa-globe"></i> English</a>
-        <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="Toggle Menu"><i class="fa-solid fa-bars-staggered"></i></button>
+      <!-- تحويل اللغة وزر القائمة للهواتف -->
+      <div class="header-actions-wrap">
+        <a href="../contact.html" class="lang-switch-badge" title="English Version">
+          <i class="fa-solid fa-globe"></i>
+          <span>English</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="فتح القائمة">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
+  <!-- القائمة الجانبية للشاشات الصغيرة -->
   <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
     <div class="mobile-drawer">
       <div>
         <div class="mobile-drawer-header">
           <a href="index.html" class="brand-logo" aria-label="MechFlow Homepage">
-            <img src="mechflow-logo.svg" alt="MechFlow" style="height:38px; width:auto;">
+            <img src="mechflow-logo.svg" alt="MechFlow" style="height:36px; width:auto;">
           </a>
-          <button class="mobile-drawer-close" id="mobileDrawerClose"><i class="fa-solid fa-xmark"></i></button>
+          <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="إغلاق">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </div>
         <ul class="mobile-nav-list">
           <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
-          <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> عن الشركة</a></li>
-          <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> كافة الأقسام</a></li>
+          <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> عن الشركة والحوكمة</a></li>
+          <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> كافة الأقسام الهندسية الستة</a></li>
           <li><a href="turbomachinery.html" class="mobile-nav-link"><i class="fa-solid fa-fan"></i> التوربينات والمضخات</a></li>
           <li><a href="fluid-gas-sealing.html" class="mobile-nav-link"><i class="fa-solid fa-ring"></i> الأختام الميكانيكية والغازية</a></li>
           <li><a href="plant-turnaround.html" class="mobile-nav-link"><i class="fa-solid fa-wrench"></i> عمرات المصانع والتشغيل الموقعي</a></li>
           <li><a href="advanced-engineering.html" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> المحاكاة والمسح ثلاثي الأبعاد</a></li>
           <li><a href="electrical-motors.html" class="mobile-nav-link"><i class="fa-solid fa-bolt"></i> لف المحركات الكهربائية والتحكم</a></li>
-          <li><a href="industries.html" class="mobile-nav-link"><i class="fa-solid fa-industry"></i> القطاعات</a></li>
-          <li><a href="case-studies.html" class="mobile-nav-link"><i class="fa-solid fa-chart-line"></i> دراسات الحالة</a></li>
-          <li><a href="diagnostic.html" class="mobile-nav-link"><i class="fa-solid fa-stethoscope"></i> أداة التشخيص</a></li>
-          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> طوارئ الأعطال</a></li>
-          <li><a href="rfq.html" class="mobile-nav-link"><i class="fa-solid fa-file-signature"></i> طلب تسعير</a></li>
-          <li><a href="contact.html" class="mobile-nav-link active"><i class="fa-solid fa-map-location-dot"></i> مواقع الفروع</a></li>
+          <li><a href="industries.html" class="mobile-nav-link"><i class="fa-solid fa-industry"></i> القطاعات الصناعية</a></li>
+          <li><a href="case-studies.html" class="mobile-nav-link"><i class="fa-solid fa-chart-line"></i> دراسات الحالة الموثقة</a></li>
+          <li><a href="diagnostic.html" class="mobile-nav-link"><i class="fa-solid fa-stethoscope"></i> أداة التشخيص الهندسي</a></li>
+          <li><a href="emergency-dispatch.html" class="mobile-nav-link"><i class="fa-solid fa-truck-medical"></i> طوارئ الأعطال 24/7</a></li>
+          <li><a href="rfq.html" class="mobile-nav-link"><i class="fa-solid fa-file-signature"></i> طلب حل فني وتسعير</a></li>
+          <li><a href="contact.html" class="mobile-nav-link active"><i class="fa-solid fa-map-location-dot"></i> مواقع الفروع والتواصل</a></li>
         </ul>
       </div>
+      
+      <!-- بطاقة الطوارئ في القائمة الجانبية -->
       <div class="mobile-drawer-footer">
-        <a href="../contact.html" class="lang-btn" style="justify-content:center; padding:10px;"><i class="fa-solid fa-globe"></i> English</a>
+        <a href="tel:+966592151506" class="mobile-hotline-banner">
+          <strong><i class="fa-solid fa-phone-volume fa-shake"></i> مركز طوارئ الأعطال على مدار 24 ساعة</strong>
+          <span class="mobile-hotline-digits">1506 215 59 966+</span>
+        </a>
+        <a href="../contact.html" class="lang-switch-badge" style="justify-content:center; padding:10px; width:100%;">
+          <i class="fa-solid fa-globe"></i> English (النسخة الإنجليزية)
+        </a>
       </div>
     </div>
   </div>
 
-  <section class="hero-monolith" style="padding: 70px 0;">
+  <!-- القسم الرئيسي: دليل الفروع التشغيلية والتواصل المباشر -->
+  <section class="contact-hero-wrap">
     <div class="container">
-      <span class="hero-badge-pill"><span class="pulse-dot"></span> التواجد الاستراتيجي بالمملكة</span>
-      <h1 class="hero-main-title" style="font-size: 42px; margin-bottom: 16px;">مواقع الفروع والتواصل المباشر</h1>
-      <p class="hero-lead-text">
-        المقر الرئيسي في جدة مع ورش متطورة في الدمام وينبع لخدمة منشآتكم في أي موقع بالمملكة العربية السعودية.
-      </p>
+      <div style="position: relative; z-index: 2;">
+        
+        <span class="hero-badge-pill" style="margin-bottom: 18px;">
+          <span class="pulse-dot"></span>
+          <span>تغطية استراتيجية شاملة وتواصل مباشر عبر المملكة</span>
+        </span>
+
+        <h1 class="contact-hero-title">
+          المراكز التشغيلية والفروع<br>
+          <span style="color: var(--color-brand-bronze-light);">&amp; قنوات التواصل الهندسي المباشر</span>
+        </h1>
+
+        <p class="contact-hero-desc">
+          المقر الرئيسي والإدارة المركزية بمدينة جدة مع ورش دعم تشغيلية وفرق طوارئ ميدانية متكاملة في الدمام وينبع لخدمة كبرى المنشآت الصناعية في كافة أنحاء المملكة العربية السعودية.
+        </p>
+
+        <!-- شارات التواصل السريع -->
+        <div class="contact-quick-badges">
+          <a href="tel:+966592151506" class="contact-badge-pill">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>طوارئ 24/7: 1506 215 59 966+</span>
+          </a>
+
+          <a href="mailto:info@mechflow.sa" class="contact-badge-pill">
+            <i class="fa-solid fa-envelope"></i>
+            <span>البريد: info@mechflow.sa</span>
+          </a>
+
+          <div class="contact-badge-pill">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>المقر الرئيسي: جدة، المملكة العربية السعودية</span>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
+  <!-- بطاقات الفروع التشغيلية الثلاثة -->
   <section class="section-spacer" style="background: var(--color-canvas-alt);">
     <div class="container">
-      <div class="tri-hubs-grid" style="margin-bottom: 60px;">
-        
-        <!-- فرع جدة -->
-        <div class="hub-location-card is-head-office">
-          <span class="head-office-ribbon">المكتب الرئيسي والمصنع المركزي</span>
-          <div class="hub-tag-badge">المنطقة الغربية</div>
-          <h3 class="hub-city-title">المقر الرئيسي — جدة</h3>
-          <div class="hub-contact-list">
-            <div class="hub-contact-item">
-              <i class="fa-solid fa-location-dot"></i>
-              <span>حي السرورية، النطاق الصناعي بالخمرة، جدة، المملكة العربية السعودية</span>
-            </div>
-            <div class="hub-contact-item">
-              <i class="fa-solid fa-phone"></i>
-              <span>هاتف: 1506 215 59 966+</span>
-            </div>
-            <div class="hub-contact-item">
-              <i class="fa-solid fa-envelope"></i>
-              <span>البريد الإلكتروني: jeddah.hq@mechflow.sa</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- فرع الدمام -->
-        <div class="hub-location-card">
-          <div class="hub-tag-badge">المنطقة الشرقية</div>
-          <h3 class="hub-city-title">فرع الدمام</h3>
-          <div class="hub-contact-list">
-            <div class="hub-contact-item">
-              <i class="fa-solid fa-location-dot"></i>
-              <span>المدينة الصناعية الثانية، محور الدمام والجبيل، المملكة العربية السعودية</span>
-            </div>
-            <div class="hub-contact-item">
-              <i class="fa-solid fa-phone"></i>
-              <span>هاتف: 1506 215 59 966+</span>
-            </div>
-            <div class="hub-contact-item">
-              <i class="fa-solid fa-envelope"></i>
-              <span>البريد الإلكتروني: dammam@mechflow.sa</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- فرع ينبع -->
-        <div class="hub-location-card">
-          <div class="hub-tag-badge">محور البحر الأحمر البتروكيماوي</div>
-          <h3 class="hub-city-title">فرع ينبع</h3>
-          <div class="hub-contact-list">
-            <div class="hub-contact-item">
-              <i class="fa-solid fa-location-dot"></i>
-              <span>منطقة الهيئة الملكية الصناعية (RCJY)، ينبع، المملكة العربية السعودية</span>
-            </div>
-            <div class="hub-contact-item">
-              <i class="fa-solid fa-phone"></i>
-              <span>هاتف: 1506 215 59 966+</span>
-            </div>
-            <div class="hub-contact-item">
-              <i class="fa-solid fa-envelope"></i>
-              <span>البريد الإلكتروني: yanbu@mechflow.sa</span>
-            </div>
-          </div>
-        </div>
+      <div class="section-head-center">
+        <span class="tag-accent"><i class="fa-solid fa-map-location-dot"></i> المنشآت التشغيلية</span>
+        <h2 class="head-title-lg">شبكة المراكز والورش الإقليمية</h2>
+        <p class="head-desc">ورش مركزية مجهزة بأحدث ماكينات الموازنة الديناميكية، صيانة الأختام بالغرف النظيفة، وفرق التدخل الميداني.</p>
       </div>
 
-      <!-- نموذج المراسلة -->
-      <div style="max-width: 800px; margin: 0 auto; background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 40px; box-shadow: var(--shadow-card);">
-        <h3 style="font-size: 22px; color: var(--color-heading); margin-bottom: 20px; text-align: center;">إرسال استفسار هندسي مباشر</h3>
+      <div class="tri-hubs-grid">
         
-        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('تم إرسال رسالتكم بنجاح إلى ميكفلو إنجينيرينج سيرفيسز آند سولوجنز.');">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
-            <div>
-              <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">الاسم الكريم:</label>
-              <input type="text" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
+        <!-- بطاقة المقر الرئيسي بجدة -->
+        <div class="contact-hub-card is-hq">
+          <span class="hq-badge-ribbon"><i class="fa-solid fa-crown"></i> المقر الرئيسي والورش المركزية</span>
+          
+          <div class="contact-hub-header">
+            <span class="hub-badge-zone hub-badge-west">مركز قيادة المنطقة الغربية</span>
+            <h3 class="contact-hub-title">المقر الرئيسي — جدة</h3>
+          </div>
+
+          <div class="contact-hub-details">
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>عنوان المنشأة:</strong><br>
+                حي السرورية، النطاق الصناعي بالخمرة، جدة، المملكة العربية السعودية
+              </div>
             </div>
-            <div>
-              <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">البريد الإلكتروني المهني:</label>
-              <input type="email" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
+
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>الهاتف المباشر:</strong><br>
+                <a href="tel:+966592151506" style="color: var(--color-heading); font-weight: 700; direction: ltr; display: inline-block;">+966 59 215 1506</a>
+              </div>
             </div>
-            <div>
-              <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">رقم الجوال / الواتساب:</label>
-              <input type="tel" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;">
+
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>بريد الإدارة والفرع:</strong><br>
+                <a href="mailto:jeddah.hq@mechflow.sa" style="color: var(--color-brand-bronze-dark); font-weight: 700;">jeddah.hq@mechflow.sa</a>
+              </div>
             </div>
-            <div>
-              <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">الفرع المستهدف:</label>
-              <select style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px; background: #FFFFFF;">
-                <option value="jeddah">المكتب الرئيسي: جدة</option>
-                <option value="dammam">الفرع التشغيلي: الدمام</option>
-                <option value="yanbu">الفرع التشغيلي: ينبع</option>
-              </select>
+
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-compass"></i>
+              <div>
+                <strong>نطاق التغطية:</strong><br>
+                المدن الصناعية بجدة (1، 2، 3)، رابغ، مكة المكرمة، المدينة المنورة، مدينة الملك عبدالله ونيوم
+              </div>
             </div>
           </div>
 
-          <div style="margin-bottom: 24px;">
-            <label style="display:block; font-size: 13px; font-weight: 700; margin-bottom: 6px;">تفاصيل الاستفسار الهندسي:</label>
-            <textarea rows="4" required style="width: 100%; padding: 12px 14px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); font-size: 14px;"></textarea>
+          <div class="contact-hub-actions">
+            <a href="tel:+966592151506" class="btn-hub-call">
+              <i class="fa-solid fa-phone"></i> اتصال بالمقر
+            </a>
+            <a href="https://wa.me/966592151506?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%85%D9%8A%D9%83%20%D9%81%D9%84%D9%88%20%D8%AC%D8%AF%D8%A9%D8%8C%20%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85." target="_blank" rel="noopener" class="btn-hub-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> واتساب
+            </a>
+          </div>
+        </div>
+
+        <!-- بطاقة فرع الدمام -->
+        <div class="contact-hub-card">
+          <div class="contact-hub-header">
+            <span class="hub-badge-zone hub-badge-east">عمليات المنطقة الشرقية</span>
+            <h3 class="contact-hub-title">فرع الدمام والجبيل</h3>
           </div>
 
-          <button type="submit" class="btn-hero-primary" style="width: 100%; justify-content: center;">
-            <span>إرسال الرسالة إلى فريق ميك فلو</span>
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-        </form>
+          <div class="contact-hub-details">
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>عنوان المنشأة:</strong><br>
+                المدينة الصناعية الثانية، محور الدمام والجبيل، المملكة العربية السعودية
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>الهاتف المباشر:</strong><br>
+                <a href="tel:+966592151506" style="color: var(--color-heading); font-weight: 700; direction: ltr; display: inline-block;">+966 59 215 1506</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>بريد فرع الشرقية:</strong><br>
+                <a href="mailto:dammam@mechflow.sa" style="color: var(--color-brand-bronze-dark); font-weight: 700;">dammam@mechflow.sa</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-compass"></i>
+              <div>
+                <strong>نطاق التغطية:</strong><br>
+                الجبيل الصناعية 1 و 2، رأس الخير، بقيق، الظهران وحقول تناقيب
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-hub-actions">
+            <a href="tel:+966592151506" class="btn-hub-call">
+              <i class="fa-solid fa-phone"></i> اتصال بالدمام
+            </a>
+            <a href="https://wa.me/966592151506?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%85%D9%8A%D9%83%20%D9%81%D9%84%D9%88%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%D8%8C%20%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85." target="_blank" rel="noopener" class="btn-hub-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> واتساب
+            </a>
+          </div>
+        </div>
+
+        <!-- بطاقة فرع ينبع -->
+        <div class="contact-hub-card">
+          <div class="contact-hub-header">
+            <span class="hub-badge-zone hub-badge-redsea">محور ينبع البتروكيماوي</span>
+            <h3 class="contact-hub-title">فرع ينبع الصناعية</h3>
+          </div>
+
+          <div class="contact-hub-details">
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>عنوان المنشأة:</strong><br>
+                منطقة الهيئة الملكية الصناعية (RCJY)، ينبع، المملكة العربية السعودية
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>الهاتف المباشر:</strong><br>
+                <a href="tel:+966592151506" style="color: var(--color-heading); font-weight: 700; direction: ltr; display: inline-block;">+966 59 215 1506</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>بريد فرع ينبع:</strong><br>
+                <a href="mailto:yanbu@mechflow.sa" style="color: var(--color-brand-bronze-dark); font-weight: 700;">yanbu@mechflow.sa</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-compass"></i>
+              <div>
+                <strong>نطاق التغطية:</strong><br>
+                مجمعات ينبع البتروكيماوية، محطات تحلية المياه SWCC وميناء الملك فهد
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-hub-actions">
+            <a href="tel:+966592151506" class="btn-hub-call">
+              <i class="fa-solid fa-phone"></i> اتصال بينبع
+            </a>
+            <a href="https://wa.me/966592151506?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%85%D9%8A%D9%83%20%D9%81%D9%84%D9%88%20%D9%8A%D9%86%D8%A8%D8%B9%D8%8C%20%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85." target="_blank" rel="noopener" class="btn-hub-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> واتساب
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Master Footer with Rich Icons -->
+  <!-- نموذج الاستفسار الفني المباشر وقنوات الدعم -->
+  <section class="section-spacer" style="background: #FFFFFF;">
+    <div class="container">
+      <div class="contact-main-grid">
+        
+        <!-- العمود الأيمن: نموذج الاستفسار -->
+        <div class="contact-inquiry-card">
+          <span class="tag-accent"><i class="fa-solid fa-paper-plane"></i> استفسار مباشر</span>
+          <h2 class="head-title-lg" style="font-size: 26px; margin-bottom: 8px;">إرسال طلب فني أو استفسار تجاري</h2>
+          <p style="font-size: 14px; color: var(--color-muted); margin-bottom: 24px;">
+            يرجى تزويدنا بمتطلبات منشأتكم، جدول العمرات المخططة، أو التحديات الهندسية لمعداتكم الدوارة.
+          </p>
+
+          <form action="#" method="POST" onsubmit="event.preventDefault(); alert('شكراً لتواصلكم معنا! سيقوم أحد مهندسينا المختصين بالرد عليكم خلال ساعتي عمل.');">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px;">
+              <div>
+                <label style="display:block; font-size: 12.5px; font-weight: 700; color: var(--color-heading); margin-bottom: 6px;">الاسم الكامل *</label>
+                <input type="text" class="diag-select-control" placeholder="مثال: م. عبدالله الحربي" required>
+              </div>
+              <div>
+                <label style="display:block; font-size: 12.5px; font-weight: 700; color: var(--color-heading); margin-bottom: 6px;">البريد الإلكتروني المؤسسي *</label>
+                <input type="email" class="diag-select-control" placeholder="name@company.com.sa" required>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px;">
+              <div>
+                <label style="display:block; font-size: 12.5px; font-weight: 700; color: var(--color-heading); margin-bottom: 6px;">رقم الجوال *</label>
+                <input type="tel" class="diag-select-control" placeholder="+966 5X XXX XXXX" required>
+              </div>
+              <div>
+                <label style="display:block; font-size: 12.5px; font-weight: 700; color: var(--color-heading); margin-bottom: 6px;">الشركة / المنشأة *</label>
+                <input type="text" class="diag-select-control" placeholder="مثال: مصنع بتروكيماويات" required>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px;">
+              <div>
+                <label style="display:block; font-size: 12.5px; font-weight: 700; color: var(--color-heading); margin-bottom: 6px;">الخدمة المطلوبة *</label>
+                <select class="diag-select-control" required>
+                  <option value="turbomachinery">التوربينات والمضخات البترولية API 610</option>
+                  <option value="dry-gas-seals">الأختام الميكانيكية والغازية (API 682/692)</option>
+                  <option value="plant-tar">عمرات المصانع والتشغيل الموقعي</option>
+                  <option value="advanced-eng">المحاكاة الهندسية والمسح ثلاثي الأبعاد</option>
+                  <option value="electrical-motors">إعادة لف المحركات الكهربائية والأتمتة</option>
+                  <option value="heat-transfer">المبادلات الحرارية وأبراج التبريد</option>
+                  <option value="general">شراكة تجارية واستفسار عام</option>
+                </select>
+              </div>
+              <div>
+                <label style="display:block; font-size: 12.5px; font-weight: 700; color: var(--color-heading); margin-bottom: 6px;">الفرع الإقليمي الأقرب *</label>
+                <select class="diag-select-control" required>
+                  <option value="jeddah">المقر الرئيسي بجدة (المنطقة الغربية)</option>
+                  <option value="dammam">فرع الدمام (المنطقة الشرقية)</option>
+                  <option value="yanbu">فرع ينبع (محور البحر الأحمر)</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 22px;">
+              <label style="display:block; font-size: 12.5px; font-weight: 700; color: var(--color-heading); margin-bottom: 6px;">نطاق العمل والمتطلبات الفنية *</label>
+              <textarea class="diag-select-control" rows="4" placeholder="وضح مواصفات المعدة، ظروف التشغيل، الجدول الزمني للعمرة، أو المخرجات الفنية المطلوبة..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-hero-primary" style="width: 100%; justify-content: center; padding: 14px 24px; font-size: 14.5px;">
+              <span>إرسال الاستفسار الفني</span>
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- العمود الأيسر: قنوات الدعم والمكاتب -->
+        <div class="contact-side-stack">
+          
+          <!-- صندوق طوارئ الأعطال 24/7 -->
+          <div class="contact-side-info-card is-dark">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+              <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(182, 123, 43, 0.2); border: 1px solid var(--color-brand-bronze); display: flex; align-items: center; justify-content: center; color: #FDBA74; font-size: 18px;">
+                <i class="fa-solid fa-truck-medical"></i>
+              </div>
+              <div>
+                <span style="font-size: 11px; font-weight: 800; color: #FDBA74; text-transform: uppercase; letter-spacing: 0.05em;">طوارئ الأعطال 24/7</span>
+                <h4 style="font-size: 18px; font-weight: 800; color: #FFFFFF;">فرق التدخل الميداني السريع</h4>
+              </div>
+            </div>
+
+            <p style="font-size: 13.5px; color: #CBD5E1; line-height: 1.6; margin-bottom: 18px;">
+              تحرك فوري لكوادر تشخيص الاهتزازات والمحاذاة الليزرية خلال ساعتين إلى 4 ساعات في كافة مناطق المملكة.
+            </p>
+
+            <a href="tel:+966592151506" class="btn-emergency-call" style="width: 100%; justify-content: center; padding: 12px 18px; font-size: 13.5px;">
+              <i class="fa-solid fa-phone"></i> 1506 215 59 966+
+            </a>
+          </div>
+
+          <!-- عناوين البريد الرسمية وساعات العمل -->
+          <div class="contact-side-info-card">
+            <h4 style="font-size: 17px; font-weight: 800; color: var(--color-heading); margin-bottom: 14px;">
+              <i class="fa-solid fa-envelope-open-text" style="color: var(--color-brand-bronze); margin-left: 6px;"></i> البريد المؤسسي للأقسام
+            </h4>
+
+            <div style="display: flex; flex-direction: column; gap: 10px; font-size: 13.5px;">
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed var(--color-border); padding-bottom: 8px;">
+                <span style="color: var(--color-muted);">طلبات التسعير (RFQ):</span>
+                <a href="mailto:rfq@mechflow.sa" style="font-weight: 700; color: var(--color-brand-bronze-dark);">rfq@mechflow.sa</a>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed var(--color-border); padding-bottom: 8px;">
+                <span style="color: var(--color-muted);">الاستفسارات العامة:</span>
+                <a href="mailto:info@mechflow.sa" style="font-weight: 700; color: var(--color-brand-bronze-dark);">info@mechflow.sa</a>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed var(--color-border); padding-bottom: 8px;">
+                <span style="color: var(--color-muted);">التوظيف والموارد البشرية:</span>
+                <a href="mailto:careers@mechflow.sa" style="font-weight: 700; color: var(--color-brand-bronze-dark);">careers@mechflow.sa</a>
+              </div>
+            </div>
+
+            <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--color-border);">
+              <h5 style="font-size: 13px; font-weight: 800; color: var(--color-heading); margin-bottom: 6px;">
+                <i class="fa-solid fa-clock" style="color: var(--color-brand-bronze); margin-left: 4px;"></i> أوقات العمل الرسمية
+              </h5>
+              <p style="font-size: 12.5px; color: var(--color-body); line-height: 1.5;">
+                الأحد &ndash; الخميس: 8:00 صباحاً &ndash; 5:30 مساءً<br>
+                <strong style="color: var(--color-brand-bronze-dark);">* مركز طوارئ الأعطال يعمل على مدار 24 ساعة طوال 365 يوماً.</strong>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- شريط اعتمادات كبرى المنشآت الصناعية -->
+  <section class="client-marquee-section">
+    <div class="container">
+      <div class="marquee-header-row">
+        <span class="marquee-tag">شريك صناعي معتمد</span>
+        <span class="marquee-sub">شريك موثوق لأكبر قلاع الطاقة والتعدين والبتروكيماويات في المملكة العربية السعودية</span>
+      </div>
+    </div>
+    
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <div class="marquee-item"><img src="../images/clients/saudi-aramco.svg" alt="أرامكو السعودية"></div>
+        <div class="marquee-item"><img src="../images/clients/sabic.svg" alt="سابك"></div>
+        <div class="marquee-item"><img src="../images/clients/maaden.svg" alt="معادن"></div>
+        <div class="marquee-item"><img src="../images/clients/sadara-chemical.svg" alt="شركة صدارة للكيميائيات"></div>
+        <div class="marquee-item"><img src="../images/clients/saudi-electricity.svg" alt="الشركة السعودية للكهرباء"></div>
+
+        <div class="marquee-item"><img src="../images/clients/saudi-aramco.svg" alt="أرامكو السعودية"></div>
+        <div class="marquee-item"><img src="../images/clients/sabic.svg" alt="سابك"></div>
+        <div class="marquee-item"><img src="../images/clients/maaden.svg" alt="معادن"></div>
+        <div class="marquee-item"><img src="../images/clients/sadara-chemical.svg" alt="شركة صدارة للكيميائيات"></div>
+        <div class="marquee-item"><img src="../images/clients/saudi-electricity.svg" alt="الشركة السعودية للكهرباء"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- تذييل الصفحة الرئيسي -->
   <footer class="master-footer">
     <div class="container">
       <div class="footer-4col">
+        <!-- عمود 1 -->
         <div>
           <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
             <img src="mechflow-logo-white.svg" alt="MechFlow Engineering Precision Performance" class="brand-logo-img" style="height:44px;">
           </a>
-          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #94A3B8;">
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 18px; color: #94A3B8;">
             الريادة الهندسية المستقلة في المملكة العربية السعودية لخدمات عمرات التوربينات والمضخات، الأختام الغازية الجافة (API 692)، المحاذاة الليزرية، وعمرات المصانع الكبرى.
           </p>
+
+          <!-- شريط شبكات التواصل الاجتماعي -->
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://wa.me/966592151506" target="_blank" rel="noopener" class="social-icon-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
         </div>
 
+        <!-- عمود 2 -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-layer-group"></i> الأقسام الهندسية</h4>
           <div class="footer-nav-list">
@@ -213,7 +554,8 @@
           </div>
         </div>
 
-        <div>
+        <!-- عمود 3 (مخفي في شاشات الهواتف) -->
+        <div class="footer-quick-links-col">
           <h4 class="footer-head-title"><i class="fa-solid fa-compass"></i> روابط سريعة</h4>
           <div class="footer-nav-list">
             <a href="about.html"><i class="fa-solid fa-shield-halved"></i> عن الشركة والحوكمة</a>
@@ -226,36 +568,68 @@
           </div>
         </div>
 
+        <!-- عمود 4 -->
         <div>
           <h4 class="footer-head-title"><i class="fa-solid fa-building-flag"></i> التواجد المؤسسي</h4>
-          <p style="font-size: 13.5px; margin-bottom: 12px; line-height: 1.6; color: #94A3B8;">
-            🏢 <strong style="color:#FFFFFF;">المكتب الرئيسي:</strong> جدة، المملكة العربية السعودية<br>
-            📍 <strong style="color:#FFFFFF;">الفروع التشغيلية:</strong> الدمام وينبع
-          </p>
-          <p style="font-size: 13.5px; color: var(--color-safety-amber); font-weight: 700;">
-            📞 <span style="color:#CBD5E1;">طوارئ الأعطال 24/7:</span> 1506 215 59 966+<br>
-            📧 <span style="color:#CBD5E1;">طلبات التسعير:</span> rfq@mechflow.sa
-          </p>
+          <div class="footer-presence-list">
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-building"></i>
+              <span><strong>المكتب الرئيسي:</strong> جدة، المملكة العربية السعودية</span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <span><strong>الفروع التشغيلية:</strong> الدمام وينبع</span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span><strong>طوارئ الأعطال 24/7:</strong> <a href="tel:+966592151506">1506 215 59 966+</a></span>
+            </div>
+            <div class="footer-presence-row">
+              <i class="fa-solid fa-envelope"></i>
+              <span><strong>طلبات التسعير:</strong> <a href="mailto:rfq@mechflow.sa">rfq@mechflow.sa</a></span>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- سطر حقوق النشر المصغر -->
       <div class="footer-bottom-row">
-        <span>&copy; 2026 ميكفلو إنجينيرينج سيرفيسز آند سولوجنز. المقر الرئيسي: جدة | الفروع: الدمام وينبع</span>
-        <a href="emergency-dispatch.html" style="color: var(--color-safety-amber); font-weight:700;">طوارئ الأعطال 24/7: 1506 215 59 966+ <i class="fa-solid fa-arrow-left"></i></a>
+        <span>&copy; 2026 شركة ميك فلو للخدمات والحلول الهندسية. كافة الحقوق محفوظة.</span>
+        <a href="tel:+966592151506" class="footer-hotline-link" style="color: #FFA800; font-weight:700;">طوارئ الأعطال 24/7: 1506 215 59 966+ <i class="fa-solid fa-arrow-left"></i></a>
       </div>
     </div>
   </footer>
 
-  <nav class="mobile-bottom-appbar">
-    <a href="index.html" class="appbar-item"><i class="fa-solid fa-house"></i><span>الرئيسية</span></a>
-    <a href="services.html" class="appbar-item"><i class="fa-solid fa-layer-group"></i><span>الخدمات</span></a>
-    <a href="diagnostic.html" class="appbar-item"><i class="fa-solid fa-stethoscope"></i><span>التشخيص</span></a>
-    <a href="emergency-dispatch.html" class="appbar-item emergency-pill"><div class="pill-icon-wrap"><i class="fa-solid fa-phone-volume"></i></div><span>طوارئ 24/7</span></a>
-    <a href="rfq.html" class="appbar-item"><i class="fa-solid fa-file-signature"></i><span>طلب تسعير</span></a>
+  <!-- شريط التنقل السفلي للهواتف الذكية -->
+  <nav class="mobile-bottom-appbar" aria-label="شريط التنقل السفلي">
+    <a href="index.html" class="appbar-item">
+      <i class="fa-solid fa-house"></i>
+      <span>الرئيسية</span>
+    </a>
+
+    <a href="services.html" class="appbar-item">
+      <i class="fa-solid fa-layer-group"></i>
+      <span>الخدمات</span>
+    </a>
+
+    <a href="diagnostic.html" class="appbar-item">
+      <i class="fa-solid fa-stethoscope"></i>
+      <span>التشخيص</span>
+    </a>
+
+    <a href="emergency-dispatch.html" class="appbar-item emergency-pill">
+      <div class="pill-icon-wrap">
+        <i class="fa-solid fa-phone-volume"></i>
+      </div>
+      <span>طوارئ 24/7</span>
+    </a>
+
+    <a href="contact.html" class="appbar-item active">
+      <i class="fa-solid fa-map-location-dot"></i>
+      <span>تواصل معنا</span>
+    </a>
   </nav>
 
-  <script src="../script.js?v=2.5"></script>
+  <script src="../script.js?v=2.7"></script>
 </body>
 </html>
-
-

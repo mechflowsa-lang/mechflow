@@ -1716,6 +1716,253 @@ html[dir="rtl"] .footer-nav-list a:hover {
 }
 
 /* ==========================================================================
+   CONTACT & OPERATIONAL HUBS DIRECTORY STYLES
+   ========================================================================== */
+.contact-hero-wrap {
+  background: radial-gradient(circle at 80% 20%, rgba(182, 123, 43, 0.25) 0%, transparent 60%),
+              radial-gradient(circle at 15% 85%, rgba(0, 128, 255, 0.18) 0%, transparent 50%),
+              linear-gradient(180deg, #0A1624 0%, #040D1A 100%);
+  position: relative;
+  padding: 80px 0 65px;
+  color: #FFFFFF;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.contact-hero-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('images/hero-bg-opt.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+  mix-blend-mode: luminosity;
+  pointer-events: none;
+}
+
+.contact-hero-title {
+  font-size: 46px;
+  font-weight: 900;
+  color: #FFFFFF;
+  line-height: 1.15;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.contact-hero-desc {
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: #CBD5E1;
+  max-width: 720px;
+  margin-bottom: 28px;
+}
+
+.contact-quick-badges {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contact-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 700;
+  backdrop-filter: blur(8px);
+  transition: all var(--transition-fast);
+}
+
+.contact-badge-pill i {
+  color: var(--color-brand-bronze);
+}
+
+.contact-badge-pill:hover {
+  background: rgba(182, 123, 43, 0.2);
+  border-color: var(--color-brand-bronze);
+  color: #FFFFFF;
+}
+
+/* Contact Hubs Card */
+.contact-hub-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-card);
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.contact-hub-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-brand-bronze-border);
+  box-shadow: var(--shadow-hover);
+}
+
+.contact-hub-card.is-hq {
+  border: 2px solid var(--color-brand-bronze);
+}
+
+.hq-badge-ribbon {
+  position: absolute;
+  top: -12px;
+  right: 24px;
+  background: linear-gradient(135deg, #B67B2B 0%, #96601D 100%);
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 12px rgba(182, 123, 43, 0.35);
+}
+
+html[dir="rtl"] .hq-badge-ribbon {
+  right: auto;
+  left: 24px;
+}
+
+.contact-hub-header {
+  margin-bottom: 20px;
+}
+
+.contact-hub-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-top: 8px;
+}
+
+.contact-hub-details {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.contact-detail-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--color-body);
+}
+
+.contact-detail-row i {
+  color: var(--color-brand-bronze);
+  font-size: 15px;
+  margin-top: 3px;
+  flex-shrink: 0;
+  width: 18px;
+}
+
+.contact-detail-row strong {
+  color: var(--color-heading);
+}
+
+.contact-hub-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-hub-call {
+  flex: 1;
+  background: var(--color-brand-gold-tint);
+  border: 1.5px solid var(--color-brand-bronze-border);
+  color: var(--color-brand-bronze-dark);
+  font-family: var(--font-heading);
+  font-size: 13.5px;
+  font-weight: 800;
+  padding: 11px 16px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all var(--transition-fast);
+}
+
+.btn-hub-call:hover {
+  background: var(--color-brand-bronze);
+  color: #FFFFFF;
+  border-color: var(--color-brand-bronze);
+}
+
+.btn-hub-whatsapp {
+  background: rgba(37, 211, 102, 0.1);
+  border: 1.5px solid rgba(37, 211, 102, 0.4);
+  color: #15803D;
+  font-family: var(--font-heading);
+  font-size: 13.5px;
+  font-weight: 800;
+  padding: 11px 16px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all var(--transition-fast);
+}
+
+.btn-hub-whatsapp:hover {
+  background: #25D366;
+  color: #FFFFFF;
+  border-color: #25D366;
+}
+
+/* Contact 2-Column Main Section */
+.contact-main-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.contact-inquiry-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 38px;
+  box-shadow: var(--shadow-card);
+}
+
+.contact-side-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-side-info-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  box-shadow: var(--shadow-card);
+}
+
+.contact-side-info-card.is-dark {
+  background: linear-gradient(145deg, #1C2A31 0%, #0F172A 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+}
+
+
+/* ==========================================================================
    RESPONSIVE BREAKPOINTS (CLEAN & ORDERED)
    ========================================================================== */
 @media (max-width: 1024px) {
@@ -1947,6 +2194,38 @@ html[dir="rtl"] .footer-nav-list a:hover {
   }
 
   .whatsapp-duty-box {
+    padding: 24px 18px;
+  }
+
+  /* Contact Page Mobile */
+  .contact-hero-wrap {
+    padding: 40px 0 32px;
+  }
+
+  .contact-hero-title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .contact-hero-desc {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .contact-quick-badges {
+    justify-content: center;
+  }
+
+  .contact-main-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .contact-inquiry-card {
+    padding: 24px 18px;
+  }
+
+  .contact-hub-card {
     padding: 24px 18px;
   }
 
