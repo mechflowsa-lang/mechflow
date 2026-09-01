@@ -3290,23 +3290,50 @@ html[dir="rtl"] .btn-inquiry-submit:hover i {
   }
 
   .nav-wrapper {
-    height: 64px;
+    height: 72px;
   }
 
   .brand-logo-img {
-    height: 36px;
-    max-width: 155px;
+    height: 46px !important;
+    max-height: 50px !important;
+    max-width: 250px !important;
+    width: auto !important;
   }
 
-  .lang-switch-badge {
-    padding: 4px 10px;
-    font-size: 11.5px;
+  .master-footer .brand-logo-img {
+    height: 50px !important;
+    max-height: 55px !important;
+    max-width: 270px !important;
+    width: auto !important;
+    margin-bottom: 20px !important;
+  }
+
+  .mobile-drawer-header .brand-logo img {
+    height: 44px !important;
+    max-width: 230px !important;
+    width: auto !important;
+  }
+
+  .lang-switch-badge,
+  .lang-btn {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  .lang-switch-badge i,
+  .lang-btn i {
+    font-size: 22px !important;
+    color: var(--color-brand-charcoal) !important;
   }
 
   .mobile-menu-btn {
-    width: 38px;
-    height: 38px;
-    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
   }
 
   /* Hero Mobile */
