@@ -327,16 +327,34 @@ html[dir="rtl"] .mega-menu-box {
 
 .mobile-menu-btn {
   display: none;
-  background: #F8FAFC;
-  border: 1.5px solid var(--color-border);
-  width: 44px;
-  height: 44px;
-  border-radius: var(--radius-md);
-  color: var(--color-brand-charcoal);
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  cursor: pointer;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  color: var(--color-brand-charcoal) !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 24px !important;
+  cursor: pointer !important;
+  transition: all var(--transition-fast) !important;
+}
+
+.mobile-menu-btn:hover {
+  background: transparent !important;
+  color: var(--color-brand-bronze) !important;
+  transform: scale(1.12) !important;
+}
+
+.mobile-menu-btn i {
+  font-size: 24px !important;
+  line-height: 1 !important;
 }
 
 /* ==========================================================================
@@ -3331,23 +3349,37 @@ html[dir="rtl"] .btn-inquiry-submit:hover i {
   .lang-switch-badge,
   .lang-btn {
     background: transparent !important;
+    background-color: transparent !important;
     border: none !important;
     box-shadow: none !important;
     padding: 0 !important;
-    width: 38px !important;
-    height: 38px !important;
+    width: auto !important;
+    height: auto !important;
   }
 
-  .lang-switch-badge i,
-  .lang-btn i {
-    font-size: 22px !important;
-    color: var(--color-brand-charcoal) !important;
+  .lang-switch-svg {
+    width: 24px !important;
+    height: 24px !important;
+    display: block !important;
   }
 
   .mobile-menu-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 17px;
+    display: flex !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 24px !important;
+  }
+
+  .mobile-menu-btn i {
+    font-size: 24px !important;
+    line-height: 1 !important;
   }
 
   /* Hero Mobile */
