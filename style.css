@@ -1403,190 +1403,14 @@ html[dir="rtl"] .footer-nav-list a:hover {
 }
 
 /* ==========================================================================
-   RESPONSIVE BREAKPOINTS (PERFECT MOBILE EXPERIENCE)
-   ========================================================================== */
-@media (max-width: 1024px) {
-  .desktop-nav, .topbar {
-    display: none !important;
-  }
-
-  .mobile-menu-btn {
-    display: flex;
-  }
-
-  .hero-layout-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .metrics-impact-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .divisions-3col-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .diag-grid-3step {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  .pillars-4col-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-  }
-
-  .tri-hubs-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .footer-4col {
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-
-  .nav-wrapper {
-    height: 64px;
-  }
-
-  .brand-logo-img {
-    height: 36px;
-    max-width: 155px;
-  }
-
-  .lang-switch-badge {
-    padding: 4px 10px;
-    font-size: 11.5px;
-  }
-
-  .mobile-menu-btn {
-    width: 38px;
-    height: 38px;
-    font-size: 16px;
-  }
-
-  /* Hero Mobile */
-  .hero-monolith {
-    padding: 36px 0 30px;
-  }
-
-  .hero-title-punch {
-    font-size: 25px;
-    line-height: 1.18;
-    text-align: center;
-    margin-bottom: 12px;
-  }
-
-  .hero-desc-text {
-    font-size: 14px;
-    line-height: 1.55;
-    text-align: center;
-    margin: 0 auto 18px;
-    max-width: 100%;
-  }
-
-  .hero-micro-features-2line {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 8px;
-    margin: 0 auto 20px;
-    max-width: 100%;
-  }
-
-  .micro-badge-item {
-    gap: 8px;
-  }
-
-  .micro-badge-icon {
-    width: 36px;
-    height: 36px;
-    font-size: 13px;
-    border-radius: 8px;
-  }
-
-  .micro-badge-text {
-    font-size: 11px;
-    line-height: 1.2;
-  }
-
-  .hero-action-buttons {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-    margin: 0 auto;
-  }
-
-  .btn-emergency-gold,
-  .btn-outline-glow {
-    width: 100%;
-    justify-content: center;
-    padding: 13px 18px;
-    font-size: 13.5px;
-    text-align: center;
-  }
-
-  .hero-trust-proof {
-    font-size: 12px;
-    justify-content: center;
-    text-align: left;
-    margin-top: 8px;
-  }
-
-  html[dir="rtl"] .hero-trust-proof {
-    text-align: right;
-  }
-
-  /* 3 Showcase Cards on Mobile: Preserved Slanted Parallelogram Shape */
-  .hero-cards-trio {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    margin-top: 18px;
-    padding: 6px 4px;
-  }
-
-  .skewed-hero-card {
-    height: 145px;
-    border-radius: 6px;
-    transform: skewX(-8deg) !important;
-    border: 1.5px solid #0080FF !important;
-    box-shadow: 0 6px 20px rgba(0, 128, 255, 0.35) !important;
-  }
-
-  html[dir="rtl"] .skewed-hero-card {
-    transform: skewX(8deg) !important;
-  }
-
-  .skewed-card-inner {
-    transform: skewX(8deg) !important;
-    inset: -10px -15px !important;
-    padding: 10px 6px !important;
-  }
-
-  html[dir="rtl"] .skewed-card-inner {
-    transform: skewX(-8deg) !important;
-  }
-
-/* ==========================================================================
-   24/7 EMERGENCY BREAKDOWN DISPATCH CENTER STYLES
+   24/7 EMERGENCY BREAKDOWN DISPATCH CENTER STYLES (BASE / DESKTOP)
    ========================================================================== */
 .emergency-hero-wrap {
-  background: radial-gradient(circle at 75% 25%, rgba(182, 123, 43, 0.22) 0%, transparent 60%),
-              radial-gradient(circle at 20% 80%, rgba(0, 128, 255, 0.15) 0%, transparent 50%),
+  background: radial-gradient(circle at 75% 25%, rgba(182, 123, 43, 0.28) 0%, transparent 60%),
+              radial-gradient(circle at 20% 80%, rgba(0, 128, 255, 0.2) 0%, transparent 50%),
               linear-gradient(180deg, #071322 0%, #030B17 100%);
   position: relative;
-  padding: 75px 0 60px;
+  padding: 80px 0 65px;
   color: #FFFFFF;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
@@ -1599,7 +1423,7 @@ html[dir="rtl"] .footer-nav-list a:hover {
   background-image: url('images/hero-bg-opt.jpg');
   background-size: cover;
   background-position: center;
-  opacity: 0.22;
+  opacity: 0.28;
   mix-blend-mode: luminosity;
   pointer-events: none;
 }
@@ -1608,12 +1432,12 @@ html[dir="rtl"] .footer-nav-list a:hover {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(182, 123, 43, 0.15);
+  background: rgba(182, 123, 43, 0.18);
   border: 1.5px solid var(--color-brand-bronze);
   color: #FDBA74;
-  padding: 6px 16px;
+  padding: 6px 18px;
   border-radius: var(--radius-full);
-  font-size: 12px;
+  font-size: 12.5px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -1621,8 +1445,8 @@ html[dir="rtl"] .footer-nav-list a:hover {
 }
 
 .live-pulse-dot {
-  width: 9px;
-  height: 9px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: #22C55E;
   box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
@@ -1636,11 +1460,11 @@ html[dir="rtl"] .footer-nav-list a:hover {
 }
 
 .emergency-hero-title {
-  font-size: 44px;
+  font-size: 46px;
   font-weight: 900;
   color: #FFFFFF;
-  line-height: 1.15;
-  margin-bottom: 16px;
+  line-height: 1.14;
+  margin-bottom: 18px;
   text-transform: uppercase;
   letter-spacing: -0.02em;
 }
@@ -1649,8 +1473,8 @@ html[dir="rtl"] .footer-nav-list a:hover {
   font-size: 16.5px;
   line-height: 1.65;
   color: #CBD5E1;
-  max-width: 680px;
-  margin-bottom: 28px;
+  max-width: 720px;
+  margin-bottom: 30px;
 }
 
 .emergency-hero-actions {
@@ -1666,7 +1490,7 @@ html[dir="rtl"] .footer-nav-list a:hover {
   font-family: var(--font-heading);
   font-size: 15px;
   font-weight: 800;
-  padding: 15px 28px;
+  padding: 15px 30px;
   border-radius: var(--radius-sm);
   display: inline-flex;
   align-items: center;
@@ -1690,7 +1514,7 @@ html[dir="rtl"] .footer-nav-list a:hover {
   font-family: var(--font-heading);
   font-size: 15px;
   font-weight: 800;
-  padding: 15px 28px;
+  padding: 15px 30px;
   border-radius: var(--radius-sm);
   display: inline-flex;
   align-items: center;
@@ -1881,74 +1705,68 @@ html[dir="rtl"] .footer-nav-list a:hover {
   line-height: 1.55;
 }
 
-/* Emergency Incident Dispatch Form */
-.emergency-form-wrapper {
-  background: #FFFFFF;
-  border: 1.5px solid var(--color-border);
-  border-radius: var(--radius-xl);
-  padding: 36px;
-  box-shadow: var(--shadow-card);
-}
-
-.priority-select-pills {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.priority-pill-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 10px;
-  border-radius: var(--radius-md);
-  border: 1.5px solid var(--color-border);
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: 700;
-  transition: all var(--transition-fast);
-}
-
-.priority-pill-label:hover,
-.priority-radio:checked + .priority-pill-label {
-  border-color: var(--color-brand-bronze);
-  background: var(--color-brand-gold-tint);
-  color: var(--color-brand-bronze-dark);
-}
-
-.emergency-form-input {
-  width: 100%;
-  padding: 12px 14px;
-  border-radius: var(--radius-md);
-  border: 1.5px solid var(--color-border);
-  font-family: inherit;
-  font-size: 14px;
-  color: var(--color-heading);
-  transition: border-color var(--transition-fast);
-}
-
-.emergency-form-input:focus {
-  outline: none;
-  border-color: var(--color-brand-bronze);
-}
-
 /* WhatsApp Duty Desk Box */
 .whatsapp-duty-box {
   background: linear-gradient(145deg, #1C2A31 0%, #0F172A 100%);
   border: 1.5px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-xl);
-  padding: 36px;
+  padding: 40px;
   color: #FFFFFF;
   box-shadow: var(--shadow-hover);
 }
 
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS (CLEAN & ORDERED)
+   ========================================================================== */
 @media (max-width: 1024px) {
+  .desktop-nav, .topbar {
+    display: none !important;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .hero-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .metrics-impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .divisions-3col-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .diag-grid-3step {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .pillars-4col-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .tri-hubs-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-4col {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
   .escalation-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
+
   .fleet-grid-3col {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
@@ -1956,24 +1774,165 @@ html[dir="rtl"] .footer-nav-list a:hover {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .nav-wrapper {
+    height: 64px;
+  }
+
+  .brand-logo-img {
+    height: 36px;
+    max-width: 155px;
+  }
+
+  .lang-switch-badge {
+    padding: 4px 10px;
+    font-size: 11.5px;
+  }
+
+  .mobile-menu-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  /* Hero Mobile */
+  .hero-monolith {
+    padding: 36px 0 30px;
+  }
+
+  .hero-title-punch {
+    font-size: 25px;
+    line-height: 1.18;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .hero-desc-text {
+    font-size: 14px;
+    line-height: 1.55;
+    text-align: center;
+    margin: 0 auto 18px;
+    max-width: 100%;
+  }
+
+  .hero-micro-features-2line {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 8px;
+    margin: 0 auto 20px;
+    max-width: 100%;
+  }
+
+  .micro-badge-item {
+    gap: 8px;
+  }
+
+  .micro-badge-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+
+  .micro-badge-text {
+    font-size: 11px;
+    line-height: 1.2;
+  }
+
+  .hero-action-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin: 0 auto;
+  }
+
+  .btn-emergency-gold,
+  .btn-outline-glow {
+    width: 100%;
+    justify-content: center;
+    padding: 13px 18px;
+    font-size: 13.5px;
+    text-align: center;
+  }
+
+  .hero-trust-proof {
+    font-size: 12px;
+    justify-content: center;
+    text-align: left;
+    margin-top: 8px;
+  }
+
+  html[dir="rtl"] .hero-trust-proof {
+    text-align: right;
+  }
+
+  /* 3 Showcase Cards on Mobile */
+  .hero-cards-trio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 18px;
+    padding: 6px 4px;
+  }
+
+  .skewed-hero-card {
+    height: 145px;
+    border-radius: 6px;
+    transform: skewX(-8deg) !important;
+    border: 1.5px solid #0080FF !important;
+    box-shadow: 0 6px 20px rgba(0, 128, 255, 0.35) !important;
+  }
+
+  html[dir="rtl"] .skewed-hero-card {
+    transform: skewX(8deg) !important;
+  }
+
+  .skewed-card-inner {
+    transform: skewX(8deg) !important;
+    inset: -10px -15px !important;
+    padding: 10px 6px !important;
+  }
+
+  html[dir="rtl"] .skewed-card-inner {
+    transform: skewX(-8deg) !important;
+  }
+
+  .skewed-card-title {
+    font-size: 9.5px !important;
+    line-height: 1.2 !important;
+    font-weight: 800 !important;
+  }
+
+  /* Emergency Hero Mobile */
   .emergency-hero-wrap {
     padding: 40px 0 32px;
   }
+
   .emergency-hero-title {
     font-size: 26px;
     text-align: center;
   }
+
   .emergency-hero-desc {
     font-size: 14px;
     text-align: center;
   }
+
   .live-pulse-badge {
     margin: 0 auto 16px;
+    display: flex;
+    justify-content: center;
   }
+
   .emergency-hero-actions {
     flex-direction: column;
     width: 100%;
   }
+
   .btn-emergency-call,
   .btn-emergency-whatsapp {
     width: 100%;
@@ -1981,24 +1940,14 @@ html[dir="rtl"] .footer-nav-list a:hover {
     padding: 14px 20px;
     font-size: 14px;
   }
+
   .fleet-grid-3col {
     grid-template-columns: 1fr;
     gap: 14px;
   }
-  .emergency-form-wrapper {
-    padding: 22px 16px;
-  }
+
   .whatsapp-duty-box {
     padding: 24px 18px;
-  }
-  .priority-select-pills {
-    grid-template-columns: 1fr;
-  }
-}
-  .skewed-card-title {
-    font-size: 9.5px !important;
-    line-height: 1.2 !important;
-    font-weight: 800 !important;
   }
 
   /* Marquee Section Mobile */
@@ -2242,3 +2191,4 @@ html[dir="rtl"] .footer-nav-list a:hover {
     padding-right: 14px !important;
   }
 }
+
