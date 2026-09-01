@@ -871,18 +871,25 @@ html[dir="rtl"] .marquee-track {
   gap: 26px;
 }
 
+@media (max-width: 991px) {
+  .divisions-3col-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
 .division-box-card {
   background: #FFFFFF;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: 30px;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
   box-shadow: var(--shadow-card);
   transition: all var(--transition-normal);
   position: relative;
+  overflow: hidden;
 }
 
 .division-box-card::before {
@@ -892,14 +899,14 @@ html[dir="rtl"] .marquee-track {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #B67B2B, #B97F2F);
-  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  background: linear-gradient(90deg, #B67B2B, #B97F2F, #FFA800);
   opacity: 0;
   transition: opacity var(--transition-fast);
+  z-index: 4;
 }
 
 .division-box-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
   box-shadow: var(--shadow-hover);
   border-color: var(--color-brand-bronze-border);
 }
@@ -910,110 +917,139 @@ html[dir="rtl"] .marquee-track {
 
 .division-img-wrap {
   width: 100%;
-  height: 165px;
-  border-radius: var(--radius-md);
+  height: 200px;
   overflow: hidden;
   position: relative;
-  margin-bottom: 18px;
-  background: #0A1624;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #091523;
+}
+
+.division-img-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(9, 21, 35, 0.1) 0%, rgba(9, 21, 35, 0.65) 100%);
+  pointer-events: none;
 }
 
 .division-card-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform var(--transition-normal);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .division-box-card:hover .division-card-img {
-  transform: scale(1.06);
+  transform: scale(1.08);
 }
 
 .division-img-badge {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 14px;
+  left: 14px;
   background: rgba(10, 22, 36, 0.85);
-  backdrop-filter: blur(6px);
-  color: var(--color-brand-bronze-light);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   font-family: var(--font-mono);
   font-size: 11px;
   font-weight: 800;
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: var(--radius-full);
   z-index: 2;
+  letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.division-img-badge i {
+  color: var(--color-brand-bronze-light);
 }
 
 [dir="rtl"] .division-img-badge {
-  right: auto;
-  left: 10px;
+  left: auto;
+  right: 14px;
 }
 
-.division-card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 14px;
-}
-
-.division-icon-badge {
-  width: 50px;
-  height: 50px;
+.division-overlap-icon {
+  position: absolute;
+  bottom: -22px;
+  right: 22px;
+  width: 48px;
+  height: 48px;
   border-radius: 12px;
-  background: var(--color-brand-gold-tint);
+  background: #FFFFFF;
   color: var(--color-brand-bronze);
-  border: 1px solid var(--color-brand-bronze-border);
+  border: 2px solid var(--color-brand-bronze);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 20px;
+  z-index: 3;
+  transition: all var(--transition-fast);
 }
 
-.division-tag-num {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  font-weight: 800;
-  color: var(--color-muted);
-  background: var(--color-canvas-subtle);
-  padding: 4px 10px;
-  border-radius: var(--radius-xs);
+[dir="rtl"] .division-overlap-icon {
+  right: auto;
+  left: 22px;
+}
+
+.division-box-card:hover .division-overlap-icon {
+  background: var(--color-brand-bronze);
+  color: #FFFFFF;
+  transform: scale(1.05);
+}
+
+.division-card-body {
+  padding: 28px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 }
 
 .division-card-title {
-  font-size: 20px;
+  font-size: 20.5px;
   font-weight: 800;
   color: var(--color-heading);
+  line-height: 1.3;
   margin-bottom: 10px;
 }
 
 .division-card-desc {
-  font-size: 14px;
+  font-size: 13.8px;
   color: var(--color-body);
-  line-height: 1.6;
+  line-height: 1.62;
   margin-bottom: 16px;
 }
 
 .division-features-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 18px;
+  gap: 8px;
+  margin-bottom: 20px;
+  background: var(--color-canvas-subtle);
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
 }
 
 .division-feature-row {
   display: flex;
-  align-items: center;
-  gap: 9px;
-  font-size: 13px;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12.8px;
   font-weight: 600;
   color: var(--color-heading);
+  line-height: 1.45;
 }
 
 .division-feature-row i {
   color: var(--color-brand-bronze);
   font-size: 13px;
+  margin-top: 2px;
+  flex-shrink: 0;
 }
 
 .division-link-btn {
@@ -1022,7 +1058,8 @@ html[dir="rtl"] .marquee-track {
   justify-content: space-between;
   padding: 12px 18px;
   border-radius: var(--radius-md);
-  background: var(--color-canvas-subtle);
+  background: #FFFFFF;
+  border: 1.5px solid var(--color-border);
   color: var(--color-heading);
   font-weight: 700;
   font-size: 13.5px;
@@ -1030,8 +1067,10 @@ html[dir="rtl"] .marquee-track {
 }
 
 .division-link-btn:hover {
-  background: var(--color-brand-charcoal);
+  background: linear-gradient(135deg, #B67B2B 0%, #96601D 100%);
   color: #FFFFFF;
+  border-color: transparent;
+  box-shadow: 0 4px 14px rgba(182, 123, 43, 0.3);
 }
 
 /* ==========================================================================
@@ -2927,29 +2966,42 @@ html[dir="rtl"] .hq-badge-ribbon {
     font-size: 13.5px;
   }
 
-  /* Divisions Cards */
+  /* Divisions Cards Mobile */
   .divisions-3col-grid {
     grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 20px;
   }
 
   .division-box-card {
-    padding: 20px 16px;
-    border-radius: 14px;
-    gap: 14px;
+    padding: 0 !important;
+    border-radius: 18px;
+    gap: 0;
+  }
+
+  .division-img-wrap {
+    height: 180px;
+  }
+
+  .division-card-body {
+    padding: 24px 18px 20px !important;
   }
 
   .division-card-title {
-    font-size: 17px;
+    font-size: 18.5px;
   }
 
   .division-card-desc {
-    font-size: 13px;
-    margin-bottom: 12px;
+    font-size: 13.5px;
+    margin-bottom: 14px;
+  }
+
+  .division-features-list {
+    padding: 12px 14px;
+    margin-bottom: 18px;
   }
 
   .division-feature-row {
-    font-size: 12px;
+    font-size: 12.5px;
   }
 
   /* Diagnostic Card */
