@@ -511,49 +511,74 @@
     <div class="container">
       <div class="diag-interactive-card">
         <div style="text-align: center; max-width: 720px; margin: 0 auto 24px;">
-          <span class="tag-accent"><i class="fa-solid fa-wand-magic-sparkles"></i> Quick Diagnostic Tool</span>
-          <h2 class="head-title-lg">Equipment Failure Diagnostic Assistant</h2>
-          <p style="color: var(--color-muted);">Select your equipment and symptom to get an immediate recommended service solution.</p>
+          <span class="tag-accent"><i class="fa-solid fa-wand-magic-sparkles"></i> Instant Engineering Diagnostic</span>
+          <h2 class="head-title-lg">Equipment Failure &amp; Diagnostic Assistant</h2>
+          <p style="color: var(--color-muted);">Select your equipment type and observed symptoms to receive instant engineering recommendations and rapid technical dispatch across Saudi Arabia.</p>
         </div>
 
         <div class="diag-grid-3step">
+          <!-- Step 1 -->
           <div class="diag-step-box">
             <div class="diag-step-badge">
-              <span class="step-num-pill">1</span>
-              <span>Select Asset Type</span>
+              <span class="step-num-pill">01</span>
+              <div class="diag-step-info">
+                <span class="diag-step-sub">Step 1</span>
+                <span class="diag-step-title">Select Asset Type</span>
+              </div>
             </div>
-            <select class="diag-select-control" id="diagEquipment">
-              <option value="pump">Process Pumps (API 610)</option>
-              <option value="compressor">Gas Compressors</option>
-              <option value="turbine">Steam &amp; Gas Turbines</option>
-              <option value="motor">Industrial Electric Motors</option>
-              <option value="flange">Piping Flanges &amp; Joints</option>
-            </select>
+            <div class="diag-select-wrap">
+              <select class="diag-select-control" id="diagEquipment" aria-label="Select Asset Type">
+                <option value="pump">Process Pumps (API 610)</option>
+                <option value="compressor">Centrifugal Gas Compressors</option>
+                <option value="turbine">Steam &amp; Gas Turbines (API 612)</option>
+                <option value="motor">Industrial Electric Motors (LV/MV)</option>
+                <option value="flange">Pipeline Flanges &amp; Pressure Joints</option>
+              </select>
+              <i class="fa-solid fa-chevron-down diag-select-arrow"></i>
+            </div>
           </div>
 
+          <!-- Step 2 -->
           <div class="diag-step-box">
             <div class="diag-step-badge">
-              <span class="step-num-pill">2</span>
-              <span>Observed Issue</span>
+              <span class="step-num-pill">02</span>
+              <div class="diag-step-info">
+                <span class="diag-step-sub">Step 2</span>
+                <span class="diag-step-title">Observed Issue</span>
+              </div>
             </div>
-            <select class="diag-select-control" id="diagSymptom">
-              <option value="vibration">High Vibration / Noise</option>
-              <option value="leakage">Seal Leakage / Fluid Loss</option>
-              <option value="burn">Motor Overheat / Insulation Trip</option>
-              <option value="trip">Bearing Overheat / Sudden Trip</option>
-            </select>
+            <div class="diag-select-wrap">
+              <select class="diag-select-control" id="diagSymptom" aria-label="Observed Issue">
+                <option value="vibration">High Vibration / Noise</option>
+                <option value="leakage">Seal Leakage / Fluid Loss</option>
+                <option value="burn">Motor Overheat / Insulation Trip</option>
+                <option value="trip">Bearing Overheat / Sudden Trip</option>
+              </select>
+              <i class="fa-solid fa-chevron-down diag-select-arrow"></i>
+            </div>
           </div>
 
+          <!-- Step 3: Result & Dispatch -->
           <div class="diag-result-box">
             <div>
-              <span class="diag-result-status"><i class="fa-solid fa-circle-check"></i> Recommended Service</span>
+              <span class="diag-result-status"><i class="fa-solid fa-circle-check"></i> RECOMMENDED INTERVENTION PROTOCOL</span>
               <h4 class="diag-result-heading" id="diagResultTitle">Laser Alignment &amp; Dynamic Balancing</h4>
               <p class="diag-result-text" id="diagResultDesc">Rotational unbalance detected. Recommended action: Rapid on-site laser alignment and workshop balancing to ISO standards.</p>
+              <div class="diag-result-hub">
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="diagResultHub">Jeddah HQ, Dammam &amp; Yanbu Hubs</span>
+              </div>
             </div>
-            <a href="emergency-dispatch.html" class="btn-dispatch-now" id="diagActionBtn">
-              <span>Request Fast Technical Dispatch</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
+            <div class="diag-actions-row">
+              <a href="emergency-dispatch.html" class="btn-dispatch-now" id="diagActionBtn">
+                <span>Request Fast Technical Dispatch</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="https://wa.me/966592151506" target="_blank" rel="noopener noreferrer" class="btn-diag-whatsapp" aria-label="WhatsApp Hotline">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp Desk</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

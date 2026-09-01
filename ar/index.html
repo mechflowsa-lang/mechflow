@@ -510,49 +510,74 @@
     <div class="container">
       <div class="diag-interactive-card">
         <div style="text-align: center; max-width: 720px; margin: 0 auto 24px;">
-          <span class="tag-accent"><i class="fa-solid fa-wand-magic-sparkles"></i> المساعد الهندسي السريع</span>
-          <h2 class="head-title-lg">أداة التشخيص السريع لأعطال المعدات</h2>
-          <p style="color: var(--color-muted);">حدد نوع المعدة والعطل لتلقي التوصية والحل الهندسي المباشر فوراً.</p>
+          <span class="tag-accent"><i class="fa-solid fa-wand-magic-sparkles"></i> المساعد الهندسي الفوري</span>
+          <h2 class="head-title-lg">أداة التشخيص الفوري لأعطال المعدات</h2>
+          <p style="color: var(--color-muted);">حدد نوع المعدة والعطل لتلقي التوصية والحل الهندسي المباشر وتوجيه الدعم الفني فوراً في المملكة.</p>
         </div>
 
         <div class="diag-grid-3step">
+          <!-- الخطوة 1 -->
           <div class="diag-step-box">
             <div class="diag-step-badge">
-              <span class="step-num-pill">1</span>
-              <span>نوع المعدة</span>
+              <span class="step-num-pill">01</span>
+              <div class="diag-step-info">
+                <span class="diag-step-sub">الخطوة 1</span>
+                <span class="diag-step-title">نوع المعدة الصناعية</span>
+              </div>
             </div>
-            <select class="diag-select-control" id="diagEquipment">
-              <option value="pump">مضخات العمليات البترولية (API 610)</option>
-              <option value="compressor">ضواغط الغاز الصناعية</option>
-              <option value="turbine">التوربينات البخارية والغازية</option>
-              <option value="motor">المحركات الكهربائية الصناعية</option>
-              <option value="flange">أنابيب وفلانجات الضغط</option>
-            </select>
+            <div class="diag-select-wrap">
+              <select class="diag-select-control" id="diagEquipment" aria-label="نوع المعدة الصناعية">
+                <option value="pump">مضخات العمليات البترولية (API 610)</option>
+                <option value="compressor">ضواغط الغاز الطاردة المركزية</option>
+                <option value="turbine">التوربينات البخارية والغازية (API 612)</option>
+                <option value="motor">المحركات الكهربائية الصناعية (LV/MV)</option>
+                <option value="flange">أنابيب وفلانجات الضغط العالي</option>
+              </select>
+              <i class="fa-solid fa-chevron-down diag-select-arrow"></i>
+            </div>
           </div>
 
+          <!-- الخطوة 2 -->
           <div class="diag-step-box">
             <div class="diag-step-badge">
-              <span class="step-num-pill">2</span>
-              <span>المشكلة المرصودة</span>
+              <span class="step-num-pill">02</span>
+              <div class="diag-step-info">
+                <span class="diag-step-sub">الخطوة 2</span>
+                <span class="diag-step-title">المشكلة المرصودة</span>
+              </div>
             </div>
-            <select class="diag-select-control" id="diagSymptom">
-              <option value="vibration">ارتفاع الاهتزازات أو الضوضاء</option>
-              <option value="leakage">تسريب من موانع التسرب أو السوائل</option>
-              <option value="burn">سخونة المحرك أو تلف العزل</option>
-              <option value="trip">توقف مفاجئ / حرارة كراسي التحميل</option>
-            </select>
+            <div class="diag-select-wrap">
+              <select class="diag-select-control" id="diagSymptom" aria-label="المشكلة المرصودة">
+                <option value="vibration">ارتفاع الاهتزازات أو الضوضاء</option>
+                <option value="leakage">تسريب من موانع التسرب أو السوائل</option>
+                <option value="burn">سخونة المحرك أو تلف العزل</option>
+                <option value="trip">توقف مفاجئ / حرارة كراسي التحميل</option>
+              </select>
+              <i class="fa-solid fa-chevron-down diag-select-arrow"></i>
+            </div>
           </div>
 
+          <!-- النتيجة والتوجيه -->
           <div class="diag-result-box">
             <div>
-              <span class="diag-result-status"><i class="fa-solid fa-circle-check"></i> الخدمة والحل الموصى به</span>
+              <span class="diag-result-status"><i class="fa-solid fa-circle-check"></i> البروتوكول والحل الهندسي الموصى به</span>
               <h4 class="diag-result-heading" id="diagResultTitle">محاذاة ليزرية وموازنة ديناميكية</h4>
               <p class="diag-result-text" id="diagResultDesc">تم رصد عدم اتزان دوراني. الإجراء الموصى به: محاذاة ليزرية موقعية دقيقة وموازنة ديناميكية بمعايير ISO.</p>
+              <div class="diag-result-hub">
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="diagResultHub">محاور جدة والدمام وينبع</span>
+              </div>
             </div>
-            <a href="emergency-dispatch.html" class="btn-dispatch-now" id="diagActionBtn">
-              <span>طلب توجيه فريق الدعم الفني</span>
-              <i class="fa-solid fa-arrow-left"></i>
-            </a>
+            <div class="diag-actions-row">
+              <a href="emergency-dispatch.html" class="btn-dispatch-now" id="diagActionBtn">
+                <span>طلب توجيه فريق الدعم الفني</span>
+                <i class="fa-solid fa-arrow-left"></i>
+              </a>
+              <a href="https://wa.me/966592151506" target="_blank" rel="noopener noreferrer" class="btn-diag-whatsapp" aria-label="WhatsApp Hotline">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>واتساب الطوارئ</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
