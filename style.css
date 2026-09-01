@@ -170,8 +170,9 @@ html[dir="rtl"] h6 {
 }
 
 .brand-logo-img {
-  height: 46px;
+  height: 48px;
   width: auto;
+  max-width: 320px;
   object-fit: contain;
   display: block;
 }
@@ -3322,27 +3323,32 @@ html[dir="rtl"] .btn-inquiry-submit:hover i {
   }
 
   .nav-wrapper {
-    height: 72px;
+    height: 80px;
   }
 
   .brand-logo-img {
-    height: 46px !important;
-    max-height: 50px !important;
-    max-width: 250px !important;
+    height: 54px !important;
+    max-height: 58px !important;
+    max-width: calc(100vw - 88px) !important;
     width: auto !important;
+  }
+
+  .master-footer .brand-logo {
+    display: inline-block !important;
+    margin-bottom: 6px !important;
   }
 
   .master-footer .brand-logo-img {
-    height: 50px !important;
-    max-height: 55px !important;
-    max-width: 270px !important;
+    height: 60px !important;
+    max-height: 66px !important;
+    max-width: 330px !important;
     width: auto !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 0 !important;
   }
 
   .mobile-drawer-header .brand-logo img {
-    height: 44px !important;
-    max-width: 230px !important;
+    height: 48px !important;
+    max-width: 260px !important;
     width: auto !important;
   }
 
@@ -4303,6 +4309,24 @@ html[dir="rtl"] .rfq-division-card input[type="radio"] {
 }
 
 @media (max-width: 480px) {
+  .nav-wrapper {
+    height: 76px !important;
+  }
+
+  .brand-logo-img {
+    height: 50px !important;
+    max-height: 54px !important;
+    max-width: calc(100vw - 80px) !important;
+    width: auto !important;
+  }
+
+  .master-footer .brand-logo-img {
+    height: 56px !important;
+    max-height: 62px !important;
+    max-width: 300px !important;
+    width: auto !important;
+  }
+
   .hero-title-punch {
     font-size: 23px;
     letter-spacing: -0.01em;
